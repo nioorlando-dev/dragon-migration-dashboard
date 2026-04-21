@@ -2285,8 +2285,9 @@
     "schedule": "Daily 00 23 * * *",
     "total_tasks": 8,
     "status_counts": {
-      "Belum Convert": 6,
-      "SKIP": 2
+      "SKIP": 2,
+      "Done": 5,
+      "Need Input": 1
     },
     "tasks": [
       {
@@ -2299,42 +2300,42 @@
       {
         "task_id": "check_astranet_astrapay_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is"
       },
       {
         "task_id": "check_astranet_mappingso_target_upload_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is"
       },
       {
         "task_id": "integration_astrapay_file",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive SQL → BigQuery SQL"
       },
       {
         "task_id": "integration_mappingso_target_file",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive SQL → BigQuery SQL"
       },
       {
         "task_id": "astrapay_transformation",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive SQL → BigQuery SQL"
       },
       {
         "task_id": "PBI_Astrapay",
         "type": "Refresh Dataset",
-        "status": "Belum Convert",
+        "status": "Need Input",
         "tool": "Cloud Run Job",
         "catatan": "Python PBI refresh → Cloud Run Job"
       },
