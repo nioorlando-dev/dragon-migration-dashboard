@@ -1,0 +1,231 @@
+{
+  "pipeline_04_customerprofilesales": {
+    "dag_name": "dragon_customerprofilesales",
+    "local": [
+      { "file": "Croselling_CrosellingOwnDealer.py", "type": "pbi_refresh" },
+      { "file": "CustomerProfileRO.py",               "type": "pbi_refresh" },
+      { "file": "CustomerProfileSales.py",             "type": "pbi_refresh" },
+      { "file": "CustomerProfileSalesH1toH2.py",       "type": "pbi_refresh" },
+      { "file": "Summary_UnitSales.py",                "type": "pbi_refresh" },
+      { "file": "TSDandOperation_CustomerProfileSales_FY_2019.py", "type": "pbi_refresh" }
+    ],
+    "remote": [
+      { "file": "dragon.py", "server": "airflow (Cloudera)", "remote_path": "/home/airflow/script/email/dragon.py", "type": "email_alert" }
+    ]
+  },
+  "pipeline_05_datarevenue": {
+    "dag_name": "dragon_datarevenue",
+    "local": [],
+    "remote": [
+      { "file": "checkstatus_synapse.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py", "type": "synapse_status" }
+    ]
+  },
+  "pipeline_07_motorkux": {
+    "dag_name": "dragon_motorkux",
+    "local": [],
+    "remote": [
+      { "file": "checkpipelinestatus_synapse.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/checkpipelinestatus_synapse.py", "type": "synapse_status" }
+    ]
+  },
+  "pipeline_11_data_mekanik": {
+    "dag_name": "dragon_data_mekanik",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_15_marketsharedata": {
+    "dag_name": "dragon_marketsharedata",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_17_astrapay": {
+    "dag_name": "dragon_astrapay",
+    "local": [
+      { "file": "Astrapay.py", "type": "pbi_refresh" }
+    ],
+    "remote": []
+  },
+  "pipeline_18_trigger_pbi_refresh": {
+    "dag_name": "dragon_trigger_pbi_refresh",
+    "local": [
+      { "file": "dragon_trigger_pbi_refresh.py", "type": "pbi_engine" }
+    ],
+    "remote": []
+  },
+  "pipeline_19_ustk2": {
+    "dag_name": "dragon_ustk2",
+    "local": [],
+    "remote": [
+      { "file": "checkstatus_synapse.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py", "type": "synapse_status" }
+    ]
+  },
+  "pipeline_21_customerpersona_segmentation": {
+    "dag_name": "dragon_customerpersona_segmentation",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_22_datamekanik": {
+    "dag_name": "dragon_datamekanik",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_23_sdue_fabric": {
+    "dag_name": "so2w_dragon_sdue_fabric",
+    "local": [
+      { "file": "ReportSDUE2023.py", "type": "pbi_refresh" }
+    ],
+    "remote": [
+      { "file": "checkstatus_synapse.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py", "type": "synapse_status" },
+      { "file": "fabric_job_trigger.py",  "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py",  "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_24_smartstock": {
+    "dag_name": "so2w_smartstock",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_25_dragon_L3": {
+    "dag_name": "dragon_L3",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc", "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" }
+    ]
+  },
+  "pipeline_27_dragon_L1": {
+    "dag_name": "dragon_L1",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc",          "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" },
+      { "file": "so2w_dragon.py",        "server": "airflow (Cloudera)", "remote_path": "/home/airflow/script/email/so2w_dragon.py",                        "type": "email_alert"    }
+    ]
+  },
+  "pipeline_28_dragon_SAP": {
+    "dag_name": "dragon_SAP",
+    "local": [],
+    "remote": [
+      { "file": "fabric_job_trigger.py", "server": "adiden_drc",          "remote_path": "/home/adiden/scripts/dbt_workspace/scripts/fabric_job_trigger.py", "type": "fabric_trigger" },
+      { "file": "so2w_dragon.py",        "server": "airflow (Cloudera)", "remote_path": "/home/airflow/script/email/so2w_dragon.py",                        "type": "email_alert"    }
+    ]
+  },
+  "pipeline_30_so2w_dragon": {
+    "dag_name": "so2w_dragon",
+    "local": [
+      { "file": "analisaefektifitas_so_rem.py",                                    "type": "pbi_refresh" },
+      { "file": "AreaDealer_DistributionSalesUnit.py",                             "type": "pbi_refresh" },
+      { "file": "AsmoID_H1.py",                                                    "type": "pbi_refresh" },
+      { "file": "Croselling_CrosellingOwnDealer.py",                               "type": "pbi_refresh" },
+      { "file": "CustomerProfileRO.py",                                            "type": "pbi_refresh" },
+      { "file": "CustomerProfileSales.py",                                         "type": "pbi_refresh" },
+      { "file": "CustomerProfileSalesH1toH2.py",                                   "type": "pbi_refresh" },
+      { "file": "customerprofilesalessummary.py",                                  "type": "pbi_refresh" },
+      { "file": "Dealer_360_H1_Leasing_Summary.py",                                "type": "pbi_refresh" },
+      { "file": "Dealer_360_H1_Sales.py",                                          "type": "pbi_refresh" },
+      { "file": "Dealer_360_H1_Target_Dealer.py",                                  "type": "pbi_refresh" },
+      { "file": "Dealer_360_H1_Target_Payment_Type.py",                            "type": "pbi_refresh" },
+      { "file": "Dealer_360_H1_Target_Segment.py",                                 "type": "pbi_refresh" },
+      { "file": "Dealer_360_PCD_H1_Sales.py",                                      "type": "pbi_refresh" },
+      { "file": "Dealer_360_PCD_Productivity_ActualandTarget_Transformation.py",   "type": "transformation" },
+      { "file": "Dealer_360_Tartget_Ring.py",                                      "type": "pbi_refresh" },
+      { "file": "hargakomoditas.py",                                               "type": "pbi_refresh" },
+      { "file": "LeadsCustomerAmanda.py",                                          "type": "pbi_refresh" },
+      { "file": "leadscustomerlemon.py",                                           "type": "pbi_refresh" },
+      { "file": "leadscustomermotorkux.py",                                        "type": "pbi_refresh" },
+      { "file": "leadscustomersocialmedia.py",                                     "type": "pbi_refresh" },
+      { "file": "LeadsCustomerVirtualExhibition.py",                               "type": "pbi_refresh" },
+      { "file": "leadtimesparepart.py",                                            "type": "pbi_refresh" },
+      { "file": "marketsharedata.py",                                              "type": "pbi_refresh" },
+      { "file": "marketsharedata_MTD.py",                                          "type": "pbi_refresh" },
+      { "file": "marketsharedata_YTD.py",                                          "type": "pbi_refresh" },
+      { "file": "MonitoringActivityGC.py",                                         "type": "pbi_refresh" },
+      { "file": "MonitoringAlasanArod.py",                                         "type": "pbi_refresh" },
+      { "file": "MonitoringAlasanArod_NonTrade.py",                                "type": "pbi_refresh" },
+      { "file": "monitoringincentivesf.py",                                        "type": "pbi_refresh" },
+      { "file": "monitoringincentivetlol.py",                                      "type": "pbi_refresh" },
+      { "file": "MonitoringKuitansi.py",                                           "type": "pbi_refresh" },
+      { "file": "monitoringpenerimaankuitansi.py",                                 "type": "pbi_refresh" },
+      { "file": "MonitoringPKBOutStanding.py",                                     "type": "pbi_refresh" },
+      { "file": "partsharecontribution.py",                                        "type": "pbi_refresh" },
+      { "file": "pdrb.py",                                                         "type": "pbi_refresh" },
+      { "file": "ProspecttoSSUSummary.py",                                         "type": "pbi_refresh" },
+      { "file": "report_marketing_gc_pdrb.py",                                     "type": "pbi_refresh" },
+      { "file": "Summary_UnitSales.py",                                            "type": "pbi_refresh" },
+      { "file": "SummarySalesActivity.py",                                         "type": "pbi_refresh" },
+      { "file": "summaryunitsales_customerprofilesales.py",                        "type": "pbi_refresh" },
+      { "file": "TSDandOperation_CustomerProfileSales_FY_2019.py",                 "type": "pbi_refresh" },
+      { "file": "zpygf_ar_aging_zpygsdr00059.py",                                  "type": "pbi_refresh" }
+    ],
+    "remote": [
+      { "file": "so2w_dragon.py", "server": "airflow (Cloudera)", "remote_path": "/home/airflow/script/email/so2w_dragon.py", "type": "email_alert" }
+    ]
+  },
+  "pipeline_31_so2w_dragon_2": {
+    "dag_name": "so2w_dragon_2",
+    "local": [
+      { "file": "assist_h1.py",                                          "type": "pbi_refresh" },
+      { "file": "Astrapay.py",                                           "type": "pbi_refresh" },
+      { "file": "csdevelopment.py",                                      "type": "pbi_refresh" },
+      { "file": "CustomerInvitation.py",                                 "type": "pbi_refresh" },
+      { "file": "DataHotlineSummary.py",                                 "type": "pbi_refresh" },
+      { "file": "datamekanik.py",                                        "type": "pbi_refresh" },
+      { "file": "DataRevenueSummary.py",                                 "type": "pbi_refresh" },
+      { "file": "datarevenuetransformation.py",                          "type": "transformation" },
+      { "file": "DataToJ11.py",                                          "type": "pbi_refresh" },
+      { "file": "Dealer360_Promotion_Marketing_360_PointofView.py",      "type": "pbi_refresh" },
+      { "file": "Dealer_360_H2_Data_Mekanik_Transformation.py",          "type": "transformation" },
+      { "file": "Dealer_360_H2_Data_Pit_Transformation.py",              "type": "transformation" },
+      { "file": "Dealer_360_Logistic_Distribution_by_Series_Summary.py", "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_GR_GI_Receive_by_Customer.py",      "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_Indent_Fulfillment.py",             "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_Kapasitas_Gudang.py",               "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_Logistic_Dealer.py",                "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_NOS_Dealer.py",                     "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_NRFS_Defect.py",                    "type": "pbi_refresh" },
+      { "file": "Dealer_360_Logistic_Stock_Level_by_Series_Summary.py",  "type": "pbi_refresh" },
+      { "file": "DealerGeneralData.py",                                  "type": "pbi_refresh" },
+      { "file": "Demand_PartContribution_SalesAbility.py",               "type": "pbi_refresh" },
+      { "file": "DGI_UtilisasiDGI.py",                                   "type": "pbi_refresh" },
+      { "file": "DMS_Performance.py",                                    "type": "pbi_refresh" },
+      { "file": "DMS_PerformanceDetail.py",                              "type": "pbi_refresh" },
+      { "file": "engine_trigger_file.py",                                "type": "file_trigger" },
+      { "file": "hc3_customerrelations.py",                              "type": "pbi_refresh" },
+      { "file": "hc3_leadsfunnel.py",                                    "type": "pbi_refresh" },
+      { "file": "Komposisi_Unit_Entry_SO_Dealer.py",                     "type": "pbi_refresh" },
+      { "file": "Leads3Axis_Overview.py",                                "type": "pbi_refresh" },
+      { "file": "LeadsFunnelCRMH1_Summary.py",                           "type": "pbi_refresh" },
+      { "file": "MotorkuXdanKPBDigital.py",                              "type": "pbi_refresh" },
+      { "file": "olidanpartbypkbservice.py",                             "type": "pbi_refresh" },
+      { "file": "partconsumptionsummary.py",                             "type": "pbi_refresh" },
+      { "file": "partcontributionsummary.py",                            "type": "pbi_refresh" },
+      { "file": "partshare.py",                                          "type": "pbi_refresh" },
+      { "file": "PartStock_Transformation.py",                           "type": "transformation" },
+      { "file": "PeopleManagement_Transformation.py",                    "type": "transformation" },
+      { "file": "performaamic.py",                                       "type": "pbi_refresh" },
+      { "file": "pkbservicefinal.py",                                    "type": "pbi_refresh" },
+      { "file": "Report_SPR.py",                                         "type": "pbi_refresh" },
+      { "file": "ReportSDUE2023.py",                                     "type": "pbi_refresh" },
+      { "file": "SalesInSalesOut_Transformation.py",                     "type": "transformation" },
+      { "file": "servicerate.py",                                        "type": "pbi_refresh" },
+      { "file": "StockLevelSummary.py",                                  "type": "pbi_refresh" },
+      { "file": "summaryleadfunnelmanagement.py",                        "type": "pbi_refresh" },
+      { "file": "TrendSaldo.py",                                         "type": "pbi_refresh" },
+      { "file": "unitentry_transformation_assist.py",                    "type": "transformation" },
+      { "file": "UnitEntryH23_Header1.py",                               "type": "pbi_refresh" },
+      { "file": "unitentrytransformation.py",                            "type": "transformation" },
+      { "file": "UtilisasiAvocado.py",                                   "type": "pbi_refresh" },
+      { "file": "UtilisasiDragon.py",                                    "type": "pbi_refresh" },
+      { "file": "utilisasiportalpasti.py",                               "type": "pbi_refresh" }
+    ],
+    "remote": [
+      { "file": "so2w_dragon_2.py", "server": "airflow (Cloudera)", "remote_path": "/home/airflow/script/email/so2w_dragon_2.py", "type": "email_alert" }
+    ]
+  }
+}

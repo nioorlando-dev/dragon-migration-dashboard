@@ -490,6 +490,51 @@
   .tested-yes { color: #7c6cfc; font-size: 13px; }
   .tested-no  { color: var(--text-mute); font-size: 12px; }
 
+  /* ---------- Scripts page ---------- */
+  .sc-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 28px; }
+  .sc-stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .sc-stat .sc-val { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .sc-stat .sc-lbl { font-size: 11px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 4px; font-weight: 600; }
+  .sc-grid { display: flex; flex-direction: column; gap: 10px; }
+  .sc-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .sc-card-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px; cursor: pointer;
+    transition: background .15s;
+  }
+  .sc-card-head:hover { background: var(--card-hi); }
+  .sc-dag-name { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 600; flex: 1; }
+  .sc-counts { display: flex; gap: 8px; font-size: 11.5px; }
+  .sc-local-ct { color: var(--green); background: rgba(0,208,132,0.1); padding: 2px 8px; border-radius: 99px; font-weight: 600; }
+  .sc-remote-ct { color: var(--yellow); background: rgba(245,166,35,0.1); padding: 2px 8px; border-radius: 99px; font-weight: 600; }
+  .sc-chevron { color: var(--text-mute); transition: transform .2s; }
+  .sc-card.open .sc-chevron { transform: rotate(90deg); }
+  .sc-body { display: none; padding: 0 18px 16px; }
+  .sc-card.open .sc-body { display: block; }
+  .sc-section-title { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 14px 0 8px; }
+  .sc-table { width: 100%; border-collapse: collapse; }
+  .sc-table th { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); padding: 0 10px 8px 0; text-align: left; border-bottom: 1px solid var(--border); }
+  .sc-table td { padding: 7px 10px 7px 0; font-size: 12.5px; border-bottom: 1px solid #181818; vertical-align: top; }
+  .sc-table tr:last-child td { border-bottom: none; }
+  .sc-file { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--text); }
+  .sc-type-badge { display: inline-flex; align-items: center; padding: 1px 7px; border-radius: 99px; font-size: 10.5px; font-weight: 600; white-space: nowrap; }
+  .sc-type-pbi_refresh   { color: #38bdf8; background: rgba(56,189,248,0.1); }
+  .sc-type-transformation{ color: #a78bfa; background: rgba(167,139,250,0.1); }
+  .sc-type-pbi_engine    { color: #fb923c; background: rgba(251,146,60,0.1);  }
+  .sc-type-file_trigger  { color: #34d399; background: rgba(52,211,153,0.1);  }
+  .sc-type-fabric_trigger{ color: var(--yellow); background: rgba(245,166,35,0.1); }
+  .sc-type-synapse_status{ color: var(--text-mute); background: #1a1a1a; }
+  .sc-type-email_alert   { color: var(--text-mute); background: #1a1a1a; }
+  .sc-status-local  { color: var(--green); font-size: 11px; font-weight: 600; }
+  .sc-status-remote { color: var(--yellow); font-size: 11px; font-weight: 600; }
+  .sc-action-ok     { color: var(--text-mute); font-size: 11px; }
+  .sc-action-needed { color: #fb923c; font-size: 11px; }
+  .sc-remote-path   { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); margin-top: 2px; }
+  .sc-filter-bar { display: flex; gap: 6px; margin-bottom: 18px; }
+  .sc-filter-btn { padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; }
+  .sc-filter-btn:hover { border-color: var(--border-hi); color: var(--text); }
+  .sc-filter-btn.active { background: #1a1a1a; border-color: #444; color: var(--text); }
+
   /* ---------- Detail panel ---------- */
   .backdrop {
     position: fixed; inset: 0; background: rgba(0,0,0,0.6);
@@ -646,6 +691,11 @@
         <span class="nav-label">All Pipelines</span>
         <span class="nav-badge" data-badge="all">—</span>
       </div>
+      <div class="nav-item" data-view="scripts">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span class="nav-label">Scripts</span>
+        <span class="nav-badge" data-badge="scripts">—</span>
+      </div>
     </nav>
 
     <div class="sidebar-footer">
@@ -679,6 +729,7 @@
 const state = {
   pipelines: null,   // from data/pipelines.json
   status: null,      // from data/status.json
+  scripts: null,     // from data/scripts.json
   view: 'overview',
   sort: { key: 'priority', dir: 'asc' },
   filter: { q: '', prio: 'all', status: 'all' },
@@ -703,12 +754,14 @@ async function init() {
   setInterval(paintClock, 30_000);
 
   try {
-    const [p, s] = await Promise.all([
+    const [p, s, sc] = await Promise.all([
       fetch('./data/pipelines.json').then(r => { if (!r.ok) throw new Error('pipelines'); return r.json(); }),
       fetch('./data/status.json').then(r => { if (!r.ok) throw new Error('status'); return r.json(); }),
+      fetch('./data/scripts.json').then(r => r.ok ? r.json() : {}),
     ]);
     state.pipelines = p;
     state.status = s;
+    state.scripts = sc;
   } catch (e) {
     document.getElementById('viewRoot').innerHTML =
       `<div class="err"><b>Failed to load data.</b><br>
@@ -831,6 +884,9 @@ function paintSidebarCounts() {
   };
   set('P1', c.P1); set('P2', c.P2); set('P3', c.P3);
   set('P45', c.P45); set('unassigned', c.unassigned); set('all', c.all);
+  const sc = state.scripts || {};
+  const totalScripts = Object.values(sc).reduce((a, p) => a + (p.local||[]).length + (p.remote||[]).length, 0);
+  set('scripts', totalScripts);
 }
 
 function paintFooter() {
@@ -864,6 +920,7 @@ function showView(v) {
     root.innerHTML = '';
     if (v === 'overview') renderOverview(root);
     else if (v === 'all') renderAll(root);
+    else if (v === 'scripts') renderScripts(root);
     else renderPriorityView(root, v);
     root.style.transition = 'opacity .28s ease, transform .28s ease';
     requestAnimationFrame(() => {
@@ -885,6 +942,7 @@ function updateCrumbs(v) {
     P45: ['Priorities', 'P4–P5 — Low'],
     unassigned: ['Priorities', 'Unassigned'],
     all: ['Data', 'All Pipelines'],
+    scripts: ['Data', 'Scripts'],
   };
   const [l, p] = map[v] || map.overview;
   document.getElementById('crumbLevel').textContent = l;
@@ -1448,6 +1506,135 @@ function animateCounter(el, target, duration) {
 }
 
 // ---------- icons ----------
+// ---------- scripts page ----------
+function renderScripts(root) {
+  const sc = state.scripts || {};
+  const pipelines = Object.entries(sc);
+
+  const TYPE_LABELS = {
+    pbi_refresh:    'PBI Refresh',
+    transformation: 'Transformation',
+    pbi_engine:     'PBI Engine',
+    file_trigger:   'File Trigger',
+    fabric_trigger: 'Fabric Trigger',
+    synapse_status: 'Synapse Status',
+    email_alert:    'Email Alert',
+  };
+
+  const ACTION_NOTES = {
+    pbi_refresh:    { text: 'Review — contains report GUID needed for Cloud Run PBI task', cls: 'sc-action-needed' },
+    transformation: { text: 'Review — data transformation logic, ref for BigQuery SQL', cls: 'sc-action-needed' },
+    pbi_engine:     { text: 'Review — PBI refresh engine, ref for Cloud Run implementation', cls: 'sc-action-needed' },
+    file_trigger:   { text: 'Review — file trigger engine, ref for GCS/Cloud Run logic', cls: 'sc-action-needed' },
+    fabric_trigger: { text: 'No action — replaced by CloudRunExecuteJobOperator in GCP', cls: 'sc-action-ok' },
+    synapse_status: { text: 'No action — Synapse status check not needed in GCP', cls: 'sc-action-ok' },
+    email_alert:    { text: 'No action — email alert only, replace with Cloud Monitoring if needed', cls: 'sc-action-ok' },
+  };
+
+  // Totals
+  let totalLocal = 0, totalRemote = 0, needsAction = 0, pipelinesWithLocal = 0;
+  pipelines.forEach(([, p]) => {
+    totalLocal  += (p.local  || []).length;
+    totalRemote += (p.remote || []).length;
+    if ((p.local || []).length) pipelinesWithLocal++;
+    (p.local || []).forEach(s => { if (['pbi_refresh','transformation','pbi_engine','file_trigger'].includes(s.type)) needsAction++; });
+  });
+
+  let filterMode = 'all'; // all | local | remote
+
+  function renderContent() {
+    const filtered = pipelines.filter(([, p]) => {
+      if (filterMode === 'local')  return (p.local  || []).length > 0;
+      if (filterMode === 'remote') return (p.remote || []).length > 0;
+      return true;
+    });
+
+    function scriptRow(s, isLocal) {
+      const lbl   = TYPE_LABELS[s.type]  || s.type;
+      const act   = ACTION_NOTES[s.type] || { text: '—', cls: 'sc-action-ok' };
+      const status = isLocal
+        ? `<span class="sc-status-local">✓ Local</span>`
+        : `<span class="sc-status-remote">⚠ Remote</span>`;
+      const pathRow = !isLocal && s.remote_path
+        ? `<div class="sc-remote-path">${escapeHtml(s.server)} → ${escapeHtml(s.remote_path)}</div>`
+        : '';
+      return `<tr>
+        <td><span class="sc-file">${escapeHtml(s.file)}</span>${pathRow}</td>
+        <td><span class="sc-type-badge sc-type-${s.type}">${lbl}</span></td>
+        <td>${status}</td>
+        <td><span class="${act.cls}">${act.text}</span></td>
+      </tr>`;
+    }
+
+    const cards = filtered.map(([key, p]) => {
+      const localList  = p.local  || [];
+      const remoteList = p.remote || [];
+      const localSec  = localList.length  ? `<div class="sc-section-title">Local scripts (${localList.length}) — available in unconverted_scripts/${key}/scripts/</div>
+        <table class="sc-table">
+          <thead><tr><th>File</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>${localList.map(s => scriptRow(s, true)).join('')}</tbody>
+        </table>` : '';
+      const remoteSec = remoteList.length ? `<div class="sc-section-title">Remote scripts (${remoteList.length}) — still on source server</div>
+        <table class="sc-table">
+          <thead><tr><th>File</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>${remoteList.map(s => scriptRow(s, false)).join('')}</tbody>
+        </table>` : '';
+      return `<div class="sc-card" id="sc-${key}">
+        <div class="sc-card-head" onclick="toggleScCard('${key}')">
+          <span class="sc-dag-name">${escapeHtml(p.dag_name)}</span>
+          <div class="sc-counts">
+            ${localList.length  ? `<span class="sc-local-ct">✓ ${localList.length} local</span>` : ''}
+            ${remoteList.length ? `<span class="sc-remote-ct">⚠ ${remoteList.length} remote</span>` : ''}
+          </div>
+          <svg class="sc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="sc-body">${localSec}${remoteSec}</div>
+      </div>`;
+    }).join('');
+
+    return `
+      <div class="sc-filter-bar">
+        <button class="sc-filter-btn ${filterMode==='all'?'active':''}"    onclick="setScFilter('all')">All Pipelines</button>
+        <button class="sc-filter-btn ${filterMode==='local'?'active':''}"  onclick="setScFilter('local')">Has Local Scripts</button>
+        <button class="sc-filter-btn ${filterMode==='remote'?'active':''}" onclick="setScFilter('remote')">Has Remote Scripts</button>
+      </div>
+      <div class="sc-grid">${cards}</div>`;
+  }
+
+  root.innerHTML = `
+    <h1 class="page-title">Scripts</h1>
+    <p class="page-sub">Task-level scripts referenced by original Cloudera DAGs — availability status and conversion action required.</p>
+    <div class="sc-summary">
+      <div class="sc-stat">
+        <div class="sc-val" style="color:var(--green)">${pipelinesWithLocal}</div>
+        <div class="sc-lbl">Pipelines with local scripts</div>
+      </div>
+      <div class="sc-stat">
+        <div class="sc-val" style="color:var(--green)">${totalLocal}</div>
+        <div class="sc-lbl">Scripts available locally</div>
+      </div>
+      <div class="sc-stat">
+        <div class="sc-val" style="color:var(--yellow)">${totalRemote}</div>
+        <div class="sc-lbl">Scripts still on remote server</div>
+      </div>
+      <div class="sc-stat">
+        <div class="sc-val" style="color:#fb923c">${needsAction}</div>
+        <div class="sc-lbl">Local scripts needing review</div>
+      </div>
+    </div>
+    <div id="sc-content">${renderContent()}</div>`;
+
+  window.setScFilter = function(mode) {
+    filterMode = mode;
+    document.getElementById('sc-content').innerHTML = renderContent();
+  };
+
+  window.toggleScCard = function(key) {
+    const el = document.getElementById('sc-' + key);
+    if (el) el.classList.toggle('open');
+  };
+}
+
 function svg(d, size = 13) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 }
