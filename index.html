@@ -748,17 +748,18 @@ function allNames() { return Object.keys(state.pipelines || {}); }
 function pipeRow(name) {
   const p = state.pipelines[name] || {};
   const s = state.status?.[name] || {};
-  const total = p.total_tasks ?? (p.tasks ? p.tasks.length : 0);
 
-  // Converted: sum of "Done" from status_counts, else derive from tasks statuses
-  let converted = 0;
-  if (p.status_counts && typeof p.status_counts === 'object') {
+  // Exclude SKIP tasks (start/finish DummyOperators) from totals
+  const allTasks = p.tasks || [];
+  const countableTasks = allTasks.filter(t => !/^skip$/i.test((t.status || '').trim()));
+  const total = countableTasks.length || (p.total_tasks ?? 0);
+
+  // Converted: sum of "Done" from countable tasks
+  let converted = countableTasks.filter(t => /^done$/i.test((t.status || '').trim())).length;
+  if (!converted && p.status_counts && typeof p.status_counts === 'object') {
     for (const [k, v] of Object.entries(p.status_counts)) {
       if (/^done$/i.test(k.trim())) converted += Number(v) || 0;
     }
-  }
-  if (!converted && Array.isArray(p.tasks)) {
-    converted = p.tasks.filter(t => /^done$/i.test((t.status || '').trim())) .length;
   }
 
   const prio = (p.priority || 'unassigned').toString();
