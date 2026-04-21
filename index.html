@@ -233,7 +233,7 @@
   }
 
   /* ---------- Status breakdown ---------- */
-  .status-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .status-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
   .status-cell {
     padding: 16px 18px; display: flex; align-items: center; gap: 14px;
   }
@@ -803,8 +803,11 @@ function countsByPrio() {
 }
 
 function statusBreakdown(rows = allRows()) {
-  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0 };
-  rows.forEach(r => { out[r.status] = (out[r.status] || 0) + 1; });
+  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0 };
+  rows.forEach(r => {
+    out[r.status] = (out[r.status] || 0) + 1;
+    if (r.tested) out.tested++;
+  });
   return out;
 }
 
@@ -814,7 +817,8 @@ function totals() {
   const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
   const blocked = rows.filter(r => r.status === 'blocked').length;
   const done = rows.filter(r => r.status === 'done').length;
-  return { totalPipes: rows.length, totalTasks, converted, blocked, done };
+  const tested = rows.filter(r => r.tested).length;
+  return { totalPipes: rows.length, totalTasks, converted, blocked, done, tested };
 }
 
 // ---------- sidebar ----------
@@ -935,6 +939,7 @@ function renderOverview(root) {
         <div class="status-grid">
           ${statusRing('Done', b.done || 0, t.totalPipes, 'var(--green)')}
           ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, 'var(--blue)')}
+          ${statusRing('Tested', b.tested || 0, t.totalPipes, '#7c6cfc')}
           ${statusRing('Blocked', b.blocked || 0, t.totalPipes, 'var(--red)')}
           ${statusRing('Pending', (b.pending || 0) + (b.testing || 0), t.totalPipes, 'var(--yellow)')}
         </div>
@@ -1246,7 +1251,7 @@ function pipeCard(r) {
       </div>
       <div class="pipe-progress">
         <span class="prog-track"><span class="prog-fill" data-pct="${pct}" style="width:0%"></span></span>
-        <span class="meta"><b style="color:var(--text)">${pct}%</b> · ${r.converted}/${r.total}</span>
+        <span class="meta"><b style="color:var(--text)">${pct}%</b> · ${r.converted}/${r.total}${r.tested ? ' &nbsp;<span style="color:#7c6cfc;font-size:11px">✓ Tested</span>' : ''}</span>
       </div>
       ${r.blocker ? `
         <div class="pipe-blocker">

@@ -2608,9 +2608,7 @@
     "total_tasks": 8,
     "status_counts": {
       "SKIP": 2,
-      "Done": 5,
-      "Need Input": 1,
-      "Tested": 0
+      "Done": 6
     },
     "tasks": [
       {
@@ -2664,7 +2662,7 @@
       {
         "task_id": "PBI_Astrapay",
         "type": "Refresh Dataset",
-        "status": "Need Input",
+        "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Python PBI refresh → Cloud Run Job",
         "tested": false
@@ -2997,9 +2995,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 11,
     "status_counts": {
-      "Belum Convert": 9,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 9
     },
     "tasks": [
       {
@@ -3013,7 +3010,7 @@
       {
         "task_id": "check_sap_ustk2",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari so2w_dragon → As-Is Cloud Composer",
         "tested": false
@@ -3021,7 +3018,7 @@
       {
         "task_id": "check_astranet_ringterritory_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_sdue → As-Is Cloud Composer",
         "tested": false
@@ -3029,7 +3026,7 @@
       {
         "task_id": "check_leadsfunnelcrmh1_star",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari so2w_dragon_2 → As-Is Cloud Composer",
         "tested": false
@@ -3037,7 +3034,7 @@
       {
         "task_id": "check_finish_depedencies_funnelleadstosales",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon → As-Is Cloud Composer",
         "tested": false
@@ -3045,7 +3042,7 @@
       {
         "task_id": "funnelleadstosales_LeadsProspect",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
@@ -3053,7 +3050,7 @@
       {
         "task_id": "funnelleadstosales_LeadsNpfu",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
@@ -3061,7 +3058,7 @@
       {
         "task_id": "funnelleadstosales_LeadsSpk",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
@@ -3069,7 +3066,7 @@
       {
         "task_id": "funnelleadstosales_temp1",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
@@ -3077,7 +3074,7 @@
       {
         "task_id": "funnelleadstosales_temp2",
         "type": "Transform/SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
