@@ -1,0 +1,254 @@
+{
+  "dragon": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Large stub DAG (~275 tasks). Requires architecture decision for SAP/RFC ingest.",
+    "notes": "DAG converted. SQL conversion and architecture decisions needed.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_L1": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Requires Spark ingest strategy for Astranet file landing.",
+    "notes": "12 Fabric tasks + file landing. Input needed.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_L2": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy after dbt Cloud Run Job is available.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_L3": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt + Fabric trigger (mastersalesperson). Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_SAP": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "7 SQL files need porting. SAP Spark/RFC ingest strategy needed.",
+    "notes": "Complex pipeline with 17 TaskGroups. Requires SQL conversion.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_astrapay": {
+    "status": "dag_done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "Awaiting source data ingestion (opr_ast_so2w_wh_dl, opr_ast_so2w_wh_di). PBI refresh strategy needed.",
+    "notes": "DAG + 3 SQL files converted (astrapay_file_rank, mappingso_target_rank, astrapay_transformation). pbi_astrapay task still DummyOperator pending decision.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_customerpersona_segmentation": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Fabric workspace ID for HSO_CustomerPersona not yet provided.",
+    "notes": "DAG converted with Fabric trigger. Awaiting Fabric ID input.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_customerprofilesales": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted with CloudRunExecuteJobOperator. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_data_mekanik": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted. Fabric ID datamekanik configured. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_datamekanik": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Confirm with owner: possible duplicate of dragon_data_mekanik.",
+    "notes": "Same Fabric entry as pipeline 11. Confirm before deploying both.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_datarevenue": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_leads_funnel_management": {
+    "status": "dag_done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "Awaiting source data ingestion to BigQuery (opr_ast_so2w_wh_dm).",
+    "notes": "DAG + 5 SQL files converted. Ready for deployment to Cloud Composer.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_leadtimesalesheader_fromspk": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_marketsharedata": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_monitoring_bku": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_monitoring_stnk_bpkb": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_monitoringkuitansi_all": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_motorkux": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted with 9 parallel dbt tasks. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_niguri_partstock": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_nms_handleleasing": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_partsharecontribution": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_report_bd": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "",
+    "notes": "DAG converted with 11 external sensors + 3 dbt tasks. Ready to deploy.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_trigger_pbi_refresh": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "PBI refresh strategy not yet decided. All tasks still DummyOperator.",
+    "notes": "Awaiting decision on Power BI refresh implementation in GCP.",
+    "last_updated": "2026-04-20"
+  },
+  "dragon_ustk2": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  },
+  "so2w_dragon": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Large stub DAG (~236 tasks). SAP RPA/Astranet/RFC ingest strategy needed.",
+    "notes": "DAG converted. SQL conversion and architecture decisions needed.",
+    "last_updated": "2026-04-20"
+  },
+  "so2w_dragon_2": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Large stub DAG (~204 tasks). NMS ingest/LeadsFunnelCRMH1 strategy needed.",
+    "notes": "DAG converted. Full conversion pending.",
+    "last_updated": "2026-04-20"
+  },
+  "so2w_dragon_sdue_fabric": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files and Fabric workspace ID (SDUE_PortalAHM).",
+    "notes": "DAG converted. Delta_Quickwin configured. 3 SQL files also need porting.",
+    "last_updated": "2026-04-20"
+  },
+  "so2w_smartstock": {
+    "status": "blocked",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server.",
+    "notes": "DAG converted with Fabric triggers. Pending dbt model deployment.",
+    "last_updated": "2026-04-20"
+  }
+}
