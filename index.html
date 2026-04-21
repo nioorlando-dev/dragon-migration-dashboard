@@ -746,6 +746,7 @@ const state = {
   pipelines: null,   // from data/pipelines.json
   status: null,      // from data/status.json
   scripts: null,     // from data/scripts.json
+  files: null,       // from data/files.json
   view: 'overview',
   sort: { key: 'priority', dir: 'asc' },
   filter: { q: '', prio: 'all', status: 'all' },
@@ -770,14 +771,16 @@ async function init() {
   setInterval(paintClock, 30_000);
 
   try {
-    const [p, s, sc] = await Promise.all([
+    const [p, s, sc, fi] = await Promise.all([
       fetch('./data/pipelines.json').then(r => { if (!r.ok) throw new Error('pipelines'); return r.json(); }),
       fetch('./data/status.json').then(r => { if (!r.ok) throw new Error('status'); return r.json(); }),
       fetch('./data/scripts.json').then(r => r.ok ? r.json() : {}),
+      fetch('./data/files.json').then(r => r.ok ? r.json() : {}),
     ]);
     state.pipelines = p;
     state.status = s;
     state.scripts = sc;
+    state.files = fi;
   } catch (e) {
     document.getElementById('viewRoot').innerHTML =
       `<div class="err"><b>Failed to load data.</b><br>
@@ -1525,6 +1528,7 @@ function animateCounter(el, target, duration) {
 function renderScripts(root) {
   const pipes   = state.pipelines || {};
   const scripts = state.scripts   || {};
+  const fileMap = state.files     || {};
 
   // Build script lookup: dag_name → { local: Set<filename>, remote: Map<filename, {server,path}> }
   const scriptLookup = {};
@@ -1579,16 +1583,39 @@ function renderScripts(root) {
     return '';
   }
 
-  // Totals
+  function locationHtml(dagName, taskId) {
+    const loc = (fileMap[dagName] || {})[taskId];
+    if (!loc) return '<span style="color:var(--text-mute);font-size:11px">—</span>';
+    const locType = loc.location;
+    if (locType === 'no_file')
+      return `<span style="color:var(--text-mute);font-size:11px">— ${escapeHtml(loc.note||'')}</span>`;
+    if (locType === 'local')
+      return `<span style="color:var(--green);font-size:11px">✓ Lokal</span><br>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#4a7c59">${escapeHtml(loc.path||'')}</span>`;
+    if (locType === 'remote') {
+      const pathPart = loc.path
+        ? `<br><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7a6020">${escapeHtml(loc.path)}</span>`
+        : '';
+      const notePart = loc.note
+        ? `<br><span style="font-size:10px;color:var(--text-mute)">${escapeHtml(loc.note)}</span>`
+        : '';
+      return `<span style="color:var(--yellow);font-size:11px">⚠ ${escapeHtml(loc.server||'Remote')}</span>${pathPart}${notePart}`;
+    }
+    if (locType === 'need_input')
+      return `<span style="color:var(--red);font-size:11px">? ${escapeHtml(loc.note||'Need Input')}</span>`;
+    return `<span style="color:var(--text-mute);font-size:11px">${escapeHtml(loc.note||'—')}</span>`;
+  }
+
+  // Totals — exclude SKIP tasks
   let totalTasks = 0, cntDone = 0, cntBelum = 0, cntNeed = 0, cntSkip = 0;
   Object.values(pipes).forEach(p => {
     (p.tasks || []).forEach(t => {
-      totalTasks++;
       const s = (t.status || '').trim();
-      if (/^done$/i.test(s))       cntDone++;
-      else if (/^skip$/i.test(s))  cntSkip++;
+      if (/^skip$/i.test(s)) { cntSkip++; return; }  // count but exclude from total
+      totalTasks++;
+      if (/^done$/i.test(s))          cntDone++;
       else if (/need.input/i.test(s)) cntNeed++;
-      else                         cntBelum++;
+      else                            cntBelum++;
     });
   });
 
@@ -1638,12 +1665,12 @@ function renderScripts(root) {
 
       const taskRows = visibleTasks.map(t => {
         const tb  = inferTypeBadge(t);
-        const sn  = scriptNote(t.task_id, dagName);
         return `<tr>
-          <td><span class="inv-task-id">${escapeHtml(t.task_id)}</span>${sn}</td>
+          <td><span class="inv-task-id">${escapeHtml(t.task_id)}</span></td>
           <td><span class="inv-type-badge ${tb.cls}">${tb.label}</span></td>
           <td><span class="inv-tool">${escapeHtml(t.tool || '—')}</span></td>
           <td>${statusHtml(t.status)}</td>
+          <td>${locationHtml(dagName, t.task_id)}</td>
           <td class="inv-catatan">${escapeHtml(t.catatan || '')}</td>
         </tr>`;
       }).join('');
@@ -1664,7 +1691,7 @@ function renderScripts(root) {
         </div>
         <div class="inv-body">
           <table class="inv-table">
-            <thead><tr><th>Task ID</th><th>Type</th><th>GCP Tool</th><th>Status</th><th>Notes</th></tr></thead>
+            <thead><tr><th>Task ID</th><th>Type</th><th>GCP Tool</th><th>Status</th><th>Source File / Lokasi</th><th>Notes</th></tr></thead>
             <tbody>${taskRows}</tbody>
           </table>
         </div>
@@ -1691,11 +1718,11 @@ function renderScripts(root) {
     <h1 class="page-title">Task Inventory</h1>
     <p class="page-sub">Semua tasks dari 28 pipeline — status konversi, GCP tool, dan catatan per task.</p>
     <div class="inv-summary">
-      <div class="inv-stat"><div class="iv">${totalTasks}</div><div class="il">Total Tasks</div></div>
+      <div class="inv-stat"><div class="iv">${totalTasks}</div><div class="il">Total Tasks (excl. Skip)</div></div>
       <div class="inv-stat"><div class="iv" style="color:var(--green)">${cntDone}</div><div class="il">Done</div></div>
       <div class="inv-stat"><div class="iv" style="color:var(--yellow)">${cntBelum}</div><div class="il">Belum Convert</div></div>
       <div class="inv-stat"><div class="iv" style="color:var(--red)">${cntNeed}</div><div class="il">Need Input</div></div>
-      <div class="inv-stat"><div class="iv" style="color:var(--text-mute)">${cntSkip}</div><div class="il">Skip</div></div>
+      <div class="inv-stat"><div class="iv" style="color:var(--text-mute)">${cntSkip}</div><div class="il">Skip (start/finish)</div></div>
     </div>
     <div id="inv-content">${renderContent()}</div>`;
 
