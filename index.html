@@ -490,50 +490,66 @@
   .tested-yes { color: #7c6cfc; font-size: 13px; }
   .tested-no  { color: var(--text-mute); font-size: 12px; }
 
-  /* ---------- Scripts page ---------- */
-  .sc-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 28px; }
-  .sc-stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
-  .sc-stat .sc-val { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-  .sc-stat .sc-lbl { font-size: 11px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 4px; font-weight: 600; }
-  .sc-grid { display: flex; flex-direction: column; gap: 10px; }
-  .sc-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-  .sc-card-head {
+  /* ---------- Task Inventory page ---------- */
+  .inv-summary { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 24px; }
+  .inv-stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .inv-stat .iv { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .inv-stat .il { font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 3px; font-weight: 600; }
+
+  .inv-controls { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .inv-filter-btn { padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; white-space: nowrap; }
+  .inv-filter-btn:hover { border-color: var(--border-hi); color: var(--text); }
+  .inv-filter-btn.active { background: #1c1c1c; border-color: #444; color: var(--text); }
+  .inv-search { flex: 1; min-width: 180px; max-width: 280px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; color: var(--text); font-size: 12.5px; outline: none; font-family: inherit; }
+  .inv-search:focus { border-color: var(--border-hi); }
+  .inv-search::placeholder { color: var(--text-mute); }
+  .inv-sep { color: var(--border); font-size: 18px; margin: 0 2px; }
+
+  .inv-grid { display: flex; flex-direction: column; gap: 8px; }
+  .inv-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .inv-card-head {
     display: flex; align-items: center; gap: 12px;
-    padding: 14px 18px; cursor: pointer;
-    transition: background .15s;
+    padding: 13px 16px; cursor: pointer;
+    transition: background .15s; user-select: none;
   }
-  .sc-card-head:hover { background: var(--card-hi); }
-  .sc-dag-name { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 600; flex: 1; }
-  .sc-counts { display: flex; gap: 8px; font-size: 11.5px; }
-  .sc-local-ct { color: var(--green); background: rgba(0,208,132,0.1); padding: 2px 8px; border-radius: 99px; font-weight: 600; }
-  .sc-remote-ct { color: var(--yellow); background: rgba(245,166,35,0.1); padding: 2px 8px; border-radius: 99px; font-weight: 600; }
-  .sc-chevron { color: var(--text-mute); transition: transform .2s; }
-  .sc-card.open .sc-chevron { transform: rotate(90deg); }
-  .sc-body { display: none; padding: 0 18px 16px; }
-  .sc-card.open .sc-body { display: block; }
-  .sc-section-title { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 14px 0 8px; }
-  .sc-table { width: 100%; border-collapse: collapse; }
-  .sc-table th { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); padding: 0 10px 8px 0; text-align: left; border-bottom: 1px solid var(--border); }
-  .sc-table td { padding: 7px 10px 7px 0; font-size: 12.5px; border-bottom: 1px solid #181818; vertical-align: top; }
-  .sc-table tr:last-child td { border-bottom: none; }
-  .sc-file { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--text); }
-  .sc-type-badge { display: inline-flex; align-items: center; padding: 1px 7px; border-radius: 99px; font-size: 10.5px; font-weight: 600; white-space: nowrap; }
-  .sc-type-pbi_refresh   { color: #38bdf8; background: rgba(56,189,248,0.1); }
-  .sc-type-transformation{ color: #a78bfa; background: rgba(167,139,250,0.1); }
-  .sc-type-pbi_engine    { color: #fb923c; background: rgba(251,146,60,0.1);  }
-  .sc-type-file_trigger  { color: #34d399; background: rgba(52,211,153,0.1);  }
-  .sc-type-fabric_trigger{ color: var(--yellow); background: rgba(245,166,35,0.1); }
-  .sc-type-synapse_status{ color: var(--text-mute); background: #1a1a1a; }
-  .sc-type-email_alert   { color: var(--text-mute); background: #1a1a1a; }
-  .sc-status-local  { color: var(--green); font-size: 11px; font-weight: 600; }
-  .sc-status-remote { color: var(--yellow); font-size: 11px; font-weight: 600; }
-  .sc-action-ok     { color: var(--text-mute); font-size: 11px; }
-  .sc-action-needed { color: #fb923c; font-size: 11px; }
-  .sc-remote-path   { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); margin-top: 2px; }
-  .sc-filter-bar { display: flex; gap: 6px; margin-bottom: 18px; }
-  .sc-filter-btn { padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; }
-  .sc-filter-btn:hover { border-color: var(--border-hi); color: var(--text); }
-  .sc-filter-btn.active { background: #1a1a1a; border-color: #444; color: var(--text); }
+  .inv-card-head:hover { background: var(--card-hi); }
+  .inv-pname { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .inv-pbar-wrap { width: 100px; height: 4px; background: #1e1e1e; border-radius: 2px; flex-shrink: 0; overflow: hidden; }
+  .inv-pbar-fill { height: 100%; border-radius: 2px; background: var(--green); transition: width .4s ease; }
+  .inv-pct { font-size: 11px; color: var(--text-mute); width: 34px; text-align: right; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+  .inv-chips { display: flex; gap: 5px; flex-shrink: 0; }
+  .inv-chip { font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 99px; }
+  .inv-chip.done   { color: var(--green);  background: rgba(0,208,132,0.1); }
+  .inv-chip.belum  { color: var(--yellow); background: rgba(245,166,35,0.1); }
+  .inv-chip.need   { color: var(--red);    background: rgba(255,68,68,0.1); }
+  .inv-chip.skip   { color: var(--text-mute); background: #1a1a1a; }
+  .inv-chevron { color: var(--text-mute); flex-shrink: 0; transition: transform .2s; }
+  .inv-card.open .inv-chevron { transform: rotate(90deg); }
+
+  .inv-body { display: none; border-top: 1px solid var(--border); }
+  .inv-card.open .inv-body { display: block; }
+  .inv-table { width: 100%; border-collapse: collapse; }
+  .inv-table th { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); padding: 9px 12px; text-align: left; border-bottom: 1px solid #181818; background: #0d0d0d; }
+  .inv-table td { padding: 7px 12px; font-size: 12px; border-bottom: 1px solid #161616; vertical-align: middle; }
+  .inv-table tr:last-child td { border-bottom: none; }
+  .inv-table tr:hover td { background: #111; }
+  .inv-task-id { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text); }
+  .inv-type-badge { display: inline-flex; align-items: center; padding: 1px 7px; border-radius: 99px; font-size: 10px; font-weight: 600; white-space: nowrap; }
+  .inv-tb-sql    { color: #38bdf8; background: rgba(56,189,248,0.1); }
+  .inv-tb-dbt    { color: #a78bfa; background: rgba(167,139,250,0.1); }
+  .inv-tb-pbi    { color: #fb923c; background: rgba(251,146,60,0.1);  }
+  .inv-tb-fabric { color: #f59e0b; background: rgba(245,158,11,0.1);  }
+  .inv-tb-sensor { color: #94a3b8; background: rgba(148,163,184,0.1); }
+  .inv-tb-spark  { color: #f97316; background: rgba(249,115,22,0.1);  }
+  .inv-tb-skip   { color: #444; background: #141414; }
+  .inv-tb-need   { color: var(--red); background: rgba(255,68,68,0.07); }
+  .inv-tb-other  { color: var(--text-mute); background: #1a1a1a; }
+  .inv-status-done  { display:inline-flex;align-items:center;gap:4px;color:var(--green);font-size:11px;font-weight:600; }
+  .inv-status-belum { display:inline-flex;align-items:center;gap:4px;color:var(--yellow);font-size:11px;font-weight:600; }
+  .inv-status-need  { display:inline-flex;align-items:center;gap:4px;color:var(--red);font-size:11px;font-weight:600; }
+  .inv-status-skip  { color:var(--text-mute);font-size:11px; }
+  .inv-catatan { font-size: 11px; color: var(--text-mute); max-width: 280px; }
+  .inv-tool { font-size: 11px; color: var(--text-dim); }
 
   /* ---------- Detail panel ---------- */
   .backdrop {
@@ -692,8 +708,8 @@
         <span class="nav-badge" data-badge="all">—</span>
       </div>
       <div class="nav-item" data-view="scripts">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        <span class="nav-label">Scripts</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <span class="nav-label">Task Inventory</span>
         <span class="nav-badge" data-badge="scripts">—</span>
       </div>
     </nav>
@@ -884,9 +900,8 @@ function paintSidebarCounts() {
   };
   set('P1', c.P1); set('P2', c.P2); set('P3', c.P3);
   set('P45', c.P45); set('unassigned', c.unassigned); set('all', c.all);
-  const sc = state.scripts || {};
-  const totalScripts = Object.values(sc).reduce((a, p) => a + (p.local||[]).length + (p.remote||[]).length, 0);
-  set('scripts', totalScripts);
+  const t = totals();
+  set('scripts', t.totalTasks);
 }
 
 function paintFooter() {
@@ -942,7 +957,7 @@ function updateCrumbs(v) {
     P45: ['Priorities', 'P4–P5 — Low'],
     unassigned: ['Priorities', 'Unassigned'],
     all: ['Data', 'All Pipelines'],
-    scripts: ['Data', 'Scripts'],
+    scripts: ['Data', 'Task Inventory'],
   };
   const [l, p] = map[v] || map.overview;
   document.getElementById('crumbLevel').textContent = l;
@@ -1506,131 +1521,194 @@ function animateCounter(el, target, duration) {
 }
 
 // ---------- icons ----------
-// ---------- scripts page ----------
+// ---------- task inventory page ----------
 function renderScripts(root) {
-  const sc = state.scripts || {};
-  const pipelines = Object.entries(sc);
+  const pipes   = state.pipelines || {};
+  const scripts = state.scripts   || {};
 
-  const TYPE_LABELS = {
-    pbi_refresh:    'PBI Refresh',
-    transformation: 'Transformation',
-    pbi_engine:     'PBI Engine',
-    file_trigger:   'File Trigger',
-    fabric_trigger: 'Fabric Trigger',
-    synapse_status: 'Synapse Status',
-    email_alert:    'Email Alert',
-  };
-
-  const ACTION_NOTES = {
-    pbi_refresh:    { text: 'Review — contains report GUID needed for Cloud Run PBI task', cls: 'sc-action-needed' },
-    transformation: { text: 'Review — data transformation logic, ref for BigQuery SQL', cls: 'sc-action-needed' },
-    pbi_engine:     { text: 'Review — PBI refresh engine, ref for Cloud Run implementation', cls: 'sc-action-needed' },
-    file_trigger:   { text: 'Review — file trigger engine, ref for GCS/Cloud Run logic', cls: 'sc-action-needed' },
-    fabric_trigger: { text: 'No action — replaced by CloudRunExecuteJobOperator in GCP', cls: 'sc-action-ok' },
-    synapse_status: { text: 'No action — Synapse status check not needed in GCP', cls: 'sc-action-ok' },
-    email_alert:    { text: 'No action — email alert only, replace with Cloud Monitoring if needed', cls: 'sc-action-ok' },
-  };
-
-  // Totals
-  let totalLocal = 0, totalRemote = 0, needsAction = 0, pipelinesWithLocal = 0;
-  pipelines.forEach(([, p]) => {
-    totalLocal  += (p.local  || []).length;
-    totalRemote += (p.remote || []).length;
-    if ((p.local || []).length) pipelinesWithLocal++;
-    (p.local || []).forEach(s => { if (['pbi_refresh','transformation','pbi_engine','file_trigger'].includes(s.type)) needsAction++; });
+  // Build script lookup: dag_name → { local: Set<filename>, remote: Map<filename, {server,path}> }
+  const scriptLookup = {};
+  Object.entries(scripts).forEach(([, p]) => {
+    const dn = p.dag_name;
+    if (!dn) return;
+    scriptLookup[dn] = {
+      local:  new Set((p.local  || []).map(s => s.file.toLowerCase())),
+      remote: new Map((p.remote || []).map(s => [s.file.toLowerCase(), s])),
+    };
   });
 
-  let filterMode = 'all'; // all | local | remote
+  function inferTypeBadge(task) {
+    const tool = (task.tool || '').toLowerCase();
+    const type = (task.type || '').toLowerCase();
+    if (/skip/.test(tool) || /skip/.test(type))             return { cls: 'inv-tb-skip',   label: 'Skip' };
+    if (/bigquery sql|hive|impala/.test(tool+type))         return { cls: 'inv-tb-sql',    label: 'BigQuery SQL' };
+    if (/dbt/.test(tool+type))                              return { cls: 'inv-tb-dbt',    label: 'dbt' };
+    if (/pbi|refresh dataset|pbi refresh/.test(tool+type))  return { cls: 'inv-tb-pbi',    label: 'PBI Refresh' };
+    if (/fabric/.test(tool+type))                           return { cls: 'inv-tb-fabric', label: 'Fabric' };
+    if (/sensor|external/.test(tool+type))                  return { cls: 'inv-tb-sensor', label: 'Sensor' };
+    if (/spark|dataproc/.test(tool+type))                   return { cls: 'inv-tb-spark',  label: 'PySpark' };
+    if (/need input/.test(tool+type))                       return { cls: 'inv-tb-need',   label: 'Need Input' };
+    return { cls: 'inv-tb-other', label: task.type || '—' };
+  }
+
+  function statusHtml(s) {
+    const v = (s || '').trim();
+    if (/^done$/i.test(v))         return `<span class="inv-status-done">✓ Done</span>`;
+    if (/^skip$/i.test(v))         return `<span class="inv-status-skip">— Skip</span>`;
+    if (/^need.input$/i.test(v))   return `<span class="inv-status-need">⚠ Need Input</span>`;
+    return `<span class="inv-status-belum">· Belum Convert</span>`;
+  }
+
+  function scriptNote(taskId, dagName) {
+    const sl = scriptLookup[dagName];
+    if (!sl) return '';
+    const tid = taskId.toLowerCase();
+    // check if any local/remote script name is in the task id
+    for (const fname of sl.local) {
+      const base = fname.replace('.py','').toLowerCase();
+      if (tid.includes(base) || base.includes(tid.replace(/^pbi_/,''))) {
+        return `<span style="color:var(--green);font-size:10px;margin-left:6px">📁 ${fname}</span>`;
+      }
+    }
+    for (const [fname, info] of sl.remote) {
+      const base = fname.replace('.py','').toLowerCase();
+      if (tid.includes(base) || base.includes(tid.replace(/^pbi_/,''))) {
+        return `<span style="color:var(--yellow);font-size:10px;margin-left:6px">⚠ ${fname} (${info.server})</span>`;
+      }
+    }
+    return '';
+  }
+
+  // Totals
+  let totalTasks = 0, cntDone = 0, cntBelum = 0, cntNeed = 0, cntSkip = 0;
+  Object.values(pipes).forEach(p => {
+    (p.tasks || []).forEach(t => {
+      totalTasks++;
+      const s = (t.status || '').trim();
+      if (/^done$/i.test(s))       cntDone++;
+      else if (/^skip$/i.test(s))  cntSkip++;
+      else if (/need.input/i.test(s)) cntNeed++;
+      else                         cntBelum++;
+    });
+  });
+
+  let filterStatus = 'all';
+  let searchQ = '';
+
+  function pipeMatchesFilter(p) {
+    const tasks = p.tasks || [];
+    if (filterStatus === 'all') return tasks.length > 0;
+    return tasks.some(t => taskMatchesFilter(t));
+  }
+
+  function taskMatchesFilter(t) {
+    const s = (t.status || '').trim();
+    if (filterStatus === 'done'  && !/^done$/i.test(s))       return false;
+    if (filterStatus === 'belum' && !/^belum/i.test(s))       return false;
+    if (filterStatus === 'need'  && !/need.input/i.test(s))   return false;
+    if (filterStatus === 'skip'  && !/^skip$/i.test(s))       return false;
+    if (searchQ && !t.task_id.toLowerCase().includes(searchQ)) return false;
+    return true;
+  }
 
   function renderContent() {
-    const filtered = pipelines.filter(([, p]) => {
-      if (filterMode === 'local')  return (p.local  || []).length > 0;
-      if (filterMode === 'remote') return (p.remote || []).length > 0;
-      return true;
-    });
+    const entries = Object.entries(pipes);
+    const rows = entries
+      .map(([dagName, p]) => {
+        const tasks  = p.tasks || [];
+        const countable = tasks.filter(t => !/^skip$/i.test((t.status||'').trim()));
+        const done   = countable.filter(t => /^done$/i.test(t.status||'')).length;
+        const total  = countable.length;
+        const pct    = total > 0 ? Math.round(done / total * 100) : 0;
+        const belum  = countable.filter(t => /^belum/i.test(t.status||'')).length;
+        const need   = countable.filter(t => /need.input/i.test(t.status||'')).length;
+        const skip   = tasks.filter(t => /^skip$/i.test(t.status||'')).length;
+        return { dagName, p, tasks, done, total, pct, belum, need, skip };
+      })
+      .filter(({ p, tasks }) => {
+        if (!pipeMatchesFilter(p)) return false;
+        if (searchQ) return tasks.some(t => t.task_id.toLowerCase().includes(searchQ));
+        return true;
+      });
 
-    function scriptRow(s, isLocal) {
-      const lbl   = TYPE_LABELS[s.type]  || s.type;
-      const act   = ACTION_NOTES[s.type] || { text: '—', cls: 'sc-action-ok' };
-      const status = isLocal
-        ? `<span class="sc-status-local">✓ Local</span>`
-        : `<span class="sc-status-remote">⚠ Remote</span>`;
-      const pathRow = !isLocal && s.remote_path
-        ? `<div class="sc-remote-path">${escapeHtml(s.server)} → ${escapeHtml(s.remote_path)}</div>`
-        : '';
-      return `<tr>
-        <td><span class="sc-file">${escapeHtml(s.file)}</span>${pathRow}</td>
-        <td><span class="sc-type-badge sc-type-${s.type}">${lbl}</span></td>
-        <td>${status}</td>
-        <td><span class="${act.cls}">${act.text}</span></td>
-      </tr>`;
-    }
+    const cards = rows.map(({ dagName, p, tasks, done, total, pct, belum, need, skip }) => {
+      const visibleTasks = searchQ || filterStatus !== 'all'
+        ? tasks.filter(taskMatchesFilter)
+        : tasks;
 
-    const cards = filtered.map(([key, p]) => {
-      const localList  = p.local  || [];
-      const remoteList = p.remote || [];
-      const localSec  = localList.length  ? `<div class="sc-section-title">Local scripts (${localList.length}) — available in unconverted_scripts/${key}/scripts/</div>
-        <table class="sc-table">
-          <thead><tr><th>File</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody>${localList.map(s => scriptRow(s, true)).join('')}</tbody>
-        </table>` : '';
-      const remoteSec = remoteList.length ? `<div class="sc-section-title">Remote scripts (${remoteList.length}) — still on source server</div>
-        <table class="sc-table">
-          <thead><tr><th>File</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody>${remoteList.map(s => scriptRow(s, false)).join('')}</tbody>
-        </table>` : '';
-      return `<div class="sc-card" id="sc-${key}">
-        <div class="sc-card-head" onclick="toggleScCard('${key}')">
-          <span class="sc-dag-name">${escapeHtml(p.dag_name)}</span>
-          <div class="sc-counts">
-            ${localList.length  ? `<span class="sc-local-ct">✓ ${localList.length} local</span>` : ''}
-            ${remoteList.length ? `<span class="sc-remote-ct">⚠ ${remoteList.length} remote</span>` : ''}
+      const taskRows = visibleTasks.map(t => {
+        const tb  = inferTypeBadge(t);
+        const sn  = scriptNote(t.task_id, dagName);
+        return `<tr>
+          <td><span class="inv-task-id">${escapeHtml(t.task_id)}</span>${sn}</td>
+          <td><span class="inv-type-badge ${tb.cls}">${tb.label}</span></td>
+          <td><span class="inv-tool">${escapeHtml(t.tool || '—')}</span></td>
+          <td>${statusHtml(t.status)}</td>
+          <td class="inv-catatan">${escapeHtml(t.catatan || '')}</td>
+        </tr>`;
+      }).join('');
+
+      const id = 'inv-' + dagName.replace(/[^a-z0-9]/gi,'_');
+      return `<div class="inv-card" id="${id}">
+        <div class="inv-card-head" onclick="toggleInvCard('${id}')">
+          <span class="inv-pname">${escapeHtml(dagName)}</span>
+          <div class="inv-pbar-wrap"><div class="inv-pbar-fill" style="width:${pct}%"></div></div>
+          <span class="inv-pct">${pct}%</span>
+          <div class="inv-chips">
+            ${done  ? `<span class="inv-chip done">${done} Done</span>`  : ''}
+            ${belum ? `<span class="inv-chip belum">${belum} Belum</span>` : ''}
+            ${need  ? `<span class="inv-chip need">${need} Input</span>` : ''}
+            ${skip  ? `<span class="inv-chip skip">${skip} Skip</span>`  : ''}
           </div>
-          <svg class="sc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          <svg class="inv-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
         </div>
-        <div class="sc-body">${localSec}${remoteSec}</div>
+        <div class="inv-body">
+          <table class="inv-table">
+            <thead><tr><th>Task ID</th><th>Type</th><th>GCP Tool</th><th>Status</th><th>Notes</th></tr></thead>
+            <tbody>${taskRows}</tbody>
+          </table>
+        </div>
       </div>`;
     }).join('');
 
+    const shown = rows.reduce((a, r) => a + (searchQ || filterStatus !== 'all' ? r.tasks.filter(taskMatchesFilter).length : r.tasks.length), 0);
+
     return `
-      <div class="sc-filter-bar">
-        <button class="sc-filter-btn ${filterMode==='all'?'active':''}"    onclick="setScFilter('all')">All Pipelines</button>
-        <button class="sc-filter-btn ${filterMode==='local'?'active':''}"  onclick="setScFilter('local')">Has Local Scripts</button>
-        <button class="sc-filter-btn ${filterMode==='remote'?'active':''}" onclick="setScFilter('remote')">Has Remote Scripts</button>
+      <div class="inv-controls">
+        <button class="inv-filter-btn ${filterStatus==='all'  ?'active':''}" onclick="setInvFilter('all')">All</button>
+        <button class="inv-filter-btn ${filterStatus==='belum'?'active':''}" onclick="setInvFilter('belum')">Belum Convert</button>
+        <button class="inv-filter-btn ${filterStatus==='done' ?'active':''}" onclick="setInvFilter('done')">Done</button>
+        <button class="inv-filter-btn ${filterStatus==='need' ?'active':''}" onclick="setInvFilter('need')">Need Input</button>
+        <button class="inv-filter-btn ${filterStatus==='skip' ?'active':''}" onclick="setInvFilter('skip')">Skip</button>
+        <span class="inv-sep">|</span>
+        <input class="inv-search" id="invSearch" placeholder="Search task name…" value="${escapeHtml(searchQ)}" oninput="onInvSearch(this.value)">
+        <span style="font-size:11px;color:var(--text-mute);margin-left:4px">${shown} tasks · ${rows.length} pipelines</span>
       </div>
-      <div class="sc-grid">${cards}</div>`;
+      <div class="inv-grid">${cards}</div>`;
   }
 
   root.innerHTML = `
-    <h1 class="page-title">Scripts</h1>
-    <p class="page-sub">Task-level scripts referenced by original Cloudera DAGs — availability status and conversion action required.</p>
-    <div class="sc-summary">
-      <div class="sc-stat">
-        <div class="sc-val" style="color:var(--green)">${pipelinesWithLocal}</div>
-        <div class="sc-lbl">Pipelines with local scripts</div>
-      </div>
-      <div class="sc-stat">
-        <div class="sc-val" style="color:var(--green)">${totalLocal}</div>
-        <div class="sc-lbl">Scripts available locally</div>
-      </div>
-      <div class="sc-stat">
-        <div class="sc-val" style="color:var(--yellow)">${totalRemote}</div>
-        <div class="sc-lbl">Scripts still on remote server</div>
-      </div>
-      <div class="sc-stat">
-        <div class="sc-val" style="color:#fb923c">${needsAction}</div>
-        <div class="sc-lbl">Local scripts needing review</div>
-      </div>
+    <h1 class="page-title">Task Inventory</h1>
+    <p class="page-sub">Semua tasks dari 28 pipeline — status konversi, GCP tool, dan catatan per task.</p>
+    <div class="inv-summary">
+      <div class="inv-stat"><div class="iv">${totalTasks}</div><div class="il">Total Tasks</div></div>
+      <div class="inv-stat"><div class="iv" style="color:var(--green)">${cntDone}</div><div class="il">Done</div></div>
+      <div class="inv-stat"><div class="iv" style="color:var(--yellow)">${cntBelum}</div><div class="il">Belum Convert</div></div>
+      <div class="inv-stat"><div class="iv" style="color:var(--red)">${cntNeed}</div><div class="il">Need Input</div></div>
+      <div class="inv-stat"><div class="iv" style="color:var(--text-mute)">${cntSkip}</div><div class="il">Skip</div></div>
     </div>
-    <div id="sc-content">${renderContent()}</div>`;
+    <div id="inv-content">${renderContent()}</div>`;
 
-  window.setScFilter = function(mode) {
-    filterMode = mode;
-    document.getElementById('sc-content').innerHTML = renderContent();
-  };
+  function rerender() {
+    document.getElementById('inv-content').innerHTML = renderContent();
+    const si = document.getElementById('invSearch');
+    if (si) { si.focus(); si.setSelectionRange(si.value.length, si.value.length); }
+  }
 
-  window.toggleScCard = function(key) {
-    const el = document.getElementById('sc-' + key);
+  window.setInvFilter = function(mode) { filterStatus = mode; rerender(); };
+  window.onInvSearch  = function(q)    { searchQ = q.toLowerCase().trim(); rerender(); };
+  window.toggleInvCard = function(id)  {
+    const el = document.getElementById(id);
     if (el) el.classList.toggle('open');
   };
 }
