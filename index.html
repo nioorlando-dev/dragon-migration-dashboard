@@ -485,7 +485,10 @@
   .st.SKIP { color: #888; background: #1a1a1a; }
   .st.BelumConvert { color: var(--yellow); background: rgba(245,166,35,0.08); }
   .st.Done { color: var(--green); background: rgba(0,208,132,0.08); }
+  .st.Tested { color: #7c6cfc; background: rgba(124,108,252,0.08); }
   .st.NEEDINPUT { color: var(--red); background: rgba(255,68,68,0.08); }
+  .tested-yes { color: #7c6cfc; font-size: 13px; }
+  .tested-no  { color: var(--text-mute); font-size: 12px; }
 
   /* ---------- Detail panel ---------- */
   .backdrop {
@@ -550,7 +553,7 @@
   .notes-box .t { font-size: 11px; font-weight: 600; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 6px; }
   .notes-box .b { color: var(--text); }
 
-  .panel-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 22px; }
+  .panel-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 22px; }
   .panel-stats .cell {
     background: var(--card); border: 1px solid var(--border);
     padding: 12px 14px; border-radius: 8px;
@@ -1069,6 +1072,7 @@ function renderAll(root) {
               ${th('total', 'Tasks')}
               ${th('converted', 'Converted')}
               ${th('status', 'Status')}
+              ${th('tested', 'Tested')}
               ${th('blocker', 'Blocker')}
               ${th('last_updated', 'Last Updated')}
             </tr>
@@ -1140,7 +1144,7 @@ function paintTableBody() {
   });
 
   if (!rows.length) {
-    body.innerHTML = `<tr><td colspan="7"><div class="empty" style="border:none;padding:40px 20px"><div class="t">No matches</div><div>Try clearing your filters.</div></div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="8"><div class="empty" style="border:none;padding:40px 20px"><div class="t">No matches</div><div>Try clearing your filters.</div></div></td></tr>`;
     return;
   }
 
@@ -1158,13 +1162,14 @@ function paintTableBody() {
           </span>
         </td>
         <td>${badge(r.status)}</td>
+        <td style="text-align:center">${testedBadge(r.tested)}</td>
         <td class="blocker-cell" title="${escapeHtml(r.blocker)}">${r.blocker ? escapeHtml(r.blocker) : '<span style="color:var(--text-mute)">—</span>'}</td>
         <td class="date-cell">${r.last_updated ? formatDate(r.last_updated) : '—'}</td>
       </tr>
     `;
     const expanded = state.expanded.has(r.name);
     const expandHtml = expanded
-      ? `<tr class="expand-row"><td colspan="7"><div class="expand-inner">${taskTable(r)}</div></td></tr>`
+      ? `<tr class="expand-row"><td colspan="8"><div class="expand-inner">${taskTable(r)}</div></td></tr>`
       : '';
     return rowHtml + expandHtml;
   }).join('');
@@ -1264,7 +1269,7 @@ function taskTable(r) {
     <div class="task-table-wrap">
       <table class="task-table">
         <thead>
-          <tr><th>Task ID</th><th>Type</th><th>Status</th><th>GCP Tool</th><th>Notes</th></tr>
+          <tr><th>Task ID</th><th>Type</th><th>Status</th><th>Tested</th><th>GCP Tool</th><th>Notes</th></tr>
         </thead>
         <tbody>
           ${r.tasks.map(t => `
@@ -1272,6 +1277,7 @@ function taskTable(r) {
               <td class="tid">${escapeHtml(t.task_id || '')}</td>
               <td style="color:var(--text-dim)">${escapeHtml(t.type || '—')}</td>
               <td>${taskStatus(t.status)}</td>
+              <td style="text-align:center">${testedBadge(t.tested)}</td>
               <td style="color:var(--text-dim);white-space:nowrap">${escapeHtml(t.tool || '—')}</td>
               <td style="color:var(--text-mute);min-width:200px">${escapeHtml(t.catatan || t.notes || '')}</td>
             </tr>
@@ -1287,10 +1293,17 @@ function taskStatus(s) {
   const key = raw.replace(/\s+/g, '');
   const cls = /^skip$/i.test(raw) ? 'SKIP'
             : /^belumconvert$/i.test(key) ? 'BelumConvert'
+            : /^tested$/i.test(raw) ? 'Tested'
             : /^done$/i.test(raw) ? 'Done'
             : /^needinput$/i.test(key) ? 'NEEDINPUT'
             : 'SKIP';
   return `<span class="st ${cls}">${escapeHtml(raw || '—')}</span>`;
+}
+
+function testedBadge(val) {
+  return val
+    ? `<span class="tested-yes">✓</span>`
+    : `<span class="tested-no">—</span>`;
 }
 
 // ---------- detail panel ----------
@@ -1301,9 +1314,10 @@ function openPanel(name) {
 
   const counts = r.status_counts || {};
   const done = Number(counts['Done'] || 0);
+  const tested = Number(counts['Tested'] || 0);
   const belum = Number(counts['Belum Convert'] || 0);
   const skip = Number(counts['SKIP'] || 0);
-  const need = Number(counts['NEED INPUT'] || 0);
+  const need = Number(counts['Need Input'] || counts['NEED INPUT'] || 0);
 
   panel.innerHTML = `
     <div class="panel-head">
@@ -1343,6 +1357,7 @@ function openPanel(name) {
       <div class="panel-stats">
         <div class="cell"><div class="l">Total tasks</div><div class="v">${r.total}</div></div>
         <div class="cell"><div class="l">Done</div><div class="v" style="color:var(--green)">${done || r.converted}</div></div>
+        <div class="cell"><div class="l">Tested</div><div class="v" style="color:#7c6cfc">${tested}</div></div>
         <div class="cell"><div class="l">Belum Convert</div><div class="v" style="color:var(--yellow)">${belum}</div></div>
         <div class="cell"><div class="l">Skip / Need Input</div><div class="v" style="color:var(--text-dim)">${skip + need}</div></div>
       </div>
