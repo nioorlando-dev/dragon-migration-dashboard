@@ -5,9 +5,10 @@
     "schedule": "Daily 00 14 * * *",
     "total_tasks": 275,
     "status_counts": {
-      "Belum Convert": 266,
-      "SKIP": 8,
+      "Belum Convert": 261,
+      "Done": 5,
       "NEED INPUT": 1,
+      "SKIP": 8,
       "Tested": 0
     },
     "tasks": [
@@ -1926,7 +1927,7 @@
       {
         "task_id": "masterdealer_delta",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -1934,7 +1935,7 @@
       {
         "task_id": "mastersalesperson_delta",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -1942,7 +1943,7 @@
       {
         "task_id": "leadsfunnelcrmh1_initial",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -1966,7 +1967,7 @@
       {
         "task_id": "demand_pkbservice_jobpart",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -1998,7 +1999,7 @@
       {
         "task_id": "demand_pkbservice_final",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -3882,9 +3883,10 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 236,
     "status_counts": {
-      "Belum Convert": 228,
-      "SKIP": 7,
+      "Belum Convert": 206,
+      "Done": 22,
       "NEED INPUT": 1,
+      "SKIP": 7,
       "Tested": 0
     },
     "tasks": [
@@ -5091,7 +5093,7 @@
       {
         "task_id": "integration_pssu",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5099,7 +5101,7 @@
       {
         "task_id": "integration_ustk2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5123,7 +5125,7 @@
       {
         "task_id": "integration_mappingunittype",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5147,7 +5149,7 @@
       {
         "task_id": "asmo_id_h1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5155,7 +5157,7 @@
       {
         "task_id": "customerprofilesales_kpb",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5163,7 +5165,7 @@
       {
         "task_id": "customerprofilesales",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5171,7 +5173,7 @@
       {
         "task_id": "customerprofilesales_star",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5179,7 +5181,7 @@
       {
         "task_id": "customerprofileleasing_prospecttossu",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5187,7 +5189,7 @@
       {
         "task_id": "customerprofileleasing_prospecttossu_temp2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5195,7 +5197,7 @@
       {
         "task_id": "customerprofileleasing_prospecttossu_delta",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5227,7 +5229,7 @@
       {
         "task_id": "demand_pkbservice",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5235,7 +5237,7 @@
       {
         "task_id": "demand_pkbservice_temp1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5243,7 +5245,7 @@
       {
         "task_id": "monitoring_kuitansi_unit",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5251,7 +5253,7 @@
       {
         "task_id": "monitoring_kuitansi_service",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5259,7 +5261,7 @@
       {
         "task_id": "monitoring_kuitansi_sparepart",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5267,7 +5269,7 @@
       {
         "task_id": "monitoring_kuitansi_arnontrade",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5275,7 +5277,7 @@
       {
         "task_id": "monitoring_kuitansi_others",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5283,7 +5285,7 @@
       {
         "task_id": "monitoring_kuitansi_all",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5315,7 +5317,7 @@
       {
         "task_id": "marketshare_headtohead",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5339,7 +5341,7 @@
       {
         "task_id": "report_so_rem",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5347,7 +5349,7 @@
       {
         "task_id": "btl_transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5363,7 +5365,7 @@
       {
         "task_id": "h1sales",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5784,9 +5786,10 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 204,
     "status_counts": {
-      "Belum Convert": 190,
-      "SKIP": 13,
+      "Belum Convert": 136,
+      "Done": 54,
       "NEED INPUT": 1,
+      "SKIP": 13,
       "Tested": 0
     },
     "tasks": [
@@ -6329,7 +6332,7 @@
       {
         "task_id": "SVMappingPit_Star",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6337,7 +6340,7 @@
       {
         "task_id": "customerprofileservice_delta",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6345,7 +6348,7 @@
       {
         "task_id": "nms_DataRevenuePartService_Filtered_2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6353,7 +6356,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempB",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6361,7 +6364,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempC",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6369,7 +6372,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempD",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6377,7 +6380,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempE",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6385,7 +6388,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempF",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6393,7 +6396,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempG",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6401,7 +6404,7 @@
       {
         "task_id": "nms_DataRevenuePartService_TempH",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6409,7 +6412,7 @@
       {
         "task_id": "nms_DataRevenuePartService_Final",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6433,7 +6436,7 @@
       {
         "task_id": "nms_tmp_mapping_datarevenue",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6441,7 +6444,7 @@
       {
         "task_id": "nms_tmp_delete_datarevenue",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6449,7 +6452,7 @@
       {
         "task_id": "nms_DataPit_Transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6457,7 +6460,7 @@
       {
         "task_id": "UnitEntry_Transformation_Temp",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6465,7 +6468,7 @@
       {
         "task_id": "UnitEntry_Transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6481,7 +6484,7 @@
       {
         "task_id": "leadsfunnelcrmh1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6489,7 +6492,7 @@
       {
         "task_id": "funnelleadstosales_LeadsProspect",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6497,7 +6500,7 @@
       {
         "task_id": "funnelleadstosales_LeadsNpfu",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6505,7 +6508,7 @@
       {
         "task_id": "funnelleadstosales_LeadsSpk",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6513,7 +6516,7 @@
       {
         "task_id": "funnelleadstosales_temp1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6521,7 +6524,7 @@
       {
         "task_id": "funnelleadstosales_temp2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6537,7 +6540,7 @@
       {
         "task_id": "utilisasidragon",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6545,7 +6548,7 @@
       {
         "task_id": "ocrkk",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6561,7 +6564,7 @@
       {
         "task_id": "spr_transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6609,7 +6612,7 @@
       {
         "task_id": "monitoringAR_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6617,7 +6620,7 @@
       {
         "task_id": "demand_pkbservice_final",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6625,7 +6628,7 @@
       {
         "task_id": "unitentry_transformation_assist",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6633,7 +6636,7 @@
       {
         "task_id": "assist_h1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6641,7 +6644,7 @@
       {
         "task_id": "assist_h1_transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6649,7 +6652,7 @@
       {
         "task_id": "UtilisasiAvocado",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6657,7 +6660,7 @@
       {
         "task_id": "UtilisasiAvocado_Transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6665,7 +6668,7 @@
       {
         "task_id": "TrendSaldo",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6681,7 +6684,7 @@
       {
         "task_id": "hc3_customer",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6689,7 +6692,7 @@
       {
         "task_id": "hc3_leads",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6697,7 +6700,7 @@
       {
         "task_id": "motorkux_h1_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6705,7 +6708,7 @@
       {
         "task_id": "motorkux_h3_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6713,7 +6716,7 @@
       {
         "task_id": "motorkux_booking_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6721,7 +6724,7 @@
       {
         "task_id": "motorkux_download_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6729,7 +6732,7 @@
       {
         "task_id": "motorkux_leads_amanda_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6737,7 +6740,7 @@
       {
         "task_id": "motorkux_feedbackservice_summary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6745,7 +6748,7 @@
       {
         "task_id": "integration_astrapay_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6761,7 +6764,7 @@
       {
         "task_id": "astrapay_transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6769,7 +6772,7 @@
       {
         "task_id": "partstock",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6777,7 +6780,7 @@
       {
         "task_id": "partstock_transformation_temp1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6785,7 +6788,7 @@
       {
         "task_id": "partstock_transformation_temp2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6793,7 +6796,7 @@
       {
         "task_id": "partstock_transformation_temp3",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6801,7 +6804,7 @@
       {
         "task_id": "partstock_transformation_final",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6809,7 +6812,7 @@
       {
         "task_id": "peoplemanagement_transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6833,7 +6836,7 @@
       {
         "task_id": "nms_DataRevenue_NonStar_Delta",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6841,7 +6844,7 @@
       {
         "task_id": "nms_DataRevenue_Transformation",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6849,7 +6852,7 @@
       {
         "task_id": "nms_DataMekanik_Transformation",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6873,7 +6876,7 @@
       {
         "task_id": "report_sdue",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -6881,7 +6884,7 @@
       {
         "task_id": "report_sdue_2023",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false

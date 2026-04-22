@@ -1190,17 +1190,17 @@
     "masterdealer_delta": {
       "location": "local",
       "file": "masterdealer_delta.sql",
-      "path": "converted_scripts/sql/dragon/datamart_master/masterdealer_delta.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/masterdealer_delta.sql"
     },
     "mastersalesperson_delta": {
       "location": "local",
       "file": "mastersalesperson_delta.sql",
-      "path": "converted_scripts/sql/dragon/datamart_master/mastersalesperson_delta.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/mastersalesperson_delta.sql"
     },
     "leadsfunnelcrmh1_initial": {
       "location": "local",
       "file": "leadsfunnelcrmh1_initial.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_crmh1/leadsfunnelcrmh1_initial.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/leadsfunnelcrmh1_initial.sql"
     },
     "monitoringdocumentsales_2": {
       "location": "remote",
@@ -1215,7 +1215,7 @@
     "demand_pkbservice_jobpart": {
       "location": "local",
       "file": "pkbservice_jobpart.sql",
-      "path": "converted_scripts/sql/dragon/datamart_demand/pkbservice_jobpart.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/pkbservice_jobpart.sql"
     },
     "demand_pkbservice_opl": {
       "location": "remote",
@@ -1235,7 +1235,7 @@
     "demand_pkbservice_final": {
       "location": "local",
       "file": "pkbservice_final.sql",
-      "path": "converted_scripts/sql/dragon/datamart_demand/pkbservice_final.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/pkbservice_final.sql"
     },
     "demand_sugorraw": {
       "location": "remote",
@@ -2932,12 +2932,12 @@
     "integration_pssu": {
       "location": "local",
       "file": "integration_pssu.sql",
-      "path": "unconverted_scripts/pipeline_30_so2w_dragon/sql/integration_pssu.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/integration_pssu.sql"
     },
     "integration_ustk2": {
       "location": "local",
-      "file": "integration_ustk.sql",
-      "path": "unconverted_scripts/pipeline_30_so2w_dragon/sql/integration_ustk.sql"
+      "file": "integration_ustk2.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/integration_ustk2.sql"
     },
     "integration_mb51": {
       "location": "remote",
@@ -2952,7 +2952,7 @@
     "integration_mappingunittype": {
       "location": "local",
       "file": "integration_mappingunittype.sql",
-      "path": "unconverted_scripts/pipeline_28_dragon_SAP/sql/integration_mappingunittype.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/integration_mappingunittype.sql"
     },
     "integration_ZPYGMME00049A": {
       "location": "remote",
@@ -2965,39 +2965,39 @@
       "path": "converted_scripts/sql/dragon_2/integration_file/integration_pcd_h3_upload.sql"
     },
     "asmo_id_h1": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "asmo_id_h1.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/asmo_id_h1.sql"
     },
     "customerprofilesales_kpb": {
       "location": "local",
       "file": "customerprofilesales_kpb.sql",
-      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales_kpb.sql"
+      "path": "converted_scripts/pipeline_04_customerprofilesales/bigquery/customerprofilesales_kpb.sql"
     },
     "customerprofilesales": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
+      "path": "converted_scripts/pipeline_04_customerprofilesales/bigquery/customerprofilesales.sql"
     },
     "customerprofilesales_star": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
+      "path": "converted_scripts/pipeline_04_customerprofilesales/bigquery/customerprofilesales.sql"
     },
     "customerprofileleasing_prospecttossu": {
       "location": "local",
       "file": "customerprofileleasing_prospecttossu.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofileleasing_prospecttossu.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/customerprofileleasing_prospecttossu.sql"
     },
     "customerprofileleasing_prospecttossu_temp2": {
       "location": "local",
       "file": "customerprofileleasing_prospecttossu_temp2.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofileleasing_prospecttossu_temp2.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/customerprofileleasing_prospecttossu_temp2.sql"
     },
     "customerprofileleasing_prospecttossu_delta": {
       "location": "local",
       "file": "customerprofileleasing_prospecttossu_delta.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofileleasing_prospecttossu_delta.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/customerprofileleasing_prospecttossu_delta.sql"
     },
     "integration_mappingposservice_file": {
       "location": "remote",
@@ -3015,44 +3015,44 @@
       "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "demand_pkbservice.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/demand_pkbservice.sql"
     },
     "demand_pkbservice_temp1": {
       "location": "local",
-      "file": "pkbservice_temp1.sql",
-      "path": "converted_scripts/sql/dragon/datamart_demand/pkbservice_temp1.sql"
+      "file": "demand_pkbservice_temp1.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/demand_pkbservice_temp1.sql"
     },
     "monitoring_kuitansi_unit": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_unit.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_unit.sql"
     },
     "monitoring_kuitansi_service": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_service.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_service.sql"
     },
     "monitoring_kuitansi_sparepart": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_sparepart.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_sparepart.sql"
     },
     "monitoring_kuitansi_arnontrade": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_arnontrade.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_arnontrade.sql"
     },
     "monitoring_kuitansi_others": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_others.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_others.sql"
     },
     "monitoring_kuitansi_all": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "monitoringkuitansi_all.sql",
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/monitoringkuitansi_all.sql"
     },
     "monitoring_alasanarod": {
       "location": "remote",
@@ -3072,7 +3072,7 @@
     "marketshare_headtohead": {
       "location": "local",
       "file": "MarketShare_HeadToHead.sql",
-      "path": "unconverted_scripts/pipeline_15_marketsharedata/sql/MarketShare_HeadToHead.sql"
+      "path": "converted_scripts/pipeline_15_marketsharedata/bigquery/MarketShare_HeadToHead.sql"
     },
     "integration_marketsharedata_file": {
       "location": "remote",
@@ -3087,12 +3087,12 @@
     "report_so_rem": {
       "location": "local",
       "file": "report_so_rem.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_analisis_efektivitas_sorem/report_so_rem.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/report_so_rem.sql"
     },
     "btl_transformation": {
       "location": "local",
       "file": "btl_transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_analisis_efektivitas_sorem/btl_transformation.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/btl_transformation.sql"
     },
     "integration_datareport_so_rem_file": {
       "location": "local",
@@ -3102,7 +3102,7 @@
     "h1sales": {
       "location": "local",
       "file": "h1sales.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h1/h1sales.sql"
+      "path": "converted_scripts/pipeline_30_so2w_dragon/bigquery/h1sales.sql"
     },
     "h1targetsegment": {
       "location": "remote",
@@ -3688,57 +3688,57 @@
     "SVMappingPit_Star": {
       "location": "local",
       "file": "svmappingpit.sql",
-      "path": "converted_scripts/sql/dragon/table_anchor/svmappingpit.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/svmappingpit.sql"
     },
     "customerprofileservice_delta": {
       "location": "local",
       "file": "customerprofileservice_delta.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofileservice_delta.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/customerprofileservice_delta.sql"
     },
     "nms_DataRevenuePartService_Filtered_2": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_Filtered_2.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_Filtered_2.sql"
     },
     "nms_DataRevenuePartService_TempB": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempB.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempB.sql"
     },
     "nms_DataRevenuePartService_TempC": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempC.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempC.sql"
     },
     "nms_DataRevenuePartService_TempD": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempD.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempD.sql"
     },
     "nms_DataRevenuePartService_TempE": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempE.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempE.sql"
     },
     "nms_DataRevenuePartService_TempF": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempF.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempF.sql"
     },
     "nms_DataRevenuePartService_TempG": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempG.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempG.sql"
     },
     "nms_DataRevenuePartService_TempH": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_TempH.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_TempH.sql"
     },
     "nms_DataRevenuePartService_Final": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "001_DataRevenuePartService_Final.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/001_DataRevenuePartService_Final.sql"
     },
     "nms_DataRevenueDirect": {
       "location": "remote",
@@ -3753,27 +3753,27 @@
     "nms_tmp_mapping_datarevenue": {
       "location": "local",
       "file": "tmp_mapping_datarevenue.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_standardized_h23/tmp_mapping_datarevenue.sql"
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/tmp_mapping_datarevenue.sql"
     },
     "nms_tmp_delete_datarevenue": {
       "location": "local",
       "file": "tmp_delete_datarevenue.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_standardized_h23/tmp_delete_datarevenue.sql"
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/tmp_delete_datarevenue.sql"
     },
     "nms_DataPit_Transformation": {
       "location": "local",
       "file": "DataPit_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h2/DataPit_Transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/DataPit_Transformation.sql"
     },
     "UnitEntry_Transformation_Temp": {
       "location": "local",
       "file": "UnitEntry_Transformation_temp.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h2/UnitEntry_Transformation_temp.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/UnitEntry_Transformation_temp.sql"
     },
     "UnitEntry_Transformation": {
       "location": "local",
       "file": "UnitEntry_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h2/UnitEntry_Transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/UnitEntry_Transformation.sql"
     },
     "Salesinout_Transformation": {
       "location": "remote",
@@ -3783,32 +3783,32 @@
     "leadsfunnelcrmh1": {
       "location": "local",
       "file": "leadsfunnelcrmh1.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_crmh1/leadsfunnelcrmh1.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/leadsfunnelcrmh1.sql"
     },
     "funnelleadstosales_LeadsProspect": {
       "location": "local",
       "file": "funnelleadstosales_LeadsProspect.sql",
-      "path": "unconverted_scripts/pipeline_12_leads_funnel_management/sql/funnelleadstosales_LeadsProspect.sql"
+      "path": "converted_scripts/pipeline_12_leads_funnel_management/bigquery/funnelleadstosales_LeadsProspect.sql"
     },
     "funnelleadstosales_LeadsNpfu": {
       "location": "local",
       "file": "funnelleadstosales_LeadsNpfu.sql",
-      "path": "unconverted_scripts/pipeline_12_leads_funnel_management/sql/funnelleadstosales_LeadsNpfu.sql"
+      "path": "converted_scripts/pipeline_12_leads_funnel_management/bigquery/funnelleadstosales_LeadsNpfu.sql"
     },
     "funnelleadstosales_LeadsSpk": {
       "location": "local",
       "file": "funnelleadstosales_LeadsSpk.sql",
-      "path": "unconverted_scripts/pipeline_12_leads_funnel_management/sql/funnelleadstosales_LeadsSpk.sql"
+      "path": "converted_scripts/pipeline_12_leads_funnel_management/bigquery/funnelleadstosales_LeadsSpk.sql"
     },
     "funnelleadstosales_temp1": {
       "location": "local",
       "file": "funnelleadstosales_temp1.sql",
-      "path": "unconverted_scripts/pipeline_12_leads_funnel_management/sql/funnelleadstosales_temp1.sql"
+      "path": "converted_scripts/pipeline_12_leads_funnel_management/bigquery/funnelleadstosales_temp1.sql"
     },
     "funnelleadstosales_temp2": {
       "location": "local",
       "file": "funnelleadstosales_temp2.sql",
-      "path": "unconverted_scripts/pipeline_12_leads_funnel_management/sql/funnelleadstosales_temp2.sql"
+      "path": "converted_scripts/pipeline_12_leads_funnel_management/bigquery/funnelleadstosales_temp2.sql"
     },
     "customerinvitation": {
       "location": "remote",
@@ -3818,12 +3818,12 @@
     "utilisasidragon": {
       "location": "local",
       "file": "utilisasidragon.sql",
-      "path": "unconverted_scripts/pipeline_06_partsharecontribution/sql/utilisasidragon.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/utilisasidragon.sql"
     },
     "ocrkk": {
       "location": "local",
       "file": "ocrkk.sql",
-      "path": "unconverted_scripts/pipeline_06_partsharecontribution/sql/ocrkk.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/ocrkk.sql"
     },
     "servicedemandratio_sprall": {
       "location": "remote",
@@ -3833,7 +3833,7 @@
     "spr_transformation": {
       "location": "local",
       "file": "spr_transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_report_spr/spr_transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/spr_transformation.sql"
     },
     "csl_integration_Table": {
       "location": "local",
@@ -3863,42 +3863,42 @@
     "monitoringAR_Table": {
       "location": "local",
       "file": "monitoringAR.sql",
-      "path": "converted_scripts/sql/dragon_3/datamart_monitoringarcashbank/monitoringAR.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/monitoringAR.sql"
     },
     "demand_pkbservice_final": {
       "location": "local",
       "file": "pkbservice_final.sql",
-      "path": "converted_scripts/sql/dragon/datamart_demand/pkbservice_final.sql"
+      "path": "converted_scripts/pipeline_29_dragon/bigquery/pkbservice_final.sql"
     },
     "unitentry_transformation_assist": {
       "location": "local",
       "file": "unitentry_transformation_assist.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_assist_h2/unitentry_transformation_assist.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/unitentry_transformation_assist.sql"
     },
     "assist_h1": {
       "location": "local",
       "file": "assist_h1.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_assist_h1/assist_h1.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/assist_h1.sql"
     },
     "assist_h1_transformation": {
       "location": "local",
       "file": "assist_h1_transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_assist_h1/assist_h1_transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/assist_h1_transformation.sql"
     },
     "UtilisasiAvocado": {
       "location": "local",
       "file": "UtilisasiAvocado.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_dus_avocado/UtilisasiAvocado.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/UtilisasiAvocado.sql"
     },
     "UtilisasiAvocado_Transformation": {
       "location": "local",
       "file": "UtilisasiAvocado_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_dus_avocado/UtilisasiAvocado_Transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/UtilisasiAvocado_Transformation.sql"
     },
     "TrendSaldo": {
       "location": "local",
       "file": "trendsaldo.sql",
-      "path": "converted_scripts/sql/dragon_3/datamart_trendsaldo/trendsaldo.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/trendsaldo.sql"
     },
     "integration_hc3_actual_target_file": {
       "location": "remote",
@@ -3908,47 +3908,47 @@
     "hc3_customer": {
       "location": "local",
       "file": "hc3_customer.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_hc3/hc3_customer.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/hc3_customer.sql"
     },
     "hc3_leads": {
       "location": "local",
       "file": "hc3_leads.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_hc3/hc3_leads.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/hc3_leads.sql"
     },
     "motorkux_h1_summary": {
       "location": "local",
       "file": "motorkux_h1_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_h1_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_h1_summary.sql"
     },
     "motorkux_h3_summary": {
       "location": "local",
       "file": "motorkux_h3_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_h3_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_h3_summary.sql"
     },
     "motorkux_booking_summary": {
       "location": "local",
       "file": "motorkux_booking_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_booking_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_booking_summary.sql"
     },
     "motorkux_download_summary": {
       "location": "local",
       "file": "motorkux_download_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_download_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_download_summary.sql"
     },
     "motorkux_leads_amanda_summary": {
       "location": "local",
       "file": "motorkux_leads_amanda_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_leads_amanda_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_leads_amanda_summary.sql"
     },
     "motorkux_feedbackservice_summary": {
       "location": "local",
       "file": "motorkux_feedbackservice_summary.sql",
-      "path": "unconverted_scripts/pipeline_07_motorkux/sql/motorkux_feedbackservice_summary.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/motorkux_feedbackservice_summary.sql"
     },
     "integration_astrapay_file": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract"
+      "location": "local",
+      "file": "astrapay_file_rank.sql",
+      "path": "converted_scripts/pipeline_17_astrapay/astrapay_sql/astrapay_file_rank.sql"
     },
     "integration_mappingso_target_file": {
       "location": "remote",
@@ -3958,37 +3958,37 @@
     "astrapay_transformation": {
       "location": "local",
       "file": "astrapay_transformation.sql",
-      "path": "unconverted_scripts/pipeline_17_astrapay/sql/astrapay_transformation.sql"
+      "path": "converted_scripts/pipeline_17_astrapay/astrapay_sql/astrapay_transformation.sql"
     },
     "partstock": {
       "location": "local",
       "file": "PartStock.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/PartStock.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/PartStock.sql"
     },
     "partstock_transformation_temp1": {
       "location": "local",
       "file": "Partstock_Transformation_temp1.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/Partstock_Transformation_temp1.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/Partstock_Transformation_temp1.sql"
     },
     "partstock_transformation_temp2": {
       "location": "local",
       "file": "Partstock_Transformation_temp2.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/Partstock_Transformation_temp2.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/Partstock_Transformation_temp2.sql"
     },
     "partstock_transformation_temp3": {
       "location": "local",
       "file": "Partstock_Transformation_temp3.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/Partstock_Transformation_temp3.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/Partstock_Transformation_temp3.sql"
     },
     "partstock_transformation_final": {
       "location": "local",
       "file": "Partstock_Transformation_final.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/Partstock_Transformation_final.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/Partstock_Transformation_final.sql"
     },
     "peoplemanagement_transformation": {
       "location": "local",
       "file": "PeopleManagement_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_d360h3/PeopleManagement_Transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/PeopleManagement_Transformation.sql"
     },
     "d360_log_datasets_distribution": {
       "location": "remote",
@@ -4003,17 +4003,17 @@
     "nms_DataRevenue_NonStar_Delta": {
       "location": "local",
       "file": "DataRevenue_NonStar_Delta.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_standardized_h23/DataRevenue_NonStar_Delta.sql"
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/DataRevenue_NonStar_Delta.sql"
     },
     "nms_DataRevenue_Transformation": {
       "location": "local",
       "file": "DataRevenue_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h2/DataRevenue_Transformation.sql"
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/DataRevenue_Transformation.sql"
     },
     "nms_DataMekanik_Transformation": {
       "location": "local",
       "file": "DataMekanik_Transformation.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_h2/DataMekanik_Transformation.sql"
+      "path": "converted_scripts/pipeline_31_so2w_dragon_2/bigquery/DataMekanik_Transformation.sql"
     },
     "impalasdue": {
       "location": "remote",
@@ -4028,12 +4028,12 @@
     "report_sdue": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
+      "path": "converted_scripts/pipeline_23_sdue_fabric/bigquery/Report_SDUE.sql"
     },
     "report_sdue_2023": {
       "location": "local",
       "file": "Report_SDUE_2023.sql",
-      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE_2023.sql"
+      "path": "converted_scripts/pipeline_23_sdue_fabric/bigquery/Report_SDUE_2023.sql"
     },
     "AzureExtract_CustomerProfileServiceStar": {
       "location": "no_file",

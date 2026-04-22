@@ -5,8 +5,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Large stub DAG (~275 tasks). Requires architecture decision for SAP/RFC ingest.",
-    "notes": "DAG converted. SQL conversion and architecture decisions needed.",
-    "last_updated": "2026-04-20"
+    "notes": "DAG converted. 5 SQL tasks converted. Remaining SQL + PySpark ingest strategy still pending.",
+    "last_updated": "2026-04-22"
   },
   "dragon_L1": {
     "status": "pending",
@@ -221,8 +221,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Large stub DAG (~236 tasks). SAP RPA/Astranet/RFC ingest strategy needed.",
-    "notes": "DAG converted. SQL conversion and architecture decisions needed.",
-    "last_updated": "2026-04-20"
+    "notes": "DAG converted. 22 SQL tasks converted. Remaining SAP/RPA ingest + PySpark strategy still pending.",
+    "last_updated": "2026-04-22"
   },
   "so2w_dragon_2": {
     "status": "pending",
@@ -230,8 +230,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Large stub DAG (~204 tasks). NMS ingest/LeadsFunnelCRMH1 strategy needed.",
-    "notes": "DAG converted. Full conversion pending.",
-    "last_updated": "2026-04-20"
+    "notes": "DAG converted. 54 SQL tasks converted. Remaining Impala/NMS strategy still pending.",
+    "last_updated": "2026-04-22"
   },
   "so2w_dragon_sdue_fabric": {
     "status": "pending",
