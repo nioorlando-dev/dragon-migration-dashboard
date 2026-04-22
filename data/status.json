@@ -90,13 +90,13 @@
     "last_updated": "2026-04-20"
   },
   "dragon_datarevenue": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG + SQL converted. DataRevenue_Transformation.sql + 13 standardized_h23 files converted. Synapse tasks removed from GCP DAG.",
+    "last_updated": "2026-04-22"
   },
   "dragon_leads_funnel_management": {
     "status": "dag_done",
@@ -119,20 +119,20 @@
   "dragon_marketsharedata": {
     "status": "ready",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
     "blocker": "",
-    "notes": "DAG converted with dbt tasks. Ready to deploy.",
-    "last_updated": "2026-04-20"
+    "notes": "DAG + MarketShare_HeadToHead.sql converted to BigQuery. Ready to deploy.",
+    "last_updated": "2026-04-22"
   },
   "dragon_monitoring_bku": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG + SQL converted. monitoringBKU.sql + monitoringbku_delta.sql converted to BigQuery.",
+    "last_updated": "2026-04-22"
   },
   "dragon_monitoring_stnk_bpkb": {
     "status": "ready",

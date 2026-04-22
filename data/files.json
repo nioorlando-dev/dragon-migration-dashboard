@@ -1729,44 +1729,39 @@
       "note": "ExternalTaskSensor — no file needed"
     },
     "datarevenue_star_synapse": {
-      "location": "remote",
-      "server": "adiden_drc",
-      "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — tidak dipakai di GCP"
+      "location": "no_file",
+      "file": "",
+      "note": "SKIP — Synapse tasks removed from GCP DAG post-migration"
     },
     "datarevenue_union_synapse": {
-      "location": "remote",
-      "server": "adiden_drc",
-      "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — tidak dipakai di GCP"
+      "location": "no_file",
+      "file": "",
+      "note": "SKIP — Synapse tasks removed from GCP DAG post-migration"
     },
     "datarevenue_contextual": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "dbt model — belum diexport"
+      "location": "local",
+      "file": "DataRevenue_Transformation.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/DataRevenue_Transformation.sql"
     },
     "datarevenue_direct_synapse": {
-      "location": "remote",
-      "server": "adiden_drc",
-      "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — tidak dipakai di GCP"
+      "location": "no_file",
+      "file": "",
+      "note": "SKIP — Synapse tasks removed from GCP DAG post-migration"
     },
     "pcd_h3_upload_file_synapse": {
-      "location": "remote",
-      "server": "adiden_drc",
-      "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — tidak dipakai di GCP"
+      "location": "no_file",
+      "file": "",
+      "note": "SKIP — Synapse tasks removed from GCP DAG post-migration"
     },
     "datarevenue": {
       "location": "local",
-      "file": "tmp_update_datarevenue.sql",
-      "path": "converted_scripts/sql/dragon_2/datamart_standardized_h23/tmp_update_datarevenue.sql"
+      "file": "DataRevenue_Transformation.sql + 001_DataRevenuePartService_*.sql",
+      "path": "converted_scripts/pipeline_05_datarevenue/bigquery/"
     },
     "datarevenue_transformation_synapse": {
-      "location": "remote",
-      "server": "adiden_drc",
-      "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — tidak dipakai di GCP"
+      "location": "no_file",
+      "file": "",
+      "note": "SKIP — Synapse tasks removed from GCP DAG post-migration"
     },
     "finish": {
       "location": "no_file",
@@ -1858,9 +1853,9 @@
       "note": "ExternalTaskSensor — no file needed"
     },
     "marketsharedata": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "dbt model — belum diexport"
+      "location": "local",
+      "file": "MarketShare_HeadToHead.sql",
+      "path": "converted_scripts/pipeline_15_marketsharedata/bigquery/MarketShare_HeadToHead.sql"
     },
     "finish": {
       "location": "no_file",
@@ -1891,12 +1886,12 @@
     "monitoringbku_star": {
       "location": "local",
       "file": "monitoringBKU.sql",
-      "path": "converted_scripts/sql/dragon/datamart_monitoring/monitoringBKU.sql"
+      "path": "converted_scripts/pipeline_08_monitoringbku/bigquery/monitoringBKU.sql"
     },
     "monitoringbku": {
       "location": "local",
-      "file": "monitoringBKU.sql",
-      "path": "converted_scripts/sql/dragon/datamart_monitoring/monitoringBKU.sql"
+      "file": "monitoringbku_delta.sql",
+      "path": "converted_scripts/pipeline_08_monitoringbku/bigquery/monitoringbku_delta.sql"
     },
     "finish": {
       "location": "no_file",

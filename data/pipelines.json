@@ -2880,8 +2880,9 @@
     "schedule": "Daily 00 20 * * *",
     "total_tasks": 13,
     "status_counts": {
-      "Belum Convert": 11,
-      "SKIP": 2,
+      "Done": 2,
+      "Belum Convert": 4,
+      "SKIP": 7,
       "Tested": 0
     },
     "tasks": [
@@ -2928,7 +2929,7 @@
       {
         "task_id": "datarevenue_star_synapse",
         "type": "Trigger Synapse (Python)",
-        "status": "Belum Convert",
+        "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
         "catatan": "NEED INPUT: Synapse status check via Python SSH → evaluasi apakah Synapse masih relevan post-GCP. Jika ya: Cloud Run Job",
         "tested": false
@@ -2936,7 +2937,7 @@
       {
         "task_id": "datarevenue_union_synapse",
         "type": "Trigger Synapse (Python)",
-        "status": "Belum Convert",
+        "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
         "catatan": "NEED INPUT: sama seperti star_synapse",
         "tested": false
@@ -2944,7 +2945,7 @@
       {
         "task_id": "datarevenue_contextual",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT → L3 contextual model",
         "tested": false
@@ -2952,7 +2953,7 @@
       {
         "task_id": "datarevenue_direct_synapse",
         "type": "Trigger Synapse (Python)",
-        "status": "Belum Convert",
+        "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
         "catatan": "NEED INPUT: Synapse",
         "tested": false
@@ -2960,7 +2961,7 @@
       {
         "task_id": "pcd_h3_upload_file_synapse",
         "type": "Trigger Synapse (Python)",
-        "status": "Belum Convert",
+        "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
         "catatan": "NEED INPUT: Synapse",
         "tested": false
@@ -2968,7 +2969,7 @@
       {
         "task_id": "datarevenue",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT → L4 final datarevenue model",
         "tested": false
@@ -2976,7 +2977,7 @@
       {
         "task_id": "datarevenue_transformation_synapse",
         "type": "Trigger Synapse (Python)",
-        "status": "Belum Convert",
+        "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
         "catatan": "NEED INPUT: Synapse transformation pipeline",
         "tested": false
@@ -3142,7 +3143,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
+      "Done": 1,
+      "Belum Convert": 2,
       "SKIP": 2,
       "Tested": 0
     },
@@ -3174,7 +3176,7 @@
       {
         "task_id": "marketsharedata",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT L3 → marketshare model",
         "tested": false
@@ -3195,7 +3197,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 8,
     "status_counts": {
-      "Belum Convert": 6,
+      "Done": 2,
+      "Belum Convert": 4,
       "SKIP": 2,
       "Tested": 0
     },
@@ -3243,7 +3246,7 @@
       {
         "task_id": "monitoringbku_star",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -3251,7 +3254,7 @@
       {
         "task_id": "monitoringbku",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
