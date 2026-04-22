@@ -5,11 +5,10 @@
     "schedule": "Daily 00 14 * * *",
     "total_tasks": 275,
     "status_counts": {
+      "SKIP": 8,
       "Belum Convert": 261,
       "Done": 5,
-      "NEED INPUT": 1,
-      "SKIP": 8,
-      "Tested": 0
+      "NEED INPUT": 1
     },
     "tasks": [
       {
@@ -2220,9 +2219,8 @@
     "schedule": "Daily 00 17 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 3
     },
     "tasks": [
       {
@@ -2273,9 +2271,8 @@
     "schedule": "Daily 00 17 * * *",
     "total_tasks": 23,
     "status_counts": {
-      "Belum Convert": 21,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 21
     },
     "tasks": [
       {
@@ -2470,9 +2467,8 @@
     "schedule": "Daily 00 19 * * *",
     "total_tasks": 9,
     "status_counts": {
-      "Belum Convert": 7,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 7
     },
     "tasks": [
       {
@@ -2555,9 +2551,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 3
     },
     "tasks": [
       {
@@ -2685,8 +2680,7 @@
     "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 2,
-      "Tested": 0
+      "Belum Convert": 2
     },
     "tasks": [
       {
@@ -2729,11 +2723,8 @@
     "schedule": "Daily 30 0 * * *",
     "total_tasks": 10,
     "status_counts": {
-      "Done": 3,
-      "Belum Convert": 5,
-      "NEED INPUT": 0,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 8
     },
     "tasks": [
       {
@@ -2747,34 +2738,38 @@
       {
         "task_id": "zpygdo00004_ustk2",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is di Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_spkheaders",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_spkdetails",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "1_customerprofilesales_ustk2",
@@ -2825,8 +2820,7 @@
     "total_tasks": 3,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 1,
-      "Tested": 0
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -2861,8 +2855,7 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 1,
     "status_counts": {
-      "NEED INPUT": 1,
-      "Tested": 0
+      "NEED INPUT": 1
     },
     "tasks": [
       {
@@ -2881,10 +2874,8 @@
     "schedule": "Daily 00 20 * * *",
     "total_tasks": 13,
     "status_counts": {
-      "Done": 2,
-      "Belum Convert": 4,
       "SKIP": 7,
-      "Tested": 0
+      "Done": 6
     },
     "tasks": [
       {
@@ -2898,34 +2889,38 @@
       {
         "task_id": "check_star_billingpart_detail",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_star_billingpart_header",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_star_billingservice_detail",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_star_billingservice_header",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "datarevenue_star_synapse",
@@ -3100,8 +3095,7 @@
     "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 2,
-      "Tested": 0
+      "Done": 2
     },
     "tasks": [
       {
@@ -3144,10 +3138,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Done": 1,
-      "Belum Convert": 2,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 3
     },
     "tasks": [
       {
@@ -3161,18 +3153,20 @@
       {
         "task_id": "check_astranet_marketsharedata_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_astranet_marketsharedatatype_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "marketsharedata",
@@ -3198,10 +3192,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 8,
     "status_counts": {
-      "Done": 2,
-      "Belum Convert": 4,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 6
     },
     "tasks": [
       {
@@ -3215,34 +3207,38 @@
       {
         "task_id": "check_incomingheader",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_outgoingheader",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_outgoingdetail",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "monitoringbku_star",
@@ -3276,9 +3272,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 3
     },
     "tasks": [
       {
@@ -3292,18 +3287,20 @@
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_masterunittype",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "monitoringdocumentsalescomplete",
@@ -3329,9 +3326,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 9,
     "status_counts": {
-      "Belum Convert": 7,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 7
     },
     "tasks": [
       {
@@ -3345,50 +3341,56 @@
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_spkheaders",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_spkdetails",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_incomingheader",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_incomingdetail",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_outgoingheader",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "monitoringkuitansiall",
@@ -3414,9 +3416,9 @@
     "schedule": "Daily 00 20 * * *",
     "total_tasks": 11,
     "status_counts": {
-      "Belum Convert": 9,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 8,
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -3430,10 +3432,11 @@
       {
         "task_id": "[12x ExternalTaskSensor motorkux L1]",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "12 sensor dari dragon_L1 (L1_MOTORKUX_ARBORVITAE.*) + 1 astranet file + 1 masterdealer L3 + 1 CPS → As-Is Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "customerprofileservice_synapse",
@@ -3515,9 +3518,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 8,
     "status_counts": {
-      "Belum Convert": 6,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 6
     },
     "tasks": [
       {
@@ -3531,34 +3533,38 @@
       {
         "task_id": "check_grheaders",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_grdetails",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_stockpart",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "salesinstar",
@@ -3593,8 +3599,7 @@
     "total_tasks": 3,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 1,
-      "Tested": 0
+      "Done": 1
     },
     "tasks": [
       {
@@ -3629,11 +3634,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 9,
     "status_counts": {
-      "Done": 1,
-      "Belum Convert": 6,
-      "NEED INPUT": 0,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 7
     },
     "tasks": [
       {
@@ -3647,34 +3649,38 @@
       {
         "task_id": "check_sap_zmb51",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_sap_zpygsdq00010",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_masterdealer",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_mastermaterial",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "masterhet",
@@ -3716,9 +3722,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 4,
       "SKIP": 1,
-      "Tested": 0
+      "Done": 4
     },
     "tasks": [
       {
@@ -3732,10 +3737,11 @@
       {
         "task_id": "[11x check_dragon_L2_bd_*]",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "11 sensor dari dragon_L2 report_bd group → As-Is Composer",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "utilisasistar_nms_consistency",
@@ -3770,8 +3776,8 @@
     "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 2,
-      "Tested": 0
+      "Done": 1,
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -3785,10 +3791,11 @@
       {
         "task_id": "[Multiple ExternalTaskSensors]",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Multi-sensor orchestrator → As-Is Cloud Composer, menunggu semua downstream pipeline selesai",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "[Multiple PBI trigger tasks]",
@@ -3814,9 +3821,8 @@
     "schedule": "Daily 30 0 * * *",
     "total_tasks": 7,
     "status_counts": {
-      "Belum Convert": 5,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 5
     },
     "tasks": [
       {
@@ -3830,18 +3836,20 @@
       {
         "task_id": "check_spkheaders",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_spkdetails",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "zpygdo00004_ustk2_star",
@@ -3883,11 +3891,10 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 236,
     "status_counts": {
+      "SKIP": 7,
       "Belum Convert": 206,
       "Done": 22,
-      "NEED INPUT": 1,
-      "SKIP": 7,
-      "Tested": 0
+      "NEED INPUT": 1
     },
     "tasks": [
       {
@@ -5786,11 +5793,10 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 204,
     "status_counts": {
-      "Belum Convert": 136,
-      "Done": 54,
-      "NEED INPUT": 1,
       "SKIP": 13,
-      "Tested": 0
+      "Belum Convert": 135,
+      "Done": 55,
+      "NEED INPUT": 1
     },
     "tasks": [
       {
@@ -6828,10 +6834,11 @@
       {
         "task_id": "dgi_utilisasidgi",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted to BigQuery SQL: converted_scripts/pipeline_31_so2w_dragon_2/bigquery/utilisasidgi.sql"
       },
       {
         "task_id": "nms_DataRevenue_NonStar_Delta",
@@ -7433,11 +7440,9 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 26,
     "status_counts": {
-      "Done": 21,
-      "Belum Convert": 3,
-      "NEED INPUT": 0,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 23,
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -7451,10 +7456,11 @@
       {
         "task_id": "check_integration_pssu",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "report_sdue",
@@ -7656,9 +7662,9 @@
     "schedule": "Daily 00 22 * * *",
     "total_tasks": 11,
     "status_counts": {
-      "Belum Convert": 9,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 4,
+      "Done": 5
     },
     "tasks": [
       {
@@ -7757,9 +7763,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 9,
     "status_counts": {
-      "Belum Convert": 7,
       "SKIP": 2,
-      "Tested": 0
+      "Done": 7
     },
     "tasks": [
       {
@@ -7773,34 +7778,38 @@
       {
         "task_id": "check_sap_ustk2",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for so2w_dragon.integration_ustk2",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_astranet_ringterritory_file",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for dragon_sdue.astranet_RingTerritory_file",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_leadsfunnelcrmh1_star",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for so2w_dragon_2.LeadsFunnelCRMH1_Star",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_finish_depedencies_prospecttossu",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for dragon.finish_depedencies_prospecttossu",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "prospecttossu_star",
@@ -7842,9 +7851,8 @@
     "schedule": "Quarterly 00 21 1 */3 *",
     "total_tasks": 3,
     "status_counts": {
-      "Belum Convert": 1,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -7877,12 +7885,11 @@
     "dag_id": "dragoncloudera_synapse",
     "priority": "Unassigned",
     "schedule": "Daily",
-    "total_tasks": 5,
+    "total_tasks": 6,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "NEED INPUT": 2,
-      "Tested": 0
+      "Done": 1,
+      "NEED INPUT": 3
     },
     "tasks": [
       {
@@ -7896,10 +7903,11 @@
       {
         "task_id": "check_sugor_ahass_pss",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for so2w_dragon.demand_sugor_ahass_pss",
-        "tested": false
+        "tested": false,
+        "notes": " [Sensor implemented in DAG]"
       },
       {
         "task_id": "check_run_monthly",
@@ -7941,8 +7949,7 @@
     "schedule": "Weekly Saturday 00 03 * * *",
     "total_tasks": 4,
     "status_counts": {
-      "SKIP": 4,
-      "Tested": 0
+      "SKIP": 4
     },
     "tasks": [
       {
@@ -7985,9 +7992,8 @@
     "schedule": "Daily 00 13 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 3
     },
     "tasks": [
       {
@@ -8038,9 +8044,8 @@
     "schedule": "Daily 00 12 * * *",
     "total_tasks": 5,
     "status_counts": {
-      "Belum Convert": 3,
       "SKIP": 2,
-      "Tested": 0
+      "Belum Convert": 3
     },
     "tasks": [
       {
