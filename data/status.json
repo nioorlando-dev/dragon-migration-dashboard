@@ -63,12 +63,12 @@
     "last_updated": "2026-04-20"
   },
   "dragon_customerprofilesales": {
-    "status": "blocked",
+    "status": "dag_done",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "3/4 dbt SQL files converted. [dbt models final] grouped task still pending. masterhet* not needed here.",
+    "blocker": "",
+    "notes": "DAG converted. 5 PySpark scripts converted from TFS vctd-daas (L3/CustomerProfileSales/). Ready to deploy.",
     "last_updated": "2026-04-22"
   },
   "dragon_data_mekanik": {
@@ -153,22 +153,22 @@
     "last_updated": "2026-04-20"
   },
   "dragon_motorkux": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted with 9 parallel dbt tasks. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG converted. 9 PySpark scripts converted from TFS vctd-daas (L4/CDBXMotorkux/). Ready to deploy.",
+    "last_updated": "2026-04-22"
   },
   "dragon_niguri_partstock": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG converted. 6 PySpark scripts converted from TFS vctd-daas (L3/Niguri_Part/). Ready to deploy.",
+    "last_updated": "2026-04-22"
   },
   "dragon_nms_handleleasing": {
     "status": "ready",
@@ -180,12 +180,12 @@
     "last_updated": "2026-04-20"
   },
   "dragon_partsharecontribution": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
-    "blocker": "masterhet.sql and masterhet_latest.sql not found — perlu ambil dari adis2w01a000",
-    "notes": "partsharecontribution SQL converted. masterhet.sql and masterhet_latest.sql still missing from server.",
+    "blocker": "",
+    "notes": "DAG + SQL converted. masterhet.sql + masterhet_latest.sql ditemukan di TFS vctd-daas dan diconvert ke PySpark. Ready to deploy.",
     "last_updated": "2026-04-22"
   },
   "dragon_report_bd": {
@@ -207,13 +207,13 @@
     "last_updated": "2026-04-20"
   },
   "dragon_ustk2": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG converted. 4 PySpark scripts converted from TFS vctd-daas (L3/ZPYGDO00004_USTK2/). Ready to deploy.",
+    "last_updated": "2026-04-22"
   },
   "so2w_dragon": {
     "status": "pending",
@@ -243,12 +243,12 @@
     "last_updated": "2026-04-22"
   },
   "so2w_smartstock": {
-    "status": "blocked",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted with Fabric triggers. Pending dbt model deployment.",
+    "blocker": "",
+    "notes": "DAG converted. 5 PySpark scripts converted dari TFS vctd-daas (L2+L3/SmartStock/). Ready to deploy.",
     "last_updated": "2026-04-20"
   },
   "dragon_prospecttossu": {
