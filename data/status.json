@@ -68,8 +68,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted with CloudRunExecuteJobOperator. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "notes": "3/4 dbt SQL files converted. [dbt models final] grouped task still pending. masterhet* not needed here.",
+    "last_updated": "2026-04-22"
   },
   "dragon_data_mekanik": {
     "status": "ready",
@@ -184,9 +184,9 @@
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Awaiting dbt model files from source server.",
-    "notes": "DAG converted. Pending dbt model deployment.",
-    "last_updated": "2026-04-20"
+    "blocker": "masterhet.sql and masterhet_latest.sql not found — perlu ambil dari adis2w01a000",
+    "notes": "partsharecontribution SQL converted. masterhet.sql and masterhet_latest.sql still missing from server.",
+    "last_updated": "2026-04-22"
   },
   "dragon_report_bd": {
     "status": "ready",
@@ -234,13 +234,13 @@
     "last_updated": "2026-04-20"
   },
   "so2w_dragon_sdue_fabric": {
-    "status": "blocked",
+    "status": "pending",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting dbt model files and Fabric workspace ID (SDUE_PortalAHM).",
-    "notes": "DAG converted. Delta_Quickwin configured. 3 SQL files also need porting.",
-    "last_updated": "2026-04-20"
+    "blocker": "Fabric workspace ID for SDUE_PortalAHM not yet provided. report_sdue_portalahm task pending.",
+    "notes": "21/22 dbt SQL files converted (Report_SDUE, Report_SDUE_2023, all views). report_sdue_portalahm still blocked on Fabric workspace ID.",
+    "last_updated": "2026-04-22"
   },
   "so2w_smartstock": {
     "status": "blocked",

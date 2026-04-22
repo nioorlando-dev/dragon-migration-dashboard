@@ -35,612 +35,612 @@
     "astranet_dealerhondaprofileahm_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "astranet_grstatus_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "astranet_pkbtypenewpss_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "astranet_pkbtypenewahass_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "astranet_tobpm_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_invoiceleasing": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_MarritalStatus": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_Occupation": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_OrderCustomerData": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_OrderDetail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_UnitType": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_DealerPosition": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_DealerPositionResult": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_DealerTelephone": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_District": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Kecamatan": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Kelurahan": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_KKDetail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_KKSalesOffice": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_KKTransaction": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Lookup": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_MarketType": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Province": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Region": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_Segment": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "master2w_UnitType": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_ApprovalIndent": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_brand": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_cancel_reason_type_indent": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_city": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_city_ahm": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_dealer": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_dealer_status": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_dealer_telephone": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_dealer_territory_result": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_gender": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_Indent": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_indent_status": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_Indent_unit_availability": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_job_position": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_kecamatan": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_kelurahan": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_main_dealer": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_market_share_monthly": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_market_share_monthly_detail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_pos": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_pos_type": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_province": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_purchase_type": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_salesman": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_salesman_backup": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_salesman_status": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_unit_type": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_unit_type_market_name": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_unit_type_segment": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_unit_type_series": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_work_day": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_ss_salesman": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "integration_ss_salesman": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_target_per_pos": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_purchase_order": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "portalhso_purchase_order_detail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "psshso_IncentiveRuleDetail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "psshso_IncentiveFormula": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "psshso_SalesPersonRAS": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "ManagementSimpliFy_Branch": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "ManagementSimpliFy_Region": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_VehicleDocumentDetail": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_VehicleDocumentActivity": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_VehicleDocument": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_PricingSTNK": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_CEPSMSFollowup": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_CEPFollowup": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_Scenario": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_ContactEntryPlan": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_Leads": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_LeadsContainer": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_LeadsVEtemp": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_MasterStatus": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_MonitoringLeadsActivity": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_ProbingLeads": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_Prospect": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_Suspect": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_SuspectFollowUp": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_PlatformData": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "azure_CustomerInvitation": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_em_user": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_em_usr_gp": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_cube_view": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_doc": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_document_stats": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_proj": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_rep_doc": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_rep": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_repctype_ind": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_is_usr_gp_user": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_stg_is_document_stats": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "olap_em_is_last_update": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_em_user": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_user_motorcycle_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_recap_leads_h1_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_recap_leads_h3_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_booking_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_workshop_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_daerah_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_geocode_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_kpb_request_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_hot_leads_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_prospect_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_customer_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_retail_dealers_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_region_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_stage_chatbot_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_booking_kpb_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "motorkux_employee_details": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_cust_room_id_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_province_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_view_stage_non_ro": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_product_variant_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_customer_non_ro_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_city_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "amanda_users_details_da": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "avocado_City": {
       "location": "remote",
@@ -1205,12 +1205,12 @@
     "monitoringdocumentsales_2": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoringdocumentsales_3": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice_jobpart": {
       "location": "local",
@@ -1220,17 +1220,17 @@
     "demand_pkbservice_opl": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice_pickinglist": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice_postogr": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice_final": {
       "location": "local",
@@ -1240,27 +1240,27 @@
     "demand_sugorraw": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_sugor_ahass_pss": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "LeadtimeServiceHeader": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "LeadTimeServiceHeader_temp1": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "LeadTimeServiceHeader_temp2": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "SMW_* MSTR triggers (25 tasks)": {
       "location": "need_input",
@@ -1269,22 +1269,22 @@
     "PBI_CustomerProfileLeasing_64612283_73c4_4f21_9dc9_9d8e88d83439": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_CustomerProfileLeasingSummary_656e6e8a_20ae_4315_8929_1039e7aba683": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_LeadTimeSalesHeader_FromProspect_64e3f787_bec6_46a4_800b_c6f2396d6141": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MasterSalesPerson_3c27b747_9ab9_4c18_8789_0363edf60cf6": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringAlasanArod_NonTrade_7cf1988d_61bd_4a75_a919_d9c0e15711ac": {
       "location": "local",
@@ -1294,77 +1294,77 @@
     "PBI_MonitoringBillingARNonTrade_Complete_a5bc3bb9_f00c_48ae_a637_27e7ffd43268": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingARNonTrade_Outstanding_784de18a_08ce_4549_86ca_ec8a39f72c79": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingService_Complete_6d65130f_ea1f_46ec_abe9_b68b9857c74a": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingService_Outstanding_79c7b427_8a96_4b1d_a47f_6ff3ea8c281d": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingSparepart_Outstanding_5beeb331_b646_4d34_a0ac_42943e668152": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingSales_Complete_2b3f11a8_f07b_48bb_987f_1cc2a15dcf89": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBillingUnit_Outstanding_153d7b59_70a6_408e_90e1_fc1ca170b62e": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringBKU_4a505875_b7e2_485c_8354_8208bc905e4c": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringDataSCP_03faa210_cd1e_4f51_a430_15cd49a0f0db": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringSparePart_Complete_dcf998b5_6f63_4d33_9048_468a2438b2d2": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringDocumentSales_Complete_df274b34_e405_4691_bbcc_d013de951518": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringDocumentSales_Outstanding_c93f01a8_2462_4794_b6d5_e390c1ccf511": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringSPK_Outstanding_9e2cbbed_71d5_4faf_bc36_12eb60728142": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringStockPameranPos_4b90bc87_ed4a_4379_908b_d4ae8268a91d": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringStockPameranPos_Outstanding_ab88a25c_00d7_47b0_a8bb_2c130b3e2587": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     }
   },
   "dragon_L1": {
@@ -1597,12 +1597,12 @@
     "integration_astrapay_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_mappingso_target_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "astrapay_transformation": {
       "location": "local",
@@ -1663,17 +1663,17 @@
     "1_customerprofilesales_ustk2": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
     },
     "1_customerprofilesales_pkb_temp": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
     },
     "1_customerprofilesales_ro_temp": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
     },
     "[dbt models final]": {
       "location": "remote",
@@ -1732,13 +1732,13 @@
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "datarevenue_union_synapse": {
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "datarevenue_contextual": {
       "location": "remote",
@@ -1749,13 +1749,13 @@
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "pcd_h3_upload_file_synapse": {
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "datarevenue": {
       "location": "local",
@@ -1766,7 +1766,7 @@
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "finish": {
       "location": "no_file",
@@ -1978,7 +1978,7 @@
       "location": "remote",
       "server": "adiden_drc",
       "path": "/home/adiden/scripts/dbt_workspace/scripts/checkstatus_synapse.py",
-      "note": "Replaced — Synapse status check tidak dipakai di GCP"
+      "note": "Replaced — tidak dipakai di GCP"
     },
     "cdbxmotorkux": {
       "location": "remote",
@@ -2105,7 +2105,7 @@
     "partsharecontribution": {
       "location": "local",
       "file": "partsharecontribution_delta.sql",
-      "path": "converted_scripts/sql/dragon/datamart_demand/partsharecontribution_delta.sql"
+      "path": "unconverted_scripts/pipeline_06_partsharecontribution/sql/partsharecontribution_delta.sql"
     },
     "finish": {
       "location": "no_file",
@@ -2149,7 +2149,7 @@
     "[Multiple PBI trigger tasks]": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "finish": {
       "location": "no_file",
@@ -2947,12 +2947,12 @@
     "integration_mb51": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_mmbe": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_mappingunittype": {
       "location": "local",
@@ -2962,7 +2962,7 @@
     "integration_ZPYGMME00049A": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_pcd_h3_upload_file": {
       "location": "local",
@@ -2972,22 +2972,22 @@
     "asmo_id_h1": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "customerprofilesales_kpb": {
       "location": "local",
       "file": "customerprofilesales_kpb.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales_kpb.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales_kpb.sql"
     },
     "customerprofilesales": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
     },
     "customerprofilesales_star": {
       "location": "local",
       "file": "customerprofilesales.sql",
-      "path": "converted_scripts/sql/dragon/datamart_customerprofile/customerprofilesales.sql"
+      "path": "unconverted_scripts/pipeline_04_customerprofilesales/sql/customerprofilesales.sql"
     },
     "customerprofileleasing_prospecttossu": {
       "location": "local",
@@ -3007,22 +3007,22 @@
     "integration_mappingposservice_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "ProspectToSSU_Star": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_mappingmaterial": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "demand_pkbservice_temp1": {
       "location": "local",
@@ -3032,47 +3032,47 @@
     "monitoring_kuitansi_unit": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_kuitansi_service": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_kuitansi_sparepart": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_kuitansi_arnontrade": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_kuitansi_others": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_kuitansi_all": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_alasanarod": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoring_alasanarod_nontrade": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "monitoringpkboutstanding": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "marketshare_headtohead": {
       "location": "local",
@@ -3082,12 +3082,12 @@
     "integration_marketsharedata_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_marketsharedatatype_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "report_so_rem": {
       "location": "local",
@@ -3112,17 +3112,17 @@
     "h1targetsegment": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "h1targetring": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "h1targetpaymenttype": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "AzureExtract_customerprofilesales_assemblyyearstar": {
       "location": "no_file",
@@ -3174,22 +3174,22 @@
     "PBI_LeadsCustomer_Lemon_7d2fca31_8607_4318_a518_c5435210d1a1": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_LeadsCustomer_MotorkuX_7d2fca31_8607_4318_a518_c5435210d1a1": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_MonitoringIncentive_TL_OL_5c06696e_3bab_47a5_9919_bfb9f7f659ef": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_LeadsCustomer_SocialMedia_d3425490_7ece_440e_966c_52773545e2a6": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_HargaKomoditas_84249013_f757_4992_91e0_3dadb93ad4e8": {
       "location": "local",
@@ -3239,17 +3239,17 @@
     "PBI_MonitoringPKB_Outstanding_533b8106_45f1_4643_987a_a4524a4e1ea0": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_LeadsCustomer_VirtualExhibition_d4d66329_2376_4ac4_a21c_ac919a5b8896": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_LeadsCustomer_Amanda_File_37128dc4_8a5f_4978_81cd_d77f7336185f": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_AsmoID_H1_22b63658_5d60_4425_b79e_d63bbfaed764": {
       "location": "local",
@@ -3259,7 +3259,7 @@
     "PBI_CustomerProfile_RO_290fd33f_9bf2_488f_8ca0_483cdc81273f": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_PSS2W_Croselling_CrosellingOwnDealer_21d1c1cd_f8a3_4905_beaa_1c7fb2964a87": {
       "location": "local",
@@ -3284,7 +3284,7 @@
     "PBI_MonitoringActicityGC_08267b9d_d7d2_407b_a1d4_8a8c634f887d": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_ProspecttoSSUSummary_92952107_ac96_4068_9297_9330d2fce835": {
       "location": "local",
@@ -3294,7 +3294,7 @@
     "PBI_Monitoring_Incentive_SF_2e26ac1d_7047_4434_befb_81639ee0ac3b": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Summary_UnitSales_2f834b4b_f007_4ef8_b31c_c396c68d01f2": {
       "location": "local",
@@ -3314,7 +3314,7 @@
     "PBI_Dealer_360_H1_Target_Ring_56a7246a_7b86_4e34_9c92_40a2bc49b979": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Dealer_360_H1_Target_Payment_Type_23f3b658_f94c_4662_b987_689a56b2aca3": {
       "location": "local",
@@ -3349,17 +3349,17 @@
     "pcdactualtarget": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "SMW_pcdactualtarget": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "SMW_PCD_H1Sales": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     }
   },
   "so2w_dragon_2": {
@@ -3703,57 +3703,57 @@
     "nms_DataRevenuePartService_Filtered_2": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempB": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempC": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempD": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempE": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempF": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempG": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_TempH": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenuePartService_Final": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenueDirect": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenueSummary": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_tmp_mapping_datarevenue": {
       "location": "local",
@@ -3783,7 +3783,7 @@
     "Salesinout_Transformation": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "leadsfunnelcrmh1": {
       "location": "local",
@@ -3818,7 +3818,7 @@
     "customerinvitation": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "utilisasidragon": {
       "location": "local",
@@ -3833,7 +3833,7 @@
     "servicedemandratio_sprall": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "spr_transformation": {
       "location": "local",
@@ -3908,7 +3908,7 @@
     "integration_hc3_actual_target_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "hc3_customer": {
       "location": "local",
@@ -3953,12 +3953,12 @@
     "integration_astrapay_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "integration_mappingso_target_file": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "astrapay_transformation": {
       "location": "local",
@@ -3998,12 +3998,12 @@
     "d360_log_datasets_distribution": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "dgi_utilisasidgi": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "nms_DataRevenue_NonStar_Delta": {
       "location": "local",
@@ -4023,22 +4023,22 @@
     "impalasdue": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "convertersdue": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "SQL embedded in original DAG — perlu diextract dan diconvert ke BigQuery SQL"
+      "note": "SQL embedded in original DAG — perlu diextract"
     },
     "report_sdue": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "report_sdue_2023": {
       "location": "local",
       "file": "Report_SDUE_2023.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE_2023.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE_2023.sql"
     },
     "AzureExtract_CustomerProfileServiceStar": {
       "location": "no_file",
@@ -4099,7 +4099,7 @@
     "PBI_DUS_Assist_H2_a9af74a6_9ed2_47f8_bbda_864002ecc415": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_DataMekanik_341345c9_9124_4e89_aca9_c9199b1e98a4": {
       "location": "local",
@@ -4129,12 +4129,12 @@
     "PBI_PartConsumption_Summary_67dc9e3f_042a_4b7d_b16a_ae341be71b45": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_DataRevenue_Summary_d331a96b_bf2d_488d_bf2f_da41bf66c121": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_DataTOJ11_991f5163_2017_4389_9edc_e8173926dab4": {
       "location": "local",
@@ -4144,7 +4144,7 @@
     "PBI_DataHotline_Summary_e0b95ccd_de3c_49ed_a603_8bd4956f869a": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_UtilisasiAvocado_00348d4a_889c_4c58_98c7_b890183b4079": {
       "location": "local",
@@ -4199,17 +4199,17 @@
     "PBI_D360_HC3_Customer_Relations_b48a24e3_2441_4770_839a_4f80367536a7": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_D360_HC3_Leads_Funnel_501e0bd1_8c91_446b_8f43_3645c76579eb": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Demand_PartContribution_Summary_8c43c4d7_cd59_46ad_bc25_62abed7e3128": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_PartShare_69a79db9_33f2_457e_872f_93600dea8295": {
       "location": "local",
@@ -4224,12 +4224,12 @@
     "PBI_Integrated_CSDev_204ee5e8_6f11_4689_9cdc_9a4061787adf": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Utilisasi_Portal_Pasti_0452ec44_de2b_422e_bd29_e966ec82e312": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Leads3Axis_Overview_0f518e48_c560_4d6f_9353_6280548a594a": {
       "location": "local",
@@ -4239,12 +4239,12 @@
     "PBI_Dealer_360_H2_Unit_Entry_Transformation_4c5d05fe_e6d8_4bbe_a037_83ca91a3eafe": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Dealer_360_H2_Data_Revenue_Transformation_e9eca6bd_2ded_4930_bec3_75a385f43571": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_Dealer_360_H2_Data_Pit_Transformation_2ddaf63c_7d1f_4538_9e8a_b001badd6128": {
       "location": "local",
@@ -4304,7 +4304,7 @@
     "PBI_Dealer_360_Promotion_Marketing_360_PointofView_0964ffb1_d4f3_497b_944c_bff906b8fd0c": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "PBI refresh script — perlu diambil dari server"
+      "note": "PBI refresh script — perlu diambil"
     },
     "PBI_UtilisasiDGI_4edb240b_eeeb_48ae_b234_a4400112737f": {
       "location": "local",
@@ -4354,12 +4354,12 @@
     "SMW_DataToJ1bdg1": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     },
     "SMW_CustomerProfileServiceSummary": {
       "location": "remote",
       "server": "adis2w01a000 (Cloudera)",
-      "note": "Ingestion script — bagian dari stub DAG, menunggu keputusan arsitektur"
+      "note": "Ingestion script — stub DAG, menunggu keputusan arsitektur"
     }
   },
   "so2w_dragon_sdue_fabric": {
@@ -4374,112 +4374,112 @@
     "report_sdue": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "report_sdue_2023": {
       "location": "local",
       "file": "Report_SDUE_2023.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE_2023.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE_2023.sql"
     },
     "report_sdue_portalahm": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_master_dealer": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_sales_part_oil": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_revenuehgp": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_revenueoli": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_mechprod": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_pit": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_toj": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_toj11": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_aprom": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_acap": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_revenue": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_dataid": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_dataid_sum": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_dataid_filler": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_dataid_union": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_dataid_union_aggr": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_tanggal_trans": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_result_aggr": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "view_report_sdue_sdue": {
       "location": "local",
       "file": "Report_SDUE.sql",
-      "path": "converted_scripts/sql/dragon_2/sdue_xml/Report_SDUE.sql"
+      "path": "unconverted_scripts/pipeline_23_sdue_fabric/sql/Report_SDUE.sql"
     },
     "wait_for_fabric_update1": {
       "location": "no_file",

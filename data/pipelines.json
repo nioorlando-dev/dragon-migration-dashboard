@@ -2728,7 +2728,9 @@
     "schedule": "Daily 30 0 * * *",
     "total_tasks": 10,
     "status_counts": {
-      "Belum Convert": 8,
+      "Done": 3,
+      "Belum Convert": 5,
+      "NEED INPUT": 0,
       "SKIP": 2,
       "Tested": 0
     },
@@ -2776,7 +2778,7 @@
       {
         "task_id": "1_customerprofilesales_ustk2",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT → pilihan Dataform/Cloud Run+dbt/BigQuery SQL",
         "tested": false
@@ -2784,7 +2786,7 @@
       {
         "task_id": "1_customerprofilesales_pkb_temp",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -2792,7 +2794,7 @@
       {
         "task_id": "1_customerprofilesales_ro_temp",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -3623,7 +3625,9 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 9,
     "status_counts": {
-      "Belum Convert": 7,
+      "Done": 1,
+      "Belum Convert": 6,
+      "NEED INPUT": 0,
       "SKIP": 2,
       "Tested": 0
     },
@@ -3687,7 +3691,7 @@
       {
         "task_id": "partsharecontribution",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7423,7 +7427,9 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 26,
     "status_counts": {
-      "Belum Convert": 24,
+      "Done": 21,
+      "Belum Convert": 3,
+      "NEED INPUT": 0,
       "SKIP": 2,
       "Tested": 0
     },
@@ -7447,7 +7453,7 @@
       {
         "task_id": "report_sdue",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7455,7 +7461,7 @@
       {
         "task_id": "report_sdue_2023",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7471,7 +7477,7 @@
       {
         "task_id": "view_report_sdue_master_dealer",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7479,7 +7485,7 @@
       {
         "task_id": "view_report_sdue_sales_part_oil",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7487,7 +7493,7 @@
       {
         "task_id": "view_report_sdue_revenuehgp",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7495,7 +7501,7 @@
       {
         "task_id": "view_report_sdue_revenueoli",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7503,7 +7509,7 @@
       {
         "task_id": "view_report_sdue_mechprod",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7511,7 +7517,7 @@
       {
         "task_id": "view_report_sdue_pit",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7519,7 +7525,7 @@
       {
         "task_id": "view_report_sdue_toj",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7527,7 +7533,7 @@
       {
         "task_id": "view_report_sdue_toj11",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7535,7 +7541,7 @@
       {
         "task_id": "view_report_sdue_aprom",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7543,7 +7549,7 @@
       {
         "task_id": "view_report_sdue_acap",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7551,7 +7557,7 @@
       {
         "task_id": "view_report_sdue_revenue",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7559,7 +7565,7 @@
       {
         "task_id": "view_report_sdue_dataid",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7567,7 +7573,7 @@
       {
         "task_id": "view_report_sdue_dataid_sum",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7575,7 +7581,7 @@
       {
         "task_id": "view_report_sdue_dataid_filler",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7583,7 +7589,7 @@
       {
         "task_id": "view_report_sdue_dataid_union",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7591,7 +7597,7 @@
       {
         "task_id": "view_report_sdue_dataid_union_aggr",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7599,7 +7605,7 @@
       {
         "task_id": "view_report_sdue_tanggal_trans",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7607,7 +7613,7 @@
       {
         "task_id": "view_report_sdue_result_aggr",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
@@ -7615,7 +7621,7 @@
       {
         "task_id": "view_report_sdue_sdue",
         "type": "Transform DBT",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT",
         "tested": false
