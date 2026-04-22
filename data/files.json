@@ -1572,9 +1572,10 @@
       "note": "Replaced by CloudRunExecuteJobOperator in GCP"
     },
     "[SAP_VTHanaEE_Fabric group]": {
-      "location": "remote",
-      "server": "adis2w01a000 (Cloudera)",
-      "note": "PySpark script — di Cloudera HDFS"
+      "location": "local",
+      "file": "integration_sap_zpygsdq00094.sql + integration_zpygf_ar_aging_unitsummary.sql + integration_zpygba_o00001.sql",
+      "path": "converted_scripts/pipeline_28_dragon_SAP/bigquery/",
+      "note": "3 SQL integration files converted. SAP RFC ingest still needs architecture decision."
     },
     "finish": {
       "location": "no_file",

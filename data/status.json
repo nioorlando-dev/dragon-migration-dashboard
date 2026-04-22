@@ -38,11 +38,11 @@
   "dragon_SAP": {
     "status": "pending",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
     "blocker": "7 SQL files need porting. SAP Spark/RFC ingest strategy needed.",
-    "notes": "Complex pipeline with 17 TaskGroups. Requires SQL conversion.",
-    "last_updated": "2026-04-20"
+    "notes": "DAG converted. 3 SQL integration files converted (zpygsdq00094, zpygf_ar_aging, zpygba_o00001). SAP RFC ingest strategy still pending.",
+    "last_updated": "2026-04-22"
   },
   "dragon_astrapay": {
     "status": "dag_done",
@@ -250,5 +250,59 @@
     "blocker": "Awaiting dbt model files from source server.",
     "notes": "DAG converted with Fabric triggers. Pending dbt model deployment.",
     "last_updated": "2026-04-20"
+  },
+  "dragon_prospecttossu": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Awaiting dbt model files from source server (prospecttossu_star, prospecttossu_union, prospecttossu).",
+    "notes": "DAG converted with 4 sensors + 3 dbt tasks. Ready once dbt models deployed.",
+    "last_updated": "2026-04-22"
+  },
+  "dragon_ro_leads": {
+    "status": "ready",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Confirm FABRIC_ENTRY and config name with data owner.",
+    "notes": "DAG converted. Quarterly schedule. 1 Fabric trigger task.",
+    "last_updated": "2026-04-22"
+  },
+  "dragoncloudera_synapse": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "NEED INPUT: apakah data sugor_ahass_pss masih perlu di-push? Jika tidak, pipeline ini bisa deprecated.",
+    "notes": "Pipeline push Cloudera→Synapse. Post-migration mungkin tidak diperlukan karena Synapse digantikan BigQuery.",
+    "last_updated": "2026-04-22"
+  },
+  "dragons_data_merging": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "HDFS merge helper — tidak relevan di GCP. Rekomendasi: DEPRECATED.",
+    "notes": "Pipeline merge small Hive files (HDFS-specific). Tidak ada ekuivalen di BigQuery. Kemungkinan besar deprecated.",
+    "last_updated": "2026-04-22"
+  },
+  "so2w_pss": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "~380 task STUB. Keputusan arsitektur PSS ingest ke GCP belum dibuat.",
+    "notes": "DAG converted sebagai STUB. PSS (Part Sales System) ingest strategy needed sebelum full conversion.",
+    "last_updated": "2026-04-22"
+  },
+  "so2w_ahass": {
+    "status": "pending",
+    "dag_converted": true,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "~404 task STUB. Keputusan arsitektur AHASS ingest ke GCP belum dibuat.",
+    "notes": "DAG converted sebagai STUB. AHASS (Astra Honda Authorized Service Station) ingest strategy needed.",
+    "last_updated": "2026-04-22"
   }
 }

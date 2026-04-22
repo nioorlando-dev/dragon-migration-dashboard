@@ -7750,5 +7750,339 @@
         "tested": false
       }
     ]
+  },
+  "dragon_prospecttossu": {
+    "dag_id": "dragon_prospecttossu",
+    "priority": "Unassigned",
+    "schedule": "Daily 00 21 * * *",
+    "total_tasks": 9,
+    "status_counts": {
+      "Belum Convert": 7,
+      "SKIP": 2,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "check_sap_ustk2",
+        "type": "Sensor/External",
+        "status": "Belum Convert",
+        "tool": "ExternalTaskSensor",
+        "catatan": "Waits for so2w_dragon.integration_ustk2",
+        "tested": false
+      },
+      {
+        "task_id": "check_astranet_ringterritory_file",
+        "type": "Sensor/External",
+        "status": "Belum Convert",
+        "tool": "ExternalTaskSensor",
+        "catatan": "Waits for dragon_sdue.astranet_RingTerritory_file",
+        "tested": false
+      },
+      {
+        "task_id": "check_leadsfunnelcrmh1_star",
+        "type": "Sensor/External",
+        "status": "Belum Convert",
+        "tool": "ExternalTaskSensor",
+        "catatan": "Waits for so2w_dragon_2.LeadsFunnelCRMH1_Star",
+        "tested": false
+      },
+      {
+        "task_id": "check_finish_depedencies_prospecttossu",
+        "type": "Sensor/External",
+        "status": "Belum Convert",
+        "tool": "ExternalTaskSensor",
+        "catatan": "Waits for dragon.finish_depedencies_prospecttossu",
+        "tested": false
+      },
+      {
+        "task_id": "prospecttossu_star",
+        "type": "Transform DBT",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (dbt-so-hso)",
+        "catatan": "dbt run -s prospecttossu_star",
+        "tested": false
+      },
+      {
+        "task_id": "prospecttossu_union",
+        "type": "Transform DBT",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (dbt-so-hso)",
+        "catatan": "dbt run -s prospecttossu_union",
+        "tested": false
+      },
+      {
+        "task_id": "prospecttossu",
+        "type": "Transform DBT",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (dbt-so-hso)",
+        "catatan": "dbt run -s prospecttossu",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
+  },
+  "dragon_ro_leads": {
+    "dag_id": "dragon_ro_leads",
+    "priority": "Unassigned",
+    "schedule": "Quarterly 00 21 1 */3 *",
+    "total_tasks": 3,
+    "status_counts": {
+      "Belum Convert": 1,
+      "SKIP": 2,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "trigger_ro_leads_fabric",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (fabric-job-trigger)",
+        "catatan": "FABRIC_ENTRY=ro_leads, confirm config name",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
+  },
+  "dragoncloudera_synapse": {
+    "dag_id": "dragoncloudera_synapse",
+    "priority": "Unassigned",
+    "schedule": "Daily",
+    "total_tasks": 5,
+    "status_counts": {
+      "Belum Convert": 3,
+      "SKIP": 2,
+      "NEED INPUT": 2,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "check_sugor_ahass_pss",
+        "type": "Sensor/External",
+        "status": "Belum Convert",
+        "tool": "ExternalTaskSensor",
+        "catatan": "Waits for so2w_dragon.demand_sugor_ahass_pss",
+        "tested": false
+      },
+      {
+        "task_id": "check_run_monthly",
+        "type": "Sensor/Check (SSH)",
+        "status": "NEED INPUT",
+        "tool": "BranchPythonOperator",
+        "catatan": "Routes daily vs monthly",
+        "tested": false
+      },
+      {
+        "task_id": "trigger_sugor_ahass_pss_daily_synapse_NEED_INPUT",
+        "type": "SSH Task",
+        "status": "NEED INPUT",
+        "tool": "DummyOperator (STUB)",
+        "catatan": "NEED INPUT: Synapse still needed or deprecated?",
+        "tested": false
+      },
+      {
+        "task_id": "trigger_sugor_ahass_pss_monthly_synapse_NEED_INPUT",
+        "type": "SSH Task",
+        "status": "NEED INPUT",
+        "tool": "DummyOperator (STUB)",
+        "catatan": "NEED INPUT: Synapse still needed or deprecated?",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
+  },
+  "dragons_data_merging": {
+    "dag_id": "dragons_data_merging",
+    "priority": "Unassigned",
+    "schedule": "Weekly Saturday 00 03 * * *",
+    "total_tasks": 4,
+    "status_counts": {
+      "SKIP": 4,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "check_run",
+        "type": "Sensor/Check (SSH)",
+        "status": "SKIP",
+        "tool": "BranchPythonOperator",
+        "catatan": "HDFS-specific — tidak relevan di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "start_saturday",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP — deprecated",
+        "catatan": "Merge Hive small files — no equivalent in BigQuery",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
+  },
+  "so2w_pss": {
+    "dag_id": "so2w_pss",
+    "priority": "Unassigned",
+    "schedule": "Daily 00 13 * * *",
+    "total_tasks": 5,
+    "status_counts": {
+      "Belum Convert": 3,
+      "SKIP": 2,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "pss_ingest_STUB",
+        "type": "Ingest Python",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (NEED INPUT)",
+        "catatan": "~380 PSS ingest tasks — STUB, arch decision needed",
+        "tested": false
+      },
+      {
+        "task_id": "pss_integration_STUB",
+        "type": "Transform SQL (Hive)",
+        "status": "Belum Convert",
+        "tool": "BigQueryInsertJobOperator (NEED INPUT)",
+        "catatan": "PSS Beeline SQL integration — needs SQL porting",
+        "tested": false
+      },
+      {
+        "task_id": "[~375 detail tasks]",
+        "type": "Transform SQL (Hive)",
+        "status": "Belum Convert",
+        "tool": "BigQueryInsertJobOperator",
+        "catatan": "Full task list pending architecture decision",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
+  },
+  "so2w_ahass": {
+    "dag_id": "so2w_ahass",
+    "priority": "Unassigned",
+    "schedule": "Daily 00 12 * * *",
+    "total_tasks": 5,
+    "status_counts": {
+      "Belum Convert": 3,
+      "SKIP": 2,
+      "Tested": 0
+    },
+    "tasks": [
+      {
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      },
+      {
+        "task_id": "ahass_ingest_STUB",
+        "type": "Ingest Python",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job (NEED INPUT)",
+        "catatan": "~400 AHASS ingest tasks — STUB, arch decision needed",
+        "tested": false
+      },
+      {
+        "task_id": "ahass_integration_STUB",
+        "type": "Transform SQL (Hive)",
+        "status": "Belum Convert",
+        "tool": "BigQueryInsertJobOperator (NEED INPUT)",
+        "catatan": "AHASS Beeline SQL integration — needs SQL porting",
+        "tested": false
+      },
+      {
+        "task_id": "[~398 detail tasks]",
+        "type": "Transform SQL (Hive)",
+        "status": "Belum Convert",
+        "tool": "BigQueryInsertJobOperator",
+        "catatan": "Full task list pending architecture decision",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "DummyOperator",
+        "tested": false
+      }
+    ]
   }
 }
