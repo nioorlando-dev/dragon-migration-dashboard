@@ -253,7 +253,7 @@
   /* ---------- Progress bars ---------- */
   .prog-list { display: flex; flex-direction: column; gap: 14px; padding: 20px 22px; }
   .prog-row {
-    display: grid; grid-template-columns: 140px 1fr 90px;
+    display: grid; grid-template-columns: 165px 1fr 90px;
     align-items: center; gap: 14px;
   }
   .prog-name { font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 8px; }
@@ -1032,8 +1032,8 @@ function renderOverview(root) {
             ${pGroups.map(g => `
               <div class="prog-row ${g.key === 'p1' ? 'p1' : ''}">
                 <div class="prog-name">
-                  <span class="chip ${g.key}">${g.label.split(' ')[0]}</span>
-                  <span>${g.label.replace(/^P\d\S*\s?/, '').replace(/^P4\S*\s?/, '').trim() || g.label}</span>
+                  <span class="chip ${g.key}">${g.key === 'un' ? 'Un' : g.label.split(' ')[0]}</span>
+                  ${g.key !== 'un' ? `<span>${g.label.replace(/^P\d\S*\s?/, '').replace(/^P4\S*\s?/, '').trim()}</span>` : '<span>Unassigned</span>'}
                   <span style="color:var(--text-mute);font-size:11.5px">· ${g.count} pipes</span>
                 </div>
                 <div class="prog-track"><div class="prog-fill" data-pct="${g.pct}" style="width:0%"></div></div>
