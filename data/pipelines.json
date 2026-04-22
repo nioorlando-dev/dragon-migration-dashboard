@@ -2290,7 +2290,7 @@
         "task_id": "star_incomingheader",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2298,7 +2298,7 @@
         "task_id": "star_incomingdetail",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2306,7 +2306,7 @@
         "task_id": "star_outgoingheader",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2314,7 +2314,7 @@
         "task_id": "star_outgoingdetail",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2322,7 +2322,7 @@
         "task_id": "star_spkdetails",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2330,7 +2330,7 @@
         "task_id": "star_spkheaders",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2338,7 +2338,7 @@
         "task_id": "star_prospect",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2346,7 +2346,7 @@
         "task_id": "star_customerdetails",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2354,7 +2354,7 @@
         "task_id": "star_customerheaders",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2362,7 +2362,7 @@
         "task_id": "star_pkbheaders",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2370,7 +2370,7 @@
         "task_id": "star_grheaders",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2378,7 +2378,7 @@
         "task_id": "star_grdetails",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2386,7 +2386,7 @@
         "task_id": "star_stockpart",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2394,7 +2394,7 @@
         "task_id": "star_billingpart_detail",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2402,7 +2402,7 @@
         "task_id": "star_billingpart_header",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2410,7 +2410,7 @@
         "task_id": "star_billingservice_detail",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2418,7 +2418,7 @@
         "task_id": "star_billingservice_header",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2426,7 +2426,7 @@
         "task_id": "bd_h1",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2434,7 +2434,7 @@
         "task_id": "bd_h23",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2442,7 +2442,7 @@
         "task_id": "bd_partsales",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2450,7 +2450,7 @@
         "task_id": "bd_metric_aj/kq/ry/z_ad",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2487,7 +2487,7 @@
         "task_id": "masterdealer_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2495,7 +2495,7 @@
         "task_id": "masterdealer_union",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2503,7 +2503,7 @@
         "task_id": "masterunittype",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2511,7 +2511,7 @@
         "task_id": "mastersalesperson_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2519,7 +2519,7 @@
         "task_id": "mastersalesperson_union",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2527,7 +2527,7 @@
         "task_id": "masterdealermaindealer_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2535,7 +2535,7 @@
         "task_id": "mastermaterial",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2780,7 +2780,7 @@
         "task_id": "1_customerprofilesales_ustk2",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT → pilihan Dataform/Cloud Run+dbt/BigQuery SQL",
         "tested": false
       },
@@ -2788,7 +2788,7 @@
         "task_id": "1_customerprofilesales_pkb_temp",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2796,7 +2796,7 @@
         "task_id": "1_customerprofilesales_ro_temp",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -2804,7 +2804,7 @@
         "task_id": "[dbt models final]",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT — final CPS models di L3/L4",
         "tested": false
       },
@@ -2947,7 +2947,7 @@
         "task_id": "datarevenue_contextual",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT → L3 contextual model",
         "tested": false
       },
@@ -2971,7 +2971,7 @@
         "task_id": "datarevenue",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT → L4 final datarevenue model",
         "tested": false
       },
@@ -3116,7 +3116,7 @@
         "task_id": "leadtimesalesheader_fromspk_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3124,7 +3124,7 @@
         "task_id": "leadtimesalesheader_fromspk_union",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT final union",
         "tested": false
       },
@@ -3178,7 +3178,7 @@
         "task_id": "marketsharedata",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3 → marketshare model",
         "tested": false
       },
@@ -3248,7 +3248,7 @@
         "task_id": "monitoringbku_star",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3256,7 +3256,7 @@
         "task_id": "monitoringbku",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3309,7 +3309,7 @@
         "task_id": "monitoringdocumentsalescomplete",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3394,7 +3394,7 @@
         "task_id": "monitoringkuitansiall",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3447,7 +3447,7 @@
         "task_id": "cdbxmotorkux",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3455,7 +3455,7 @@
         "task_id": "motorkuxsummary",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3463,7 +3463,7 @@
         "task_id": "motorkuxfunnelworkshop",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3471,7 +3471,7 @@
         "task_id": "motorkuxkpbperformance",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3479,7 +3479,7 @@
         "task_id": "motorkuxregistereduser",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3487,7 +3487,7 @@
         "task_id": "motorkuxleadsh1",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3495,7 +3495,7 @@
         "task_id": "motorkuxleadsh2",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L4",
         "tested": false
       },
@@ -3564,7 +3564,7 @@
         "task_id": "salesinstar",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3572,7 +3572,7 @@
         "task_id": "stocklevel",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3609,7 +3609,7 @@
         "task_id": "nms_handleleasing",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3680,7 +3680,7 @@
         "task_id": "masterhet",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3688,7 +3688,7 @@
         "task_id": "masterhet_latest",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3696,7 +3696,7 @@
         "task_id": "partsharecontribution",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -3741,7 +3741,7 @@
         "task_id": "utilisasistar_nms_consistency",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3",
         "tested": false
       },
@@ -3749,7 +3749,7 @@
         "task_id": "utilisasistar_nms_ahm",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3",
         "tested": false
       },
@@ -3757,7 +3757,7 @@
         "task_id": "utilisasistar_bd",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3 (final output)",
         "tested": false
       }
@@ -3847,7 +3847,7 @@
         "task_id": "zpygdo00004_ustk2_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L2 staging",
         "tested": false
       },
@@ -3855,7 +3855,7 @@
         "task_id": "zpygdo00004_ustk2_cloudera",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L2 staging Cloudera enhancement",
         "tested": false
       },
@@ -3863,7 +3863,7 @@
         "task_id": "zpygdo00004_ustk2",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT final union model",
         "tested": false
       },
@@ -7460,7 +7460,7 @@
         "task_id": "report_sdue",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7468,7 +7468,7 @@
         "task_id": "report_sdue_2023",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7476,7 +7476,7 @@
         "task_id": "report_sdue_portalahm",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7484,7 +7484,7 @@
         "task_id": "view_report_sdue_master_dealer",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7492,7 +7492,7 @@
         "task_id": "view_report_sdue_sales_part_oil",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7500,7 +7500,7 @@
         "task_id": "view_report_sdue_revenuehgp",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7508,7 +7508,7 @@
         "task_id": "view_report_sdue_revenueoli",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7516,7 +7516,7 @@
         "task_id": "view_report_sdue_mechprod",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7524,7 +7524,7 @@
         "task_id": "view_report_sdue_pit",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7532,7 +7532,7 @@
         "task_id": "view_report_sdue_toj",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7540,7 +7540,7 @@
         "task_id": "view_report_sdue_toj11",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7548,7 +7548,7 @@
         "task_id": "view_report_sdue_aprom",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7556,7 +7556,7 @@
         "task_id": "view_report_sdue_acap",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7564,7 +7564,7 @@
         "task_id": "view_report_sdue_revenue",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7572,7 +7572,7 @@
         "task_id": "view_report_sdue_dataid",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7580,7 +7580,7 @@
         "task_id": "view_report_sdue_dataid_sum",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7588,7 +7588,7 @@
         "task_id": "view_report_sdue_dataid_filler",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7596,7 +7596,7 @@
         "task_id": "view_report_sdue_dataid_union",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7604,7 +7604,7 @@
         "task_id": "view_report_sdue_dataid_union_aggr",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7612,7 +7612,7 @@
         "task_id": "view_report_sdue_tanggal_trans",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7620,7 +7620,7 @@
         "task_id": "view_report_sdue_result_aggr",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7628,7 +7628,7 @@
         "task_id": "view_report_sdue_sdue",
         "type": "Transform DBT",
         "status": "Done",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s <model> -t prod",
         "tested": false
       },
@@ -7705,7 +7705,7 @@
         "task_id": "smartstock_contextual",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L2",
         "tested": false
       },
@@ -7713,7 +7713,7 @@
         "task_id": "smartstock_contextual_upto",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L2",
         "tested": false
       },
@@ -7721,7 +7721,7 @@
         "task_id": "smart_stock_sales",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3",
         "tested": false
       },
@@ -7729,7 +7729,7 @@
         "task_id": "smart_stock_sales_location",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3",
         "tested": false
       },
@@ -7737,7 +7737,7 @@
         "task_id": "smart_stock_sales_location_customer",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "NEED INPUT DBT L3",
         "tested": false
       },
@@ -7806,7 +7806,7 @@
         "task_id": "prospecttossu_star",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s prospecttossu_star",
         "tested": false
       },
@@ -7814,7 +7814,7 @@
         "task_id": "prospecttossu_union",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s prospecttossu_union",
         "tested": false
       },
@@ -7822,7 +7822,7 @@
         "task_id": "prospecttossu",
         "type": "Transform DBT",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (dbt-so-hso)",
+        "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s prospecttossu",
         "tested": false
       },
