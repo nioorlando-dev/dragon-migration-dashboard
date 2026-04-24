@@ -5,10 +5,9 @@
     "schedule": "Daily 00 14 * * *",
     "total_tasks": 275,
     "status_counts": {
-      "SKIP": 8,
-      "Belum Convert": 261,
-      "Done": 5,
-      "NEED INPUT": 1
+      "done": 33,
+      "belum": 228,
+      "need_input": 0
     },
     "tasks": [
       {
@@ -1198,135 +1197,135 @@
       {
         "task_id": "union_POSTOReferenceSO",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpGIDetail",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpGIHeader",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpGIBillingReference",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpGRPOLocReference",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpPOLocalHeader",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "union_SpPOLocalDetail",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "SKIP",
+        "tool": "SKIP (Commented out in DAG)",
+        "catatan": "Commented out in dragon_pipeline.py",
         "tested": false
       },
       {
         "task_id": "mastercddbudstk",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "mastercustomerprofileref",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "masterdealer",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "masterdealer_master2w",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "masterdealer_null",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "masterdealer_portal",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "mastermaindealer",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "mastersalesperson",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "mastersalesperson_temp",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "masterunittype",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1334,7 +1333,7 @@
       {
         "task_id": "customerprofileleasing",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1342,7 +1341,7 @@
       {
         "task_id": "customerprofileleasing_avocado",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1350,7 +1349,7 @@
       {
         "task_id": "customerprofileleasing_pss_ahass",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1358,7 +1357,7 @@
       {
         "task_id": "customerprofileleasing_temp",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1366,7 +1365,7 @@
       {
         "task_id": "customerprofilesales_cdb",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1374,7 +1373,7 @@
       {
         "task_id": "customerprofilesales_fovallowndealer",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1382,7 +1381,7 @@
       {
         "task_id": "customerprofilesales_fovalltime",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1390,7 +1389,7 @@
       {
         "task_id": "customerprofilesales_fovlastyear",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1398,7 +1397,7 @@
       {
         "task_id": "customerprofilesales_kpb1",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1406,7 +1405,7 @@
       {
         "task_id": "customerprofilesales_kpb2",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1414,7 +1413,7 @@
       {
         "task_id": "customerprofilesales_kpb3",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1422,7 +1421,7 @@
       {
         "task_id": "customerprofilesales_kpb4",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1430,7 +1429,7 @@
       {
         "task_id": "customerprofilesales_lastservice",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1438,7 +1437,7 @@
       {
         "task_id": "customerprofilesales_salesorder",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1446,7 +1445,7 @@
       {
         "task_id": "customerprofilesales_dataservice",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1454,7 +1453,7 @@
       {
         "task_id": "customerprofileservice_job",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1462,7 +1461,7 @@
       {
         "task_id": "customerprofileservice_pkb",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1470,7 +1469,7 @@
       {
         "task_id": "customerprofileservice_pkbro",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1478,7 +1477,7 @@
       {
         "task_id": "customerprofileservice",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1486,7 +1485,7 @@
       {
         "task_id": "customerprofileservice_cdb",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1494,7 +1493,7 @@
       {
         "task_id": "customerprofilesales_rofinal",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1502,23 +1501,23 @@
       {
         "task_id": "customerprofilesales_unitsales",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "customerprofilesales",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "dmslog",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1526,335 +1525,366 @@
       {
         "task_id": "monitoringbillingarnontrade",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingarnontrade.sql"
       },
       {
         "task_id": "monitoringbillingarnontrade_oustanding_complete",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingarnontrade_oustanding_complete.sql"
       },
       {
         "task_id": "MonitoringBillingSales",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales.sql"
       },
       {
         "task_id": "MonitoringBillingSales_AmountBilling",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_amountbilling.sql"
       },
       {
         "task_id": "MonitoringBillingSales_KuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_kuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_KuitansiPelunasan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_kuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSales_LastKuitansi",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_lastkuitansi.sql"
       },
       {
         "task_id": "MonitoringBillingSales_LastKuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_lastkuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansi",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansi.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansiPelunasan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSalesComplete",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsalescomplete.sql"
       },
       {
         "task_id": "MonitoringBillingSalesOutstanding",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsalesoutstanding.sql"
       },
       {
         "task_id": "monitoringbillingservice_0",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_0.sql"
       },
       {
         "task_id": "monitoringbillingservice_1",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_1.sql"
       },
       {
         "task_id": "monitoringbillingservice_complete_outstanding",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_complete_outstanding.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_KuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_kuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_KuitansiPelunasan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_kuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_LatestKuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_latestkuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_LatestKuitansiPelunasan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_latestkuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_TagihanKuitansiDP",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_tagihankuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_TagihanKuitansiPelunasan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_tagihankuitansipelunasan.sql"
       },
       {
         "task_id": "monitoringBKU",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringBKU.sql"
       },
       {
         "task_id": "monitoringBKU_delta",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql"
       },
       {
         "task_id": "monitoringdocumentsales_1",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_1.sql"
       },
       {
         "task_id": "monitoringdocumentsales_complete",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_complete.sql"
       },
       {
         "task_id": "monitoringdocumentsales_outstanding",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_outstanding.sql"
       },
       {
         "task_id": "MonitoringPKBAllocation",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/MonitoringPKBAllocation.sql"
       },
       {
         "task_id": "monitoringstockpameran",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringstockpameran.sql"
       },
       {
         "task_id": "monitoringalasanarod",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringalasanarod.sql"
       },
       {
         "task_id": "areadealer_pdrb",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Converted from pdrb.py - UNION of pdrb_yty_file, pdrb_qtq_file, pdrb_mtm_file",
         "tested": false
       },
       {
         "task_id": "areadealer_distributionsalesunit_unitsales",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Converted from distributionsalesunit_unitsales.py",
         "tested": false
       },
       {
         "task_id": "areadealer_distributionsalesunit_distribution",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Converted from distributionsalesunit_distribution.py",
         "tested": false
       },
       {
         "task_id": "areadealer_distributionsalesunit",
-        "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "type": "Transform BigQuery",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Converted from distributionsalesunit.py",
         "tested": false
       },
       {
         "task_id": "demand_pkbservice_sofactur",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "demand_pkbservice_sofactur.sql",
         "tested": false
       },
       {
         "task_id": "demand_pkbservice_temp1",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "Done",
+        "tool": "BigQuery SQL",
+        "catatan": "demand_pkbservice_temp1.sql",
         "tested": false
       },
       {
         "task_id": "demand_pkbservice_temp2",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "status": "Done",
+        "tool": "BigQuery SQL",
+        "catatan": "demand_pkbservice_temp2.sql",
         "tested": false
       },
       {
         "task_id": "demand_partsharecontribution",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "partsharecontribution.py not found locally; task commented out in DAG",
         "tested": false
       },
       {
         "task_id": "demand_mappingmaterial",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "demand_mappingmaterial.sql",
         "tested": false
       },
       {
         "task_id": "demand_pkbservice",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "pkbservice.py not found locally; task commented out in DAG",
         "tested": false
       },
       {
         "task_id": "leadtimeprospect_final",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1862,7 +1892,7 @@
       {
         "task_id": "leadtimeprospect_kuitansidp",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1870,7 +1900,7 @@
       {
         "task_id": "leadtimeprospect_leadtimesales",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1878,7 +1908,7 @@
       {
         "task_id": "leadtimeprospect_pelunasanunit",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1886,31 +1916,31 @@
       {
         "task_id": "leadtimesales",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "leadtimesales2",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "LeadtimeSalesHeader_fromSPK",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "LeadTimeServiceHeader_temp3",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -1918,8 +1948,8 @@
       {
         "task_id": "LeadtimeSalesHeader_fromSPK_delta",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -1950,18 +1980,20 @@
       {
         "task_id": "monitoringdocumentsales_2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
-        "tool": "BigQuery SQL",
+        "status": "Done",
+        "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_2.sql"
       },
       {
         "task_id": "monitoringdocumentsales_3",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
-        "tool": "BigQuery SQL",
+        "status": "Done",
+        "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_3.sql"
       },
       {
         "task_id": "demand_pkbservice_jobpart",
@@ -1974,26 +2006,29 @@
       {
         "task_id": "demand_pkbservice_opl",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Commented out in original dragon_pipeline.py"
       },
       {
         "task_id": "demand_pkbservice_pickinglist",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Commented out in original dragon_pipeline.py"
       },
       {
         "task_id": "demand_pkbservice_postogr",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Commented out in original dragon_pipeline.py"
       },
       {
         "task_id": "demand_pkbservice_final",
@@ -2006,42 +2041,47 @@
       {
         "task_id": "demand_sugorraw",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Commented out in original dragon_pipeline.py"
       },
       {
         "task_id": "demand_sugor_ahass_pss",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Commented out in original dragon_pipeline.py"
       },
       {
         "task_id": "LeadtimeServiceHeader",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
-        "tool": "BigQuery SQL",
+        "status": "Done",
+        "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/LeadTimeServiceHeader.sql (PySpark joins → BigQuery SQL with joinkey CTE)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp1",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
-        "tool": "BigQuery SQL",
+        "status": "Done",
+        "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/LeadTimeServiceHeader_temp1_script.sql (source: LeadTimeServiceHeader_temp0.py; creates temp0+temp1 tables; unix_timestamp→TIMESTAMP_DIFF)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp2",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
-        "tool": "BigQuery SQL",
+        "status": "Done",
+        "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/LeadTimeServiceHeader_temp2_script.sql (source: LeadTimeServiceHeader_temp1.py; creates temp2; CAST(DECIMAL)→NUMERIC)"
       },
       {
         "task_id": "SMW_* MSTR triggers (25 tasks)",
@@ -3892,9 +3932,10 @@
     "total_tasks": 236,
     "status_counts": {
       "SKIP": 7,
-      "Belum Convert": 206,
-      "Done": 22,
-      "NEED INPUT": 1
+      "Belum Convert": 190,
+      "Done": 38,
+      "NEED INPUT": 1,
+      "Skip": 0
     },
     "tasks": [
       {
@@ -5116,7 +5157,7 @@
       {
         "task_id": "integration_mb51",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5124,7 +5165,7 @@
       {
         "task_id": "integration_mmbe",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5140,7 +5181,7 @@
       {
         "task_id": "integration_ZPYGMME00049A",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5148,7 +5189,7 @@
       {
         "task_id": "integration_pcd_h3_upload_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5212,7 +5253,7 @@
       {
         "task_id": "integration_mappingposservice_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5220,7 +5261,7 @@
       {
         "task_id": "ProspectToSSU_Star",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5228,7 +5269,7 @@
       {
         "task_id": "demand_mappingmaterial",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5300,7 +5341,7 @@
       {
         "task_id": "monitoring_alasanarod",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5308,7 +5349,7 @@
       {
         "task_id": "monitoring_alasanarod_nontrade",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5316,7 +5357,7 @@
       {
         "task_id": "monitoringpkboutstanding",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5332,7 +5373,7 @@
       {
         "task_id": "integration_marketsharedata_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5340,7 +5381,7 @@
       {
         "task_id": "integration_marketsharedatatype_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5364,7 +5405,7 @@
       {
         "task_id": "integration_datareport_so_rem_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5380,7 +5421,7 @@
       {
         "task_id": "h1targetsegment",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5388,7 +5429,7 @@
       {
         "task_id": "h1targetring",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5396,7 +5437,7 @@
       {
         "task_id": "h1targetpaymenttype",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
@@ -5794,8 +5835,9 @@
     "total_tasks": 204,
     "status_counts": {
       "SKIP": 13,
-      "Belum Convert": 135,
-      "Done": 55,
+      "Belum Convert": 120,
+      "Done": 68,
+      "Skip": 2,
       "NEED INPUT": 1
     },
     "tasks": [
@@ -6426,18 +6468,20 @@
       {
         "task_id": "nms_DataRevenueDirect",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted PySpark SQL → BigQuery SQL. See bigquery/nms_datarevenuedirect.sql"
       },
       {
         "task_id": "nms_DataRevenueSummary",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted PySpark SQL → BigQuery SQL. See bigquery/nms_datarevenuesummary.sql"
       },
       {
         "task_id": "nms_tmp_mapping_datarevenue",
@@ -6482,10 +6526,11 @@
       {
         "task_id": "Salesinout_Transformation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/Salesinout_Transformation.sql (3 tables: partsharecontribution, targetsalesinout, transformation)"
       },
       {
         "task_id": "leadsfunnelcrmh1",
@@ -6538,10 +6583,11 @@
       {
         "task_id": "customerinvitation",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → converted_scripts/pipeline_31_so2w_dragon_2/bigquery/customerinvitation.sql"
       },
       {
         "task_id": "utilisasidragon",
@@ -6562,10 +6608,11 @@
       {
         "task_id": "servicedemandratio_sprall",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/servicedemandratio_sprall.sql (Python LEAD logic → BigQuery LEAD() window function)"
       },
       {
         "task_id": "spr_transformation",
@@ -6578,42 +6625,47 @@
       {
         "task_id": "csl_integration_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: csl_integration_table.sql"
       },
       {
         "task_id": "csl_datamart_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: csl_datamart_table.sql"
       },
       {
         "task_id": "DCSL_integration_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: dcsl_integration_table.sql"
       },
       {
         "task_id": "DCSL_datamart_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: dcsl_datamart_table.sql"
       },
       {
         "task_id": "targetCSL_datamart_Table",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: targetcsl_datamart_table.sql"
       },
       {
         "task_id": "monitoringAR_Table",
@@ -6682,10 +6734,11 @@
       {
         "task_id": "integration_hc3_actual_target_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: integration_hc3_actual_target_file.sql"
       },
       {
         "task_id": "hc3_customer",
@@ -6762,10 +6815,11 @@
       {
         "task_id": "integration_mappingso_target_file",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Disabled in original DAG (commented out). mappingso_target_rank.sql available at sources/framework/query/dragon_3/datamart_astrapay/"
       },
       {
         "task_id": "astrapay_transformation",
@@ -6826,10 +6880,11 @@
       {
         "task_id": "d360_log_datasets_distribution",
         "type": "Transform SQL (Hive)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Converted → bigquery/d360_log_datasets_distribution.sql (4 tables: crossjoin1/2/3 + datasets_distribution)"
       },
       {
         "task_id": "dgi_utilisasidgi",
@@ -6867,18 +6922,20 @@
       {
         "task_id": "impalasdue",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "BigQuery SQL converted. File: impalasdue.sql"
       },
       {
         "task_id": "convertersdue",
         "type": "Transform SQL (Impala)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "BigQuery SQL",
         "catatan": "",
-        "tested": false
+        "tested": false,
+        "notes": "Disabled in original DAG (commented out). Uses Airflow Variable command_converter_sdue → SDUE CSV→XML converter (not SQL)"
       },
       {
         "task_id": "report_sdue",
