@@ -49,9 +49,9 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting source data ingestion (opr_ast_so2w_wh_dl, opr_ast_so2w_wh_di). PBI refresh strategy needed.",
-    "notes": "DAG + 3 SQL files converted (astrapay_file_rank, mappingso_target_rank, astrapay_transformation). pbi_astrapay task still DummyOperator pending decision.",
-    "last_updated": "2026-04-20"
+    "blocker": "Awaiting source data ingestion (opr_ast_so2w_wh_dl, opr_ast_so2w_wh_di).",
+    "notes": "DAG + 3 SQL files converted. pbi_astrapay Cloud Run config ready (pbi_datasets_astrapay.json). Pending source data landing.",
+    "last_updated": "2026-04-25"
   },
   "dragon_customerpersona_segmentation": {
     "status": "blocked",
@@ -202,9 +202,9 @@
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "PBI refresh strategy not yet decided. All tasks still DummyOperator.",
-    "notes": "Awaiting decision on Power BI refresh implementation in GCP.",
-    "last_updated": "2026-04-20"
+    "blocker": "DAG tasks still DummyOperator — needs PBI_WORKSPACE_ID/DATASET_ID config per task to activate CloudRunExecuteJobOperator.",
+    "notes": "Cloud Run Job pbi_refresh.py converted (with status polling). Config template in pipeline_18_trigger_pbi_refresh/cloudrun/. DAG task activation pending workspace/dataset ID mapping for DRA_PBI_2025_00001..00018.",
+    "last_updated": "2026-04-25"
   },
   "dragon_ustk2": {
     "status": "ready",
@@ -221,8 +221,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Large stub DAG (~236 tasks). SAP RPA/Astranet/RFC ingest strategy needed.",
-    "notes": "DAG converted. 22 SQL tasks converted. Remaining SAP/RPA ingest + PySpark strategy still pending.",
-    "last_updated": "2026-04-22"
+    "notes": "DAG converted. 22 SQL tasks + 43 PBI Cloud Run refresh scripts converted. SAP/RFC/Astranet ingest still pending.",
+    "last_updated": "2026-04-25"
   },
   "so2w_dragon_2": {
     "status": "pending",
@@ -230,8 +230,8 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "Large stub DAG (~204 tasks). NMS ingest/LeadsFunnelCRMH1 strategy needed.",
-    "notes": "DAG converted. 54 SQL tasks converted. Remaining Impala/NMS strategy still pending.",
-    "last_updated": "2026-04-22"
+    "notes": "DAG converted. 54 SQL tasks + 53 PBI Cloud Run refresh scripts converted. engine_trigger_file.py deprecated (Cloudera HDFS engine). Impala/NMS still pending.",
+    "last_updated": "2026-04-25"
   },
   "so2w_dragon_sdue_fabric": {
     "status": "pending",
@@ -239,8 +239,8 @@
     "sql_converted": true,
     "tested": false,
     "blocker": "Fabric workspace ID for SDUE_PortalAHM not yet provided. report_sdue_portalahm task pending.",
-    "notes": "21/22 dbt SQL files converted (Report_SDUE, Report_SDUE_2023, all views). report_sdue_portalahm still blocked on Fabric workspace ID.",
-    "last_updated": "2026-04-22"
+    "notes": "21/22 dbt SQL files converted. ReportSDUE2023.py Cloud Run PBI config added (pbi_datasets_sdue_fabric.json). report_sdue_portalahm still blocked on Fabric workspace ID.",
+    "last_updated": "2026-04-25"
   },
   "so2w_smartstock": {
     "status": "ready",
