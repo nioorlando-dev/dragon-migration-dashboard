@@ -5834,8 +5834,8 @@
     "total_tasks": 204,
     "status_counts": {
       "SKIP": 13,
-      "Belum Convert": 81,
-      "Done": 107,
+      "Belum Convert": 61,
+      "Done": 127,
       "Skip": 2,
       "NEED INPUT": 1
     },
@@ -5907,39 +5907,39 @@
       {
         "task_id": "check_pss2who_pdi",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_pss2who_headerdgi",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_pss2who_detaildgibranch",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_ManagementSimpliFy_Branch",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "CustomerProfileService_Star",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -5963,32 +5963,32 @@
       {
         "task_id": "pkbservice_final_Delta",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "pkbservice_delta_weekly",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "LeadsFunnelCRMH1_Star",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "leadsfunnelcrmh1_delta",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -6067,8 +6067,8 @@
       {
         "task_id": "trigger_jobds_3AxisLeadsMonitoring",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (Trigger)",
         "catatan": "",
         "tested": false
       },
@@ -6195,24 +6195,24 @@
       {
         "task_id": "dataset_number_workdays",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "dataset_psf_spr",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "dataset_target_spr",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -6227,7 +6227,7 @@
       {
         "task_id": "integration_digitalassets_actual_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6235,7 +6235,7 @@
       {
         "task_id": "integration_promotion_eventlive_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6243,7 +6243,7 @@
       {
         "task_id": "integration_promotion_pameran_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6251,7 +6251,7 @@
       {
         "task_id": "integration_promotion_roadshow_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6259,7 +6259,7 @@
       {
         "task_id": "integration_promotion_showroom_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6267,7 +6267,7 @@
       {
         "task_id": "integration_promotion_target_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -6299,7 +6299,7 @@
       {
         "task_id": "simparts",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
