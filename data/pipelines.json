@@ -7,7 +7,9 @@
     "status_counts": {
       "done": 33,
       "belum": 228,
-      "need_input": 0
+      "need_input": 0,
+      "Done": 20,
+      "Belum Convert": 122
     },
     "tasks": [
       {
@@ -2094,7 +2096,7 @@
       {
         "task_id": "PBI_CustomerProfileLeasing_64612283_73c4_4f21_9dc9_9d8e88d83439",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2102,7 +2104,7 @@
       {
         "task_id": "PBI_CustomerProfileLeasingSummary_656e6e8a_20ae_4315_8929_1039e7aba683",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2110,7 +2112,7 @@
       {
         "task_id": "PBI_LeadTimeSalesHeader_FromProspect_64e3f787_bec6_46a4_800b_c6f2396d6141",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2118,7 +2120,7 @@
       {
         "task_id": "PBI_MasterSalesPerson_3c27b747_9ab9_4c18_8789_0363edf60cf6",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2126,7 +2128,7 @@
       {
         "task_id": "PBI_MonitoringAlasanArod_NonTrade_7cf1988d_61bd_4a75_a919_d9c0e15711ac",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2134,7 +2136,7 @@
       {
         "task_id": "PBI_MonitoringBillingARNonTrade_Complete_a5bc3bb9_f00c_48ae_a637_27e7ffd43268",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2142,7 +2144,7 @@
       {
         "task_id": "PBI_MonitoringBillingARNonTrade_Outstanding_784de18a_08ce_4549_86ca_ec8a39f72c79",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2150,7 +2152,7 @@
       {
         "task_id": "PBI_MonitoringBillingService_Complete_6d65130f_ea1f_46ec_abe9_b68b9857c74a",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2158,7 +2160,7 @@
       {
         "task_id": "PBI_MonitoringBillingService_Outstanding_79c7b427_8a96_4b1d_a47f_6ff3ea8c281d",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2166,7 +2168,7 @@
       {
         "task_id": "PBI_MonitoringBillingSparepart_Outstanding_5beeb331_b646_4d34_a0ac_42943e668152",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2174,7 +2176,7 @@
       {
         "task_id": "PBI_MonitoringBillingSales_Complete_2b3f11a8_f07b_48bb_987f_1cc2a15dcf89",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2182,7 +2184,7 @@
       {
         "task_id": "PBI_MonitoringBillingUnit_Outstanding_153d7b59_70a6_408e_90e1_fc1ca170b62e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2190,7 +2192,7 @@
       {
         "task_id": "PBI_MonitoringBKU_4a505875_b7e2_485c_8354_8208bc905e4c",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2198,7 +2200,7 @@
       {
         "task_id": "PBI_MonitoringDataSCP_03faa210_cd1e_4f51_a430_15cd49a0f0db",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2206,7 +2208,7 @@
       {
         "task_id": "PBI_MonitoringSparePart_Complete_dcf998b5_6f63_4d33_9048_468a2438b2d2",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2214,7 +2216,7 @@
       {
         "task_id": "PBI_MonitoringDocumentSales_Complete_df274b34_e405_4691_bbcc_d013de951518",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2222,7 +2224,7 @@
       {
         "task_id": "PBI_MonitoringDocumentSales_Outstanding_c93f01a8_2462_4794_b6d5_e390c1ccf511",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2230,7 +2232,7 @@
       {
         "task_id": "PBI_MonitoringSPK_Outstanding_9e2cbbed_71d5_4faf_bc36_12eb60728142",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2238,7 +2240,7 @@
       {
         "task_id": "PBI_MonitoringStockPameranPos_4b90bc87_ed4a_4379_908b_d4ae8268a91d",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -2246,7 +2248,7 @@
       {
         "task_id": "PBI_MonitoringStockPameranPos_Outstanding_ab88a25c_00d7_47b0_a8bb_2c130b3e2587",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -4016,8 +4018,7 @@
     "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
-      "Done": 1,
-      "Belum Convert": 1
+      "Done": 2
     },
     "tasks": [
       {
@@ -4040,7 +4041,7 @@
       {
         "task_id": "[Multiple PBI trigger tasks]",
         "type": "Refresh Dataset",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Python PBI trigger per dataset (DRA_PBI_2025_00001 s/d ~00010) → Cloud Run Job",
         "tested": false
@@ -4132,8 +4133,8 @@
     "total_tasks": 236,
     "status_counts": {
       "SKIP": 7,
-      "Done": 77,
-      "Belum Convert": 151,
+      "Done": 119,
+      "Belum Convert": 109,
       "NEED INPUT": 1
     },
     "tasks": [
@@ -5668,7 +5669,7 @@
       {
         "task_id": "PBI_CustomerProfileSales_H1toH2_924f4a50_4474_4a86_8527_87f8f066e968",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5676,7 +5677,7 @@
       {
         "task_id": "PBI_CustomerProfileSales_Summary_da613130_9a38_4522_aa14_30cbe1a1af63",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5684,7 +5685,7 @@
       {
         "task_id": "PBI_MarketShareData_7b8970dc_6486_48e9_a8b2_8ff321bd2db2",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5692,7 +5693,7 @@
       {
         "task_id": "PBI_MarketShareData_MTD_c08f4ec0_47b3_4d1d_899c_dff8e14afeb9",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5700,7 +5701,7 @@
       {
         "task_id": "PBI_MarketShareData_YTD_665f0a67_e00b_4830_af23_c1bbdae47c92",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5708,7 +5709,7 @@
       {
         "task_id": "PBI_LeadTimeSparePart_fd1b225f_f71a_40d3_a756_9f91769913de",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5716,7 +5717,7 @@
       {
         "task_id": "PBI_PartShareContribution_e2f5b5ae_1ba6_4a05_a7bb_ff0c14442e0b",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5724,7 +5725,7 @@
       {
         "task_id": "PBI_LeadsCustomer_Lemon_7d2fca31_8607_4318_a518_c5435210d1a1",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5732,7 +5733,7 @@
       {
         "task_id": "PBI_LeadsCustomer_MotorkuX_7d2fca31_8607_4318_a518_c5435210d1a1",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5740,7 +5741,7 @@
       {
         "task_id": "PBI_MonitoringIncentive_TL_OL_5c06696e_3bab_47a5_9919_bfb9f7f659ef",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5748,7 +5749,7 @@
       {
         "task_id": "PBI_LeadsCustomer_SocialMedia_d3425490_7ece_440e_966c_52773545e2a6",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5756,7 +5757,7 @@
       {
         "task_id": "PBI_HargaKomoditas_84249013_f757_4992_91e0_3dadb93ad4e8",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5764,7 +5765,7 @@
       {
         "task_id": "PBI_PartsServiceRate_PO_SupplySalesOut_2e3e41e0_5507_44d6_b1c6_e58bfbcb7a58",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5772,7 +5773,7 @@
       {
         "task_id": "PBI_AnalisaEfektifitas_SO_REM_e58fc322_3c1d_4099_87b4_10a65eff386e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5780,7 +5781,7 @@
       {
         "task_id": "PBI_AreaDealer_PDRB_1a2e045e_43d3_4714_9a84_35716f43ecb3",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5788,7 +5789,7 @@
       {
         "task_id": "PBI_AreaDealer_PDRB_74972622_023c_4fc2_9a08_f343bddc0651",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5796,7 +5797,7 @@
       {
         "task_id": "PBI_AreaDealer_DistributionSalesUnit_bc96ab47_bc59_407b_91a6_16937d41b023",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5804,7 +5805,7 @@
       {
         "task_id": "PBI_Summary_UnitSales_2d54eadb_b524_49b3_8263_cecbe08f02ab",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5812,7 +5813,7 @@
       {
         "task_id": "PBI_ReportMarketing_GC_PDRB_eb06f31f_0f25_47ce_8207_b5ed6922aa8b",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5820,7 +5821,7 @@
       {
         "task_id": "PBI_SummarySalesActivity_0335d2d6_87b7_4376_a69d_d2837089695c",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5828,7 +5829,7 @@
       {
         "task_id": "PBI_MonitoringPKB_Outstanding_533b8106_45f1_4643_987a_a4524a4e1ea0",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5836,7 +5837,7 @@
       {
         "task_id": "PBI_LeadsCustomer_VirtualExhibition_d4d66329_2376_4ac4_a21c_ac919a5b8896",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5844,7 +5845,7 @@
       {
         "task_id": "PBI_LeadsCustomer_Amanda_File_37128dc4_8a5f_4978_81cd_d77f7336185f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5852,7 +5853,7 @@
       {
         "task_id": "PBI_AsmoID_H1_22b63658_5d60_4425_b79e_d63bbfaed764",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5860,7 +5861,7 @@
       {
         "task_id": "PBI_CustomerProfile_RO_290fd33f_9bf2_488f_8ca0_483cdc81273f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5868,7 +5869,7 @@
       {
         "task_id": "PBI_PSS2W_Croselling_CrosellingOwnDealer_21d1c1cd_f8a3_4905_beaa_1c7fb2964a87",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5876,7 +5877,7 @@
       {
         "task_id": "PBI_MonitoringKuitansi_1af30a39_dc19_46cc_b140_0be2a73cff6e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5884,7 +5885,7 @@
       {
         "task_id": "PBI_MonitoringPenerimaanKuitansi_f0962a3c_6f03_461a_af34_b5a1a562956e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5892,7 +5893,7 @@
       {
         "task_id": "PBI_MonitoringAlasanAROD_f410fc67_e2f1_40c9_b673_4b515f4c1275",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5900,7 +5901,7 @@
       {
         "task_id": "PBI_MonitoringActicityGC_08267b9d_d7d2_407b_a1d4_8a8c634f887d",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5908,7 +5909,7 @@
       {
         "task_id": "PBI_ProspecttoSSUSummary_92952107_ac96_4068_9297_9330d2fce835",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5916,7 +5917,7 @@
       {
         "task_id": "PBI_Monitoring_Incentive_SF_2e26ac1d_7047_4434_befb_81639ee0ac3b",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5924,7 +5925,7 @@
       {
         "task_id": "PBI_Summary_UnitSales_2f834b4b_f007_4ef8_b31c_c396c68d01f2",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5932,7 +5933,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Sales_e22a8edd_4070_4047_9f2c_0f71bd35f4a3",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5940,7 +5941,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Target_Segment_6d8f6119_946c_4468_8d3b_e931adfe0e7c",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5948,7 +5949,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Target_Ring_56a7246a_7b86_4e34_9c92_40a2bc49b979",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5956,7 +5957,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Target_Payment_Type_23f3b658_f94c_4662_b987_689a56b2aca3",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5964,7 +5965,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Target_Dealer_05207a25_1bc3_4419_8750_530d46912135",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5972,7 +5973,7 @@
       {
         "task_id": "PBI_Dealer_360_H1_Leasing_Summary_b6ae4ce1_f430_489e_9a8d_3950dfbff72a",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5980,7 +5981,7 @@
       {
         "task_id": "PBI_Dealer_360_PCD_H1_Sales_be871e1e_d7c4_452a_8669_9a14477d064f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5988,7 +5989,7 @@
       {
         "task_id": "PBI_Dealer_360_PCD_Productivity_ActualandTarget_Transformation_d095d3a8_eaf6_4882_a836_bc0d79ced4ea",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -5996,7 +5997,7 @@
       {
         "task_id": "PBI_TSDandOperation_CustomerProfileSales_FY_2019_a5da6727_4738_4c33_a19d_4ddb5c619db3",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -6034,10 +6035,10 @@
     "total_tasks": 204,
     "status_counts": {
       "SKIP": 13,
-      "Done": 135,
+      "Done": 186,
       "Skip": 2,
       "NEED INPUT": 1,
-      "Belum Convert": 53
+      "Belum Convert": 2
     },
     "tasks": [
       {
@@ -7267,7 +7268,7 @@
       {
         "task_id": "PBI_DUS_Assist_H2_a9af74a6_9ed2_47f8_bbda_864002ecc415",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7275,7 +7276,7 @@
       {
         "task_id": "PBI_DataMekanik_341345c9_9124_4e89_aca9_c9199b1e98a4",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7283,7 +7284,7 @@
       {
         "task_id": "PBI_StockLevelSummary_a4e02ec3_3f60_4970_93c7_f39a3cb17ece",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7291,7 +7292,7 @@
       {
         "task_id": "PBI_DealerGeneralData_d3cd273e_1cf8_4350_a791_f23787d268e2",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7299,7 +7300,7 @@
       {
         "task_id": "PBI_UnitEntryH23_Header1_b92e918e_15a2_41c9_9474_87e54e680d5b",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7307,7 +7308,7 @@
       {
         "task_id": "PBI_Assist_H1_27b1e142_0760_44db_bf99_f288c4d671ee",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7315,7 +7316,7 @@
       {
         "task_id": "PBI_PartConsumption_Summary_67dc9e3f_042a_4b7d_b16a_ae341be71b45",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7323,7 +7324,7 @@
       {
         "task_id": "PBI_DataRevenue_Summary_d331a96b_bf2d_488d_bf2f_da41bf66c121",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7331,7 +7332,7 @@
       {
         "task_id": "PBI_DataTOJ11_991f5163_2017_4389_9edc_e8173926dab4",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7339,7 +7340,7 @@
       {
         "task_id": "PBI_DataHotline_Summary_e0b95ccd_de3c_49ed_a603_8bd4956f869a",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7347,7 +7348,7 @@
       {
         "task_id": "PBI_UtilisasiAvocado_00348d4a_889c_4c58_98c7_b890183b4079",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7355,7 +7356,7 @@
       {
         "task_id": "PBI_UtilisasiDragon_74ed01f9_6cbd_4075_b82e_b26b16323040",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7363,7 +7364,7 @@
       {
         "task_id": "PBI_OliDanPartByPKBService_f69373c6_31be_4ce3_a224_f941f8d037c9",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7371,7 +7372,7 @@
       {
         "task_id": "PBI_MotorkuXdanKPBDigital_78c71d2c_517e_4ff9_95ca_bd8fc66e1de6",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7379,7 +7380,7 @@
       {
         "task_id": "PBI_TrendSaldo_9a4247b7_d5b4_4ff7_81cd_8e6132458eb9",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7387,7 +7388,7 @@
       {
         "task_id": "PBI_DMS_Performance_785bfa6b_188e_4f5e_a140_85a0c7c158a9",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7395,7 +7396,7 @@
       {
         "task_id": "PBI_DMS_PerformanceDetail_8c30ace9_ba70_4c82_ac37_27253df59733",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7403,7 +7404,7 @@
       {
         "task_id": "PBI_Report_SPR_020d9a96_ba09_4240_be46_47b9199166d7",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7411,7 +7412,7 @@
       {
         "task_id": "PBI_CustomerInvitation_f274dc7f_0aa1_4d9c_914e_fc52e899cc4e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7419,7 +7420,7 @@
       {
         "task_id": "PBI_LeadsFunnelCRMH1_Summary_0f17acc1_45ce_4d75_b692_d1d6531fe0b5",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7427,7 +7428,7 @@
       {
         "task_id": "PBI_D360_HC3_Customer_Relations_b48a24e3_2441_4770_839a_4f80367536a7",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7435,7 +7436,7 @@
       {
         "task_id": "PBI_D360_HC3_Leads_Funnel_501e0bd1_8c91_446b_8f43_3645c76579eb",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7443,7 +7444,7 @@
       {
         "task_id": "PBI_Demand_PartContribution_Summary_8c43c4d7_cd59_46ad_bc25_62abed7e3128",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7451,7 +7452,7 @@
       {
         "task_id": "PBI_PartShare_69a79db9_33f2_457e_872f_93600dea8295",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7459,7 +7460,7 @@
       {
         "task_id": "PBI_ServiceRate_e7a14409_0cf4_4b42_8ae6_a850a4c9cd52",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7467,7 +7468,7 @@
       {
         "task_id": "PBI_Integrated_CSDev_204ee5e8_6f11_4689_9cdc_9a4061787adf",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7475,7 +7476,7 @@
       {
         "task_id": "PBI_Utilisasi_Portal_Pasti_0452ec44_de2b_422e_bd29_e966ec82e312",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7483,7 +7484,7 @@
       {
         "task_id": "PBI_Leads3Axis_Overview_0f518e48_c560_4d6f_9353_6280548a594a",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7491,7 +7492,7 @@
       {
         "task_id": "PBI_Dealer_360_H2_Unit_Entry_Transformation_4c5d05fe_e6d8_4bbe_a037_83ca91a3eafe",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7499,7 +7500,7 @@
       {
         "task_id": "PBI_Dealer_360_H2_Data_Revenue_Transformation_e9eca6bd_2ded_4930_bec3_75a385f43571",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7507,7 +7508,7 @@
       {
         "task_id": "PBI_Dealer_360_H2_Data_Pit_Transformation_2ddaf63c_7d1f_4538_9e8a_b001badd6128",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7515,7 +7516,7 @@
       {
         "task_id": "PBI_Dealer_360_H2_Data_Mekanik_Transformation_fbe67c31_662c_4633_aeea_2de13c791dca",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7523,7 +7524,7 @@
       {
         "task_id": "PBI_Komposisi_Unit_Entry_SO_Dealer_9893724c_cf06_4bf2_9c13_766289302b0f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7531,7 +7532,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_Indent_Fulfillment_425af6b3_a27d_4ba2_9fa2_e7dae4a223e6",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7539,7 +7540,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_NRFS_Defect_4b500113_31b6_45fb_99ff_63fc2bf7b337",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7547,7 +7548,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_Distribution_by_Series_Summary_1f091614_9cef_4e58_8d4a_8043884862e7",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7555,7 +7556,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_GR_GI_Receive_by_Customer_8b88c541_6faf_4ab6_8cb7_11057dec360e",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7563,7 +7564,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_Kapasitas_Gudang_0696a74b_57f3_4648_955d_1c475f48bbf9",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7571,7 +7572,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_Logistic_Dealer_d4d7ab07_0cc4_4b81_b8cf_9e44332a302f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7579,7 +7580,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_NOS_Dealer_69db5004_a114_4644_a82d_59a81c30141c",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7587,7 +7588,7 @@
       {
         "task_id": "PBI_Dealer_360_Logistic_Stock_Level_by_Series_Summary_f6b753bd_b17c_426b_bc93_777f66673c3d",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7595,7 +7596,7 @@
       {
         "task_id": "PBI_Dealer_360_Promotion_Marketing_360_PointofView_0964ffb1_d4f3_497b_944c_bff906b8fd0c",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7603,7 +7604,7 @@
       {
         "task_id": "PBI_UtilisasiDGI_4edb240b_eeeb_48ae_b234_a4400112737f",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7611,7 +7612,7 @@
       {
         "task_id": "PBI_Astrapay_878ed35c_4319_4508_8a15_9151bf81ae6b",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7619,7 +7620,7 @@
       {
         "task_id": "PBI_Demand_PartContribution_SalesAbility_ba13cb2e_80af_49db_bd68_deddab42e20d",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7627,7 +7628,7 @@
       {
         "task_id": "PBI_PerformaAmic_ae30b362_826c_4de0_8df5_4deddb2e0919",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7635,7 +7636,7 @@
       {
         "task_id": "PBI_ReportSDUE2023_9f8fa08f_5f58_400f_ac24_121048635d31",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7643,7 +7644,7 @@
       {
         "task_id": "PBI_pkbservicefinal_55d19328_2895_4f82_92a0_a78fae785f40",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7651,7 +7652,7 @@
       {
         "task_id": "PBI_partstock_transformation_63d2d91d_8a12_4307_8e24_0d7146a315d0",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7659,7 +7660,7 @@
       {
         "task_id": "PBI_peoplemanagement_transformation_523a3c37_42e7_440e_9cf0_b310c08c6072",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
@@ -7667,7 +7668,7 @@
       {
         "task_id": "PBI_SalesInSalesOut_Transformation_135ea381_78f5_4b05_9e00_381d50c923bd",
         "type": "Report PBI Refresh",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job (PBI Refresh)",
         "catatan": "",
         "tested": false
