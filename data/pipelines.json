@@ -3932,8 +3932,8 @@
     "total_tasks": 236,
     "status_counts": {
       "SKIP": 7,
-      "Belum Convert": 155,
-      "Done": 73,
+      "Done": 77,
+      "Belum Convert": 151,
       "NEED INPUT": 1
     },
     "tasks": [
@@ -3980,7 +3980,7 @@
       {
         "task_id": "ExternalTaskSensor (21 tasks)",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (As-Is)",
         "catatan": "Grouped 21 sensor tasks. Tetap di Cloud Composer.",
         "tested": false
@@ -4364,8 +4364,8 @@
       {
         "task_id": "delay_astrapay",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "Cloud Composer (TimeSensor)",
         "catatan": "",
         "tested": false
       },
@@ -4772,16 +4772,16 @@
       {
         "task_id": "integration_zpygf_ar_aging_unitsummary",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "integration_zpygba_o00001",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
