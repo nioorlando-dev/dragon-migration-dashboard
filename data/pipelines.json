@@ -2260,7 +2260,7 @@
     "total_tasks": 5,
     "status_counts": {
       "SKIP": 2,
-      "Belum Convert": 3
+      "Skip": 3
     },
     "tasks": [
       {
@@ -2274,25 +2274,25 @@
       {
         "task_id": "[L1_MOTORKUX_ARBORVITAE.*]",
         "type": "Trigger Fabric Job (Python)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint [L1: deferred - incremental load, not in current migration scope]",
         "tested": false
       },
       {
         "task_id": "[L1_FILE_ASTRANET.*]",
         "type": "Trigger Fabric Job (Python)",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint [L1: deferred - incremental load, not in current migration scope]",
         "tested": false
       },
       {
         "task_id": "[L1_SAP.*]",
         "type": "Extract/SAP RFC",
-        "status": "Belum Convert",
+        "status": "Skip",
         "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC ingest ke GCP",
+        "catatan": "NEED INPUT: SAP RFC ingest ke GCP [L1: deferred - incremental load, not in current migration scope]",
         "tested": false
       },
       {
