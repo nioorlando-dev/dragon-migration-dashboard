@@ -824,7 +824,8 @@ function pipeRow(name) {
   // Exclude SKIP tasks (start/finish DummyOperators) from totals
   const allTasks = p.tasks || [];
   const countableTasks = allTasks.filter(t => !/^skip$/i.test((t.status || '').trim()));
-  const total = countableTasks.length || (p.total_tasks ?? 0);
+  // If tasks array exists, trust it (even if all-Skip → 0). Fallback to total_tasks only when no tasks array.
+  const total = allTasks.length > 0 ? countableTasks.length : (p.total_tasks ?? 0);
 
   // Converted: sum of "Done" from countable tasks
   let converted = countableTasks.filter(t => /^done$/i.test((t.status || '').trim())).length;
@@ -1725,7 +1726,7 @@ function renderScripts(root) {
 
   root.innerHTML = `
     <h1 class="page-title">Task Inventory</h1>
-    <p class="page-sub">Semua tasks dari 28 pipeline — status konversi, GCP tool, dan catatan per task.</p>
+    <p class="page-sub">Semua tasks dari ${Object.keys(pipes).length} pipeline — status konversi, GCP tool, dan catatan per task.</p>
     <div class="inv-summary">
       <div class="inv-stat"><div class="iv">${totalTasks}</div><div class="il">Total Tasks (excl. Skip)</div></div>
       <div class="inv-stat"><div class="iv" style="color:var(--green)">${cntDone}</div><div class="il">Done</div></div>
