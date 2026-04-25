@@ -10,12 +10,12 @@
   },
   "dragon_L1": {
     "status": "pending",
-    "dag_converted": true,
+    "dag_converted": false,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Requires Spark ingest strategy for Astranet file landing.",
-    "notes": "12 Fabric tasks + file landing. Input needed.",
-    "last_updated": "2026-04-20"
+    "blocker": "Deferred — incremental load tasks. L1_MOTORKUX_ARBORVITAE, L1_FILE_ASTRANET handled via Cloud Run (Fabric trigger). L1_SAP needs SAP RFC connector.",
+    "notes": "All 3 task groups marked Skip. Will be handled as incremental load separately. See docs/l1_tasks_deferred.md.",
+    "last_updated": "2026-04-25"
   },
   "dragon_L2": {
     "status": "ready",
