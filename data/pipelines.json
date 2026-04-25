@@ -3932,8 +3932,8 @@
     "total_tasks": 236,
     "status_counts": {
       "SKIP": 7,
-      "Belum Convert": 164,
-      "Done": 64,
+      "Belum Convert": 158,
+      "Done": 70,
       "NEED INPUT": 1
     },
     "tasks": [
@@ -4540,7 +4540,7 @@
       {
         "task_id": "astranet_marketsharedata_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -4548,7 +4548,7 @@
       {
         "task_id": "astranet_marketsharedatatype_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -4628,8 +4628,8 @@
       {
         "task_id": "astranet_spkexclude_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -4764,7 +4764,7 @@
       {
         "task_id": "sap_ZPYGMME00049A",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false
@@ -4788,8 +4788,8 @@
       {
         "task_id": "integration_qtrust_vehicle_history",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -4892,8 +4892,8 @@
       {
         "task_id": "integration_sap_zpygsdq00094",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -5834,10 +5834,10 @@
     "total_tasks": 204,
     "status_counts": {
       "SKIP": 13,
-      "Belum Convert": 61,
-      "Done": 127,
+      "Done": 135,
       "Skip": 2,
-      "NEED INPUT": 1
+      "NEED INPUT": 1,
+      "Belum Convert": 53
     },
     "tasks": [
       {
@@ -5899,7 +5899,7 @@
       {
         "task_id": "ExternalTaskSensor (89 tasks)",
         "type": "Sensor/External",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Composer (As-Is)",
         "catatan": "Grouped 89 sensor tasks. Tetap di Cloud Composer.",
         "tested": false
@@ -7003,56 +7003,56 @@
       {
         "task_id": "check_portalhso_dealer_territory_result",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_portalhso_work_day",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_portalhso_purchase_order",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_portalhso_purchase_order_detail",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_avocado_city",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_avocado_Company",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
       {
         "task_id": "check_avocado_Education",
         "type": "Sensor/Check (SSH)",
-        "status": "Belum Convert",
-        "tool": "Cloud Composer (Sensor)",
+        "status": "Done",
+        "tool": "Cloud Composer (ExternalTaskSensor)",
         "catatan": "",
         "tested": false
       },
