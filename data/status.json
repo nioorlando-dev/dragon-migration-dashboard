@@ -45,13 +45,13 @@
     "last_updated": "2026-04-22"
   },
   "dragon_astrapay": {
-    "status": "dag_done",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting source data ingestion (opr_ast_so2w_wh_dl, opr_ast_so2w_wh_di).",
-    "notes": "DAG + 3 SQL files converted. pbi_astrapay Cloud Run config ready (pbi_datasets_astrapay.json). Pending source data landing.",
-    "last_updated": "2026-04-25"
+    "blocker": "",
+    "notes": "DAG + SQL + PBI Cloud Run config selesai. 6 tasks Done. Ready to deploy setelah source data landing (opr_ast_so2w_wh_dl/di) tersedia.",
+    "last_updated": "2026-04-26"
   },
   "dragon_customerpersona_segmentation": {
     "status": "blocked",
@@ -63,31 +63,31 @@
     "last_updated": "2026-04-20"
   },
   "dragon_customerprofilesales": {
-    "status": "dag_done",
+    "status": "ready",
     "dag_converted": true,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
     "blocker": "",
-    "notes": "DAG converted. 5 PySpark scripts converted from TFS vctd-daas (L3/CustomerProfileSales/). Ready to deploy.",
-    "last_updated": "2026-04-22"
+    "notes": "DAG + 5 PySpark scripts converted (CustomerProfileSales/). Semua 8 tasks Done. Ready to deploy.",
+    "last_updated": "2026-04-26"
   },
   "dragon_data_mekanik": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted. Fabric ID datamekanik configured. Ready to deploy.",
-    "last_updated": "2026-04-20"
+    "blocker": "1 task Fabric trigger belum bisa diconvert — menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner.",
+    "notes": "DAG converted. Fabric ID datamekanik ada tapi perlu konfirmasi FABRIC_ENTRY config name sebelum task bisa diaktifkan.",
+    "last_updated": "2026-04-26"
   },
   "dragon_datamekanik": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Confirm with owner: possible duplicate of dragon_data_mekanik.",
-    "notes": "Same Fabric entry as pipeline 11. Confirm before deploying both.",
-    "last_updated": "2026-04-20"
+    "blocker": "Possible duplicate dari dragon_data_mekanik — perlu konfirmasi dengan data owner apakah pipeline ini perlu di-deploy atau di-drop.",
+    "notes": "DAG di so2w_dragon_datamekanik.py kemungkinan duplikat dari dragon_data_mekanik. Konfirmasi sebelum deploy.",
+    "last_updated": "2026-04-26"
   },
   "dragon_datarevenue": {
     "status": "ready",
@@ -99,13 +99,13 @@
     "last_updated": "2026-04-22"
   },
   "dragon_leads_funnel_management": {
-    "status": "dag_done",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Awaiting source data ingestion to BigQuery (opr_ast_so2w_wh_dm).",
-    "notes": "DAG + 5 SQL files converted. Ready for deployment to Cloud Composer.",
-    "last_updated": "2026-04-20"
+    "blocker": "",
+    "notes": "DAG + 5 SQL files converted. Semua 9 tasks Done. Blocker source data sebelumnya sudah resolved. Ready to deploy.",
+    "last_updated": "2026-04-26"
   },
   "dragon_leadtimesalesheader_fromspk": {
     "status": "ready",
@@ -153,13 +153,13 @@
     "last_updated": "2026-04-20"
   },
   "dragon_motorkux": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted. 9 PySpark scripts converted from TFS vctd-daas (L4/CDBXMotorkux/). Ready to deploy.",
-    "last_updated": "2026-04-22"
+    "blocker": "1 task customerprofileservice_synapse masih unresolved — push ke Synapse tidak relevan post-migrasi BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+    "notes": "DAG + 9 PySpark scripts converted. 8/9 tasks Done. 1 task Synapse menunggu keputusan arsitektur.",
+    "last_updated": "2026-04-26"
   },
   "dragon_niguri_partstock": {
     "status": "ready",
@@ -243,13 +243,13 @@
     "last_updated": "2026-04-25"
   },
   "so2w_smartstock": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted. 5 PySpark scripts converted dari TFS vctd-daas (L2+L3/SmartStock/). Ready to deploy.",
-    "last_updated": "2026-04-20"
+    "blocker": "4 tasks Belum: 2 sensor SAP (blocked karena SAP RFC connector GCP belum ada) + 2 Fabric trigger (menunggu workspace ID SmartStock).",
+    "notes": "DAG + 5 PySpark scripts converted. 5/9 tasks Done. SAP sensors dan Fabric triggers masih blocked sampai infrastruktur tersedia.",
+    "last_updated": "2026-04-26"
   },
   "dragon_prospecttossu": {
     "status": "ready",
@@ -261,13 +261,13 @@
     "last_updated": "2026-04-22"
   },
   "dragon_ro_leads": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Confirm FABRIC_ENTRY and config name with data owner.",
-    "notes": "DAG converted. Quarterly schedule. 1 Fabric trigger task.",
-    "last_updated": "2026-04-22"
+    "blocker": "1 task Fabric trigger menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner RO Leads.",
+    "notes": "DAG converted. Schedule quarterly. 1 Fabric trigger task pending input data owner.",
+    "last_updated": "2026-04-26"
   },
   "dragoncloudera_synapse": {
     "status": "pending",

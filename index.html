@@ -233,7 +233,7 @@
   }
 
   /* ---------- Status breakdown ---------- */
-  .status-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .status-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
   .status-cell {
     padding: 16px 18px; display: flex; align-items: center; gap: 14px;
   }
@@ -360,6 +360,8 @@
   }
   .badge.done { color: var(--green); background: rgba(0,208,132,0.08); border-color: rgba(0,208,132,0.2); }
   .badge.done .dot { background: var(--green); box-shadow: 0 0 6px var(--green-glow); }
+  .badge.ready { color: #10b981; background: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.25); }
+  .badge.ready .dot { background: #10b981; box-shadow: 0 0 6px rgba(16,185,129,0.5); }
   .badge.dag_done { color: #7fd7ff; background: rgba(0,112,243,0.08); border-color: rgba(0,112,243,0.25); }
   .badge.dag_done .dot { background: var(--blue); box-shadow: 0 0 6px var(--blue-glow); }
   .badge.testing { color: #c7a8ff; background: rgba(160,100,255,0.08); border-color: rgba(160,100,255,0.22); }
@@ -755,6 +757,7 @@ const state = {
 
 const STATUS_LABELS = {
   done: 'Done',
+  ready: 'Ready',
   dag_done: 'DAG Done',
   blocked: 'Blocked',
   pending: 'Pending',
@@ -1024,6 +1027,7 @@ function renderOverview(root) {
         </div>
         <div class="status-grid">
           ${statusRing('Done', b.done || 0, t.totalPipes, 'var(--green)')}
+          ${statusRing('Ready', b.ready || 0, t.totalPipes, '#10b981')}
           ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, 'var(--blue)')}
           ${statusRing('Tested', b.tested || 0, t.totalPipes, '#7c6cfc')}
           ${statusRing('Blocked', b.blocked || 0, t.totalPipes, 'var(--red)')}
@@ -1077,7 +1081,7 @@ function renderOverview(root) {
 function renderPriorityView(root, prio) {
   const rows = rowsByPrio(prio).sort((a, b) => {
     // blocked first, then by name
-    const order = { blocked: 0, pending: 1, testing: 2, dag_done: 3, done: 4 };
+    const order = { blocked: 0, pending: 1, testing: 2, dag_done: 3, ready: 4, done: 5 };
     const d = (order[a.status] ?? 9) - (order[b.status] ?? 9);
     if (d) return d;
     return a.name.localeCompare(b.name);
@@ -1147,6 +1151,7 @@ function renderAll(root) {
         <select class="select" id="f_status">
           <option value="all">All statuses</option>
           <option value="done">Done</option>
+          <option value="ready">Ready</option>
           <option value="dag_done">DAG Done</option>
           <option value="blocked">Blocked</option>
           <option value="pending">Pending</option>
