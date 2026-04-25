@@ -81,7 +81,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
@@ -89,7 +89,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
@@ -97,7 +97,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
@@ -105,7 +105,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
@@ -113,7 +113,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
@@ -121,7 +121,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -129,7 +129,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -137,7 +137,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -145,7 +145,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -153,7 +153,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -161,7 +161,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
@@ -169,7 +169,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -177,7 +177,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -185,7 +185,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -193,7 +193,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -201,7 +201,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -209,7 +209,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -217,7 +217,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -225,7 +225,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -233,7 +233,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -241,7 +241,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -249,7 +249,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -257,7 +257,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -265,7 +265,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -273,7 +273,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -281,7 +281,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -289,7 +289,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -297,7 +297,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -305,7 +305,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -313,7 +313,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -321,7 +321,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -329,7 +329,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -337,7 +337,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -345,7 +345,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -353,7 +353,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -361,7 +361,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -369,7 +369,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -377,7 +377,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -385,7 +385,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -393,7 +393,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -401,7 +401,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -409,7 +409,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -417,7 +417,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -425,7 +425,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -433,7 +433,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -441,7 +441,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -449,7 +449,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -457,7 +457,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -465,7 +465,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -473,7 +473,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -481,7 +481,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -489,7 +489,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -497,7 +497,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -505,7 +505,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -513,7 +513,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -521,7 +521,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -529,7 +529,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -537,7 +537,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -545,7 +545,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "SQL integration tidak ditemukan di TFS. Butuh konfirmasi source dan SQL porting.",
         "tested": false
       },
       {
@@ -553,7 +553,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -561,7 +561,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -569,7 +569,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -577,7 +577,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
@@ -585,7 +585,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
@@ -593,7 +593,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
@@ -601,7 +601,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest ManagementSimpliFy tidak ada di TFS. Butuh akses dari GCP.",
         "tested": false
       },
       {
@@ -609,7 +609,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest ManagementSimpliFy tidak ada di TFS. Butuh akses dari GCP.",
         "tested": false
       },
       {
@@ -617,7 +617,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -625,7 +625,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -633,7 +633,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -641,7 +641,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -649,7 +649,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -657,7 +657,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -665,7 +665,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -673,7 +673,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -681,7 +681,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -689,7 +689,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -697,7 +697,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -705,7 +705,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -713,7 +713,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -721,7 +721,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -729,7 +729,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -737,7 +737,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -745,7 +745,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -753,7 +753,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -761,7 +761,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
@@ -769,7 +769,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -777,7 +777,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -785,7 +785,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -793,7 +793,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -801,7 +801,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -809,7 +809,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -817,7 +817,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -825,7 +825,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -833,7 +833,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -841,7 +841,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -849,7 +849,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -857,7 +857,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
@@ -865,7 +865,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -873,7 +873,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -881,7 +881,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -889,7 +889,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -897,7 +897,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -905,7 +905,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -913,7 +913,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -921,7 +921,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -929,7 +929,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -937,7 +937,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -945,7 +945,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -953,7 +953,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -961,7 +961,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -969,7 +969,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -977,7 +977,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -985,7 +985,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -993,7 +993,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
@@ -1001,7 +1001,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1009,7 +1009,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1017,7 +1017,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1025,7 +1025,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1033,7 +1033,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1041,7 +1041,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1049,7 +1049,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "",
+        "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
@@ -1057,7 +1057,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1065,7 +1065,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1073,7 +1073,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1081,7 +1081,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1089,7 +1089,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1097,7 +1097,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1105,7 +1105,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1113,7 +1113,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1121,7 +1121,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1129,7 +1129,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1137,7 +1137,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1145,7 +1145,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1153,7 +1153,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
@@ -1161,7 +1161,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -1169,7 +1169,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -1177,7 +1177,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
@@ -1185,7 +1185,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
@@ -1193,7 +1193,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem QTrust dari GCP.",
         "tested": false
       },
       {
@@ -2810,7 +2810,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
+        "catatan": "Fabric trigger — menunggu Fabric workspace ID dari data owner SAP.",
         "tested": false
       },
       {
@@ -2818,7 +2818,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
+        "catatan": "Fabric trigger — menunggu Fabric workspace ID dari data owner SAP.",
         "tested": false
       },
       {
@@ -2826,7 +2826,7 @@
         "type": "Extract/SAP RFC",
         "status": "Belum Convert",
         "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC ingest ke GCP",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa diconvert.",
         "tested": false
       },
       {
@@ -2938,7 +2938,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor → As-Is",
+        "catatan": "Sensor menunggu pipeline HSO_CustomerPersona — blocked karena Fabric workspace ID belum disediakan.",
         "tested": false
       },
       {
@@ -2946,7 +2946,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
+        "catatan": "Fabric trigger — menunggu Fabric workspace ID HSO_CustomerPersona dari data owner.",
         "tested": false
       },
       {
@@ -3078,7 +3078,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job yang hit Fabric endpoint",
+        "catatan": "Fabric trigger — menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner.",
         "tested": false
       },
       {
@@ -3685,7 +3685,7 @@
         "type": "Trigger Synapse (Python)",
         "status": "Belum Convert",
         "tool": "NEED INPUT (Synapse relevance)",
-        "catatan": "NEED INPUT: Python trigger Synapse pipeline CPS → evaluasi relevansi post-GCP",
+        "catatan": "Task push data ke Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti direct write ke BigQuery.",
         "tested": false
       },
       {
@@ -4191,7 +4191,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4199,7 +4199,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4207,7 +4207,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4215,7 +4215,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4223,7 +4223,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4231,7 +4231,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4239,7 +4239,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4247,7 +4247,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4255,7 +4255,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4263,7 +4263,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4271,7 +4271,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4279,7 +4279,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4287,7 +4287,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4295,7 +4295,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4303,7 +4303,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4311,7 +4311,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4319,7 +4319,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4327,7 +4327,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4335,7 +4335,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4343,7 +4343,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4351,7 +4351,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4359,7 +4359,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4367,7 +4367,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4375,7 +4375,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4383,7 +4383,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4391,7 +4391,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4399,7 +4399,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4407,7 +4407,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4415,7 +4415,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4423,7 +4423,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4431,7 +4431,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4439,7 +4439,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4447,7 +4447,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4455,7 +4455,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4463,7 +4463,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4471,7 +4471,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4479,7 +4479,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4487,7 +4487,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4495,7 +4495,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4503,7 +4503,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4511,7 +4511,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4519,7 +4519,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4527,7 +4527,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4535,7 +4535,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4543,7 +4543,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4551,7 +4551,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4559,7 +4559,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4575,7 +4575,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4583,7 +4583,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4591,7 +4591,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4599,7 +4599,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4607,7 +4607,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4615,7 +4615,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4623,7 +4623,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4631,7 +4631,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4639,7 +4639,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4647,7 +4647,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4655,7 +4655,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4663,7 +4663,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4671,7 +4671,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4679,7 +4679,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4687,7 +4687,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4695,7 +4695,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4703,7 +4703,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4711,7 +4711,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4719,7 +4719,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4727,7 +4727,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4735,7 +4735,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4759,7 +4759,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4767,7 +4767,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4775,7 +4775,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4783,7 +4783,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4791,7 +4791,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4799,7 +4799,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4807,7 +4807,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4815,7 +4815,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4823,7 +4823,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4839,7 +4839,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4847,7 +4847,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4855,7 +4855,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4863,7 +4863,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4871,7 +4871,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4879,7 +4879,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4887,7 +4887,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4895,7 +4895,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4903,7 +4903,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4911,7 +4911,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
@@ -4919,7 +4919,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4927,7 +4927,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4935,7 +4935,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4943,7 +4943,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4951,7 +4951,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4959,7 +4959,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -4999,7 +4999,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5007,7 +5007,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5015,7 +5015,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5023,7 +5023,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5031,7 +5031,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5039,7 +5039,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5047,7 +5047,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5055,7 +5055,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5063,7 +5063,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5071,7 +5071,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5079,7 +5079,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5087,7 +5087,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
@@ -5263,7 +5263,7 @@
         "type": "Transform PySpark",
         "status": "Belum Convert",
         "tool": "Dataproc (PySpark)",
-        "catatan": "",
+        "catatan": "Task ini di-comment di source DAG — kemungkinan deprecated.",
         "tested": false
       },
       {
@@ -6007,7 +6007,7 @@
         "type": "SSH Task",
         "status": "Belum Convert",
         "tool": "NEED INPUT",
-        "catatan": "Perlu klasifikasi manual. cmd: compute_stats.format('opr_ast_so2w_wh_dm.pkbservicefinal'), trigger_rule='all_su",
+        "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       },
       {
@@ -6015,7 +6015,7 @@
         "type": "SSH Task",
         "status": "Belum Convert",
         "tool": "NEED INPUT",
-        "catatan": "Perlu klasifikasi manual. cmd: compute_stats.format('opr_ast_so2w_wh_dm.PCD_Productivity_ActualandTarget_Transf",
+        "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       },
       {
@@ -6023,7 +6023,7 @@
         "type": "SSH Task",
         "status": "Belum Convert",
         "tool": "NEED INPUT",
-        "catatan": "Perlu klasifikasi manual. cmd: compute_stats.format('opr_ast_so2w_wh_dm.PCD_Productivity_ActualandTarget_Transf",
+        "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       }
     ]
@@ -7678,7 +7678,7 @@
         "type": "SSH Task",
         "status": "Belum Convert",
         "tool": "NEED INPUT",
-        "catatan": "Perlu klasifikasi manual. cmd: compute_stats.format('opr_ast_so2w_wh_dm.DataRevenue'), trigger_rule='all_succes",
+        "catatan": "NEED INPUT — sumber data dari NMS/J1 belum tersedia di GCP. Butuh konfirmasi strategy ingest.",
         "tested": false
       },
       {
@@ -7686,7 +7686,7 @@
         "type": "SSH Task",
         "status": "Belum Convert",
         "tool": "NEED INPUT",
-        "catatan": "Perlu klasifikasi manual. cmd: compute_stats.format('opr_ast_so2w_wh_dm.DataRevenueSummary'), trigger_rule='all",
+        "catatan": "NEED INPUT — sumber data dari NMS/J1 belum tersedia di GCP. Butuh konfirmasi strategy ingest.",
         "tested": false
       }
     ]
@@ -7900,7 +7900,7 @@
         "type": "Wait/Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (polling) / Cloud Composer Sensor",
-        "catatan": "Python polling function → Cloud Run Job atau Cloud Composer sensor ke Fabric",
+        "catatan": "Polling/sensor menunggu Fabric job selesai — blocked karena Fabric workspace ID SDUE_PortalAHM belum disediakan.",
         "tested": false
       },
       {
@@ -7937,7 +7937,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor → As-Is",
+        "catatan": "Sensor menunggu SAP pipeline (dragon_SAP/so2w_dragon) — blocked karena SAP RFC connector GCP belum tersedia.",
         "tested": false
       },
       {
@@ -7945,7 +7945,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor → As-Is",
+        "catatan": "Sensor menunggu SAP pipeline (dragon_SAP/so2w_dragon) — blocked karena SAP RFC connector GCP belum tersedia.",
         "tested": false
       },
       {
@@ -7953,7 +7953,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric → Cloud Run Job hit Fabric",
+        "catatan": "Fabric trigger SmartStock — menunggu konfigurasi Fabric Job dan workspace ID.",
         "tested": false
       },
       {
@@ -7961,7 +7961,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric → Cloud Run Job hit Fabric",
+        "catatan": "Fabric trigger SmartStock — menunggu konfigurasi Fabric Job dan workspace ID.",
         "tested": false
       },
       {
@@ -8125,7 +8125,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (fabric-job-trigger)",
-        "catatan": "FABRIC_ENTRY=ro_leads, confirm config name",
+        "catatan": "Cloud Run Fabric trigger — menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner RO Leads.",
         "tested": false
       },
       {
@@ -8266,7 +8266,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (NEED INPUT)",
-        "catatan": "~380 PSS ingest tasks — STUB, arch decision needed",
+        "catatan": "STUB ~380 tasks — butuh keputusan arsitektur PSS (Part Sales System) ingest ke GCP sebelum bisa diconvert.",
         "tested": false
       },
       {
@@ -8274,7 +8274,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "PSS Beeline SQL integration — needs SQL porting",
+        "catatan": "STUB SQL integration — butuh SQL porting dari Beeline/Hive ke BigQuery SQL. Blocked sampai arsitektur PSS diputuskan.",
         "tested": false
       },
       {
@@ -8282,7 +8282,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator",
-        "catatan": "Full task list pending architecture decision",
+        "catatan": "STUB placeholder — full task list (~375 tasks) pending keputusan arsitektur ingest PSS ke GCP.",
         "tested": false
       },
       {
@@ -8318,7 +8318,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (NEED INPUT)",
-        "catatan": "~400 AHASS ingest tasks — STUB, arch decision needed",
+        "catatan": "STUB ~400 tasks — butuh keputusan arsitektur AHASS (Astra Honda Authorized Service Station) ingest ke GCP sebelum bisa diconvert.",
         "tested": false
       },
       {
@@ -8326,7 +8326,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "AHASS Beeline SQL integration — needs SQL porting",
+        "catatan": "STUB SQL integration — butuh SQL porting dari Beeline/Hive ke BigQuery SQL. Blocked sampai arsitektur AHASS diputuskan.",
         "tested": false
       },
       {
@@ -8334,7 +8334,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator",
-        "catatan": "Full task list pending architecture decision",
+        "catatan": "STUB placeholder — full task list (~398 tasks) pending keputusan arsitektur ingest AHASS ke GCP.",
         "tested": false
       },
       {
