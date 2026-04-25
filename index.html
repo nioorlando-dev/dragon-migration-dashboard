@@ -898,8 +898,7 @@ function totals() {
 function l1Totals() {
   const p = state.pipelines?.['dragon_L1'] || {};
   const tasks = p.tasks || [];
-  const groups = tasks.filter(t => (t.task_id || '').startsWith('[L1_')).length;
-  return { total: p.total_tasks ?? tasks.length, groups };
+  return { total: tasks.length };
 }
 
 // ---------- sidebar ----------

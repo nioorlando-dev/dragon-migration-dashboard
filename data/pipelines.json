@@ -54,7 +54,7 @@
         "task_id": "DummyOperator SMW_* (disabled) (3 tasks)",
         "type": "Dummy (SMW disabled)",
         "status": "SKIP",
-        "tool": "SKIP (DummyOperator \u2192 SMW disabled)",
+        "tool": "SKIP (DummyOperator → SMW disabled)",
         "catatan": "Grouped 3 tasks. Tidak perlu convert.",
         "tested": false
       },
@@ -1736,7 +1736,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringBKU.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringBKU.sql"
       },
       {
         "task_id": "monitoringBKU_delta",
@@ -1745,7 +1745,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql"
       },
       {
         "task_id": "monitoringdocumentsales_1",
@@ -1754,7 +1754,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_1.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_1.sql"
       },
       {
         "task_id": "monitoringdocumentsales_complete",
@@ -1763,7 +1763,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_complete.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_complete.sql"
       },
       {
         "task_id": "monitoringdocumentsales_outstanding",
@@ -1772,7 +1772,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_outstanding.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_outstanding.sql"
       },
       {
         "task_id": "MonitoringPKBAllocation",
@@ -1781,7 +1781,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/MonitoringPKBAllocation.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/MonitoringPKBAllocation.sql"
       },
       {
         "task_id": "monitoringstockpameran",
@@ -1790,7 +1790,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringstockpameran.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringstockpameran.sql"
       },
       {
         "task_id": "monitoringalasanarod",
@@ -1799,7 +1799,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringalasanarod.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringalasanarod.sql"
       },
       {
         "task_id": "areadealer_pdrb",
@@ -1984,7 +1984,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_2.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_2.sql"
       },
       {
         "task_id": "monitoringdocumentsales_3",
@@ -1993,7 +1993,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_3.sql"
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_3.sql"
       },
       {
         "task_id": "demand_pkbservice_jobpart",
@@ -2063,7 +2063,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader.sql (PySpark joins \u2192 BigQuery SQL with joinkey CTE)"
+        "notes": "Converted → bigquery/LeadTimeServiceHeader.sql (PySpark joins → BigQuery SQL with joinkey CTE)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp1",
@@ -2072,7 +2072,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader_temp1_script.sql (source: LeadTimeServiceHeader_temp0.py; creates temp0+temp1 tables; unix_timestamp\u2192TIMESTAMP_DIFF)"
+        "notes": "Converted → bigquery/LeadTimeServiceHeader_temp1_script.sql (source: LeadTimeServiceHeader_temp0.py; creates temp0+temp1 tables; unix_timestamp→TIMESTAMP_DIFF)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp2",
@@ -2081,7 +2081,7 @@
         "tool": "Dataproc (PySpark)",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader_temp2_script.sql (source: LeadTimeServiceHeader_temp1.py; creates temp2; CAST(DECIMAL)\u2192NUMERIC)"
+        "notes": "Converted → bigquery/LeadTimeServiceHeader_temp2_script.sql (source: LeadTimeServiceHeader_temp1.py; creates temp2; CAST(DECIMAL)→NUMERIC)"
       },
       {
         "task_id": "SMW_* MSTR triggers (25 tasks)",
@@ -2257,10 +2257,10 @@
     "dag_id": "dragon_L1",
     "priority": "Unassigned",
     "schedule": "Daily 00 17 * * *",
-    "total_tasks": 5,
+    "total_tasks": 30,
     "status_counts": {
-      "SKIP": 2,
-      "Skip": 3
+      "SKIP": 4,
+      "Skip": 26
     },
     "tasks": [
       {
@@ -2272,27 +2272,227 @@
         "tested": false
       },
       {
-        "task_id": "[L1_MOTORKUX_ARBORVITAE.*]",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "Skip",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint [L1: deferred - incremental load, not in current migration scope]",
+        "task_id": "schedule_4AM",
+        "type": "Sensor",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "TimeDeltaSensor 4h",
         "tested": false
       },
       {
-        "task_id": "[L1_FILE_ASTRANET.*]",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "Skip",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint [L1: deferred - incremental load, not in current migration scope]",
+        "task_id": "schedule_6AM",
+        "type": "Sensor",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "TimeDeltaSensor 6h",
         "tested": false
       },
       {
-        "task_id": "[L1_SAP.*]",
+        "task_id": "L1_CLOUDERA.region",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load (Cloudera region sync), deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_motorcycle_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_fif_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_items_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_daerah_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_kpb_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_kpb_request_details",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_apin_event_log_detail",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_non_dynamic",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedata_file",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedatatype_file",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_threshold_nms_file",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_leads_ahm_file",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_target_motorkux_file",
+        "type": "Trigger Fabric Job (Python)",
+        "status": "Skip",
+        "tool": "Cloud Run Job (Fabric trigger)",
+        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.L1_sap_ZPYGDO00004_USTK2",
         "type": "Extract/SAP RFC",
         "status": "Skip",
         "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC ingest ke GCP [L1: deferred - incremental load, not in current migration scope]",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.L1_sap_zpygsdi00045_pssu",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.com_ZPYGDO00004_USTK2",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.com_zpygsdi00045_pssu",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.integration_pssu",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.integration_ustk2",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.inv_ZPYGDO00004_USTK2",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "tested": false
+      },
+      {
+        "task_id": "L1_SAP.inv_zpygsdi00045_pssu",
+        "type": "Extract/SAP RFC",
+        "status": "Skip",
+        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
+        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
         "tested": false
       },
       {
@@ -2608,7 +2808,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
         "tested": false
       },
       {
@@ -2616,7 +2816,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
         "tested": false
       },
       {
@@ -2660,7 +2860,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false
       },
       {
@@ -2668,7 +2868,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false
       },
       {
@@ -2676,7 +2876,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "catatan": "Hive SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -2684,7 +2884,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "catatan": "Hive SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -2692,7 +2892,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "catatan": "Hive SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -2700,7 +2900,7 @@
         "type": "Refresh Dataset",
         "status": "Done",
         "tool": "Cloud Run Job",
-        "catatan": "Python PBI refresh \u2192 Cloud Run Job",
+        "catatan": "Python PBI refresh → Cloud Run Job",
         "tested": false
       },
       {
@@ -2736,7 +2936,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false
       },
       {
@@ -2744,7 +2944,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job hit Fabric endpoint",
         "tested": false
       },
       {
@@ -2780,7 +2980,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is di Cloud Composer",
+        "catatan": "Composer sensor → As-Is di Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2789,7 +2989,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2798,7 +2998,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2807,7 +3007,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2816,7 +3016,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
-        "catatan": "NEED INPUT DBT \u2192 pilihan Dataform/Cloud Run+dbt/BigQuery SQL",
+        "catatan": "NEED INPUT DBT → pilihan Dataform/Cloud Run+dbt/BigQuery SQL",
         "tested": false
       },
       {
@@ -2840,7 +3040,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
-        "catatan": "NEED INPUT DBT \u2014 final CPS models di L3/L4",
+        "catatan": "NEED INPUT DBT — final CPS models di L3/L4",
         "tested": false
       },
       {
@@ -2876,7 +3076,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric Job \u2192 Cloud Run Job yang hit Fabric endpoint",
+        "catatan": "Python SSH trigger Fabric Job → Cloud Run Job yang hit Fabric endpoint",
         "tested": false
       },
       {
@@ -2931,7 +3131,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2940,7 +3140,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2949,7 +3149,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2958,7 +3158,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -2967,7 +3167,7 @@
         "type": "Trigger Synapse (Python)",
         "status": "SKIP",
         "tool": "NEED INPUT (Synapse relevance)",
-        "catatan": "NEED INPUT: Synapse status check via Python SSH \u2192 evaluasi apakah Synapse masih relevan post-GCP. Jika ya: Cloud Run Job",
+        "catatan": "NEED INPUT: Synapse status check via Python SSH → evaluasi apakah Synapse masih relevan post-GCP. Jika ya: Cloud Run Job",
         "tested": false
       },
       {
@@ -2983,7 +3183,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
-        "catatan": "NEED INPUT DBT \u2192 L3 contextual model",
+        "catatan": "NEED INPUT DBT → L3 contextual model",
         "tested": false
       },
       {
@@ -3007,7 +3207,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
-        "catatan": "NEED INPUT DBT \u2192 L4 final datarevenue model",
+        "catatan": "NEED INPUT DBT → L4 final datarevenue model",
         "tested": false
       },
       {
@@ -3051,7 +3251,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari so2w_dragon \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari so2w_dragon → As-Is Cloud Composer",
         "tested": false
       },
       {
@@ -3059,7 +3259,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_sdue \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_sdue → As-Is Cloud Composer",
         "tested": false
       },
       {
@@ -3067,7 +3267,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari so2w_dragon_2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari so2w_dragon_2 → As-Is Cloud Composer",
         "tested": false
       },
       {
@@ -3075,7 +3275,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon → As-Is Cloud Composer",
         "tested": false
       },
       {
@@ -3083,7 +3283,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -3091,7 +3291,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -3099,7 +3299,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -3107,7 +3307,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -3115,7 +3315,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL → BigQuery SQL",
         "tested": false
       },
       {
@@ -3195,7 +3395,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3204,7 +3404,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3213,7 +3413,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
-        "catatan": "NEED INPUT DBT L3 \u2192 marketshare model",
+        "catatan": "NEED INPUT DBT L3 → marketshare model",
         "tested": false
       },
       {
@@ -3249,7 +3449,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3258,7 +3458,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3267,7 +3467,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3276,7 +3476,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L3 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3329,7 +3529,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L3 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3338,7 +3538,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L3 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3383,7 +3583,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L3 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3392,7 +3592,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3401,7 +3601,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3410,7 +3610,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3419,7 +3619,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3428,7 +3628,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3474,7 +3674,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "12 sensor dari dragon_L1 (L1_MOTORKUX_ARBORVITAE.*) + 1 astranet file + 1 masterdealer L3 + 1 CPS \u2192 As-Is Composer",
+        "catatan": "12 sensor dari dragon_L1 (L1_MOTORKUX_ARBORVITAE.*) + 1 astranet file + 1 masterdealer L3 + 1 CPS → As-Is Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3483,7 +3683,7 @@
         "type": "Trigger Synapse (Python)",
         "status": "Belum Convert",
         "tool": "NEED INPUT (Synapse relevance)",
-        "catatan": "NEED INPUT: Python trigger Synapse pipeline CPS \u2192 evaluasi relevansi post-GCP",
+        "catatan": "NEED INPUT: Python trigger Synapse pipeline CPS → evaluasi relevansi post-GCP",
         "tested": false
       },
       {
@@ -3575,7 +3775,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3584,7 +3784,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3593,7 +3793,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L2 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L2 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3602,7 +3802,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Sensor dari dragon_L3 \u2192 As-Is Cloud Composer",
+        "catatan": "Sensor dari dragon_L3 → As-Is Cloud Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3691,7 +3891,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3700,7 +3900,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3709,7 +3909,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3718,7 +3918,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3779,7 +3979,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "11 sensor dari dragon_L2 report_bd group \u2192 As-Is Composer",
+        "catatan": "11 sensor dari dragon_L2 report_bd group → As-Is Composer",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3833,7 +4033,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Multi-sensor orchestrator \u2192 As-Is Cloud Composer, menunggu semua downstream pipeline selesai",
+        "catatan": "Multi-sensor orchestrator → As-Is Cloud Composer, menunggu semua downstream pipeline selesai",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3842,7 +4042,7 @@
         "type": "Refresh Dataset",
         "status": "Belum Convert",
         "tool": "Cloud Run Job",
-        "catatan": "Python PBI trigger per dataset (DRA_PBI_2025_00001 s/d ~00010) \u2192 Cloud Run Job",
+        "catatan": "Python PBI trigger per dataset (DRA_PBI_2025_00001 s/d ~00010) → Cloud Run Job",
         "tested": false
       },
       {
@@ -3878,7 +4078,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3887,7 +4087,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -3957,7 +4157,7 @@
         "task_id": "DummyOperator SMW_* (disabled) (19 tasks)",
         "type": "Dummy (SMW disabled)",
         "status": "SKIP",
-        "tool": "SKIP (DummyOperator \u2192 SMW disabled)",
+        "tool": "SKIP (DummyOperator → SMW disabled)",
         "catatan": "Grouped 19 tasks. Tidak perlu convert.",
         "tested": false
       },
@@ -5446,7 +5646,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -5454,7 +5654,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -5876,7 +6076,7 @@
         "task_id": "DummyOperator SMW_* (disabled) (9 tasks)",
         "type": "Dummy (SMW disabled)",
         "status": "SKIP",
-        "tool": "SKIP (DummyOperator \u2192 SMW disabled)",
+        "tool": "SKIP (DummyOperator → SMW disabled)",
         "catatan": "Grouped 9 tasks. Tidak perlu convert.",
         "tested": false
       },
@@ -6471,7 +6671,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted PySpark SQL \u2192 BigQuery SQL. See bigquery/nms_datarevenuedirect.sql"
+        "notes": "Converted PySpark SQL → BigQuery SQL. See bigquery/nms_datarevenuedirect.sql"
       },
       {
         "task_id": "nms_DataRevenueSummary",
@@ -6480,7 +6680,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted PySpark SQL \u2192 BigQuery SQL. See bigquery/nms_datarevenuesummary.sql"
+        "notes": "Converted PySpark SQL → BigQuery SQL. See bigquery/nms_datarevenuesummary.sql"
       },
       {
         "task_id": "nms_tmp_mapping_datarevenue",
@@ -6529,7 +6729,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/Salesinout_Transformation.sql (3 tables: partsharecontribution, targetsalesinout, transformation)"
+        "notes": "Converted → bigquery/Salesinout_Transformation.sql (3 tables: partsharecontribution, targetsalesinout, transformation)"
       },
       {
         "task_id": "leadsfunnelcrmh1",
@@ -6586,7 +6786,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_31_so2w_dragon_2/bigquery/customerinvitation.sql"
+        "notes": "Converted → converted_scripts/pipeline_31_so2w_dragon_2/bigquery/customerinvitation.sql"
       },
       {
         "task_id": "utilisasidragon",
@@ -6611,7 +6811,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/servicedemandratio_sprall.sql (Python LEAD logic \u2192 BigQuery LEAD() window function)"
+        "notes": "Converted → bigquery/servicedemandratio_sprall.sql (Python LEAD logic → BigQuery LEAD() window function)"
       },
       {
         "task_id": "spr_transformation",
@@ -6883,7 +7083,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/d360_log_datasets_distribution.sql (4 tables: crossjoin1/2/3 + datasets_distribution)"
+        "notes": "Converted → bigquery/d360_log_datasets_distribution.sql (4 tables: crossjoin1/2/3 + datasets_distribution)"
       },
       {
         "task_id": "dgi_utilisasidgi",
@@ -6934,7 +7134,7 @@
         "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false,
-        "notes": "Disabled in original DAG (commented out). Uses Airflow Variable command_converter_sdue \u2192 SDUE CSV\u2192XML converter (not SQL)"
+        "notes": "Disabled in original DAG (commented out). Uses Airflow Variable command_converter_sdue → SDUE CSV→XML converter (not SQL)"
       },
       {
         "task_id": "report_sdue",
@@ -6957,7 +7157,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -6965,7 +7165,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -6973,7 +7173,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -6981,7 +7181,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -6989,7 +7189,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -6997,7 +7197,7 @@
         "type": "Extract Azure (SKIP)",
         "status": "SKIP",
         "tool": "SKIP (data sudah di GCP)",
-        "catatan": "Data sudah di GCP \u2192 evaluasi apakah masih perlu extract",
+        "catatan": "Data sudah di GCP → evaluasi apakah masih perlu extract",
         "tested": false
       },
       {
@@ -7514,7 +7714,7 @@
         "type": "Sensor/External",
         "status": "Done",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false,
         "notes": " [Sensor implemented in DAG]"
       },
@@ -7699,7 +7899,7 @@
         "type": "Wait/Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (polling) / Cloud Composer Sensor",
-        "catatan": "Python polling function \u2192 Cloud Run Job atau Cloud Composer sensor ke Fabric",
+        "catatan": "Python polling function → Cloud Run Job atau Cloud Composer sensor ke Fabric",
         "tested": false
       },
       {
@@ -7736,7 +7936,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false
       },
       {
@@ -7744,7 +7944,7 @@
         "type": "Sensor/External",
         "status": "Belum Convert",
         "tool": "Cloud Composer (ExternalTaskSensor)",
-        "catatan": "Composer sensor \u2192 As-Is",
+        "catatan": "Composer sensor → As-Is",
         "tested": false
       },
       {
@@ -7752,7 +7952,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric \u2192 Cloud Run Job hit Fabric",
+        "catatan": "Python SSH trigger Fabric → Cloud Run Job hit Fabric",
         "tested": false
       },
       {
@@ -7760,7 +7960,7 @@
         "type": "Trigger Fabric Job (Python)",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Python SSH trigger Fabric \u2192 Cloud Run Job hit Fabric",
+        "catatan": "Python SSH trigger Fabric → Cloud Run Job hit Fabric",
         "tested": false
       },
       {
@@ -8021,15 +8221,15 @@
         "type": "Sensor/Check (SSH)",
         "status": "SKIP",
         "tool": "BranchPythonOperator",
-        "catatan": "HDFS-specific \u2014 tidak relevan di GCP",
+        "catatan": "HDFS-specific — tidak relevan di GCP",
         "tested": false
       },
       {
         "task_id": "start_saturday",
         "type": "Dummy",
         "status": "SKIP",
-        "tool": "SKIP \u2014 deprecated",
-        "catatan": "Merge Hive small files \u2014 no equivalent in BigQuery",
+        "tool": "SKIP — deprecated",
+        "catatan": "Merge Hive small files — no equivalent in BigQuery",
         "tested": false
       },
       {
@@ -8065,7 +8265,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (NEED INPUT)",
-        "catatan": "~380 PSS ingest tasks \u2014 STUB, arch decision needed",
+        "catatan": "~380 PSS ingest tasks — STUB, arch decision needed",
         "tested": false
       },
       {
@@ -8073,7 +8273,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "PSS Beeline SQL integration \u2014 needs SQL porting",
+        "catatan": "PSS Beeline SQL integration — needs SQL porting",
         "tested": false
       },
       {
@@ -8117,7 +8317,7 @@
         "type": "Ingest Python",
         "status": "Belum Convert",
         "tool": "Cloud Run Job (NEED INPUT)",
-        "catatan": "~400 AHASS ingest tasks \u2014 STUB, arch decision needed",
+        "catatan": "~400 AHASS ingest tasks — STUB, arch decision needed",
         "tested": false
       },
       {
@@ -8125,7 +8325,7 @@
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
         "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "AHASS Beeline SQL integration \u2014 needs SQL porting",
+        "catatan": "AHASS Beeline SQL integration — needs SQL porting",
         "tested": false
       },
       {
