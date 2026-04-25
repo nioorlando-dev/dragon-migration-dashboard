@@ -3932,8 +3932,8 @@
     "total_tasks": 236,
     "status_counts": {
       "SKIP": 7,
-      "Belum Convert": 158,
-      "Done": 70,
+      "Belum Convert": 155,
+      "Done": 73,
       "NEED INPUT": 1
     },
     "tasks": [
@@ -5028,8 +5028,8 @@
       {
         "task_id": "demand_partsharecontribution",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -5052,8 +5052,8 @@
       {
         "task_id": "demand_pkbservice_temp3",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
@@ -5068,8 +5068,8 @@
       {
         "task_id": "demand_pkbservice_final",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "Done",
+        "tool": "BigQuery SQL",
         "catatan": "",
         "tested": false
       },
