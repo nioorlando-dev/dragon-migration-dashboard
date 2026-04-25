@@ -1015,7 +1015,7 @@ function renderOverview(root) {
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks under tracking', '')}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
         ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
-        ${statCard('L1 Incremental', l1.groups, iconClock(), 'deferred — incremental load', '')}
+        ${statCard('L1 Incremental', l1.total, iconClock(), 'deferred — incremental load', '')}
       </div>
 
       <div class="section">
