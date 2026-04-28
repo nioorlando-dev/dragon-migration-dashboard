@@ -129,10 +129,10 @@
     "status": "ready",
     "dag_converted": true,
     "sql_converted": true,
-    "tested": false,
+    "tested": true,
     "blocker": "",
-    "notes": "DAG + SQL converted. monitoringBKU.sql + monitoringbku_delta.sql converted to BigQuery.",
-    "last_updated": "2026-04-22"
+    "notes": "DAG + SQL converted. monitoringBKU.sql + monitoringbku_delta.sql converted to BigQuery. Tested 2026-04-28: delta detection confirmed (Append=32).",
+    "last_updated": "2026-04-28"
   },
   "dragon_monitoring_stnk_bpkb": {
     "status": "ready",
