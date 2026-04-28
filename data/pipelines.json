@@ -1,7 +1,7 @@
 {
   "dragon": {
     "dag_id": "dragon",
-    "priority": "Unassigned",
+    "priority": "P5",
     "schedule": "Daily 00 14 * * *",
     "total_tasks": 275,
     "status_counts": {
@@ -1746,8 +1746,8 @@
         "status": "Done",
         "tool": "Dataproc (PySpark)",
         "catatan": "",
-        "tested": false,
-        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql"
+        "tested": true,
+        "notes": "Converted → converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql [Tested 2026-04-27: BigQuery SUCCESS, delta detection confirmed Append=32]"
       },
       {
         "task_id": "monitoringdocumentsales_1",
@@ -2257,7 +2257,7 @@
   },
   "dragon_L1": {
     "dag_id": "dragon_L1",
-    "priority": "Unassigned",
+    "priority": "P1",
     "schedule": "Daily 00 17 * * *",
     "total_tasks": 30,
     "status_counts": {
@@ -2509,7 +2509,7 @@
   },
   "dragon_L2": {
     "dag_id": "dragon_L2",
-    "priority": "Unassigned",
+    "priority": "P1",
     "schedule": "Daily 00 17 * * *",
     "total_tasks": 23,
     "status_counts": {
@@ -2705,7 +2705,7 @@
   },
   "dragon_L3": {
     "dag_id": "dragon_L3",
-    "priority": "Unassigned",
+    "priority": "P1",
     "schedule": "Daily 00 19 * * *",
     "total_tasks": 9,
     "status_counts": {
@@ -2789,7 +2789,7 @@
   },
   "dragon_SAP": {
     "dag_id": "dragon_SAP",
-    "priority": "Unassigned",
+    "priority": "P1",
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 5,
     "status_counts": {
