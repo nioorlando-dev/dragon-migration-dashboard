@@ -132,8 +132,10 @@ function statusBreakdown(rows = allRows()) {
   return out;
 }
 
+const INCREMENTAL_DAGS = ['dragon_L1', 'dragon_SAP'];
+
 function totals() {
-  const rows = allRows().filter(r => r.name !== 'dragon_L1');
+  const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
   const totalTasks = rows.reduce((a, r) => a + (r.total || 0), 0);
   const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
   const blocked = rows.filter(r => r.status === 'blocked').length;
@@ -142,10 +144,14 @@ function totals() {
 }
 
 function l1Totals() {
-  const p = state.pipelines?.['dragon_L1'] || {};
-  const tasks = p.tasks || [];
-  const skipped = tasks.filter(t => /^skip$/i.test((t.status || '').trim())).length;
-  return { total: p.total_tasks ?? tasks.length, skipped };
+  let total = 0, skipped = 0;
+  for (const key of INCREMENTAL_DAGS) {
+    const p = state.pipelines?.[key] || {};
+    const tasks = p.tasks || [];
+    total += p.total_tasks ?? tasks.length;
+    skipped += tasks.filter(t => /^skip$/i.test((t.status || '').trim())).length;
+  }
+  return { total, skipped };
 }
 
 // ---------- sidebar ----------
@@ -221,7 +227,7 @@ function updateCrumbs(v) {
 function renderOverview(root) {
   const t = totals();
   const l1 = l1Totals();
-  const b = statusBreakdown(allRows().filter(r => r.name !== 'dragon_L1'));
+  const b = statusBreakdown(allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name)));
   const P1_NAMES = [
     'dragon_leads_funnel_management',
     'dragon_customerprofilesales',
@@ -257,7 +263,7 @@ function renderOverview(root) {
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks under tracking', '')}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
         ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
-        ${statCard('L1 Incremental', l1.total, iconClock(), 'deferred — incremental load', '')}
+        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'deferred — incremental load', '')}
       </div>
 
       <div class="section">
