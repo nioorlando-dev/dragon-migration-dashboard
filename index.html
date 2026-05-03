@@ -1020,10 +1020,10 @@ function renderOverview(root) {
 
       <div class="stats">
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '')}
-        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks under tracking', '')}
+        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '')}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
         ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
-        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'deferred — incremental load', '')}
+        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '')}
       </div>
 
       <div class="section">
