@@ -260,12 +260,11 @@ function renderOverview(root) {
       <p class="page-sub">Tracking 28 Hadoop/Cloudera pipelines migrating to BigQuery + Cloud Composer.</p>
 
       <div class="stats">
-        ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '')}
-        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '')}
-        ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
-        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '')}
-        ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
-        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '')}
+        ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
+        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "showView('all')")}
+        ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "showView('all')")}
+        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '', "showView('all')")}
+        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "showView('all')")}
       </div>
 
       <div class="section">
@@ -532,9 +531,10 @@ function paintTableBody() {
 }
 
 // ---------- components ----------
-function statCard(label, value, icon, foot, trend) {
+function statCard(label, value, icon, foot, trend, onclick = '') {
+  const clickAttr = onclick ? ` onclick="${onclick}" style="cursor:pointer"` : '';
   return `
-    <div class="card stat hoverable">
+    <div class="card stat hoverable"${clickAttr}>
       <div class="stat-label">${icon} <span>${label}</span></div>
       <div class="stat-value" data-counter="${value}">0</div>
       <div class="stat-foot">

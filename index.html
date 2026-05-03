@@ -752,8 +752,14 @@ const state = {
   view: 'overview',
   sort: { key: 'priority', dir: 'asc' },
   filter: { q: '', prio: 'all', status: 'all' },
+  invFilter: 'all',  // pre-set filter when navigating to Task Inventory
   expanded: new Set(),
 };
+
+function navigateTo(view, filter) {
+  state.invFilter = filter || 'all';
+  showView(view);
+}
 
 const STATUS_LABELS = {
   done: 'Done',
@@ -1020,12 +1026,11 @@ function renderOverview(root) {
       <p class="page-sub">Tracking ${t.totalPipes} Hadoop/Cloudera pipelines migrating to BigQuery + Cloud Composer.</p>
 
       <div class="stats">
-        ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '')}
-        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '')}
-        ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
-        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '')}
-        ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
-        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '')}
+        ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
+        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "navigateTo('scripts','all')")}
+        ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "navigateTo('scripts','done')")}
+        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '', "navigateTo('scripts','skip')")}
+        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "navigateTo('scripts','all')")}
       </div>
 
       <div class="section">
@@ -1297,9 +1302,10 @@ function paintTableBody() {
 }
 
 // ---------- components ----------
-function statCard(label, value, icon, foot, trend) {
+function statCard(label, value, icon, foot, trend, onclick = '') {
+  const clickAttr = onclick ? ` onclick="${onclick}" style="cursor:pointer"` : '';
   return `
-    <div class="card stat hoverable">
+    <div class="card stat hoverable"${clickAttr}>
       <div class="stat-label">${icon} <span>${label}</span></div>
       <div class="stat-value" data-counter="${value}">0</div>
       <div class="stat-foot">
@@ -1641,7 +1647,8 @@ function renderScripts(root) {
     });
   });
 
-  let filterStatus = 'all';
+  let filterStatus = state.invFilter || 'all';
+  state.invFilter = 'all';  // reset so next visit defaults to all
   let searchQ = '';
 
   function pipeMatchesFilter(p) {
