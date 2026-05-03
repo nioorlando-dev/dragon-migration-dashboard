@@ -138,9 +138,10 @@ function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
   const totalTasks = rows.reduce((a, r) => a + (r.total || 0), 0);
   const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
+  const skipped = rows.reduce((a, r) => a + (Number((r.status_counts || {})['SKIP']) || 0), 0);
   const blocked = rows.filter(r => r.status === 'blocked').length;
   const done = rows.filter(r => r.status === 'done').length;
-  return { totalPipes: rows.length, totalTasks, converted, blocked, done };
+  return { totalPipes: rows.length, totalTasks, converted, skipped, blocked, done };
 }
 
 function l1Totals() {
@@ -262,6 +263,7 @@ function renderOverview(root) {
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '')}
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '')}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up')}
+        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '')}
         ${statCard('Blocked', t.blocked, iconAlert(), 'needs attention', 'down')}
         ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '')}
       </div>
@@ -777,6 +779,7 @@ const iconAlert = (s = 13) => svg('<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3
 const iconCal = () => svg('<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>');
 const iconTask = () => svg('<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/>');
 const iconClock = () => svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>');
+const iconMinus = () => svg('<line x1="5" y1="12" x2="19" y2="12"/>');
 
 // ---------- utils ----------
 function formatDate(d) {
