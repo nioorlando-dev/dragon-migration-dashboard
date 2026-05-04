@@ -1042,7 +1042,7 @@ function renderOverview(root) {
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "navigateTo('scripts','all')")}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "navigateTo('scripts','done')")}
-        ${statCard('SKIP', t.skipped, iconMinus(), `${t.skipOrch} orchestration · ${t.skipPaused} DAG non-aktif`, '', "navigateTo('scripts','skip')")}
+        ${statCard('SKIP', t.skipped, iconMinus(), `${t.skipOrch} tidak perlu diconvert · ${t.skipPaused} DAG non-aktif`, '', "navigateTo('scripts','skip')")}
         ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "navigateTo('scripts','all')")}
       </div>
 
