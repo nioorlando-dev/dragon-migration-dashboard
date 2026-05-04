@@ -895,7 +895,7 @@ function statusBreakdown(rows = allRows()) {
 }
 
 const INCREMENTAL_DAGS = ['dragon_L1', 'dragon_SAP'];
-const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2'];
+const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2', 'dragoncloudera_synapse', 'dragon_datamekanik', 'dragon_leads_funnel_management'];
 
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
