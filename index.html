@@ -1010,13 +1010,7 @@ function renderOverview(root) {
   const t = totals();
   const l1 = l1Totals();
   const b = statusBreakdown(allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name) && !r.isPaused));
-  const P1_NAMES = [
-    'dragon_leads_funnel_management',
-    'dragon_customerprofilesales',
-    'dragon_partsharecontribution',
-    'dragon_ustk2',
-    'so2w_dragon_sdue_fabric',
-  ];
+  const P1_NAMES = allRows().filter(r => r.priority === 'P1').map(r => r.name);
 
   const groupProgress = (names) => {
     const rows = names.map(pipeRow);
