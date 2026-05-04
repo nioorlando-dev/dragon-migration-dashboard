@@ -5,8 +5,7 @@
     "schedule": "Daily 00 14 * * *",
     "total_tasks": 275,
     "status_counts": {
-      "SKIP": 22,
-      "Belum Convert": 141,
+      "SKIP": 163,
       "Done": 112
     },
     "tasks": [
@@ -77,1120 +76,1120 @@
       {
         "task_id": "astranet_dealerhondaprofileahm_file",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
         "task_id": "astranet_grstatus_file",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
         "task_id": "astranet_pkbtypenewpss_file",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
         "task_id": "astranet_pkbtypenewahass_file",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
         "task_id": "astranet_tobpm_file",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest AstraNet tidak ada di TFS. Butuh file landing infrastruktur AstraNet ke GCP (Cloud Storage + trigger).",
         "tested": false
       },
       {
         "task_id": "avocado_invoiceleasing",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_MarritalStatus",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_Occupation",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_OrderCustomerData",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_OrderDetail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_UnitType",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Avocado tidak ada di TFS. Butuh JDBC/API access ke sistem Avocado dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_DealerPosition",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_DealerPositionResult",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_DealerTelephone",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_District",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Kecamatan",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Kelurahan",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_KKDetail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_KKSalesOffice",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_KKTransaction",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Lookup",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_MarketType",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Province",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Region",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_Segment",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_UnitType",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Master2W tidak ada di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_ApprovalIndent",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_brand",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_cancel_reason_type_indent",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_city",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_city_ahm",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_dealer",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_dealer_status",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_dealer_telephone",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_dealer_territory_result",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_gender",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_Indent",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_indent_status",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_Indent_unit_availability",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_job_position",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_kecamatan",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_kelurahan",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_main_dealer",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_market_share_monthly",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_market_share_monthly_detail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_pos",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_pos_type",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_province",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_purchase_type",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_salesman",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_salesman_backup",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_salesman_status",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_unit_type",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_unit_type_market_name",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_unit_type_segment",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_unit_type_series",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_work_day",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_ss_salesman",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "integration_ss_salesman",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "SQL integration tidak ditemukan di TFS. Butuh konfirmasi source dan SQL porting.",
         "tested": false
       },
       {
         "task_id": "portalhso_target_per_pos",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_purchase_order",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_purchase_order_detail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PortalHSO tidak ada di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "psshso_IncentiveRuleDetail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
         "task_id": "psshso_IncentiveFormula",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
         "task_id": "psshso_SalesPersonRAS",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest PSS HSO tidak ada di TFS. Tergantung keputusan arsitektur PSS ingest ke GCP.",
         "tested": false
       },
       {
         "task_id": "ManagementSimpliFy_Branch",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest ManagementSimpliFy tidak ada di TFS. Butuh akses dari GCP.",
         "tested": false
       },
       {
         "task_id": "ManagementSimpliFy_Region",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest ManagementSimpliFy tidak ada di TFS. Butuh akses dari GCP.",
         "tested": false
       },
       {
         "task_id": "azure_VehicleDocumentDetail",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_VehicleDocumentActivity",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_VehicleDocument",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_PricingSTNK",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_CEPSMSFollowup",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_CEPFollowup",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_Scenario",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_ContactEntryPlan",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_Leads",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_LeadsContainer",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_LeadsVEtemp",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_MasterStatus",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_MonitoringLeadsActivity",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_ProbingLeads",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_Prospect",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_Suspect",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_SuspectFollowUp",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_PlatformData",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "azure_CustomerInvitation",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task terkait Azure/Synapse — tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
         "tested": false
       },
       {
         "task_id": "olap_em_user",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_em_usr_gp",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_cube_view",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_doc",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_document_stats",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_proj",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_rep_doc",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_rep",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_repctype_ind",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_is_usr_gp_user",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_stg_is_document_stats",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "olap_em_is_last_update",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest OLAP tidak ada di TFS. Butuh akses ke sistem OLAP dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_em_user",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_user_motorcycle_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_recap_leads_h1_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_recap_leads_h3_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_booking_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_workshop_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_daerah_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_geocode_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_kpb_request_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_hot_leads_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_prospect_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_customer_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_retail_dealers_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_region_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_stage_chatbot_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_booking_kpb_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "motorkux_employee_details",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_cust_room_id_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_province_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_view_stage_non_ro",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_product_variant_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_customer_non_ro_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_city_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "amanda_users_details_da",
         "type": "Ingest Python",
-        "status": "Belum Convert",
-        "tool": "Cloud Run Job",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Script ingest Amanda tidak ada di TFS. Butuh akses ke sistem Amanda dari GCP.",
         "tested": false
       },
       {
         "task_id": "avocado_City",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Company",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Education",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_HomeStatus",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Kecamatan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Kelurahan",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_masterstatus",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_masterstatusinv",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_OrderHeader",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Province",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_Region",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_SexType",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "avocado_UnitColor",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Kemungkinan hanya tersimpan di Cloudera edge node.",
         "tested": false
       },
       {
         "task_id": "master2w_Dealer",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_KKHeader",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "master2w_DealerGroup",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem Master2W dari GCP.",
         "tested": false
       },
       {
         "task_id": "portalhso_target_per_tipe",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke Portal HSO dari GCP.",
         "tested": false
       },
       {
         "task_id": "qtrust_vehicle_history",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Source PySpark script tidak ditemukan di TFS. Butuh akses ke sistem QTrust dari GCP.",
         "tested": false
       },
@@ -2086,8 +2085,8 @@
       {
         "task_id": "SMW_* MSTR triggers (25 tasks)",
         "type": "Report MSTR Trigger",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT (MSTR trigger - evaluasi relevansi)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Grouped 25 MSTR Web report trigger tasks. Evaluasi apakah masih relevan setelah migrasi ke PBI/GCP.",
         "tested": false
       },
@@ -4138,9 +4137,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 236,
     "status_counts": {
-      "SKIP": 7,
-      "Done": 119,
-      "Belum Convert": 110
+      "SKIP": 117,
+      "Done": 119
     },
     "tasks": [
       {
@@ -4194,376 +4192,376 @@
       {
         "task_id": "sap_bsec",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_bkpf",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_bseg",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygf_ar_aging",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_virtualexhibitionsummary_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_eventlive_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_summarypdrb_mtm_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_summarypdrb_qtq_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_summarypdrb_yty_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pdrb_yty_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pdrb_tenagakerja_yty_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_astranet_pdrb_qtq_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pdrb_mtm_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_monitoringactivitygc_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_masteractivity_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_marketpricing_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_incentive_tl_ol_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_incentive_sf_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_hunianberbintang_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_hargakomoditas_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_categorydatabps_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_bpsdatatype_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_activityroadshow_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_activitypameran_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_KaresidenanDealer_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_leadscustomer_amanda_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingfunnelingstage_amanda_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingsourcegroup_amanda_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_leadscustomer_lemon_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_leadscustomer_motorkux_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingregion_motorkux_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_leadscustomer_socialmediafb_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_leadscustomer_virtualexhibition_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_terminmou_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_tobpm_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_targetpartsharedansalesamic_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_dealerhondaprofileahm_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_target_spr_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_list_unitseries_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_servicedemandratio_sprall_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mapping_pkbtypenew_jenisservice_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_datareport_so_rem_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_data_parameterso_rem_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pcd_h3_upload_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_logisticdealer_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_nosdealer_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_targetdistributionandstock_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
@@ -4578,168 +4576,168 @@
       {
         "task_id": "astranet_astrapay_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingso_target_upload_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_hc3_actual_target_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_target_lcr_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pkbtypenewpss_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_pkbtypenewahass_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_SvReservationStatus_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_grstatus_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingcityavocadomstr_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingprovinceavocadomstr_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingtypemotor_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_roletype_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_statuslayanandealer_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_telephonetype_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingpriorityjobtype_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingposservice_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_CRMStatusCall_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_RingTerritory_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_GroupingMaterial_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_TargetSales_TargetStockLevel_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_unitentrymanual_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
@@ -4762,72 +4760,72 @@
       {
         "task_id": "astranet_HubunganDenganPemilik_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingaktivitasmarketingleads_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_mappingsapdealercode_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_digitalassest_actual_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_promotion_eventlive_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_promotion_pameran_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_promotion_roadshow_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_promotion_showroom_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_promotion_target_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
@@ -4842,128 +4840,128 @@
       {
         "task_id": "astranet_h1targetdealerdetail_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_bankstatement_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_TargetSalesInOut_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_AlasanAROD_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_AlasanAROD_NonTrade_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_csl_xlsx",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_dcsl_xlsx",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_csl_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_dcsl_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "astranet_targetcsl_file",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_ZAISOFII00006",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdi00045_pssu",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_ZPYGDO00004_USTK2",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_ZAISOMMI00001_MB51",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_ZAISOMMI00002_MMBE",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_ZPYGBA_O00001",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
@@ -5002,96 +5000,96 @@
       {
         "task_id": "sap_zpygmmr00179",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygmmq00036",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdq00010",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdr00059",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdr00263",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygmmr00188",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdr00039",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdq00094",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygf_ar_aging_nontradedetail",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygf_ar_aging_servicessummary",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygf_ar_aging_unitsummary",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
       {
         "task_id": "sap_zpygsddt00720",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc.",
         "tested": false
       },
@@ -5266,8 +5264,8 @@
       {
         "task_id": "demand_pkbservice_temp4",
         "type": "Transform PySpark",
-        "status": "Belum Convert",
-        "tool": "Dataproc (PySpark)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Task ini di-comment di source DAG — kemungkinan deprecated.",
         "tested": false
       },
@@ -5666,8 +5664,8 @@
       {
         "task_id": "SMW_* MSTR triggers (51 tasks)",
         "type": "Report MSTR Trigger",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT (MSTR trigger - evaluasi relevansi)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Grouped 51 MSTR Web report trigger tasks. Evaluasi apakah masih relevan setelah migrasi ke PBI/GCP.",
         "tested": false
       },
@@ -6010,24 +6008,24 @@
       {
         "task_id": "pcdactualtarget",
         "type": "SSH Task",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       },
       {
         "task_id": "SMW_pcdactualtarget",
         "type": "SSH Task",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       },
       {
         "task_id": "SMW_PCD_H1Sales",
         "type": "SSH Task",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Strategy ingest/transform belum ditentukan. Butuh input dari data owner atau tim arsitektur.",
         "tested": false
       }
@@ -6039,9 +6037,8 @@
     "schedule": "Daily 00 21 * * *",
     "total_tasks": 204,
     "status_counts": {
-      "SKIP": 15,
-      "Done": 186,
-      "Belum Convert": 3
+      "SKIP": 18,
+      "Done": 186
     },
     "tasks": [
       {
@@ -7263,8 +7260,8 @@
       {
         "task_id": "SMW_* MSTR triggers (52 tasks)",
         "type": "Report MSTR Trigger",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT (MSTR trigger - evaluasi relevansi)",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "Grouped 52 MSTR Web report trigger tasks. Evaluasi apakah masih relevan setelah migrasi ke PBI/GCP.",
         "tested": false
       },
@@ -7679,16 +7676,16 @@
       {
         "task_id": "SMW_DataToJ1bdg1",
         "type": "SSH Task",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "NEED INPUT — sumber data dari NMS/J1 belum tersedia di GCP. Butuh konfirmasi strategy ingest.",
         "tested": false
       },
       {
         "task_id": "SMW_CustomerProfileServiceSummary",
         "type": "SSH Task",
-        "status": "Belum Convert",
-        "tool": "NEED INPUT",
+        "status": "SKIP",
+        "tool": "SKIP (DAG paused)",
         "catatan": "NEED INPUT — sumber data dari NMS/J1 belum tersedia di GCP. Butuh konfirmasi strategy ingest.",
         "tested": false
       }

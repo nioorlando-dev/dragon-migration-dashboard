@@ -895,6 +895,7 @@ function statusBreakdown(rows = allRows()) {
 }
 
 const INCREMENTAL_DAGS = ['dragon_L1', 'dragon_SAP'];
+const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2'];
 
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
@@ -1692,9 +1693,11 @@ function renderScripts(root) {
         ? tasks.filter(taskMatchesFilter)
         : tasks;
 
+      const isPausedDag = PAUSED_DAGS.includes(dagName);
       const taskRows = visibleTasks.map(t => {
         const tb  = inferTypeBadge(t);
-        return `<tr>
+        const rowStyle = isPausedDag ? ' style="background:rgba(220,38,38,0.08);"' : '';
+        return `<tr${rowStyle}>
           <td><span class="inv-task-id">${escapeHtml(t.task_id)}</span></td>
           <td><span class="inv-type-badge ${tb.cls}">${tb.label}</span></td>
           <td><span class="inv-tool">${escapeHtml(t.tool || '—')}</span></td>
@@ -1705,9 +1708,10 @@ function renderScripts(root) {
       }).join('');
 
       const id = 'inv-' + dagName.replace(/[^a-z0-9]/gi,'_');
-      return `<div class="inv-card" id="${id}">
+      const pausedBadge = isPausedDag ? `<span style="font-size:10px;font-weight:600;color:#f87171;background:rgba(220,38,38,0.12);border:1px solid rgba(220,38,38,0.25);border-radius:4px;padding:1px 6px;margin-left:8px">PAUSED</span>` : '';
+      return `<div class="inv-card${isPausedDag ? ' paused-dag' : ''}" id="${id}" style="${isPausedDag ? 'border-color:rgba(220,38,38,0.2);' : ''}">
         <div class="inv-card-head" onclick="toggleInvCard('${id}')">
-          <span class="inv-pname">${escapeHtml(dagName)}</span>
+          <span class="inv-pname">${escapeHtml(dagName)}${pausedBadge}</span>
           <div class="inv-pbar-wrap"><div class="inv-pbar-fill" style="width:${pct}%"></div></div>
           <span class="inv-pct">${pct}%</span>
           <div class="inv-chips">
