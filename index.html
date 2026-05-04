@@ -891,6 +891,7 @@ function statusBreakdown(rows = allRows()) {
   rows.forEach(r => {
     out[r.status] = (out[r.status] || 0) + 1;
     if (r.tested) out.tested++;
+    if (r.dag_converted) out.dag_done++;
   });
   return out;
 }
