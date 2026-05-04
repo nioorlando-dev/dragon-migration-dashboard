@@ -875,7 +875,7 @@ function rowsByPrio(prio) {
 }
 
 function countsByPrio() {
-  const rows = allRows().filter(r => !r.isPaused);
+  const rows = allRows();
   return {
     P1: rows.filter(r => r.priority === 'P1').length,
     P2: rows.filter(r => r.priority === 'P2').length,
@@ -1011,6 +1011,7 @@ function renderOverview(root) {
   const l1 = l1Totals();
   const b = statusBreakdown(allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name) && !r.isPaused));
   const P1_NAMES = [
+    'dragon_leads_funnel_management',
     'dragon_customerprofilesales',
     'dragon_partsharecontribution',
     'dragon_ustk2',
@@ -1107,7 +1108,7 @@ function renderOverview(root) {
 
 // ---------- priority view ----------
 function renderPriorityView(root, prio) {
-  const rows = rowsByPrio(prio).filter(r => !r.isPaused).sort((a, b) => {
+  const rows = rowsByPrio(prio).sort((a, b) => {
     // blocked first, then by name
     const order = { blocked: 0, pending: 1, testing: 2, dag_done: 3, ready: 4, done: 5 };
     const d = (order[a.status] ?? 9) - (order[b.status] ?? 9);
