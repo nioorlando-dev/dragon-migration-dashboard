@@ -905,7 +905,19 @@ function totals() {
   const blocked = rows.filter(r => r.status === 'blocked').length;
   const done = rows.filter(r => r.status === 'done').length;
   const tested = rows.filter(r => r.tested).length;
-  return { totalPipes: rows.length, totalTasks, converted, skipped, blocked, done, tested };
+
+  // Split SKIP: DAG non-aktif (paused) vs orchestration
+  let skipPaused = 0, skipOrch = 0;
+  rows.forEach(r => {
+    ((state.pipelines[r.name] || {}).tasks || []).forEach(t => {
+      if (/^skip$/i.test(t.status || '')) {
+        if (/dag paused/i.test(t.tool || '')) skipPaused++;
+        else skipOrch++;
+      }
+    });
+  });
+
+  return { totalPipes: rows.length, totalTasks, converted, skipped, skipPaused, skipOrch, blocked, done, tested };
 }
 
 function l1Totals() {
@@ -1030,7 +1042,7 @@ function renderOverview(root) {
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "navigateTo('scripts','all')")}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "navigateTo('scripts','done')")}
-        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '', "navigateTo('scripts','skip')")}
+        ${statCard('SKIP', t.skipped, iconMinus(), `${t.skipOrch} orchestration · ${t.skipPaused} DAG non-aktif`, '', "navigateTo('scripts','skip')")}
         ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "navigateTo('scripts','all')")}
       </div>
 
