@@ -904,7 +904,10 @@ function totals() {
   const activeRows = rows.filter(r => !r.isPaused);
   const totalTasks = activeRows.reduce((a, r) => a + (r.total || 0), 0);
   const converted = activeRows.reduce((a, r) => a + (r.converted || 0), 0);
-  const skipped = rows.reduce((a, r) => a + (Number((r.status_counts || {})['SKIP']) || 0), 0);
+  const skipped = rows.reduce((a, r) => {
+    const sc = r.status_counts || {};
+    return a + Object.entries(sc).filter(([k]) => /^skip/i.test(k)).reduce((s, [,v]) => s + (Number(v) || 0), 0);
+  }, 0);
   const blocked = activeRows.filter(r => r.status === 'blocked').length;
   const done = activeRows.filter(r => r.status === 'done').length;
   const tested = activeRows.filter(r => r.tested).length;
@@ -913,8 +916,8 @@ function totals() {
   let skipPaused = 0, skipOrch = 0;
   rows.forEach(r => {
     ((state.pipelines[r.name] || {}).tasks || []).forEach(t => {
-      if (/^skip$/i.test(t.status || '')) {
-        if (/dag paused/i.test(t.tool || '')) skipPaused++;
+      if (/^skip/i.test(t.status || '')) {
+        if (/dag paused/i.test(t.tool || '') || /dag paused/i.test(t.status || '')) skipPaused++;
         else skipOrch++;
       }
     });
@@ -1034,7 +1037,7 @@ function renderOverview(root) {
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">Migration Overview</h1>
-      <p class="page-sub">Tracking ${t.totalPipes} Hadoop/Cloudera pipelines migrating to Dataproc PySpark + Cloud Composer.</p>
+      <p class="page-sub">Tracking ${t.totalPipes} active pipelines migrating from Cloudera to GCP Dataproc + Airflow (self-managed).</p>
 
       <div class="stats">
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}

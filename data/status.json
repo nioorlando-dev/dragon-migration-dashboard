@@ -40,8 +40,8 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "7 SQL files need porting. SAP Spark/RFC ingest strategy needed.",
-    "notes": "DAG converted. 3 SQL integration files converted (zpygsdq00094, zpygf_ar_aging, zpygba_o00001). SAP RFC ingest strategy still pending.",
+    "blocker": "",
+    "notes": "SAP connector tersedia. 20 sap_* tasks siap diconvert ke Dataproc. 3 SQL integration files sudah diconvert.",
     "last_updated": "2026-04-22"
   },
   "dragon_astrapay": {
