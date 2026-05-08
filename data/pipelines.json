@@ -2786,50 +2786,330 @@
     "dag_id": "dragon_SAP",
     "priority": "P1",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 5,
+    "total_tasks": 40,
     "status_counts": {
-      "SKIP": 2,
-      "Belum Convert": 3
+      "Belum Convert": 20,
+      "SKIP": 20
     },
     "tasks": [
       {
-        "task_id": "start",
-        "type": "Dummy",
-        "status": "SKIP",
-        "tool": "SKIP (Orchestration)",
-        "catatan": "DummyOperator",
+        "task_id": "sap_bkpf",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
         "tested": false
       },
       {
-        "task_id": "sap_zmb51",
-        "type": "Trigger Fabric Job (Python)",
+        "task_id": "sap_bsec",
+        "type": "SSHOperator",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Fabric trigger — menunggu Fabric workspace ID dari data owner SAP.",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_bseg",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygmmq00036",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygmmr00188",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygsddt00720",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdq00010",
-        "type": "Trigger Fabric Job (Python)",
+        "type": "SSHOperator",
         "status": "Belum Convert",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Fabric trigger — menunggu Fabric workspace ID dari data owner SAP.",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
         "tested": false
       },
       {
-        "task_id": "[SAP_VTHanaEE_Fabric group]",
-        "type": "Extract/SAP RFC",
+        "task_id": "sap_zpygsdq00094",
+        "type": "SSHOperator",
         "status": "Belum Convert",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa diconvert.",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
         "tested": false
       },
       {
-        "task_id": "finish",
-        "type": "Dummy",
+        "task_id": "sap_zpygsdr00039",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygsdr00059",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygsdr00263",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygf_ar_aging",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygf_ar_aging_nontradedetail",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygf_ar_aging_servicessummary",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_zpygf_ar_aging_unitsummary",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_ZAISOFII00006",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_ZAISOMMI00001_MB51",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_ZAISOMMI00002_MMBE",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_ZPYGBA_O00001",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "sap_ZPYGMME00049A",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "Blocked — butuh SAP RFC connector config di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_bkpf",
+        "type": "SSHOperator",
         "status": "SKIP",
         "tool": "SKIP (Orchestration)",
-        "catatan": "DummyOperator",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_bsec",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_bseg",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygmmq00036",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygmmr00188",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsddt00720",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsdq00010",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsdq00094",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsdr00039",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsdr00059",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygsdr00263",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygf_ar_aging",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygf_ar_aging_nontradedetail",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_sap_zpygf_ar_aging_servicessummary",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_zpygf_ar_aging_unitsummary",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_mappingunittype",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_mb51",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_mmbe",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_zpygba_o00001",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_integration_ZPYGMME00049A",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Impala Metadata — tidak ada di GCP",
         "tested": false
       }
     ]
@@ -8548,74 +8828,468 @@
     "dag_id": "dragon_customerprofilesales_cloudera",
     "priority": "P2",
     "schedule": "00 17 * * *",
-    "total_tasks": 8,
+    "total_tasks": 33,
     "status_counts": {
-      "Belum Convert": 8
+      "SKIP": 24,
+      "Done": 22,
+      "Belum Convert": 11
     },
     "tasks": [
       {
-        "task_id": "portalhso_dealer_territory_result",
+        "task_id": "start",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "",
+        "tested": false
+      },
+      {
+        "task_id": "finish",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "",
+        "tested": false
+      },
+      {
+        "task_id": "step",
+        "type": "Dummy",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "",
+        "tested": false
+      },
+      {
+        "task_id": "schedule_6AM",
+        "type": "TimeDeltaSensor",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Airflow TimeDeltaSensor — dihandle Airflow",
+        "tested": false
+      },
+      {
+        "task_id": "com_customerprofilesales",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Compute Statistics Hive — tidak ada di Spark/GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_portalhso_dealer_territory_result",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_masterdealer",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_cdb",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_fovallowndealer",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_fovalltime",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_fovlastyear",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_kpb1",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_kpb2",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_kpb3",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_kpb4",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_lastservice",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_salesorder",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_dataservice",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_rofinal",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_unitsales",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_ring",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_servicejobtype",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales_kpb",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "inv_customerprofilesales",
+        "type": "SSHOperator",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "Invalidate Metadata — tidak ada di GCP",
+        "tested": false
+      },
+      {
+        "task_id": "check_masterdealer_null",
+        "type": "PythonOperator",
         "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Ingest Python",
+        "tool": "Airflow (PythonOperator/Sensor)",
+        "catatan": "Check null masterdealer — Airflow sensor",
+        "tested": false
+      },
+      {
+        "task_id": "masterdealer_null",
+        "type": "SSHOperator",
+        "status": "Done",
         "tool": "Dataproc",
-        "type": "Ingest Python"
+        "catatan": "appendnullmasterdealer.py — Spark PySpark",
+        "tested": false
+      },
+      {
+        "task_id": "check_integration_ustk2",
+        "type": "ExternalTaskSensor",
+        "status": "Belum Convert",
+        "tool": "Airflow (ExternalTaskSensor)",
+        "catatan": "Sensor tunggu L1 USTK2 selesai",
+        "tested": false
+      },
+      {
+        "task_id": "L1_integration_ustk2",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job",
+        "catatan": "Trigger L1 USTK2 Fabric + integration_ustk.sql",
+        "tested": false
+      },
+      {
+        "task_id": "check_integration_pssu",
+        "type": "ExternalTaskSensor",
+        "status": "Belum Convert",
+        "tool": "Airflow (ExternalTaskSensor)",
+        "catatan": "Sensor tunggu L1 PSSU selesai",
+        "tested": false
+      },
+      {
+        "task_id": "L1_integration_pssu",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "NEED INPUT (SAP connector GCP)",
+        "catatan": "SAP RFC extract zpygsdi00045_pssu + integration_pssu.sql — butuh SAP connector",
+        "tested": false
+      },
+      {
+        "task_id": "portalhso_dealer_territory_result",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Dataproc",
+        "catatan": "dealer_territory_result.py — Spark PySpark",
+        "tested": false
+      },
+      {
+        "task_id": "ManagementSimpliFy_Branch",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job",
+        "catatan": "Trigger object Obj00125335dbo.Branch",
+        "tested": false
+      },
+      {
+        "task_id": "ManagementSimpliFy_Region",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job",
+        "catatan": "Trigger object Obj00125339dbo.Region",
+        "tested": false
+      },
+      {
+        "task_id": "master2w_Region",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job",
+        "catatan": "Trigger object Obj00125461dbo.Region",
+        "tested": false
       },
       {
         "task_id": "masterdealer",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "MasterDealer_Master2W.py + MasterDealer_Portal.py + MasterDealer.py + appendnullmasterdealer.py",
+        "tested": false
       },
       {
         "task_id": "masterdealer_delta",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "masterdealer_delta.sql → sudah convert ke Spark SQL",
+        "tested": false
       },
       {
         "task_id": "customerprofilesales_cdb",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_cdb.py — Spark PySpark",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_fovallowndealer",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_fovallowndealer.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_fovalltime",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_fovalltime.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_fovlastyear",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_fovlastyear.py",
+        "tested": false
       },
       {
         "task_id": "customerprofilesales_kpb1",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_kpb1.py",
+        "tested": false
       },
       {
         "task_id": "customerprofilesales_kpb2",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_kpb2.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_kpb3",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_kpb3.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_kpb4",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_kpb4.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_lastservice",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_lastservice.py",
+        "tested": false
       },
       {
         "task_id": "customerprofilesales_salesorder",
-        "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_salesorder.py",
+        "tested": false
       },
       {
         "task_id": "customerprofilesales_dataservice",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "1_customerprofilesales_dataservice.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_rofinal",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "2_customerprofilesales_rofinal.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_unitsales",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "2_customerprofilesales_unitsales.sql → sudah convert",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_ring",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "3_customerprofilesales_ring.sql → sudah convert",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_servicejobtype",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "3_customerprofilesales_servicejobtype.py",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_kpb",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "3_customerprofilesales_kpb.sql → sudah convert",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_final",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "4_customerprofilesales.sql → sudah convert",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_merge_star",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Dataproc",
+        "catatan": "5_CustomerProfileSales_Merge_STAR.py — Spark PySpark",
+        "tested": false
+      },
+      {
+        "task_id": "customerprofilesales_delta_final",
+        "type": "SSHOperator",
+        "status": "Done",
+        "tool": "Spark SQL (Dataproc)",
+        "catatan": "6_customerprofilesales_delta.sql → sudah convert",
+        "tested": false
+      },
+      {
+        "task_id": "refresh_pbi",
+        "type": "SSHOperator",
         "status": "Belum Convert",
-        "tested": false,
-        "tipe_step": "Hive SQL",
-        "tool": "Spark SQL SQL",
-        "type": "Hive SQL"
+        "tool": "Cloud Run Job",
+        "catatan": "6 PBI Python scripts (CustomerProfileRO.py dll) → Cloud Run Job",
+        "tested": false
+      },
+      {
+        "task_id": "trigger_synapse",
+        "type": "SSHOperator",
+        "status": "Belum Convert",
+        "tool": "Cloud Run Job",
+        "catatan": "copyfile_cpsales.sh + trigger_customerprofilesales_synapse.sh",
+        "tested": false
       }
     ]
   },
