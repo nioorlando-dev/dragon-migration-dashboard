@@ -613,7 +613,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -621,7 +621,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -629,7 +629,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -637,7 +637,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -645,7 +645,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -653,7 +653,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -661,7 +661,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -669,7 +669,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -677,7 +677,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -685,7 +685,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -693,7 +693,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -701,7 +701,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -709,7 +709,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -717,7 +717,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -725,7 +725,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -733,7 +733,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -741,7 +741,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -749,7 +749,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -757,7 +757,7 @@
         "type": "Ingest Python",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+        "catatan": "Task terkait Azure/Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
         "tested": false
       },
       {
@@ -1527,7 +1527,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingarnontrade.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingarnontrade.sql"
       },
       {
         "task_id": "monitoringbillingarnontrade_oustanding_complete",
@@ -1536,7 +1536,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingarnontrade_oustanding_complete.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingarnontrade_oustanding_complete.sql"
       },
       {
         "task_id": "MonitoringBillingSales",
@@ -1545,7 +1545,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales.sql"
       },
       {
         "task_id": "MonitoringBillingSales_AmountBilling",
@@ -1554,7 +1554,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_amountbilling.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_amountbilling.sql"
       },
       {
         "task_id": "MonitoringBillingSales_KuitansiDP",
@@ -1563,7 +1563,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_kuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_kuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_KuitansiPelunasan",
@@ -1572,7 +1572,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_kuitansipelunasan.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_kuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSales_LastKuitansi",
@@ -1581,7 +1581,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_lastkuitansi.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_lastkuitansi.sql"
       },
       {
         "task_id": "MonitoringBillingSales_LastKuitansiDP",
@@ -1590,7 +1590,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_lastkuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_lastkuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansi",
@@ -1599,7 +1599,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansi.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_tagihankuitansi.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansiDP",
@@ -1608,7 +1608,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_tagihankuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSales_TagihanKuitansiPelunasan",
@@ -1617,7 +1617,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsales_tagihankuitansipelunasan.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsales_tagihankuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSalesComplete",
@@ -1626,7 +1626,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsalescomplete.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsalescomplete.sql"
       },
       {
         "task_id": "MonitoringBillingSalesOutstanding",
@@ -1635,7 +1635,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsalesoutstanding.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsalesoutstanding.sql"
       },
       {
         "task_id": "monitoringbillingservice_0",
@@ -1644,7 +1644,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_0.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingservice_0.sql"
       },
       {
         "task_id": "monitoringbillingservice_1",
@@ -1653,7 +1653,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_1.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingservice_1.sql"
       },
       {
         "task_id": "monitoringbillingservice_complete_outstanding",
@@ -1662,7 +1662,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingservice_complete_outstanding.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingservice_complete_outstanding.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart",
@@ -1671,7 +1671,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_KuitansiDP",
@@ -1680,7 +1680,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_kuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_kuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_KuitansiPelunasan",
@@ -1689,7 +1689,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_kuitansipelunasan.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_kuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_LatestKuitansiDP",
@@ -1698,7 +1698,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_latestkuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_latestkuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_LatestKuitansiPelunasan",
@@ -1707,7 +1707,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_latestkuitansipelunasan.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_latestkuitansipelunasan.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_TagihanKuitansiDP",
@@ -1716,7 +1716,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_tagihankuitansidp.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_tagihankuitansidp.sql"
       },
       {
         "task_id": "MonitoringBillingSparepart_TagihanKuitansiPelunasan",
@@ -1725,7 +1725,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "converted_file": "converted_scripts/pipeline_29_dragon/bigquery/monitoringbillingsparepart_tagihankuitansipelunasan.sql"
+        "converted_file": "converted_spark_scripts/pipeline_29_dragon/sql/monitoringbillingsparepart_tagihankuitansipelunasan.sql"
       },
       {
         "task_id": "monitoringBKU",
@@ -1734,7 +1734,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringBKU.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringBKU.sql"
       },
       {
         "task_id": "monitoringBKU_delta",
@@ -1743,7 +1743,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": true,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringbku_delta.sql [Tested 2026-04-27: BigQuery SUCCESS, delta detection confirmed Append=32]"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringbku_delta.sql [Tested 2026-04-27: Spark SQL SUCCESS, delta detection confirmed Append=32]"
       },
       {
         "task_id": "monitoringdocumentsales_1",
@@ -1752,7 +1752,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_1.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringdocumentsales_1.sql"
       },
       {
         "task_id": "monitoringdocumentsales_complete",
@@ -1761,7 +1761,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_complete.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringdocumentsales_complete.sql"
       },
       {
         "task_id": "monitoringdocumentsales_outstanding",
@@ -1770,7 +1770,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_outstanding.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringdocumentsales_outstanding.sql"
       },
       {
         "task_id": "MonitoringPKBAllocation",
@@ -1779,7 +1779,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/MonitoringPKBAllocation.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/MonitoringPKBAllocation.sql"
       },
       {
         "task_id": "monitoringstockpameran",
@@ -1788,7 +1788,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringstockpameran.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringstockpameran.sql"
       },
       {
         "task_id": "monitoringalasanarod",
@@ -1797,7 +1797,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringalasanarod.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringalasanarod.sql"
       },
       {
         "task_id": "areadealer_pdrb",
@@ -1982,7 +1982,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_2.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringdocumentsales_2.sql"
       },
       {
         "task_id": "monitoringdocumentsales_3",
@@ -1991,7 +1991,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_29_dragon/bigquery/monitoringdocumentsales_3.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_29_dragon/sql/monitoringdocumentsales_3.sql"
       },
       {
         "task_id": "demand_pkbservice_jobpart",
@@ -2061,7 +2061,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader.sql (PySpark joins \u2192 BigQuery SQL with joinkey CTE)"
+        "notes": "Converted \u2192 spark_sql/LeadTimeServiceHeader.sql (PySpark joins \u2192 Spark SQL SQL with joinkey CTE)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp1",
@@ -2070,7 +2070,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader_temp1_script.sql (source: LeadTimeServiceHeader_temp0.py; creates temp0+temp1 tables; unix_timestamp\u2192TIMESTAMP_DIFF)"
+        "notes": "Converted \u2192 spark_sql/LeadTimeServiceHeader_temp1_script.sql (source: LeadTimeServiceHeader_temp0.py; creates temp0+temp1 tables; unix_timestamp\u2192TIMESTAMP_DIFF)"
       },
       {
         "task_id": "LeadTimeServiceHeader_temp2",
@@ -2079,7 +2079,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/LeadTimeServiceHeader_temp2_script.sql (source: LeadTimeServiceHeader_temp1.py; creates temp2; CAST(DECIMAL)\u2192NUMERIC)"
+        "notes": "Converted \u2192 spark_sql/LeadTimeServiceHeader_temp2_script.sql (source: LeadTimeServiceHeader_temp1.py; creates temp2; CAST(DECIMAL)\u2192NUMERIC)"
       },
       {
         "task_id": "SMW_* MSTR triggers (25 tasks)",
@@ -2872,24 +2872,24 @@
         "task_id": "integration_astrapay_file",
         "type": "Transform/SQL (Hive)",
         "status": "Done",
-        "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "tool": "Spark SQL SQL",
+        "catatan": "Hive SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
         "task_id": "integration_mappingso_target_file",
         "type": "Transform/SQL (Hive)",
         "status": "Done",
-        "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "tool": "Spark SQL SQL",
+        "catatan": "Hive SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
         "task_id": "astrapay_transformation",
         "type": "Transform/SQL (Hive)",
         "status": "Done",
-        "tool": "BigQuery SQL",
-        "catatan": "Hive SQL \u2192 BigQuery SQL",
+        "tool": "Spark SQL SQL",
+        "catatan": "Hive SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3014,7 +3014,7 @@
         "type": "Transform DBT",
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "NEED INPUT DBT \u2192 pilihan Dataform/Cloud Run+dbt/BigQuery SQL",
+        "catatan": "NEED INPUT DBT \u2192 pilihan Dataform/Cloud Run+dbt/Spark SQL SQL",
         "tested": false
       },
       {
@@ -3288,7 +3288,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3296,7 +3296,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3304,7 +3304,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3312,7 +3312,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3320,7 +3320,7 @@
         "type": "Transform/SQL (Hive)",
         "status": "SKIP",
         "tool": "SKIP (DAG paused)",
-        "catatan": "Hive/Beeline SQL \u2192 BigQuery SQL",
+        "catatan": "Hive/Beeline SQL \u2192 Spark SQL SQL",
         "tested": false
       },
       {
@@ -3688,7 +3688,7 @@
         "type": "Trigger Synapse (Python)",
         "status": "Belum Convert",
         "tool": "NEED INPUT (Synapse relevance)",
-        "catatan": "Task push data ke Synapse \u2014 tidak relevan post-migrasi ke BigQuery. Butuh keputusan: deprecated atau diganti direct write ke BigQuery.",
+        "catatan": "Task push data ke Synapse \u2014 tidak relevan post-migrasi ke Spark SQL. Butuh keputusan: deprecated atau diganti direct write ke Spark SQL.",
         "tested": false
       },
       {
@@ -6668,7 +6668,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted PySpark SQL \u2192 BigQuery SQL. See bigquery/nms_datarevenuedirect.sql"
+        "notes": "Converted PySpark SQL \u2192 Spark SQL SQL. See spark_sql/nms_datarevenuedirect.sql"
       },
       {
         "task_id": "nms_DataRevenueSummary",
@@ -6677,7 +6677,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted PySpark SQL \u2192 BigQuery SQL. See bigquery/nms_datarevenuesummary.sql"
+        "notes": "Converted PySpark SQL \u2192 Spark SQL SQL. See spark_sql/nms_datarevenuesummary.sql"
       },
       {
         "task_id": "nms_tmp_mapping_datarevenue",
@@ -6726,7 +6726,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/Salesinout_Transformation.sql (3 tables: partsharecontribution, targetsalesinout, transformation)"
+        "notes": "Converted \u2192 spark_sql/Salesinout_Transformation.sql (3 tables: partsharecontribution, targetsalesinout, transformation)"
       },
       {
         "task_id": "leadsfunnelcrmh1",
@@ -6783,7 +6783,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 converted_scripts/pipeline_31_so2w_dragon_2/bigquery/customerinvitation.sql"
+        "notes": "Converted \u2192 converted_spark_scripts/pipeline_31_so2w_dragon_2/sql/customerinvitation.sql"
       },
       {
         "task_id": "utilisasidragon",
@@ -6808,7 +6808,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/servicedemandratio_sprall.sql (Python LEAD logic \u2192 BigQuery LEAD() window function)"
+        "notes": "Converted \u2192 spark_sql/servicedemandratio_sprall.sql (Python LEAD logic \u2192 Spark SQL LEAD() window function)"
       },
       {
         "task_id": "spr_transformation",
@@ -6825,7 +6825,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: csl_integration_table.sql"
+        "notes": "Spark SQL SQL converted. File: csl_integration_table.sql"
       },
       {
         "task_id": "csl_datamart_Table",
@@ -6834,7 +6834,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: csl_datamart_table.sql"
+        "notes": "Spark SQL SQL converted. File: csl_datamart_table.sql"
       },
       {
         "task_id": "DCSL_integration_Table",
@@ -6843,7 +6843,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: dcsl_integration_table.sql"
+        "notes": "Spark SQL SQL converted. File: dcsl_integration_table.sql"
       },
       {
         "task_id": "DCSL_datamart_Table",
@@ -6852,7 +6852,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: dcsl_datamart_table.sql"
+        "notes": "Spark SQL SQL converted. File: dcsl_datamart_table.sql"
       },
       {
         "task_id": "targetCSL_datamart_Table",
@@ -6861,7 +6861,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: targetcsl_datamart_table.sql"
+        "notes": "Spark SQL SQL converted. File: targetcsl_datamart_table.sql"
       },
       {
         "task_id": "monitoringAR_Table",
@@ -6934,7 +6934,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: integration_hc3_actual_target_file.sql"
+        "notes": "Spark SQL SQL converted. File: integration_hc3_actual_target_file.sql"
       },
       {
         "task_id": "hc3_customer",
@@ -7080,7 +7080,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted \u2192 bigquery/d360_log_datasets_distribution.sql (4 tables: crossjoin1/2/3 + datasets_distribution)"
+        "notes": "Converted \u2192 spark_sql/d360_log_datasets_distribution.sql (4 tables: crossjoin1/2/3 + datasets_distribution)"
       },
       {
         "task_id": "dgi_utilisasidgi",
@@ -7089,7 +7089,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "Converted to BigQuery SQL: converted_scripts/pipeline_31_so2w_dragon_2/bigquery/utilisasidgi.sql"
+        "notes": "Converted to Spark SQL SQL: converted_spark_scripts/pipeline_31_so2w_dragon_2/sql/utilisasidgi.sql"
       },
       {
         "task_id": "nms_DataRevenue_NonStar_Delta",
@@ -7122,7 +7122,7 @@
         "tool": "SKIP (DAG paused)",
         "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera",
         "tested": false,
-        "notes": "BigQuery SQL converted. File: impalasdue.sql"
+        "notes": "Spark SQL SQL converted. File: impalasdue.sql"
       },
       {
         "task_id": "convertersdue",
@@ -8233,7 +8233,7 @@
         "type": "Dummy",
         "status": "SKIP",
         "tool": "SKIP \u2014 deprecated",
-        "catatan": "Merge Hive small files \u2014 no equivalent in BigQuery",
+        "catatan": "Merge Hive small files \u2014 no equivalent in Spark SQL",
         "tested": false
       },
       {
@@ -8276,15 +8276,15 @@
         "task_id": "pss_integration_STUB",
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
-        "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "STUB SQL integration \u2014 butuh SQL porting dari Beeline/Hive ke BigQuery SQL. Blocked sampai arsitektur PSS diputuskan.",
+        "tool": "Spark SQLInsertJobOperator (NEED INPUT)",
+        "catatan": "STUB SQL integration \u2014 butuh SQL porting dari Beeline/Hive ke Spark SQL SQL. Blocked sampai arsitektur PSS diputuskan.",
         "tested": false
       },
       {
         "task_id": "[~375 detail tasks]",
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
-        "tool": "BigQueryInsertJobOperator",
+        "tool": "Spark SQLInsertJobOperator",
         "catatan": "STUB placeholder \u2014 full task list (~375 tasks) pending keputusan arsitektur ingest PSS ke GCP.",
         "tested": false
       },
@@ -8328,15 +8328,15 @@
         "task_id": "ahass_integration_STUB",
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
-        "tool": "BigQueryInsertJobOperator (NEED INPUT)",
-        "catatan": "STUB SQL integration \u2014 butuh SQL porting dari Beeline/Hive ke BigQuery SQL. Blocked sampai arsitektur AHASS diputuskan.",
+        "tool": "Spark SQLInsertJobOperator (NEED INPUT)",
+        "catatan": "STUB SQL integration \u2014 butuh SQL porting dari Beeline/Hive ke Spark SQL SQL. Blocked sampai arsitektur AHASS diputuskan.",
         "tested": false
       },
       {
         "task_id": "[~398 detail tasks]",
         "type": "Transform SQL (Hive)",
         "status": "Belum Convert",
-        "tool": "BigQueryInsertJobOperator",
+        "tool": "Spark SQLInsertJobOperator",
         "catatan": "STUB placeholder \u2014 full task list (~398 tasks) pending keputusan arsitektur ingest AHASS ke GCP.",
         "tested": false
       },
@@ -8364,7 +8364,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8372,7 +8372,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8380,7 +8380,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8388,7 +8388,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8404,7 +8404,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8472,7 +8472,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8480,7 +8480,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8488,7 +8488,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8496,7 +8496,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8531,7 +8531,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8566,7 +8566,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8574,7 +8574,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8582,7 +8582,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8590,7 +8590,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8598,7 +8598,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8606,7 +8606,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       },
       {
@@ -8614,7 +8614,7 @@
         "status": "Belum Convert",
         "tested": false,
         "tipe_step": "Hive SQL",
-        "tool": "BigQuery SQL",
+        "tool": "Spark SQL SQL",
         "type": "Hive SQL"
       }
     ]

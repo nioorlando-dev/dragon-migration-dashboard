@@ -1,0 +1,807 @@
+[
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "CDDBUDSTK",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "RefEquipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "SvPKBHeader",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "SvPKBHeaderEquipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "customer",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "invoice",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "jabatan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "mappingkaryawanjabatan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "salesorder",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "svmappingpit",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_ahass_wh_di",
+    "Table_Name": "svtipepit",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_avocado_wh_di",
+    "Table_Name": "city",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_avocado_wh_di",
+    "Table_Name": "kecamatan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_avocado_wh_di",
+    "Table_Name": "kelurahan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_avocado_wh_di",
+    "Table_Name": "occupation",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_avocado_wh_di",
+    "Table_Name": "province",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_bi_lh_di",
+    "Table_Name": "reportlogbi_cleansing",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "Dealer",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "dealergroup",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "dealertelephone",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "district",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "kecamatan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "kelurahan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "lookup",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "province",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_master2w_wh_di",
+    "Table_Name": "region",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "Dealer",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "city",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "city_ahm",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "dealer_status",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "dealer_telephone",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "dealer_territory_result",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "kecamatan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "kelurahan",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_portalhso_wh_di",
+    "Table_Name": "province",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "bkpf",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "bsec",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "bseg",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "mappingunittype",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zaisommi00001_mb51",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zaisommi00002_mmbe",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygba_o00001",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygdo00004_ustk2",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygf_ar_aging",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygf_ar_aging_nontradedetail",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygf_ar_aging_servicessummary",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygf_ar_aging_unitsummary",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygmme00049a",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygmmq00036",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygmmr00188",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsddt00720",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdi00045_pssu",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdq00010",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdq00094",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdr00039",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdr00059",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_di",
+    "Table_Name": "zpygsdr00263",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "mappingunittype",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zaisommi00001_mb51",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zaisommi00002_mmbe",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygba_o00001",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygdo00004_ustk2",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygf_ar_aging_unitsummary",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygmme00049a",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygsdi00045_pssu",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_sap_wh_dl",
+    "Table_Name": "zpygsdq00094",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "CDDBUDSTK",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "Eventlive_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "RefEquipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "StatusLayananDealer_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "SvPKBHeader",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "SvPKBHeaderEquipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "activitypameran_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "activityroadshow_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "astrapay_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "branch",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "customer",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "dealerhondaprofileahm_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "hargakomoditas_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "incentive_sf_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "incentive_tl_ol_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "invoice",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "leadscustomer_amanda_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "leadscustomer_lemon_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "leadscustomer_motorkux_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "leadscustomer_socialmediafb_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "leadscustomer_virtualexhibition_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "mappingdealeroldnew_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "mappingposservice_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "mappingpriorityjobtype_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "mappingso_target_upload_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "marketpricing_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "region",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "ringterritory_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "salesorder",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "sequence_region",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "summarypdrb_mtm_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "summarypdrb_yty_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "svmappingpit",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "svtipepit",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "targetpartsharedansalesamic_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_di",
+    "Table_Name": "virtualexhibitionsummary_file",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dl",
+    "Table_Name": "falcon_smi",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "MasterDealer",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "RefCounterGroup",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "Reftasklist",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "refequipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "refjob",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "refjobtype",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "svpkbheader",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "svpkbheaderequipment",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "svpkbjobdetail",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "unitcolor",
+    "GCS_Status": "Not Found in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "h1targetring",
+    "GCS_Status": "0 KB (Empty) in GCS Landing",
+    "Total_Bytes": "0"
+  },
+  {
+    "Platform": "Cloudera",
+    "Database_Dataset": "opr_ast_so2w_wh_dm",
+    "Table_Name": "h1targetpaymenttype",
+    "GCS_Status": "0 KB (Empty) in GCS Landing",
+    "Total_Bytes": "0"
+  }
+]

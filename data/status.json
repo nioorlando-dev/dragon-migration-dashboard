@@ -122,7 +122,7 @@
     "sql_converted": true,
     "tested": false,
     "blocker": "",
-    "notes": "DAG + MarketShare_HeadToHead.sql converted to BigQuery. Ready to deploy.",
+    "notes": "DAG + MarketShare_HeadToHead.sql converted to Spark SQL. Ready to deploy.",
     "last_updated": "2026-04-22"
   },
   "dragon_monitoring_bku": {
@@ -131,7 +131,7 @@
     "sql_converted": true,
     "tested": true,
     "blocker": "",
-    "notes": "DAG + SQL converted. monitoringBKU.sql + monitoringbku_delta.sql converted to BigQuery. Tested 2026-04-28: delta detection confirmed (Append=32).",
+    "notes": "DAG + SQL converted. monitoringBKU.sql + monitoringbku_delta.sql converted to Spark SQL. Tested 2026-04-28: delta detection confirmed (Append=32).",
     "last_updated": "2026-04-28"
   },
   "dragon_monitoring_stnk_bpkb": {
@@ -157,7 +157,7 @@
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "1 task customerprofileservice_synapse masih unresolved — push ke Synapse tidak relevan post-migrasi BigQuery. Butuh keputusan: deprecated atau diganti BigQuery write.",
+    "blocker": "1 task customerprofileservice_synapse masih unresolved — push ke Synapse tidak relevan post-migrasi Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
     "notes": "DAG + 9 PySpark scripts converted. 8/9 tasks Done. 1 task Synapse menunggu keputusan arsitektur.",
     "last_updated": "2026-04-26"
   },
@@ -275,7 +275,7 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "NEED INPUT: apakah data sugor_ahass_pss masih perlu di-push? Jika tidak, pipeline ini bisa deprecated.",
-    "notes": "Pipeline push Cloudera→Synapse. Post-migration mungkin tidak diperlukan karena Synapse digantikan BigQuery.",
+    "notes": "Pipeline push Cloudera→Synapse. Post-migration mungkin tidak diperlukan karena Synapse digantikan Spark SQL.",
     "last_updated": "2026-04-22"
   },
   "dragons_data_merging": {
@@ -284,7 +284,7 @@
     "sql_converted": false,
     "tested": false,
     "blocker": "HDFS merge helper — tidak relevan di GCP. Rekomendasi: DEPRECATED.",
-    "notes": "Pipeline merge small Hive files (HDFS-specific). Tidak ada ekuivalen di BigQuery. Kemungkinan besar deprecated.",
+    "notes": "Pipeline merge small Hive files (HDFS-specific). Tidak ada ekuivalen di Spark SQL. Kemungkinan besar deprecated.",
     "last_updated": "2026-04-22"
   },
   "so2w_pss": {

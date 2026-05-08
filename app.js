@@ -257,7 +257,7 @@ function renderOverview(root) {
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">Migration Overview</h1>
-      <p class="page-sub">Tracking 28 Hadoop/Cloudera pipelines migrating to BigQuery + Cloud Composer.</p>
+      <p class="page-sub">Tracking 28 Hadoop/Cloudera pipelines migrating to Dataproc PySpark + Cloud Composer.</p>
 
       <div class="stats">
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
