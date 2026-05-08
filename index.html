@@ -896,8 +896,8 @@ function statusBreakdown(rows = allRows()) {
   return out;
 }
 
-const INCREMENTAL_DAGS = ['dragon_L1'];
-const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2', 'dragoncloudera_synapse', 'dragon_datamekanik', 'dragon_leads_funnel_management', 'dragon_backup', 'dragon_sdue_old', 'dragon_report_leads_funnel_management', 'testing_alert_notif_dragon', 'falcon'];
+const INCREMENTAL_DAGS = [];
+const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2', 'dragoncloudera_synapse', 'dragon_datamekanik', 'dragon_leads_funnel_management', 'dragon_backup', 'dragon_sdue_old', 'dragon_report_leads_funnel_management', 'testing_alert_notif_dragon', 'falcon', 'dragon_L1'];
 
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
