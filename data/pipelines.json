@@ -2890,7 +2890,7 @@
         "status": "Done",
         "tool": "Spark SQL SQL",
         "catatan": "Hive SQL → Spark SQL SQL",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "PBI_Astrapay",
@@ -3015,7 +3015,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT → pilihan Dataform/Cloud Run+dbt/Spark SQL SQL",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "1_customerprofilesales_pkb_temp",
@@ -3023,7 +3023,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "1_customerprofilesales_ro_temp",
@@ -3031,7 +3031,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "[dbt models final]",
@@ -3214,7 +3214,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "NEED INPUT DBT → L4 final datarevenue model",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "datarevenue_transformation_synapse",
@@ -3491,7 +3491,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "monitoringbku",
@@ -3499,7 +3499,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "finish",
@@ -3949,7 +3949,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "finish",
@@ -7712,7 +7712,7 @@
         "status": "Done",
         "tool": "Airflow (ExternalTaskSensor)",
         "catatan": "Composer sensor → As-Is",
-        "tested": false,
+        "tested": true,
         "notes": " [Sensor implemented in DAG]"
       },
       {
@@ -7721,7 +7721,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "report_sdue_2023",
@@ -7729,7 +7729,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "report_sdue_portalahm",
@@ -7737,7 +7737,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_master_dealer",
@@ -7745,7 +7745,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_sales_part_oil",
@@ -7753,7 +7753,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenuehgp",
@@ -7761,7 +7761,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenueoli",
@@ -7769,7 +7769,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_mechprod",
@@ -7777,7 +7777,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_pit",
@@ -7785,7 +7785,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_toj",
@@ -7793,7 +7793,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_toj11",
@@ -7801,7 +7801,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_aprom",
@@ -7809,7 +7809,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_acap",
@@ -7817,7 +7817,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenue",
@@ -7825,7 +7825,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid",
@@ -7833,7 +7833,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_sum",
@@ -7841,7 +7841,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_filler",
@@ -7849,7 +7849,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_union",
@@ -7857,7 +7857,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_union_aggr",
@@ -7865,7 +7865,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_tanggal_trans",
@@ -7873,7 +7873,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_result_aggr",
@@ -7881,7 +7881,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_sdue",
@@ -7889,7 +7889,7 @@
         "status": "Done",
         "tool": "NEED INPUT (DBT/Dataform/BQ)",
         "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "wait_for_fabric_update1",
@@ -8053,7 +8053,7 @@
         "status": "Done",
         "tool": "ExternalTaskSensor",
         "catatan": "Waits for so2w_dragon_2.LeadsFunnelCRMH1_Star",
-        "tested": false,
+        "tested": true,
         "notes": " [Sensor implemented in DAG]"
       },
       {
@@ -8087,7 +8087,7 @@
         "status": "Done",
         "tool": "Dataproc Serverless (PySpark)",
         "catatan": "dbt run -s prospecttossu",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "Grape Phase 1",
@@ -8674,7 +8674,7 @@
       {
         "task_id": "PRD_DataMekanik_Transformation | datamekanik_transformation",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "PRD_DataMekanik_Transformation",
         "tool": "Spark SQL"
       },
@@ -8693,7 +8693,7 @@
       {
         "task_id": "PRD_DataRevenue_Transformation | datarevenue_transformation",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "PRD_DataRevenue_Transformation",
         "tool": "Spark SQL"
       },
@@ -8778,14 +8778,14 @@
       {
         "task_id": "CustomerProfileSales_Delta | opr_ast_so2w_wh_dm.customerprofilesales",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "CustomerProfileSales_Delta",
         "tool": "Spark SQL"
       },
       {
         "task_id": "CustomerProfileSales_Delta | opr_ast_so2w_wh_dm.customerprofilesales",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "CustomerProfileSales_Delta",
         "tool": "Spark SQL"
       },
@@ -8798,7 +8798,7 @@
       {
         "task_id": "Datapit_Transformation | opr_ast_so2w_wh_dm.datapit_transformation",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "Datapit_Transformation",
         "tool": "Spark SQL"
       },
@@ -8907,7 +8907,7 @@
       {
         "task_id": "BTL_Transformation_FullLoad | opr_ast_so2w_wh_dm.btl_transformation",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "BTL_Transformation_FullLoad",
         "tool": "Spark SQL"
       },
@@ -8974,7 +8974,7 @@
       {
         "task_id": "PRD_UnitEntry | opr_ast_so2w_wh_dm.unitentry_transformation",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "PRD_UnitEntry",
         "tool": "Spark SQL"
       },
@@ -9005,7 +9005,7 @@
       {
         "task_id": "PRD_CustomerProfileSales | opr_ast_so2w_wh_dm.customerprofilesales",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "PRD_CustomerProfileSales",
         "tool": "Spark SQL"
       },
@@ -9102,7 +9102,7 @@
       {
         "task_id": "PRD_SvMappingpit | svmappingpit",
         "status": "Done",
-        "tested": false,
+        "tested": true,
         "pipeline": "PRD_SvMappingpit",
         "tool": "Spark SQL"
       },
