@@ -2252,255 +2252,175 @@
     ]
   },
   "dragon_L1": {
-    "dag_id": "dragon_L1",
-    "priority": "P1",
-    "schedule": "Daily 00 17 * * *",
-    "total_tasks": 30,
-    "status_counts": {
-      "SKIP": 30
-    },
     "tasks": [
       {
         "task_id": "start",
-        "type": "Dummy",
         "status": "SKIP",
         "tool": "SKIP (Orchestration)",
-        "catatan": "DummyOperator",
-        "tested": false
-      },
-      {
-        "task_id": "schedule_4AM",
-        "type": "Sensor",
-        "status": "SKIP",
-        "tool": "SKIP (Orchestration)",
-        "catatan": "TimeDeltaSensor 4h",
-        "tested": false
-      },
-      {
-        "task_id": "schedule_6AM",
-        "type": "Sensor",
-        "status": "SKIP",
-        "tool": "SKIP (Orchestration)",
-        "catatan": "TimeDeltaSensor 6h",
-        "tested": false
-      },
-      {
-        "task_id": "L1_CLOUDERA.region",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load (Cloudera region sync), deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_motorcycle_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_fif_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_items_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_daerah_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_kpb_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_kpb_request_details",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_apin_event_log_detail",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_non_dynamic",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedata_file",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedatatype_file",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_FILE_ASTRANET.astranet_threshold_nms_file",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_FILE_ASTRANET.astranet_leads_ahm_file",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_FILE_ASTRANET.astranet_target_motorkux_file",
-        "type": "Trigger Fabric Job (Python)",
-        "status": "SKIP",
-        "tool": "Cloud Run Job (Fabric trigger)",
-        "catatan": "Cloud Run Job (Fabric trigger) — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.L1_sap_ZPYGDO00004_USTK2",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.L1_sap_zpygsdi00045_pssu",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.com_ZPYGDO00004_USTK2",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.com_zpygsdi00045_pssu",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.integration_pssu",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.integration_ustk2",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.inv_ZPYGDO00004_USTK2",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
-        "tested": false
-      },
-      {
-        "task_id": "L1_SAP.inv_zpygsdi00045_pssu",
-        "type": "Extract/SAP RFC",
-        "status": "SKIP",
-        "tool": "Dataproc + NEED INPUT (SAP connector GCP)",
-        "catatan": "NEED INPUT: SAP RFC connector GCP — L1 incremental load, deferred",
+        "catatan": "DummyOperator — orchestration only.",
         "tested": false
       },
       {
         "task_id": "finish",
-        "type": "Dummy",
         "status": "SKIP",
         "tool": "SKIP (Orchestration)",
-        "catatan": "DummyOperator",
+        "catatan": "DummyOperator — orchestration only.",
+        "tested": false
+      },
+      {
+        "task_id": "schedule_6AM",
+        "status": "SKIP",
+        "tool": "SKIP (Orchestration)",
+        "catatan": "TimeDeltaSensor 6AM — Cloudera-specific schedule. Needs Cloud Run / Airflow Time trigger in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_CLOUDERA.region",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Fabric job trigger via SSH — deferred. Needs Cloud Run Job replacement.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_user_motorcycle_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h1_fif_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_recap_leads_h3_items_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_daerah_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_booking_kpb_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_kpb_request_details",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_apin_event_log_detail",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_MOTORKUX_ARBORVITAE.motorkux_non_dynamic",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_astrapay_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Cloudera SSH → Spark submit (Obj00128893HSO). Needs Cloud Run / GCS trigger.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_mappingso_target_upload_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Cloudera SSH → Spark submit (Obj00128887). Needs Cloud Run / GCS trigger.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedata_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job (marketsharedata). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_marketsharedatatype_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job (marketsharedatatype). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_threshold_nms_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job (threshold_nms). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_leads_ahm_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job (leads_ahm). Needs Cloud Run Job in GCP.",
+        "tested": false
+      },
+      {
+        "task_id": "L1_FILE_ASTRANET.astranet_target_motorkux_file",
+        "status": "SKIP",
+        "tool": "SKIP (L1 Deferred)",
+        "catatan": "Trigger Fabric Job (targetmotorkux). Needs Cloud Run Job in GCP.",
         "tested": false
       }
-    ]
+    ],
+    "total_tasks": 23,
+    "status_counts": {
+      "SKIP (L1 Deferred)": 20,
+      "SKIP (Orchestration)": 3
+    },
+    "priority": "incremental"
   },
   "dragon_L2": {
     "dag_id": "dragon_L2",
