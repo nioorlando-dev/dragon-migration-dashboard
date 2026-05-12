@@ -247,9 +247,9 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Fabric workspace ID for SDUE_PortalAHM not yet provided. report_sdue_portalahm task pending.",
-    "notes": "21/22 dbt SQL files converted. ReportSDUE2023.py Cloud Run PBI config added (pbi_datasets_sdue_fabric.json). report_sdue_portalahm still blocked on Fabric workspace ID.",
-    "last_updated": "2026-04-25"
+    "blocker": "partsharecontribution_temp1/temp2 SQL belum convert (large files). Fabric workspace ID for SDUE_PortalAHM pending.",
+    "notes": "Pipeline 23. DAG updated: partsharecontribution_delta → DataprocSubmitJobOperator + spark_bq_sql_runner.py. 21/22 dbt SQL files converted. temp1/temp2 SQL masih TODO (710+596 lines). SAP ingest tasks masih NEED_INPUT.",
+    "last_updated": "2026-05-12"
   },
   "so2w_smartstock": {
     "status": "pending",
