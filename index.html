@@ -1869,7 +1869,7 @@ function exportCSV() {
     const tasks = pipe.tasks || [];
 
     csvRows.push([
-      projectNo, 'dragon', priority, indikator, '', 'Cloudera',
+      projectNo, pipeName, priority, indikator, '', 'Cloudera',
       dagId, '', '', '', '', 'L3_CLOUDERA_DRAGON_HSO', '-', '-', 'L3',
       '', `${dagId}.py`, '', schedule,
       'Completed','Completed','Completed', etlConv,
@@ -1887,8 +1887,8 @@ function exportCSV() {
       const taskEtl = TASK_ETL[taskStatus] ?? (taskStatus === 'Done' ? 'Done' : 'In Progress');
 
       csvRows.push([
-        globalNo, '', priority, indikator, task.type||'-', 'Cloudera',
-        dagId, '', 'opr_ast_so2w_wh_dm', task.task_id||'', '', 'L3_CLOUDERA_DRAGON_HSO',
+        globalNo, pipeName, priority, indikator, task.type||'-', 'Cloudera',
+        dagId, '', 'opr_ast_so2w_wh_dm', task.task_id||'', 'L3_CLOUDERA_DRAGON_HSO', 'L3_CLOUDERA_DRAGON_HSO',
         '-', '-', 'L3', script, `${dagId}.py`, tool, schedule,
         'Completed','Completed','Completed', taskEtl,
         '', intTest(tested, taskStatus), '', '', dagConverted ? 'Done' : '',
