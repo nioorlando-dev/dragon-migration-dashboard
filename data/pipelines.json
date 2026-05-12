@@ -14379,8 +14379,8 @@
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "appendnullmasterdealer.py \u2014 Spark PySpark",
-        "tested": false
+        "catatan": "appendnullmasterdealer.py — Spark PySpark. Tested 2026-05-12: dirun urut, confirmed via Task 19 SUCCESS.",
+        "tested": true
       },
       {
         "task_id": "check_integration_ustk2",
@@ -14395,8 +14395,8 @@
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Cloud Run Job",
-        "catatan": "Trigger L1 USTK2 Fabric + integration_ustk.sql",
-        "tested": false
+        "catatan": "Trigger L1 USTK2 Fabric + integration_ustk.sql. Tested 2026-05-12: dirun urut, confirmed via Task 19 SUCCESS.",
+        "tested": true
       },
       {
         "task_id": "check_integration_pssu",
