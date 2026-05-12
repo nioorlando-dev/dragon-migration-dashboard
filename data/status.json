@@ -405,13 +405,13 @@
     "last_updated": "2026-05-12"
   },
   "prd_leadsfunnel_crmh1": {
-    "status": "pending",
+    "status": "ready",
     "dag_converted": false,
-    "sql_converted": false,
+    "sql_converted": true,
     "tested": false,
-    "blocker": "Large SQL files remaining. DAG belum dibuat.",
-    "notes": "2/5 SQL converted: funnelleadstosales_temp1.sql, funnelleadstosales_temp2.sql. Remaining: leadsfunnelcrmh1 (1003), leadsfunnelcrmh1_delta (640), leadsfunnelcrmh1_initial (1036).",
-    "last_updated": "2026-05-12"
+    "blocker": "DAG belum dibuat",
+    "notes": "5/5 SQL converted: funnelleadstosales_temp1.sql (219 lines), funnelleadstosales_temp2.sql (259 lines), leadsfunnelcrmh1_delta.sql (641 lines), leadsfunnelcrmh1.sql (1004 lines), leadsfunnelcrmh1_initial.sql (1037 lines). All → Spark SQL targeting L3_CLOUDERA_DRAGON_HSO. Total 2680 lines converted.",
+    "last_updated": "2026-05-13"
   },
   "landing_databricks_motorkux": {
     "status": "ready",
