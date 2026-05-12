@@ -395,6 +395,24 @@
     "notes": "Converted via pipeline_25_dragon_L3/pyspark/mastermaindealer.py + mastermaindealer_star.py",
     "last_updated": "2026-05-12"
   },
+  "prd_pcd_h3_upload_file": {
+    "status": "ready",
+    "dag_converted": false,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "DAG belum dibuat",
+    "notes": "SQL converted: integration_pcd_h3_upload.sql (66 lines) → Spark SQL. Target: L1_SO2W_HSO.pcd_h3_upload_file",
+    "last_updated": "2026-05-12"
+  },
+  "prd_leadsfunnel_crmh1": {
+    "status": "pending",
+    "dag_converted": false,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "Large SQL files (3184 lines total). funnelleadstosales_temp1 converted, others pending.",
+    "notes": "1/5 SQL converted: funnelleadstosales_temp1.sql (219 lines). Remaining: funnelleadstosales_temp2 (286), leadsfunnelcrmh1 (1003), leadsfunnelcrmh1_delta (640), leadsfunnelcrmh1_initial (1036).",
+    "last_updated": "2026-05-12"
+  },
   "_HSO_STAR_NOT_DRAGON": {
     "status": "out_of_scope",
     "dag_converted": false,
