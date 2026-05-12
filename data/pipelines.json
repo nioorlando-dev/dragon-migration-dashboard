@@ -14458,105 +14458,105 @@
         "task_id": "masterdealer_delta",
         "type": "SSHOperator",
         "status": "Done",
-        "tool": "Spark SQL (Dataproc)",
-        "catatan": "masterdealer_delta.sql \u2192 sudah convert ke Spark SQL",
-        "tested": false
+        "tool": "BigQuery SQL",
+        "catatan": "masterdealer_delta.sql → BQ SQL. Tested 2026-05-12: dependency table confirmed exist.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_cdb",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_cdb.py \u2014 Spark PySpark",
-        "tested": false
+        "catatan": "1_customerprofilesales_cdb.py — Spark PySpark. Tested 2026-05-12: output table used by Task 19.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_fovallowndealer",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_fovallowndealer.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_fovallowndealer.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_fovalltime",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_fovalltime.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_fovalltime.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_fovlastyear",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_fovlastyear.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_fovlastyear.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_kpb1",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_kpb1.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_kpb1.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_kpb2",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_kpb2.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_kpb2.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_kpb3",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_kpb3.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_kpb3.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_kpb4",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_kpb4.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_kpb4.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_lastservice",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_lastservice.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_lastservice.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_salesorder",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_salesorder.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_salesorder.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_dataservice",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "1_customerprofilesales_dataservice.py",
-        "tested": false
+        "catatan": "1_customerprofilesales_dataservice.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_rofinal",
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "2_customerprofilesales_rofinal.py",
-        "tested": false
+        "catatan": "2_customerprofilesales_rofinal.py. Tested 2026-05-12.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_unitsales",
