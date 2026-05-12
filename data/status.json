@@ -36,12 +36,12 @@
     "last_updated": "2026-04-20"
   },
   "dragon_SAP": {
-    "status": "pending",
+    "status": "ready",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "SAP source perlu 2-step job: trigger .sh di prod → tembak ke YAML framework (mas Juang, di Teams internal). Framework belum diperoleh.",
-    "notes": "SAP connector tersedia. 20 sap_* tasks siap diconvert ke Dataproc. 3 SQL integration files sudah diconvert. Info dari mas Riand (2026-05-12): deploy per job, SAP source perlu trigger sh → YAML framework mas Juang (ada di Teams internal). Framework sedang diminta.",
+    "blocker": "SAP extract tasks perlu config YAML untuk scheduler.runner framework (Mas Juang).",
+    "notes": "Pipeline 28. DAG updated: 3 integration SQL → DataprocSubmitJobOperator + spark_bq_sql_runner.py. SAP extract tasks → BashOperator (scheduler.runner framework di edgenode). Framework command: python -m scheduler.runner daily --config <yaml> --table-filter <table> --sync-wm. Config YAML belum dibuat.",
     "last_updated": "2026-05-12"
   },
   "dragon_astrapay": {
@@ -77,7 +77,7 @@
     "sql_converted": true,
     "tested": true,
     "blocker": "",
-    "notes": "Pipeline 35. DAG + PySpark + BQ SQL converted. Testing 2026-05-12: Tasks 1-19 ✅ DONE. Task 19 unitsales SUCCESS (BQ SQL, 26 stmts, 4m20s). Next: Task 20 ring (BQ SQL), Task 21 servicejobtype (PySpark).",
+    "notes": "Pipeline 35. DAG updated: BigQueryInsertJobOperator → DataprocSubmitJobOperator + spark_bq_sql_runner.py. 6 SQL files converted to Spark SQL. PySpark scripts ready. Deploy: upload spark_bq_sql_runner.py + SQL to GCS, copy DAG to airflowcompose/DAGS/.",
     "last_updated": "2026-05-12"
   },
   "dragon_data_mekanik": {
