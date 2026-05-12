@@ -753,6 +753,7 @@ const state = {
   status: null,      // from data/status.json
   scripts: null,     // from data/scripts.json
   files: null,       // from data/files.json
+  l0l1: [],          // from data/master_l0_l1_inventory.csv
   view: 'overview',
   sort: { key: 'priority', dir: 'asc' },
   filter: { q: '', prio: 'all', status: 'all' },
@@ -784,16 +785,22 @@ async function init() {
   setInterval(paintClock, 30_000);
 
   try {
-    const [p, s, sc, fi] = await Promise.all([
+    const [p, s, sc, fi, l0l1Text] = await Promise.all([
       fetch('./data/pipelines.json').then(r => { if (!r.ok) throw new Error('pipelines'); return r.json(); }),
       fetch('./data/status.json').then(r => { if (!r.ok) throw new Error('status'); return r.json(); }),
       fetch('./data/scripts.json').then(r => r.ok ? r.json() : {}),
       fetch('./data/files.json').then(r => r.ok ? r.json() : {}),
+      fetch('./data/master_l0_l1_inventory.csv').then(r => r.ok ? r.text() : ''),
     ]);
     state.pipelines = p;
     state.status = s;
     state.scripts = sc;
     state.files = fi;
+    // Parse L0/L1 CSV — each non-empty line after header = 1 table
+    if (l0l1Text) {
+      const lines = l0l1Text.trim().split('\n').filter(l => l.trim());
+      state.l0l1 = lines.slice(1); // exclude header
+    }
   } catch (e) {
     document.getElementById('viewRoot').innerHTML =
       `<div class="err"><b>Failed to load data.</b><br>
@@ -891,16 +898,16 @@ function countsByPrio() {
 }
 
 function statusBreakdown(rows = allRows()) {
-  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0 };
+  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0, ready: 0 };
   rows.forEach(r => {
     out[r.status] = (out[r.status] || 0) + 1;
-    if (r.tested) out.tested++;
+    out.tested += (r.tasks || []).filter(t => t.tested).length;
     if (r.dag_converted) out.dag_done++;
   });
   return out;
 }
 
-const INCREMENTAL_DAGS = [];
+const INCREMENTAL_DAGS = ['dragon_L1'];
 const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2', 'dragoncloudera_synapse', 'dragon_datamekanik', 'dragon_leads_funnel_management', 'dragon_backup', 'dragon_sdue_old', 'dragon_report_leads_funnel_management', 'testing_alert_notif_dragon', 'falcon', 'dragon_L1'];
 
 function totals() {
@@ -931,13 +938,7 @@ function totals() {
 }
 
 function l1Totals() {
-  let total = 0;
-  for (const key of INCREMENTAL_DAGS) {
-    const p = state.pipelines?.[key] || {};
-    const tasks = p.tasks || [];
-    total += p.total_tasks ?? tasks.length;
-  }
-  return { total };
+  return { total: state.l0l1 ? state.l0l1.length : 0 };
 }
 
 // ---------- sidebar ----------
@@ -1048,7 +1049,7 @@ function renderOverview(root) {
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "navigateTo('scripts','all')")}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "navigateTo('scripts','done')")}
         ${statCard('SKIP', t.skipped, iconMinus(), `${t.skipOrch} tidak perlu diconvert · ${t.skipPaused} Task DAG non-aktif`, '', "navigateTo('scripts','skip')")}
-        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "navigateTo('scripts','all')")}
+        ${statCard('L1 & L0 Incremental', l1.total, iconClock(), `${l1.total} tables — loaded separately, not counted in pipeline tasks`, '', "navigateTo('scripts','all')")}
       </div>
 
       <div class="section">
@@ -1060,7 +1061,7 @@ function renderOverview(root) {
           ${statusRing('Done', b.done || 0, t.totalPipes, 'var(--green)')}
           ${statusRing('Ready', b.ready || 0, t.totalPipes, '#10b981')}
           ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, 'var(--blue)')}
-          ${statusRing('Tested', b.tested || 0, t.totalTasks, '#7c6cfc')}
+          ${statusRing('Tested', t.tested || 0, t.totalTasks, '#7c6cfc')}
           ${statusRing('Blocked', b.blocked || 0, t.totalPipes, 'var(--red)')}
           ${statusRing('Pending', (b.pending || 0) + (b.testing || 0), t.totalPipes, 'var(--yellow)')}
         </div>
@@ -1495,7 +1496,7 @@ function openPanel(name) {
       <div style="display:flex;gap:14px;margin-bottom:18px;font-size:12px;flex-wrap:wrap">
         ${flagPill('DAG Converted', r.dag_converted)}
         ${flagPill('SQL Converted', r.sql_converted)}
-        ${flagPill('Tested', r.tested)}
+        ${flagPill('Tested', r.tasks.filter(t => t.tested).length > 0)}
       </div>
 
       <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-mute);font-weight:600;margin-bottom:10px">Task Breakdown</div>
