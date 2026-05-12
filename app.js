@@ -797,7 +797,7 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-// ---------- CSV Export (HSO Dragon format) ----------
+// ---------- CSV Export — Project MAGNUM format ----------
 function exportCSV() {
   if (!state.pipelines || !state.status) {
     alert('Data belum loaded. Tunggu sebentar.');
@@ -805,67 +805,74 @@ function exportCSV() {
   }
 
   const HEADERS = [
-    'No', 'Platform', 'Phase/Delay', 'Indikator', 'Step Order',
-    'Task ID (Airflow)', 'Tipe Step', 'Script/File', 'Config (.cfg)',
-    'Parameter SP', 'SSH Host', 'Dependency', 'Status Convert',
-    'Tested/Untested', 'PIC', 'Catatan', 'DAG ID', 'Task Group',
-    'Source System', 'Target Layer', 'Tool Target GCP', 'Schedule/Cadence',
-    'Bukti Referensi', 'Priority', 'Due Date'
+    'No', 'Project', 'Priority', 'Indikator', 'Phase/Delay', 'Platform',
+    'DAG ID', 'Assets', 'Database Name', 'Table Name', 'Layer Bucket',
+    'Dataset BQ', 'Config (.cfg)', 'Parameter SP', 'Target Layer',
+    'Script/File', 'Script File', 'Tool Target GCP', 'Schedule/Cadence',
+    'Initial Landing', 'Initial Mart', 'DA Maping', 'ETL Conversion',
+    'Incremental', 'Internal Testing', 'PQA Test', 'BI Dev', 'Orchestration',
+    'Labeling Charging', 'Dataplex', 'Sign-off Document', 'Last Updated'
   ];
 
-  const STATUS_MAP = { done:'Done', testing:'Testing', ready:'Ready', pending:'Pending', blocked:'Blocked' };
+  const ETL_MAP = { done:'Done', ready:'Done', testing:'Done', pending:'In Progress', blocked:'In Progress' };
+  const TASK_ETL = { 'Done':'Done', 'SKIP':'Skip', 'Skip':'Skip', 'Belum Convert':'In Progress' };
+
+  function extractScript(catatan, tool) {
+    for (const text of [catatan || '', tool || '']) {
+      const py = text.match(/[\w\-\.]+\.py/); if (py) return py[0];
+      const sql = text.match(/[\w\-\.]+\.sql/); if (sql) return sql[0];
+    }
+    return '-';
+  }
+
+  function intTesting(tested, status) {
+    if ((status || '').toLowerCase() === 'skip') return 'Skip';
+    return tested ? 'Completed' : '';
+  }
 
   const csvRows = [HEADERS];
   let globalNo = 1;
+  let projectNo = 1;
 
   for (const [pipeName, pipe] of Object.entries(state.pipelines)) {
     const dagId = pipe.dag_id || pipeName;
-    const priority = pipe.priority || '-';
+    const priority = String(pipe.priority || '');
     const schedule = pipe.schedule || '-';
-    const statusEntry = state.status[pipeName] || {};
-    const pipeStatus = STATUS_MAP[(statusEntry.status || 'pending').toLowerCase()] || 'Pending';
-    const indikator = pipeName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const se = state.status[pipeName] || {};
+    const pipeStatusRaw = (se.status || 'pending').toLowerCase();
+    const etlConv = ETL_MAP[pipeStatusRaw] || 'In Progress';
+    const lastUpdated = se.last_updated || '';
+    const dagConverted = !!se.dag_converted;
+    const testedFlag = !!se.tested;
+    const indikator = pipe.description || pipeName;
     const tasks = pipe.tasks || [];
 
     // Pipeline header row
     csvRows.push([
-      '', 'Cloudera', '', `PIPELINE | ${dagId} | ${schedule}`,
-      '', '', '', '', '', '', '', '',
-      pipeStatus, '', '', statusEntry.notes || '',
-      dagId, '', 'Cloudera', 'L3', '', schedule, '', priority, statusEntry.last_updated || ''
+      projectNo, 'dragon', priority, indikator, '', 'Cloudera',
+      dagId, '', '', '', '', 'L3_CLOUDERA_DRAGON_HSO', '-', '-', 'L3',
+      '', `${dagId}.py`, '', schedule,
+      'Completed', 'Completed', 'Completed', etlConv,
+      '', testedFlag ? 'Completed' : '', '', '', dagConverted ? 'Done' : '',
+      '', '', '', lastUpdated
     ]);
+    projectNo++;
 
-    tasks.forEach((task, idx) => {
+    tasks.forEach(task => {
       const catatan = task.catatan || '';
-      let script = '-';
-      const pyMatch = catatan.match(/[\w\-\.]+\.py/);
-      const sqlMatch = catatan.match(/[\w\-\.]+\.sql/);
-      if (pyMatch) script = pyMatch[0];
-      else if (sqlMatch) script = sqlMatch[0];
+      const tool = task.tool || '-';
+      const taskStatus = task.status || '';
+      const tested = !!task.tested;
+      const script = extractScript(catatan, tool);
+      const taskEtl = TASK_ETL[taskStatus] ?? (taskStatus === 'Done' ? 'Done' : 'In Progress');
 
       csvRows.push([
-        globalNo,
-        'Cloudera',
-        '',
-        indikator,
-        idx + 1,
-        task.task_id || '',
-        task.type || '-',
-        script,
-        '-', '-', '-', '-',
-        task.status || '',
-        task.tested ? 'Tested' : 'Untested',
-        'NIO',
-        catatan,
-        dagId,
-        '',
-        'Cloudera',
-        'L3',
-        task.tool || '-',
-        schedule,
-        '',
-        priority,
-        ''
+        globalNo, '', priority, indikator, task.type || '-', 'Cloudera',
+        dagId, '', 'opr_ast_so2w_wh_dm', task.task_id || '', '', 'L3_CLOUDERA_DRAGON_HSO',
+        '-', '-', 'L3', script, `${dagId}.py`, tool, schedule,
+        'Completed', 'Completed', 'Completed', taskEtl,
+        '', intTesting(tested, taskStatus), '', '', dagConverted ? 'Done' : '',
+        '', '', '', lastUpdated
       ]);
       globalNo++;
     });
@@ -883,7 +890,7 @@ function exportCSV() {
   // Trigger download with BOM for Excel UTF-8 compatibility
   const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
-  const ts = new Date().toISOString().slice(0,19).replace(/[-:T]/g, '').replace(/(\d{8})(\d{6})/, '$1_$2');
+  const ts = new Date().toISOString().slice(0,19).replace(/[-:T]/g,'').replace(/(\d{8})(\d{6})/,'$1_$2');
   const a = document.createElement('a');
   a.href = url;
   a.download = `HSO_DRAGON_EXPORT_${ts}.csv`;
