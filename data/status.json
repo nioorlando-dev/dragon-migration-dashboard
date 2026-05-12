@@ -394,5 +394,14 @@
     "blocker": "",
     "notes": "Converted via pipeline_25_dragon_L3/pyspark/mastermaindealer.py + mastermaindealer_star.py",
     "last_updated": "2026-05-12"
+  },
+  "_HSO_STAR_NOT_DRAGON": {
+    "status": "out_of_scope",
+    "dag_converted": false,
+    "sql_converted": false,
+    "tested": false,
+    "blocker": "NOT DRAGON - These are HSO STAR pipelines, not part of DRAGON migration scope",
+    "notes": "31 DAGs tanpa priority di Excel adalah HSO STAR bukan DRAGON: STARLanding_* (Bookings, Configuration, Crm, Customer, Delivery, District, Finance, GoodIssue, GoodReceipt, Inventory, Leasing, Order, Procurement, Purchase, Reporting, ResourceMgmt, Security, UnitSales, WOTemplate, Workforce, Workplace, Workshop), MftAhm_New, PRD_PKBServiceFinal_STAR, Report - Utilization NMS, Reporting_DashboardCRM, Reporting_FunnelingLeads, Reporting_FunnelingLeadsH23, Reporting_NotaService, falcon, iCare. Total 662 tasks. DO NOT CONVERT.",
+    "last_updated": "2026-05-12"
   }
 }
