@@ -41,7 +41,7 @@
     "sql_converted": true,
     "tested": false,
     "blocker": "SAP extract tasks perlu config YAML untuk scheduler.runner framework (Mas Juang).",
-    "notes": "Pipeline 28. DAG updated: 3 integration SQL → DataprocSubmitJobOperator + spark_bq_sql_runner.py. SAP extract tasks → BashOperator (scheduler.runner framework di edgenode). Framework command: python -m scheduler.runner daily --config <yaml> --table-filter <table> --sync-wm. Config YAML belum dibuat.",
+    "notes": "Pipeline 28. DAG updated: 4 integration SQL → DataprocSubmitJobOperator + spark_bq_sql_runner.py (zpygba_o00001, sap_zpygsdq00094, zpygf_ar_aging_unitsummary, mappingunittype). SAP extract tasks → BashOperator (scheduler.runner framework di edgenode).",
     "last_updated": "2026-05-12"
   },
   "dragon_astrapay": {
@@ -396,12 +396,12 @@
     "last_updated": "2026-05-12"
   },
   "prd_pcd_h3_upload_file": {
-    "status": "ready",
+    "status": "pending",
     "dag_converted": false,
-    "sql_converted": true,
+    "sql_converted": false,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: integration_pcd_h3_upload.sql (66 lines) → Spark SQL. Target: L1_SO2W_HSO.pcd_h3_upload_file",
+    "blocker": "1 large SQL remaining (PCD_general_transformation.sql 2217 lines). DAG belum dibuat.",
+    "notes": "2/3 SQL converted: integration_pcd_h3_upload.sql, PCD_Productivity_ActualandTarget_transformation.sql (715 lines). Remaining: PCD_general_transformation.sql (2217 lines - very large).",
     "last_updated": "2026-05-12"
   },
   "prd_leadsfunnel_crmh1": {
@@ -409,8 +409,26 @@
     "dag_converted": false,
     "sql_converted": false,
     "tested": false,
-    "blocker": "Large SQL files (3184 lines total). funnelleadstosales_temp1 converted, others pending.",
-    "notes": "1/5 SQL converted: funnelleadstosales_temp1.sql (219 lines). Remaining: funnelleadstosales_temp2 (286), leadsfunnelcrmh1 (1003), leadsfunnelcrmh1_delta (640), leadsfunnelcrmh1_initial (1036).",
+    "blocker": "Large SQL files remaining. DAG belum dibuat.",
+    "notes": "2/5 SQL converted: funnelleadstosales_temp1.sql, funnelleadstosales_temp2.sql. Remaining: leadsfunnelcrmh1 (1003), leadsfunnelcrmh1_delta (640), leadsfunnelcrmh1_initial (1036).",
+    "last_updated": "2026-05-12"
+  },
+  "landing_databricks_motorkux": {
+    "status": "ready",
+    "dag_converted": false,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "DAG belum dibuat",
+    "notes": "6 SQL converted: motorkux_feedbackservice_summary, motorkux_download_summary, motorkux_h1_summary, motorkux_booking_summary, motorkux_h3_summary, motorkux_leads_amanda_summary. All → Spark SQL targeting L3_CLOUDERA_DRAGON_HSO + L1_MOTORKUX_HSO + L1_AMANDA_HSO.",
+    "last_updated": "2026-05-12"
+  },
+  "prd_customerprofileservice_star": {
+    "status": "ready",
+    "dag_converted": false,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "DAG belum dibuat",
+    "notes": "SQL converted: customerprofileservice_delta.sql (497 lines) → Spark SQL. Target: L3_CLOUDERA_DRAGON_HSO.customerprofileservice_cloudera_delta",
     "last_updated": "2026-05-12"
   },
   "_HSO_STAR_NOT_DRAGON": {
