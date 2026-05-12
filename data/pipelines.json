@@ -14563,8 +14563,8 @@
         "type": "SSHOperator",
         "status": "Done",
         "tool": "BigQuery SQL",
-        "catatan": "2_customerprofilesales_unitsales.sql → BQ SQL. Testing 2026-05-12: fixing circular ref (UnitSalesfinal_unionexisting first-run), UNION ALL syntax, SAFE_CAST, TIMESTAMP_SUB conversions.",
-        "tested": false
+        "catatan": "2_customerprofilesales_unitsales.sql → BQ SQL. Tested 2026-05-12: SUCCESS 26 statements, 4m20s. Fixes: SESSION_USER(), SAFE_CAST, TIMESTAMP_SUB, circular ref UNION ALL first-run.",
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_ring",
