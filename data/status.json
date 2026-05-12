@@ -40,9 +40,9 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "",
-    "notes": "SAP connector tersedia. 20 sap_* tasks siap diconvert ke Dataproc. 3 SQL integration files sudah diconvert.",
-    "last_updated": "2026-04-22"
+    "blocker": "SAP source perlu 2-step job: trigger .sh di prod → tembak ke YAML framework (mas Juang, di Teams internal). Framework belum diperoleh.",
+    "notes": "SAP connector tersedia. 20 sap_* tasks siap diconvert ke Dataproc. 3 SQL integration files sudah diconvert. Info dari mas Riand (2026-05-12): deploy per job, SAP source perlu trigger sh → YAML framework mas Juang (ada di Teams internal). Framework sedang diminta.",
+    "last_updated": "2026-05-12"
   },
   "dragon_astrapay": {
     "status": "ready",
@@ -313,5 +313,86 @@
     "blocker": "~404 task STUB. Keputusan arsitektur AHASS ingest ke GCP belum dibuat.",
     "notes": "DAG converted sebagai STUB. AHASS (Astra Honda Authorized Service Station) ingest strategy needed.",
     "last_updated": "2026-04-22"
+  },
+  "prod_mastersalesperson": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/mastersalesperson.py",
+    "last_updated": "2026-05-12"
+  },
+  "masterunittype_star": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/masterunittype.py",
+    "last_updated": "2026-05-12"
+  },
+  "masterunittype_union": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/masterunittype.py (DBT union)",
+    "last_updated": "2026-05-12"
+  },
+  "prd_region": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Simple table, region in L1_SO2W_HSO. UNION query to L3.",
+    "last_updated": "2026-05-12"
+  },
+  "prd_customerprofilesales": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_04_customerprofilesales/ (full CPS pipeline)",
+    "last_updated": "2026-05-12"
+  },
+  "customerprofilesales_delta": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_04/sparksql/6_customerprofilesales_delta.sql",
+    "last_updated": "2026-05-12"
+  },
+  "prd_union_masterdealer": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/masterdealer.py + masterdealer_star.py",
+    "last_updated": "2026-05-12"
+  },
+  "prd_union_mastergroupdealer": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/masterdealer.py (group dealer variant)",
+    "last_updated": "2026-05-12"
+  },
+  "prd_mastermaindealer": {
+    "status": "done",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": false,
+    "blocker": "",
+    "notes": "Converted via pipeline_25_dragon_L3/pyspark/mastermaindealer.py + mastermaindealer_star.py",
+    "last_updated": "2026-05-12"
   }
 }

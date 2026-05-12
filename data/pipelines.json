@@ -21441,18 +21441,22 @@
     "schedule": "\u2014",
     "total_tasks": 2,
     "status_counts": {
-      "Belum Convert": 2
+      "Done": 2
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofilesales",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "BigQuery SQL",
+        "catatan": "Converted: pipeline_04/sparksql/6_customerprofilesales_delta.sql"
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofilesales",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "BigQuery SQL",
+        "catatan": "Converted: pipeline_04/sparksql/customerprofilesales_delta.sql"
       }
     ]
   },
@@ -21643,13 +21647,15 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.masterunittype",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py"
       }
     ]
   },
@@ -21845,13 +21851,15 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.mastersalesperson",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastersalesperson.py"
       }
     ]
   },
@@ -21862,18 +21870,22 @@
     "schedule": "\u2014",
     "total_tasks": 2,
     "status_counts": {
-      "Belum Convert": 2
+      "Done": 2
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.masterunittype_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py (DBT union)"
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.masterunittype_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py (DBT union)"
       }
     ]
   },
@@ -21884,13 +21896,15 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.region",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "BigQuery SQL",
+        "catatan": "Simple table, region data already in L1_SO2W_HSO. UNION query to L3."
       }
     ]
   },
@@ -21962,13 +21976,15 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofilesales",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark + BigQuery SQL",
+        "catatan": "Converted: pipeline_04_customerprofilesales/ (full CPS pipeline)"
       }
     ]
   },
@@ -21979,23 +21995,29 @@
     "schedule": "\u2014",
     "total_tasks": 3,
     "status_counts": {
-      "Belum Convert": 3
+      "Done": 3
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.masterdealer_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py"
       },
       {
         "task_id": "masterdealer_sdue",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py (SDUE variant)"
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.masterdealer_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer_star.py"
       }
     ]
   },
@@ -22006,13 +22028,15 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.masterdealergroup_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py (group dealer variant)"
       }
     ]
   },
@@ -22023,18 +22047,22 @@
     "schedule": "\u2014",
     "total_tasks": 2,
     "status_counts": {
-      "Belum Convert": 2
+      "Done": 2
     },
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.mastermaindealer_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastermaindealer.py"
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.mastermaindealer_union",
-        "status": "Belum Convert",
-        "tested": false
+        "status": "Done",
+        "tested": false,
+        "tool": "Dataproc PySpark",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastermaindealer_star.py"
       }
     ]
   },
