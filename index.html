@@ -1859,7 +1859,7 @@ function exportCSV() {
     'Labeling Charging', 'Dataplex', 'Sign-off Document', 'Last Updated'
   ];
 
-  const ETL_MAP = { done:'Done', ready:'Done', testing:'Done', pending:'In Progress', blocked:'In Progress' };
+  const ETL_MAP = { done:'Done', testing:'In Progress', pending:'In Progress', blocked:'Blocked', dag_done:'In Progress' };
   const TASK_ETL = { 'Done':'Done', 'SKIP':'Skip', 'Skip':'Skip', 'Belum Convert':'In Progress' };
 
   function exScript(catatan, tool) {
@@ -1883,7 +1883,8 @@ function exportCSV() {
     const priority = String(pipe.priority || '');
     const schedule = pipe.schedule || '-';
     const se = state.status[pipeName] || {};
-    const etlConv = ETL_MAP[(se.status||'pending').toLowerCase()] || 'In Progress';
+    const pipelineStatus = normalizePipelineStatus(se.status, deriveStatusFromTasks(pipe.tasks || []));
+    const etlConv = ETL_MAP[pipelineStatus] || 'In Progress';
     const lastUpdated = se.last_updated || '';
     const dagConverted = !!se.dag_converted;
     const testedFlag = !!se.tested;
@@ -1970,7 +1971,7 @@ async function exportXLSX() {
     'Labeling Charging', 'Dataplex', 'Sign-off Document', 'Last Updated'
   ];
 
-  const ETL_MAP = { done:'Done', ready:'Done', testing:'Done', pending:'In Progress', blocked:'In Progress' };
+  const ETL_MAP = { done:'Done', testing:'In Progress', pending:'In Progress', blocked:'Blocked', dag_done:'In Progress' };
   const TASK_ETL = { 'Done':'Done', 'SKIP':'Skip', 'Skip':'Skip', 'Belum Convert':'In Progress' };
 
   function exScript(catatan, tool) {
@@ -2007,7 +2008,8 @@ async function exportXLSX() {
     const priority = String(pipe.priority || '');
     const schedule = pipe.schedule || '-';
     const se = state.status[pipeName] || {};
-    const etlConv = ETL_MAP[(se.status||'pending').toLowerCase()] || 'In Progress';
+    const pipelineStatus = normalizePipelineStatus(se.status, deriveStatusFromTasks(pipe.tasks || []));
+    const etlConv = ETL_MAP[pipelineStatus] || 'In Progress';
     const lastUpdated = se.last_updated || '';
     const dagConverted = !!se.dag_converted;
     const testedFlag = !!se.tested;
