@@ -14451,8 +14451,8 @@
         "type": "SSHOperator",
         "status": "Done",
         "tool": "Dataproc",
-        "catatan": "MasterDealer_Master2W.py + MasterDealer_Portal.py + MasterDealer.py + appendnullmasterdealer.py",
-        "tested": false
+        "catatan": "MasterDealer_Master2W.py + MasterDealer_Portal.py + MasterDealer.py + appendnullmasterdealer.py. Tested 2026-05-12: 2964 rows, 9 dup dealercodenew (expected).",
+        "tested": true
       },
       {
         "task_id": "masterdealer_delta",
@@ -14562,8 +14562,8 @@
         "task_id": "customerprofilesales_unitsales",
         "type": "SSHOperator",
         "status": "Done",
-        "tool": "Spark SQL (Dataproc)",
-        "catatan": "2_customerprofilesales_unitsales.sql \u2192 sudah convert",
+        "tool": "BigQuery SQL",
+        "catatan": "2_customerprofilesales_unitsales.sql → BQ SQL. Testing 2026-05-12: fixing circular ref (UnitSalesfinal_unionexisting first-run), UNION ALL syntax, SAFE_CAST, TIMESTAMP_SUB conversions.",
         "tested": false
       },
       {

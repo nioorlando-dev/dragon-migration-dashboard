@@ -71,6 +71,15 @@
     "notes": "DAG + 5 PySpark scripts converted (CustomerProfileSales/). Semua 8 tasks Done. Ready to deploy.",
     "last_updated": "2026-04-26"
   },
+  "dragon_customerprofilesales_cloudera": {
+    "status": "testing",
+    "dag_converted": true,
+    "sql_converted": true,
+    "tested": true,
+    "blocker": "",
+    "notes": "Pipeline 35. DAG + 19 PySpark + 6 SQL converted. Testing in progress (2026-05-12): Task 1 masterdealer_master2w ✅, Task 3 masterdealer ✅ (2964 rows). Task 19 customerprofilesales_unitsales sedang di-fix (BQ SQL circular ref resolved). Tasks 2,4-18 belum test. DummyOperators: SAP RFC, ManagementSimpliFy, PortalHSO, Synapse.",
+    "last_updated": "2026-05-12"
+  },
   "dragon_data_mekanik": {
     "status": "pending",
     "dag_converted": true,
