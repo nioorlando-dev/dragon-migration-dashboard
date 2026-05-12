@@ -18,31 +18,31 @@
     "last_updated": "2026-04-25"
   },
   "dragon_L2": {
-    "status": "ready",
+    "status": "blocked",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted with dbt tasks. Ready to deploy after dbt Cloud Run Job is available.",
-    "last_updated": "2026-04-20"
+    "blocker": "cloud run job dbt-so-hso belum tersedia.",
+    "notes": "dag converted, tetapi eksekusi p1 masih tertahan dependency dbt-so-hso.",
+    "last_updated": "2026-05-13"
   },
   "dragon_L3": {
-    "status": "ready",
+    "status": "blocked",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted with dbt + Fabric trigger (mastersalesperson). Ready to deploy.",
-    "last_updated": "2026-04-20"
+    "blocker": "7 task dbt masih blocker (menunggu dbt-so-hso).",
+    "notes": "dag converted, sebagian task bisa jalan tetapi belum end-to-end.",
+    "last_updated": "2026-05-13"
   },
   "dragon_SAP": {
-    "status": "ready",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "SAP extract tasks perlu config YAML untuk scheduler.runner framework (Mas Juang).",
-    "notes": "Pipeline 28. DAG updated: 4 integration SQL → DataprocSubmitJobOperator + spark_bq_sql_runner.py (zpygba_o00001, sap_zpygsdq00094, zpygf_ar_aging_unitsummary, mappingunittype). SAP extract tasks → BashOperator (scheduler.runner framework di edgenode).",
-    "last_updated": "2026-05-12"
+    "blocker": "",
+    "notes": "p1 siap phase 1. dag converted dan task utama untuk testing manual sudah tersedia.",
+    "last_updated": "2026-05-13"
   },
   "dragon_astrapay": {
     "status": "ready",
@@ -63,22 +63,22 @@
     "last_updated": "2026-04-20"
   },
   "dragon_customerprofilesales": {
-    "status": "ready",
+    "status": "blocked",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG + 5 PySpark scripts converted (CustomerProfileSales/). Semua 8 tasks Done. Ready to deploy.",
-    "last_updated": "2026-04-26"
+    "blocker": "5 task dbt masih menunggu dbt-so-hso dan dependency l2/l3/ustk2.",
+    "notes": "pipeline converted tetapi belum bisa test end-to-end.",
+    "last_updated": "2026-05-13"
   },
   "dragon_customerprofilesales_cloudera": {
     "status": "testing",
     "dag_converted": true,
     "sql_converted": true,
     "tested": true,
-    "blocker": "",
-    "notes": "Pipeline 35. DAG updated: BigQueryInsertJobOperator → DataprocSubmitJobOperator + spark_bq_sql_runner.py. 6 SQL files converted to Spark SQL. PySpark scripts ready. Deploy: upload spark_bq_sql_runner.py + SQL to GCS, copy DAG to airflowcompose/DAGS/.",
-    "last_updated": "2026-05-12"
+    "blocker": "blocker minor tersisa: sap rfc, portalhso, managementsimplify.",
+    "notes": "p1 siap phase 1: dag + pyspark + sql + pbi cloud run sudah tersedia untuk testing.",
+    "last_updated": "2026-05-13"
   },
   "dragon_data_mekanik": {
     "status": "pending",
@@ -189,13 +189,13 @@
     "last_updated": "2026-04-20"
   },
   "dragon_partsharecontribution": {
-    "status": "ready",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
     "blocker": "",
     "notes": "DAG + SQL converted. masterhet.sql + masterhet_latest.sql ditemukan di TFS vctd-daas dan diconvert ke PySpark. Ready to deploy.",
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-05-13"
   },
   "dragon_report_bd": {
     "status": "ready",
@@ -216,13 +216,13 @@
     "last_updated": "2026-04-25"
   },
   "dragon_ustk2": {
-    "status": "ready",
+    "status": "blocked",
     "dag_converted": true,
     "sql_converted": false,
     "tested": false,
-    "blocker": "",
-    "notes": "DAG converted. 4 PySpark scripts converted from TFS vctd-daas (L3/ZPYGDO00004_USTK2/). Ready to deploy.",
-    "last_updated": "2026-04-22"
+    "blocker": "dependency dbt-so-hso dan upstream l2/l3 belum siap penuh.",
+    "notes": "dag converted, testing penuh menunggu dependency p1.",
+    "last_updated": "2026-05-13"
   },
   "so2w_dragon": {
     "status": "pending",
@@ -243,13 +243,13 @@
     "last_updated": "2026-04-25"
   },
   "so2w_dragon_sdue_fabric": {
-    "status": "pending",
+    "status": "blocked",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "partsharecontribution_temp1/temp2 SQL belum convert (large files). Fabric workspace ID for SDUE_PortalAHM pending.",
-    "notes": "Pipeline 23. DAG updated: partsharecontribution_delta → DataprocSubmitJobOperator + spark_bq_sql_runner.py. 21/22 dbt SQL files converted. temp1/temp2 SQL masih TODO (710+596 lines). SAP ingest tasks masih NEED_INPUT.",
-    "last_updated": "2026-05-12"
+    "blocker": "task dbt masih menunggu job dbt-so-hso.",
+    "notes": "converted mayoritas, tetapi run penuh belum bisa karena blocker dbt.",
+    "last_updated": "2026-05-13"
   },
   "so2w_smartstock": {
     "status": "pending",

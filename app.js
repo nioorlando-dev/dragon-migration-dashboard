@@ -25,11 +25,12 @@ document.addEventListener('DOMContentLoaded', init);
 async function init() {
   paintClock();
   setInterval(paintClock, 30_000);
+  const v = `v=${Date.now()}`;
 
   try {
     const [p, s] = await Promise.all([
-      fetch('./data/pipelines.json').then(r => { if (!r.ok) throw new Error('pipelines'); return r.json(); }),
-      fetch('./data/status.json').then(r => { if (!r.ok) throw new Error('status'); return r.json(); }),
+      fetch(`./data/pipelines.json?${v}`).then(r => { if (!r.ok) throw new Error('pipelines'); return r.json(); }),
+      fetch(`./data/status.json?${v}`).then(r => { if (!r.ok) throw new Error('status'); return r.json(); }),
     ]);
     state.pipelines = p;
     state.status = s;
@@ -69,6 +70,24 @@ function wireKeys() {
 // ---------- derived helpers ----------
 function allNames() { return Object.keys(state.pipelines || {}); }
 
+function deriveStatusFromTasks(tasks = []) {
+  const countable = tasks.filter(t => !/^skip$/i.test((t.status || '').trim()));
+  if (countable.length === 0) return 'pending';
+  const done = countable.filter(t => /^done$/i.test((t.status || '').trim())).length;
+  const belum = countable.filter(t => /^belum convert$/i.test((t.status || '').trim())).length;
+  if (done === countable.length) return 'done';
+  if (done > 0 && belum > 0) return 'testing';
+  if (done > 0) return 'testing';
+  return 'pending';
+}
+
+function normalizePipelineStatus(rawStatus, fallbackStatus) {
+  const s = (rawStatus || '').toLowerCase().trim();
+  if (['done', 'dag_done', 'blocked', 'pending', 'testing'].includes(s)) return s;
+  if (s === 'ready') return fallbackStatus === 'pending' ? 'testing' : fallbackStatus;
+  return fallbackStatus;
+}
+
 function pipeRow(name) {
   const p = state.pipelines[name] || {};
   const s = state.status?.[name] || {};
@@ -86,7 +105,7 @@ function pipeRow(name) {
   }
 
   const prio = (p.priority || 'unassigned').toString();
-  const status = (s.status || 'pending').toLowerCase();
+  const status = normalizePipelineStatus(s.status, deriveStatusFromTasks(p.tasks || []));
   return {
     name,
     dag_id: p.dag_id || name,
