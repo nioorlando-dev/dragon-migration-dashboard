@@ -1885,10 +1885,20 @@ function exportCSV() {
       const tested = !!task.tested;
       const script = exScript(catatan, tool);
       const taskEtl = TASK_ETL[taskStatus] ?? (taskStatus === 'Done' ? 'Done' : 'In Progress');
+      const tableName = (task.task_id || '').split(/\s+/)[0];
+      const tType = (task.type || '').toLowerCase();
+      const tTool = (tool || '').toLowerCase();
+      let assets = 'Data Mart';
+      if (tType.includes('ingest')) assets = 'Data Landing';
+      else if (tType.includes('dummy') || taskStatus === 'SKIP') assets = '-';
+      else if (tTool.includes('dataproc') || tTool.includes('pyspark')) assets = 'Data Enrichment';
+      else if (tTool.includes('bigquery') || tTool.includes('sql')) assets = 'Data Mart';
+      const dbName = tType.includes('ingest') ? 'opr_ast_so2w_wh_di' : 'opr_ast_so2w_wh_dm';
+      const layerBucket = tType.includes('ingest') ? 'hotd-hso/L1_SO2W_HSO' : 'hotd-hso/L3_CLOUDERA_DRAGON_HSO';
 
       csvRows.push([
         globalNo, pipeName, priority, indikator, task.type||'-', 'Cloudera',
-        dagId, '', 'opr_ast_so2w_wh_dm', task.task_id||'', 'L3_CLOUDERA_DRAGON_HSO', 'L3_CLOUDERA_DRAGON_HSO',
+        dagId, assets, dbName, tableName, layerBucket, 'L3_CLOUDERA_DRAGON_HSO',
         '-', '-', 'L3', script, `${dagId}.py`, tool, schedule,
         'Completed','Completed','Completed', taskEtl,
         '', intTest(tested, taskStatus), '', '', dagConverted ? 'Done' : '',
