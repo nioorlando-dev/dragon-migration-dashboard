@@ -796,3 +796,99 @@ function escapeHtml(s) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
+
+// ---------- CSV Export (HSO Dragon format) ----------
+function exportCSV() {
+  if (!state.pipelines || !state.status) {
+    alert('Data belum loaded. Tunggu sebentar.');
+    return;
+  }
+
+  const HEADERS = [
+    'No', 'Platform', 'Phase/Delay', 'Indikator', 'Step Order',
+    'Task ID (Airflow)', 'Tipe Step', 'Script/File', 'Config (.cfg)',
+    'Parameter SP', 'SSH Host', 'Dependency', 'Status Convert',
+    'Tested/Untested', 'PIC', 'Catatan', 'DAG ID', 'Task Group',
+    'Source System', 'Target Layer', 'Tool Target GCP', 'Schedule/Cadence',
+    'Bukti Referensi', 'Priority', 'Due Date'
+  ];
+
+  const STATUS_MAP = { done:'Done', testing:'Testing', ready:'Ready', pending:'Pending', blocked:'Blocked' };
+
+  const csvRows = [HEADERS];
+  let globalNo = 1;
+
+  for (const [pipeName, pipe] of Object.entries(state.pipelines)) {
+    const dagId = pipe.dag_id || pipeName;
+    const priority = pipe.priority || '-';
+    const schedule = pipe.schedule || '-';
+    const statusEntry = state.status[pipeName] || {};
+    const pipeStatus = STATUS_MAP[(statusEntry.status || 'pending').toLowerCase()] || 'Pending';
+    const indikator = pipeName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const tasks = pipe.tasks || [];
+
+    // Pipeline header row
+    csvRows.push([
+      '', 'Cloudera', '', `PIPELINE | ${dagId} | ${schedule}`,
+      '', '', '', '', '', '', '', '',
+      pipeStatus, '', '', statusEntry.notes || '',
+      dagId, '', 'Cloudera', 'L3', '', schedule, '', priority, statusEntry.last_updated || ''
+    ]);
+
+    tasks.forEach((task, idx) => {
+      const catatan = task.catatan || '';
+      let script = '-';
+      const pyMatch = catatan.match(/[\w\-\.]+\.py/);
+      const sqlMatch = catatan.match(/[\w\-\.]+\.sql/);
+      if (pyMatch) script = pyMatch[0];
+      else if (sqlMatch) script = sqlMatch[0];
+
+      csvRows.push([
+        globalNo,
+        'Cloudera',
+        '',
+        indikator,
+        idx + 1,
+        task.task_id || '',
+        task.type || '-',
+        script,
+        '-', '-', '-', '-',
+        task.status || '',
+        task.tested ? 'Tested' : 'Untested',
+        'NIO',
+        catatan,
+        dagId,
+        '',
+        'Cloudera',
+        'L3',
+        task.tool || '-',
+        schedule,
+        '',
+        priority,
+        ''
+      ]);
+      globalNo++;
+    });
+  }
+
+  // Build CSV string
+  const csvContent = csvRows.map(row =>
+    row.map(cell => {
+      const s = String(cell ?? '');
+      return s.includes(',') || s.includes('"') || s.includes('\n')
+        ? `"${s.replace(/"/g, '""')}"` : s;
+    }).join(',')
+  ).join('\r\n');
+
+  // Trigger download with BOM for Excel UTF-8 compatibility
+  const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const ts = new Date().toISOString().slice(0,19).replace(/[-:T]/g, '').replace(/(\d{8})(\d{6})/, '$1_$2');
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `HSO_DRAGON_EXPORT_${ts}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
