@@ -171,7 +171,7 @@
         "tested": false
       }
     ],
-    "total_tasks": 23,
+    "total_tasks": 1,
     "status_counts": {
       "SKIP (L1 Deferred)": 20,
       "SKIP (Orchestration)": 3
@@ -182,7 +182,7 @@
     "dag_id": "dragon_L2",
     "priority": "P1",
     "schedule": "Daily 00 17 * * *",
-    "total_tasks": 23,
+    "total_tasks": 29,
     "status_counts": {
       "SKIP": 2,
       "Done": 21
@@ -378,7 +378,7 @@
     "dag_id": "dragon_L3",
     "priority": "P1",
     "schedule": "Daily 00 19 * * *",
-    "total_tasks": 9,
+    "total_tasks": 12,
     "status_counts": {
       "SKIP": 2,
       "Done": 7
@@ -462,7 +462,7 @@
     "dag_id": "dragon_SAP",
     "priority": "P1",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 20,
+    "total_tasks": 3,
     "status_counts": {
       "Done": 20,
       "SKIP": 20
@@ -794,7 +794,7 @@
     "dag_id": "dragon_astrapay",
     "priority": "P5",
     "schedule": "Daily 00 23 * * *",
-    "total_tasks": 8,
+    "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
       "Done": 6
@@ -871,7 +871,7 @@
     "display_name": "dragon_customerpersona_segmentation",
     "priority": "P3",
     "schedule": "\u2014",
-    "total_tasks": 4,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 2,
       "SKIP": 2
@@ -903,7 +903,7 @@
     "dag_id": "dragon_customerprofilesales",
     "priority": "P1",
     "schedule": "Daily 30 0 * * *",
-    "total_tasks": 11,
+    "total_tasks": 28,
     "status_counts": {
       "Done": 8,
       "Belum Convert": 1,
@@ -971,7 +971,7 @@
     "dag_id": "dragon_data_mekanik",
     "priority": "P4",
     "schedule": "Daily 00 21",
-    "total_tasks": 3,
+    "total_tasks": 1,
     "status_counts": {
       "SKIP": 2,
       "Belum Convert": 1
@@ -1027,7 +1027,7 @@
     "display_name": "dragon_datarevenue",
     "priority": "P2",
     "schedule": "\u2014",
-    "total_tasks": 13,
+    "total_tasks": 21,
     "status_counts": {
       "Done": 6,
       "SKIP": 7
@@ -1104,7 +1104,7 @@
     "dag_id": "dragon_leads_funnel_management",
     "priority": "P1",
     "schedule": "Daily 00 21",
-    "total_tasks": 11,
+    "total_tasks": 6,
     "status_counts": {
       "SKIP": 11
     },
@@ -1203,7 +1203,7 @@
     "dag_id": "dragon_leadtimesalesheader_fromspk",
     "priority": "P3",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 4,
+    "total_tasks": 3,
     "status_counts": {
       "SKIP": 2,
       "Done": 2
@@ -1247,7 +1247,7 @@
     "dag_id": "dragon_marketsharedata",
     "priority": "P2",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 5,
+    "total_tasks": 3,
     "status_counts": {
       "SKIP": 2,
       "Done": 3
@@ -1301,7 +1301,7 @@
     "dag_id": "dragon_monitoring_bku",
     "priority": "P2",
     "schedule": "Daily 00 21",
-    "total_tasks": 8,
+    "total_tasks": 5,
     "status_counts": {
       "SKIP": 2,
       "Done": 6
@@ -1381,7 +1381,7 @@
     "dag_id": "dragon_monitoring_stnk_bpkb",
     "priority": "P3",
     "schedule": "Daily 00 21",
-    "total_tasks": 5,
+    "total_tasks": 4,
     "status_counts": {
       "SKIP": 2,
       "Done": 3
@@ -1435,7 +1435,7 @@
     "dag_id": "dragon_monitoringkuitansi_all",
     "priority": "P3",
     "schedule": "Daily 00 21",
-    "total_tasks": 9,
+    "total_tasks": 2,
     "status_counts": {
       "SKIP": 2,
       "Done": 7
@@ -1526,7 +1526,7 @@
     "display_name": "dragon_motorkux",
     "priority": "P2",
     "schedule": "\u2014",
-    "total_tasks": 11,
+    "total_tasks": 10,
     "status_counts": {
       "Done": 8,
       "Belum Convert": 1,
@@ -1594,7 +1594,7 @@
     "dag_id": "dragon_niguri_partstock",
     "priority": "P3",
     "schedule": "Daily 00 21",
-    "total_tasks": 8,
+    "total_tasks": 6,
     "status_counts": {
       "SKIP": 2,
       "Done": 6
@@ -1674,7 +1674,7 @@
     "dag_id": "dragon_nms_handleleasing",
     "priority": "P2",
     "schedule": "Daily 00 21",
-    "total_tasks": 3,
+    "total_tasks": 2,
     "status_counts": {
       "SKIP": 2,
       "Done": 1
@@ -1710,7 +1710,7 @@
     "dag_id": "dragon_partsharecontribution",
     "priority": "P1",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 9,
+    "total_tasks": 3,
     "status_counts": {
       "SKIP": 2,
       "Done": 7
@@ -1951,7 +1951,7 @@
         "tested": false
       }
     ],
-    "total_tasks": 22,
+    "total_tasks": 4,
     "status_counts": {
       "Done": 22
     },
@@ -1961,7 +1961,7 @@
     "dag_id": "dragon_trigger_pbi_refresh",
     "priority": "P5",
     "schedule": "Daily 00 21 * * *",
-    "total_tasks": 4,
+    "total_tasks": 2,
     "status_counts": {
       "SKIP": 2,
       "Done": 2
@@ -2006,7 +2006,7 @@
     "dag_id": "dragon_ustk2",
     "priority": "P1",
     "schedule": "Daily 30 0 * * *",
-    "total_tasks": 7,
+    "total_tasks": 8,
     "status_counts": {
       "SKIP": 2,
       "Done": 5
@@ -2093,7 +2093,7 @@
     "display_name": "so2w_dragon_sdue_fabric",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 26,
+    "total_tasks": 22,
     "status_counts": {
       "Done": 23,
       "Belum Convert": 1,
@@ -2237,7 +2237,7 @@
     "display_name": "so2w_smartstock",
     "priority": "P2",
     "schedule": "\u2014",
-    "total_tasks": 11,
+    "total_tasks": 6,
     "status_counts": {
       "Done": 5,
       "Belum Convert": 4,
@@ -2305,7 +2305,7 @@
     "dag_id": "dragon_prospecttossu",
     "priority": "P2",
     "schedule": "Daily",
-    "total_tasks": 10,
+    "total_tasks": 3,
     "status_counts": {
       "Done": 0,
       "Belum Convert": 3,
@@ -2368,7 +2368,7 @@
     "dag_id": "dragon_ro_leads",
     "priority": "P3",
     "schedule": "Quarterly 00 21 1 */3 *",
-    "total_tasks": 3,
+    "total_tasks": 1,
     "status_counts": {
       "SKIP": 2,
       "Belum Convert": 1
@@ -2404,7 +2404,7 @@
     "dag_id": "dragoncloudera_synapse",
     "priority": "P5",
     "schedule": "Daily",
-    "total_tasks": 6,
+    "total_tasks": 1,
     "status_counts": {
       "SKIP": 6
     },
@@ -2464,7 +2464,7 @@
     "dag_id": "dragons_data_merging",
     "priority": "P5",
     "schedule": "Weekly Saturday 00 03 * * *",
-    "total_tasks": 4,
+    "total_tasks": 1,
     "status_counts": {
       "SKIP": 4
     },
@@ -4886,7 +4886,7 @@
         "tested": false
       }
     ],
-    "total_tasks": 154,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 154,
       "SKIP (Orchestration)": 3,
@@ -7704,7 +7704,7 @@
         "tested": false
       }
     ],
-    "total_tasks": 132,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 132,
       "SKIP (Orchestration)": 136,
@@ -8381,7 +8381,7 @@
     "dag_id": "dragon_customerprofilesales_cloudera",
     "priority": "P1",
     "schedule": "00 17 * * *",
-    "total_tasks": 33,
+    "total_tasks": 10,
     "status_counts": {
       "Done": 22,
       "Belum Convert": 11,
@@ -15492,7 +15492,7 @@
     "display_name": "PRD_PKBServiceFinal_Integrasi",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
+    "total_tasks": 2,
     "status_counts": {
       "Belum Convert": 1
     },
@@ -15570,7 +15570,7 @@
     "display_name": "PRD_PCD_H3_Upload_File",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
+    "total_tasks": 3,
     "status_counts": {
       "Belum Convert": 1
     },
@@ -15922,17 +15922,9 @@
     "display_name": "PROD_CustomerProfileSales_Object_Prompt_DR",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
-    "status_counts": {
-      "Belum Convert": 1
-    },
-    "tasks": [
-      {
-        "task_id": "Customer Profile Sales",
-        "status": "Belum Convert",
-        "tested": false
-      }
-    ]
+    "total_tasks": 0,
+    "status_counts": {},
+    "tasks": []
   },
   "sap_pssu": {
     "dag_id": "sap_pssu",
@@ -15973,7 +15965,7 @@
     "display_name": "PRD_Customerprofileservice_UNION",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 2,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 2
     },
@@ -16046,7 +16038,7 @@
     "display_name": "PRD_Leadsfunnel_CRMH1",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
+    "total_tasks": 5,
     "status_counts": {
       "Belum Convert": 1
     },
@@ -16063,7 +16055,7 @@
     "display_name": "PROD_MasterSalesPerson",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
+    "total_tasks": 2,
     "status_counts": {
       "Done": 1
     },
@@ -16082,7 +16074,7 @@
     "display_name": "MasterUnitType UNION",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 2,
+    "total_tasks": 1,
     "status_counts": {
       "Done": 2
     },
@@ -16207,7 +16199,7 @@
     "display_name": "PRD_Union_MasterDealer",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 3,
+    "total_tasks": 2,
     "status_counts": {
       "Done": 3
     },
@@ -16285,22 +16277,9 @@
     "display_name": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 2,
-    "status_counts": {
-      "Belum Convert": 2
-    },
-    "tasks": [
-      {
-        "task_id": "opr_ast_so2w_wh_dm.pkbservicefinal_union",
-        "status": "Belum Convert",
-        "tested": false
-      },
-      {
-        "task_id": "opr_ast_so2w_wh_dm.pkbservicefinal_union",
-        "status": "Belum Convert",
-        "tested": false
-      }
-    ]
+    "total_tasks": 0,
+    "status_counts": {},
+    "tasks": []
   },
   "prd_stocklevelsummary_daily___6_stocklevelsummarymonthyear": {
     "dag_id": "prd_stocklevelsummary_daily___6_stocklevelsummarymonthyear",
@@ -16424,17 +16403,9 @@
     "display_name": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > PKBService_DR > PRD_Data_Transaksi_PKB_DR_Main > PRD_Data_Transaksi_PKB_DR",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 1,
-    "status_counts": {
-      "Belum Convert": 1
-    },
-    "tasks": [
-      {
-        "task_id": "Data_Transaksi_PKB_DR",
-        "status": "Belum Convert",
-        "tested": false
-      }
-    ]
+    "total_tasks": 0,
+    "status_counts": {},
+    "tasks": []
   },
   "prd_stocklevelsummary_daily___9_stocklevelsummary_md_onelake": {
     "dag_id": "prd_stocklevelsummary_daily___9_stocklevelsummary_md_onelake",
@@ -19745,7 +19716,7 @@
     "display_name": "pipeline_astranet_file_threshold_nms",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 2,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 2
     },
@@ -19801,7 +19772,7 @@
     "display_name": "Landing_Databricks_Motorkux",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 13,
+    "total_tasks": 6,
     "status_counts": {
       "Belum Convert": 13
     },
@@ -19912,7 +19883,7 @@
     "display_name": "DBT",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 15,
+    "total_tasks": 1,
     "status_counts": {
       "Belum Convert": 15
     },
@@ -20082,7 +20053,7 @@
     "display_name": "pipeline_grape_targetsales",
     "priority": "P1",
     "schedule": "\u2014",
-    "total_tasks": 3,
+    "total_tasks": 4,
     "status_counts": {
       "Belum Convert": 3
     },
