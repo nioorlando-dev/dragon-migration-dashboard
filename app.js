@@ -155,9 +155,10 @@ const INCREMENTAL_DAGS = ['dragon_L1', 'dragon_SAP'];
 
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
-  const totalTasks = rows.reduce((a, r) => a + (r.total || 0), 0);
+  const rawTotal = rows.reduce((a, r) => a + (r.total || 0), 0);
   const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
   const skipped = rows.reduce((a, r) => a + (Number((r.status_counts || {})['SKIP']) || 0), 0);
+  const totalTasks = rawTotal - skipped; // Total tasks = only tasks that need conversion (exclude SKIP)
   const blocked = rows.filter(r => r.status === 'blocked').length;
   const done = rows.filter(r => r.status === 'done').length;
   return { totalPipes: rows.length, totalTasks, converted, skipped, blocked, done };
@@ -280,7 +281,7 @@ function renderOverview(root) {
 
       <div class="stats">
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
-        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. L1 & L0 incremental', '', "showView('all')")}
+        ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. SKIP & L1/SAP', '', "showView('all')")}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "showView('all')")}
         ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '', "showView('all')")}
         ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "showView('all')")}
