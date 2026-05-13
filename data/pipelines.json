@@ -3116,8 +3116,9 @@
     "schedule": "\u2014",
     "total_tasks": 4,
     "status_counts": {
+      "Done": 1,
       "SKIP": 2,
-      "Belum Convert": 2
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -3148,9 +3149,8 @@
     "schedule": "Daily 30 0 * * *",
     "total_tasks": 11,
     "status_counts": {
-      "Done": 8,
-      "SKIP": 2,
-      "Belum Convert": 1
+      "Done": 9,
+      "SKIP": 2
     },
     "tasks": [
       {
@@ -3216,8 +3216,8 @@
     "schedule": "Daily 00 21",
     "total_tasks": 3,
     "status_counts": {
-      "SKIP": 2,
-      "Belum Convert": 1
+      "Done": 1,
+      "SKIP": 2
     },
     "tasks": [
       {
@@ -3771,9 +3771,8 @@
     "schedule": "\u2014",
     "total_tasks": 11,
     "status_counts": {
-      "Done": 8,
-      "SKIP": 2,
-      "Belum Convert": 1
+      "Done": 9,
+      "SKIP": 2
     },
     "tasks": [
       {
@@ -8024,9 +8023,9 @@
     "schedule": "\u2014",
     "total_tasks": 11,
     "status_counts": {
-      "Done": 5,
+      "Done": 6,
       "SKIP": 2,
-      "Belum Convert": 4
+      "Belum Convert": 3
     },
     "tasks": [
       {
@@ -8092,8 +8091,8 @@
     "schedule": "Daily",
     "total_tasks": 10,
     "status_counts": {
-      "SKIP": 7,
-      "Belum Convert": 3
+      "Done": 3,
+      "SKIP": 7
     },
     "tasks": [
       {
@@ -8154,8 +8153,8 @@
     "schedule": "Quarterly 00 21 1 */3 *",
     "total_tasks": 3,
     "status_counts": {
-      "SKIP": 2,
-      "Belum Convert": 1
+      "Done": 1,
+      "SKIP": 2
     },
     "tasks": [
       {
@@ -21275,7 +21274,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -21353,7 +21352,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -21370,7 +21369,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -21387,7 +21386,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -21625,7 +21624,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -21661,7 +21660,7 @@
     "schedule": "\u2014",
     "total_tasks": 3,
     "status_counts": {
-      "Belum Convert": 3
+      "Done": 3
     },
     "tasks": [
       {
@@ -21756,7 +21755,8 @@
     "schedule": "\u2014",
     "total_tasks": 2,
     "status_counts": {
-      "Belum Convert": 2
+      "Done": 1,
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -21829,7 +21829,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -25257,7 +25257,8 @@
     "schedule": "\u2014",
     "total_tasks": 45,
     "status_counts": {
-      "Belum Convert": 45
+      "Done": 1,
+      "Belum Convert": 44
     },
     "tasks": [
       {
@@ -25494,7 +25495,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -25511,7 +25512,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -25528,7 +25529,8 @@
     "schedule": "\u2014",
     "total_tasks": 2,
     "status_counts": {
-      "Belum Convert": 2
+      "Done": 1,
+      "Belum Convert": 1
     },
     "tasks": [
       {
@@ -25567,7 +25569,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
@@ -25584,7 +25586,8 @@
     "schedule": "\u2014",
     "total_tasks": 13,
     "status_counts": {
-      "Belum Convert": 13
+      "Done": 6,
+      "Belum Convert": 7
     },
     "tasks": [
       {
@@ -25695,7 +25698,8 @@
     "schedule": "\u2014",
     "total_tasks": 15,
     "status_counts": {
-      "Belum Convert": 15
+      "Done": 1,
+      "Belum Convert": 14
     },
     "tasks": [
       {
@@ -25865,7 +25869,7 @@
     "schedule": "\u2014",
     "total_tasks": 3,
     "status_counts": {
-      "Belum Convert": 3
+      "Done": 3
     },
     "tasks": [
       {
@@ -25926,7 +25930,7 @@
     "schedule": "\u2014",
     "total_tasks": 1,
     "status_counts": {
-      "Belum Convert": 1
+      "Done": 1
     },
     "tasks": [
       {
