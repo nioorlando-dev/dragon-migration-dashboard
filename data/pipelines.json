@@ -7879,9 +7879,8 @@
     "schedule": "\u2014",
     "total_tasks": 26,
     "status_counts": {
-      "Done": 23,
-      "SKIP": 2,
-      "Belum Convert": 1
+      "Done": 24,
+      "SKIP": 2
     },
     "tasks": [
       {
@@ -25586,8 +25585,7 @@
     "schedule": "\u2014",
     "total_tasks": 13,
     "status_counts": {
-      "Done": 8,
-      "Belum Convert": 5
+      "Done": 13
     },
     "tasks": [
       {
