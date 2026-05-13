@@ -2615,7 +2615,9 @@
         "catatan": "DummyOperator",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_L3": {
     "dag_id": "dragon_L3",
@@ -2699,7 +2701,9 @@
         "catatan": "DummyOperator",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_SAP": {
     "dag_id": "dragon_SAP",
@@ -3031,7 +3035,9 @@
         "catatan": "Invalidate Impala Metadata \u2014 tidak ada di GCP",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_astrapay": {
     "dag_id": "dragon_astrapay",
@@ -3208,7 +3214,9 @@
         "status": "SKIP",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_data_mekanik": {
     "dag_id": "dragon_data_mekanik",
@@ -4034,7 +4042,9 @@
         "catatan": "DummyOperator",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_report_bd": {
     "tasks": [
@@ -4312,7 +4322,9 @@
         "catatan": "DummyOperator",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "so2w_dragon": {
     "dag_id": "so2w_dragon",
@@ -8013,7 +8025,9 @@
         "status": "SKIP",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "so2w_smartstock": {
     "dag_id": "so2w_smartstock",
@@ -14622,7 +14636,9 @@
         "catatan": "copyfile_cpsales.sh + trigger_customerprofilesales_synapse.sh",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_sdue_old": {
     "dag_id": "dragon_sdue_old",
@@ -21280,7 +21296,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "partstock_transform": {
     "dag_id": "partstock_transform",
@@ -21341,7 +21359,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_pcd_h3_upload_file": {
     "dag_id": "prd_pcd_h3_upload_file",
@@ -21358,7 +21378,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "targetsalesinout_file": {
     "dag_id": "targetsalesinout_file",
@@ -21375,7 +21397,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "target_lcr_file": {
     "dag_id": "target_lcr_file",
@@ -21392,7 +21416,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_spr_transformation_dataset": {
     "dag_id": "prd_spr_transformation_dataset",
@@ -21450,7 +21476,9 @@
         "tool": "BigQuery SQL",
         "catatan": "Converted: pipeline_04/sparksql/customerprofilesales_delta.sql"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "datainsighthotline_delta": {
     "dag_id": "datainsighthotline_delta",
@@ -21631,7 +21659,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "masterunittype_star": {
     "dag_id": "masterunittype_star",
@@ -21650,7 +21680,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_sdue_quickwin": {
     "dag_id": "prd_sdue_quickwin",
@@ -21677,7 +21709,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_sugorahasspss_daily___2_sugorahasspss_star": {
     "dag_id": "prd_sugorahasspss_daily___2_sugorahasspss_star",
@@ -21711,7 +21745,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sap_pssu": {
     "dag_id": "sap_pssu",
@@ -21728,7 +21764,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "btl_transformation_fullload": {
     "dag_id": "btl_transformation_fullload",
@@ -21767,7 +21805,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "datainsighthotline_final": {
     "dag_id": "datainsighthotline_final",
@@ -21835,7 +21875,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prod_mastersalesperson": {
     "dag_id": "prod_mastersalesperson",
@@ -21854,7 +21896,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastersalesperson.py"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "masterunittype_union": {
     "dag_id": "masterunittype_union",
@@ -21880,7 +21924,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py (DBT union)"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_region": {
     "dag_id": "prd_region",
@@ -21899,7 +21945,9 @@
         "tool": "BigQuery SQL",
         "catatan": "Simple table, region data already in L1_SO2W_HSO. UNION query to L3."
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_unitentry": {
     "dag_id": "prd_unitentry",
@@ -21979,7 +22027,9 @@
         "tool": "Dataproc PySpark + BigQuery SQL",
         "catatan": "Converted: pipeline_04_customerprofilesales/ (full CPS pipeline)"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_union_masterdealer": {
     "dag_id": "prd_union_masterdealer",
@@ -22012,7 +22062,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer_star.py"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_union_mastergroupdealer": {
     "dag_id": "prd_union_mastergroupdealer",
@@ -22031,7 +22083,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py (group dealer variant)"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_mastermaindealer": {
     "dag_id": "prd_mastermaindealer",
@@ -22057,7 +22111,9 @@
         "tool": "Dataproc PySpark",
         "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastermaindealer_star.py"
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_pkbservicefinal_star___prd_pkbservicefinal_integrasi___delta_enhancement": {
     "dag_id": "prd_pkbservicefinal_star___prd_pkbservicefinal_integrasi___delta_enhancement",
@@ -22079,7 +22135,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_stocklevelsummary_daily___6_stocklevelsummarymonthyear": {
     "dag_id": "prd_stocklevelsummary_daily___6_stocklevelsummarymonthyear",
@@ -22213,7 +22271,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_stocklevelsummary_daily___9_stocklevelsummary_md_onelake": {
     "dag_id": "prd_stocklevelsummary_daily___9_stocklevelsummary_md_onelake",
@@ -24194,7 +24254,9 @@
         "status": "SKIP",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_sap": {
     "dag_id": "dragon_sap",
@@ -24232,7 +24294,9 @@
         "status": "SKIP",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "reporting_funnelingleads": {
     "dag_id": "reporting_funnelingleads",
@@ -25483,7 +25547,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "pipeline_astranet_file_marketsharedata": {
     "dag_id": "pipeline_astranet_file_marketsharedata",
@@ -25500,7 +25566,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "pipeline_astranet_file_marketsharedatatype": {
     "dag_id": "pipeline_astranet_file_marketsharedatatype",
@@ -25517,7 +25585,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "pipeline_astranet_file_threshold_nms": {
     "dag_id": "pipeline_astranet_file_threshold_nms",
@@ -25539,7 +25609,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "de": {
     "dag_id": "de",
@@ -25573,7 +25645,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "landing_databricks_motorkux": {
     "dag_id": "landing_databricks_motorkux",
@@ -25650,7 +25724,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sap_zmb51_fabric": {
     "dag_id": "sap_zmb51_fabric",
@@ -25667,7 +25743,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sap_zpygsdq00010_fabric": {
     "dag_id": "sap_zpygsdq00010_fabric",
@@ -25684,7 +25762,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dbt": {
     "dag_id": "dbt",
@@ -25771,7 +25851,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "prd_datarevenue_union": {
     "dag_id": "prd_datarevenue_union",
@@ -25881,7 +25963,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sdue_datamart_quickwin___cpservice": {
     "dag_id": "sdue_datamart_quickwin___cpservice",
@@ -25898,7 +25982,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sdue_datamart_quickwin___datarevenue": {
     "dag_id": "sdue_datamart_quickwin___datarevenue",
@@ -25915,7 +26001,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "sdue_datamart_quickwin___pkbservice": {
     "dag_id": "sdue_datamart_quickwin___pkbservice",
@@ -25932,7 +26020,9 @@
         "status": "Done",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "fab_dragon_customerprofilesales": {
     "dag_id": "fab_dragon_customerprofilesales",
@@ -25969,7 +26059,9 @@
     "status_counts": {
       "Done": 5
     },
-    "total_tasks": 5
+    "total_tasks": 5,
+    "status": "Done",
+    "dag_done": true
   },
   "fab_dragon_prospecttossu": {
     "dag_id": "fab_dragon_prospecttossu",
