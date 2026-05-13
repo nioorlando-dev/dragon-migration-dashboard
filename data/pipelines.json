@@ -14162,9 +14162,8 @@
     "schedule": "00 17 * * *",
     "total_tasks": 57,
     "status_counts": {
-      "Done": 27,
-      "SKIP": 25,
-      "Belum Convert": 5
+      "Done": 32,
+      "SKIP": 25
     },
     "tasks": [
       {
@@ -25256,8 +25255,7 @@
     "schedule": "\u2014",
     "total_tasks": 45,
     "status_counts": {
-      "Done": 2,
-      "Belum Convert": 43
+      "Done": 45
     },
     "tasks": [
       {
@@ -25695,8 +25693,7 @@
     "schedule": "\u2014",
     "total_tasks": 15,
     "status_counts": {
-      "Done": 2,
-      "Belum Convert": 13
+      "Done": 15
     },
     "tasks": [
       {
