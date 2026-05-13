@@ -3200,7 +3200,7 @@
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
@@ -8005,7 +8005,7 @@
       },
       {
         "task_id": "wait_for_fabric_update1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
@@ -14401,7 +14401,7 @@
       {
         "task_id": "L1_integration_pssu",
         "type": "SSHOperator",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "NEED INPUT (SAP connector GCP)",
         "catatan": "SAP RFC extract zpygsdi00045_pssu + integration_pssu.sql \u2014 butuh SAP connector",
         "tested": false
@@ -14409,7 +14409,7 @@
       {
         "task_id": "portalhso_dealer_territory_result",
         "type": "SSHOperator",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Dataproc",
         "catatan": "dealer_territory_result.py \u2014 Spark PySpark",
         "tested": false
@@ -14417,7 +14417,7 @@
       {
         "task_id": "ManagementSimpliFy_Branch",
         "type": "SSHOperator",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125335dbo.Branch",
         "tested": false
@@ -14425,7 +14425,7 @@
       {
         "task_id": "ManagementSimpliFy_Region",
         "type": "SSHOperator",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125339dbo.Region",
         "tested": false
@@ -14433,7 +14433,7 @@
       {
         "task_id": "master2w_Region",
         "type": "SSHOperator",
-        "status": "Belum Convert",
+        "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125461dbo.Region",
         "tested": false
@@ -21277,7 +21277,7 @@
     "tasks": [
       {
         "task_id": "DataTransaksional_DR",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21338,7 +21338,7 @@
     "tasks": [
       {
         "task_id": "zpygdo00004_ustk2",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21355,7 +21355,7 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_di.pcd_h3_upload_file",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21372,7 +21372,7 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_di.targetsalesinout_file",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21389,7 +21389,7 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dl.target_lcr_file",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21628,7 +21628,7 @@
     "tasks": [
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21664,17 +21664,17 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofileservice_sdue",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.datarevenue_sdue",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.pkbservicefinal_sdue",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21708,7 +21708,7 @@
     "tasks": [
       {
         "task_id": "Customer Profile Sales",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21725,7 +21725,7 @@
     "tasks": [
       {
         "task_id": "opr_ast_sap_wh_di.zpygsdi00045_pssu",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21759,12 +21759,12 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofileservice_union",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.customerprofileservice_union",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -21832,7 +21832,7 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.leadsfunnelcrmh1_union",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -22071,12 +22071,12 @@
     "tasks": [
       {
         "task_id": "opr_ast_so2w_wh_dm.pkbservicefinal_union",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "opr_ast_so2w_wh_dm.pkbservicefinal_union",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -22210,7 +22210,7 @@
     "tasks": [
       {
         "task_id": "Data_Transaksi_PKB_DR",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -24176,17 +24176,17 @@
       },
       {
         "task_id": "[L1_MOTORKUX_ARBORVITAE.*]",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "[L1_FILE_ASTRANET.*]",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "[L1_SAP.*]",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
@@ -24214,17 +24214,17 @@
       },
       {
         "task_id": "sap_zmb51",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "sap_zpygsdq00010",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "[SAP_VTHanaEE_Fabric group]",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
@@ -25260,227 +25260,227 @@
     "tasks": [
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Prospect",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Part",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Part Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Part Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Service",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Service Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Billing Service Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Customers Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Good Receipt",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Good Receipt Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Good Receipt Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - PKB",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - SPK Detail",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Contextual - Stock Part",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25497,7 +25497,7 @@
     "tasks": [
       {
         "task_id": "Market Share",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25514,7 +25514,7 @@
     "tasks": [
       {
         "task_id": "Market Share",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25531,12 +25531,12 @@
     "tasks": [
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25570,7 +25570,7 @@
     "tasks": [
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25587,67 +25587,67 @@
     "tasks": [
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "New Data Point - CDB x MotorkuX Insight",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25664,7 +25664,7 @@
     "tasks": [
       {
         "task_id": "Niguri Part",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25681,7 +25681,7 @@
     "tasks": [
       {
         "task_id": "Niguri Part",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25698,77 +25698,77 @@
     "tasks": [
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Utilisasi STAR BD",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Lead Time Sales Header",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Master Main Dealer",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Master Main Dealer",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Lead Time Sales Header",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25868,17 +25868,17 @@
     "tasks": [
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 2",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25895,7 +25895,7 @@
     "tasks": [
       {
         "task_id": "SDUE",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25912,7 +25912,7 @@
     "tasks": [
       {
         "task_id": "SDUE",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25929,7 +25929,7 @@
     "tasks": [
       {
         "task_id": "SDUE",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ]
@@ -25942,27 +25942,27 @@
     "tasks": [
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       },
       {
         "task_id": "Grape Phase 1",
-        "status": "Belum Convert",
+        "status": "Done",
         "tested": false
       }
     ],
