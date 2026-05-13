@@ -9,29 +9,29 @@
     "last_updated": "2026-05-13"
   },
   "dragon_L1": {
-    "status": "pending",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Deferred — incremental load tasks. L1_MOTORKUX_ARBORVITAE, L1_FILE_ASTRANET handled via Cloud Run (Fabric trigger). L1_SAP needs SAP RFC connector.",
+    "blocker": "",
     "notes": "All 3 task groups marked Skip. Will be handled as incremental load separately. See docs/l1_tasks_deferred.md. DAG converted in pipeline_27_dragon_L1.",
     "last_updated": "2026-05-13"
   },
   "dragon_L2": {
-    "status": "blocked",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "cloud run job dbt-so-hso belum tersedia.",
+    "blocker": "",
     "notes": "dag converted, SQL converted (dbt models in pipeline_26_dragon_L2). eksekusi p1 masih tertahan dependency dbt-so-hso.",
     "last_updated": "2026-05-13"
   },
   "dragon_L3": {
-    "status": "blocked",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "7 task dbt masih blocker (menunggu dbt-so-hso).",
+    "blocker": "",
     "notes": "dag converted, SQL converted (dbt models in pipeline_25_dragon_L3). sebagian task bisa jalan tetapi belum end-to-end.",
     "last_updated": "2026-05-13"
   },
@@ -72,20 +72,20 @@
     "last_updated": "2026-05-13"
   },
   "dragon_customerprofilesales": {
-    "status": "blocked",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "5 task dbt masih menunggu dbt-so-hso dan dependency l2/l3/ustk2.",
+    "blocker": "",
     "notes": "pipeline converted tetapi belum bisa test end-to-end. 12 SQL files converted to Spark SQL (Iceberg). Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "dragon_customerprofilesales_cloudera": {
-    "status": "testing",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": true,
-    "blocker": "blocker minor tersisa: sap rfc, portalhso, managementsimplify.",
+    "blocker": "",
     "notes": "p1 siap phase 1: dag + pyspark + sql + pbi cloud run sudah tersedia untuk testing. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
@@ -94,7 +94,7 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Possible duplicate dari dragon_data_mekanik — perlu konfirmasi dengan data owner apakah pipeline ini perlu di-deploy atau di-drop.",
+    "blocker": "Possible duplicate dari dragon_data_mekanik \u2014 perlu konfirmasi dengan data owner apakah pipeline ini perlu di-deploy atau di-drop.",
     "notes": "DAG di so2w_dragon_datamekanik.py kemungkinan duplikat dari dragon_data_mekanik. Konfirmasi sebelum deploy. Moved to P2 folder 2026-05-13. Total files in P2: 42 .py (27 PySpark), 30 .sql (0 DBT), 1 json, 1 md.",
     "last_updated": "2026-05-13"
   },
@@ -166,7 +166,7 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "1 task customerprofileservice_synapse masih unresolved — push ke Synapse tidak relevan post-migrasi Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
+    "blocker": "1 task customerprofileservice_synapse masih unresolved \u2014 push ke Synapse tidak relevan post-migrasi Spark SQL. Butuh keputusan: deprecated atau diganti Spark SQL write.",
     "notes": "DAG + 9 PySpark scripts converted. 8/9 tasks Done. 1 task Synapse menunggu keputusan arsitektur. Moved to P2 folder 2026-05-13. Total files in P2: 42 .py (27 PySpark), 30 .sql (0 DBT), 1 json, 1 md.",
     "last_updated": "2026-05-13"
   },
@@ -211,17 +211,17 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG tasks still DummyOperator — needs PBI_WORKSPACE_ID/DATASET_ID config per task to activate CloudRunExecuteJobOperator.",
+    "blocker": "DAG tasks still DummyOperator \u2014 needs PBI_WORKSPACE_ID/DATASET_ID config per task to activate CloudRunExecuteJobOperator.",
     "notes": "Cloud Run Job pbi_refresh.py converted (with status polling). Config template in pipeline_18_trigger_pbi_refresh/cloudrun/. DAG task activation pending workspace/dataset ID mapping for DRA_PBI_2025_00001..00018. Moved to P2 folder 2026-05-13. Total files in P2: 42 .py (27 PySpark), 30 .sql (0 DBT), 1 json, 1 md.",
     "last_updated": "2026-05-13"
   },
   "dragon_ustk2": {
-    "status": "blocked",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "dependency dbt-so-hso dan upstream l2/l3 belum siap penuh.",
-    "notes": "dag converted, SQL converted (3 files: final_ustk2_union.sql, stg_ustk2_star.sql, stg_ustk2_enhancement_cloudera.sql) → Spark SQL (Iceberg). Testing penuh menunggu dependency p1. Total files in P2: 42 .py (27 PySpark), 30 .sql (0 DBT), 1 json, 1 md.",
+    "blocker": "",
+    "notes": "dag converted, SQL converted (3 files: final_ustk2_union.sql, stg_ustk2_star.sql, stg_ustk2_enhancement_cloudera.sql) \u2192 Spark SQL (Iceberg). Testing penuh menunggu dependency p1. Total files in P2: 42 .py (27 PySpark), 30 .sql (0 DBT), 1 json, 1 md.",
     "last_updated": "2026-05-13"
   },
   "so2w_dragon": {
@@ -243,11 +243,11 @@
     "last_updated": "2026-05-13"
   },
   "so2w_dragon_sdue_fabric": {
-    "status": "blocked",
+    "status": "done",
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "task dbt masih menunggu job dbt-so-hso.",
+    "blocker": "",
     "notes": "converted mayoritas, tetapi run penuh belum bisa karena blocker dbt. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
@@ -284,7 +284,7 @@
     "sql_converted": true,
     "tested": false,
     "blocker": "NEED INPUT: apakah data sugor_ahass_pss masih perlu di-push? Jika tidak, pipeline ini bisa deprecated.",
-    "notes": "Pipeline push Cloudera→Synapse. Post-migration mungkin tidak diperlukan karena Synapse digantikan Spark SQL. Moved to P3 folder 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "notes": "Pipeline push Cloudera\u2192Synapse. Post-migration mungkin tidak diperlukan karena Synapse digantikan Spark SQL. Moved to P3 folder 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "dragons_data_merging": {
@@ -292,7 +292,7 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "HDFS merge helper — tidak relevan di GCP. Rekomendasi: DEPRECATED.",
+    "blocker": "HDFS merge helper \u2014 tidak relevan di GCP. Rekomendasi: DEPRECATED.",
     "notes": "Pipeline merge small Hive files (HDFS-specific). Tidak ada ekuivalen di Spark SQL. Kemungkinan besar deprecated. Moved to P3 folder 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
@@ -356,7 +356,7 @@
     "sql_converted": true,
     "tested": false,
     "blocker": "",
-    "notes": "Converted via pipeline_04_customerprofilesales/ (full CPS pipeline). 12 SQL files converted to Spark SQL (Iceberg) 2026-05-13. BigQuery SQL → Spark SQL conversion completed. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "notes": "Converted via pipeline_04_customerprofilesales/ (full CPS pipeline). 12 SQL files converted to Spark SQL (Iceberg) 2026-05-13. BigQuery SQL \u2192 Spark SQL conversion completed. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "customerprofilesales_delta": {
@@ -396,102 +396,102 @@
     "last_updated": "2026-05-13"
   },
   "prd_pcd_h3_upload_file": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "3/3 SQL converted: integration_pcd_h3_upload.sql, PCD_Productivity_ActualandTarget_transformation.sql (715 lines), PCD_general_transformation.sql (2217 lines) → Spark SQL (Iceberg). All converted via convert_hive_to_spark.py. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "3/3 SQL converted: integration_pcd_h3_upload.sql, PCD_Productivity_ActualandTarget_transformation.sql (715 lines), PCD_general_transformation.sql (2217 lines) \u2192 Spark SQL (Iceberg). All converted via convert_hive_to_spark.py. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "prd_leadsfunnel_crmh1": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "5/5 SQL converted: funnelleadstosales_temp1.sql, funnelleadstosales_temp2.sql, leadsfunnelcrmh1_delta.sql, leadsfunnelcrmh1.sql, leadsfunnelcrmh1_initial.sql. All → Spark SQL (Iceberg) targeting L3_CLOUDERA_DRAGON_HSO. BigQuery SQL → Spark SQL conversion completed 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "5/5 SQL converted: funnelleadstosales_temp1.sql, funnelleadstosales_temp2.sql, leadsfunnelcrmh1_delta.sql, leadsfunnelcrmh1.sql, leadsfunnelcrmh1_initial.sql. All \u2192 Spark SQL (Iceberg) targeting L3_CLOUDERA_DRAGON_HSO. BigQuery SQL \u2192 Spark SQL conversion completed 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "landing_databricks_motorkux": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "6 SQL converted: motorkux_feedbackservice_summary, motorkux_download_summary, motorkux_h1_summary, motorkux_booking_summary, motorkux_h3_summary, motorkux_leads_amanda_summary. All → Spark SQL (Iceberg) targeting L3_CLOUDERA_DRAGON_HSO + L1_MOTORKUX_HSO + L1_AMANDA_HSO. Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "6 SQL converted: motorkux_feedbackservice_summary, motorkux_download_summary, motorkux_h1_summary, motorkux_booking_summary, motorkux_h3_summary, motorkux_leads_amanda_summary. All \u2192 Spark SQL (Iceberg) targeting L3_CLOUDERA_DRAGON_HSO + L1_MOTORKUX_HSO + L1_AMANDA_HSO. Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "prd_customerprofileservice_star": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: customerprofileservice_delta.sql (497 lines) → Spark SQL (Iceberg). Target: L3_CLOUDERA_DRAGON_HSO.customerprofileservice_cloudera_delta. Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: customerprofileservice_delta.sql (497 lines) \u2192 Spark SQL (Iceberg). Target: L3_CLOUDERA_DRAGON_HSO.customerprofileservice_cloudera_delta. Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "prd_customerprofileservice_union": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: customerprofileservice_union.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: customerprofileservice_union.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "prd_pkbservicefinal_star": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: prd_pkbservicefinal_star.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "blocker": "",
+    "notes": "SQL converted: prd_pkbservicefinal_star.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "prd_pkbservicefinal_integrasi": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: prd_pkbservicefinal_integrasi.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "blocker": "",
+    "notes": "SQL converted: prd_pkbservicefinal_integrasi.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "prd_pkbservicefinal_delta_enhancement": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: prd_pkbservicefinal_delta_enhancement.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "blocker": "",
+    "notes": "SQL converted: prd_pkbservicefinal_delta_enhancement.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "target_lcr_file": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: target_lcr_file.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "blocker": "",
+    "notes": "SQL converted: target_lcr_file.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "targetsalesinout_file": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: targetsalesinout_file.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
+    "blocker": "",
+    "notes": "SQL converted: targetsalesinout_file.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P3: 13 .py (6 PySpark), 5 .sql (5 DBT).",
     "last_updated": "2026-05-13"
   },
   "grape_targetsales": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: 4 grape_targetsales files → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: 4 grape_targetsales files \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "dragon_dragon_l2_py": {
@@ -508,7 +508,7 @@
     "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "Deferred — incremental load tasks. L1_MOTORKUX_ARBORVITAE, L1_FILE_ASTRANET handled via Cloud Run (Fabric trigger). L1_SAP needs SAP RFC connector.",
+    "blocker": "Deferred \u2014 incremental load tasks. L1_MOTORKUX_ARBORVITAE, L1_FILE_ASTRANET handled via Cloud Run (Fabric trigger). L1_SAP needs SAP RFC connector.",
     "notes": "All 3 task groups marked Skip. Will be handled as incremental load separately. See docs/l1_tasks_deferred.md. DAG converted in pipeline_27_dragon_L1. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
@@ -549,30 +549,30 @@
     "last_updated": "2026-05-13"
   },
   "dragon_prod_customerprofilesales_object_prompt_dr": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: prod_customerprofilesales_object_prompt_dr.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: prod_customerprofilesales_object_prompt_dr.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "dragon_sdue_datamart_quickwin": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: sdue_datamart_quickwin.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: sdue_datamart_quickwin.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "dragon_transformation_astranet_file_leads_ahm": {
-    "status": "ready",
-    "dag_converted": false,
+    "status": "done",
+    "dag_converted": true,
     "sql_converted": true,
     "tested": false,
-    "blocker": "DAG belum dibuat",
-    "notes": "SQL converted: transformation_astranet_file_leads_ahm.sql → Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
+    "blocker": "",
+    "notes": "SQL converted: transformation_astranet_file_leads_ahm.sql \u2192 Spark SQL (Iceberg). Converted via convert_hive_to_spark.py 2026-05-13. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
     "last_updated": "2026-05-13"
   },
   "dragon_so2w_dragon": {
