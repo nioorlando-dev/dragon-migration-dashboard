@@ -155,13 +155,27 @@ const INCREMENTAL_DAGS = ['dragon_L1', 'dragon_SAP'];
 
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
-  const rawTotal = rows.reduce((a, r) => a + (r.total || 0), 0);
   const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
-  const skipped = rows.reduce((a, r) => a + (Number((r.status_counts || {})['SKIP']) || 0), 0);
-  const totalTasks = rawTotal - skipped; // Total tasks = only tasks that need conversion (exclude SKIP)
   const blocked = rows.filter(r => r.status === 'blocked').length;
   const done = rows.filter(r => r.status === 'done').length;
-  return { totalPipes: rows.length, totalTasks, converted, skipped, blocked, done };
+
+  // Count SKIP from tasks array (consistent source)
+  let skipPaused = 0, skipOrch = 0;
+  rows.forEach(r => {
+    ((state.pipelines[r.name] || {}).tasks || []).forEach(t => {
+      if (/^skip/i.test(t.status || '')) {
+        if (/dag paused/i.test(t.tool || '') || /dag paused/i.test(t.status || '')) skipPaused++;
+        else skipOrch++;
+      }
+    });
+  });
+  const skipped = skipOrch + skipPaused; // Total SKIP = sum of both categories
+
+  // Total tasks = raw total - skipped (only count tasks that need conversion)
+  const rawTotal = rows.reduce((a, r) => a + (r.total || 0), 0);
+  const totalTasks = rawTotal - skipped;
+
+  return { totalPipes: rows.length, totalTasks, converted, skipped, skipPaused, skipOrch, blocked, done };
 }
 
 function l1Totals() {
@@ -283,7 +297,7 @@ function renderOverview(root) {
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
         ${statCard('Total Tasks', t.totalTasks, iconHash(), 'tasks — excl. SKIP & L1/SAP', '', "showView('all')")}
         ${statCard('Converted', t.converted, iconCheck(), `${convPct}% of total`, 'up', "showView('all')")}
-        ${statCard('SKIP', t.skipped, iconMinus(), 'tasks — orchestration / not converted', '', "showView('all')")}
+        ${statCard('SKIP', t.skipped, iconMinus(), `${t.skipOrch} tidak perlu diconvert · ${t.skipPaused} Task DAG non-aktif`, '', "showView('all')")}
         ${statCard('L1 & L0 Incremental', l1.total, iconClock(), 'tasks deferred — not counted in total', '', "showView('all')")}
       </div>
 
