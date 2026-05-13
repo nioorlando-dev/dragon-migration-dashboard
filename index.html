@@ -936,14 +936,14 @@ const PAUSED_DAGS = ['dragon', 'so2w_dragon', 'so2w_dragon_2', 'dragoncloudera_s
 function totals() {
   const rows = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
   const activeRows = rows.filter(r => !r.isPaused);
-  const converted = activeRows.reduce((a, r) => a + (r.converted || 0), 0);
+  const converted = rows.reduce((a, r) => a + (r.converted || 0), 0);
   const blocked = activeRows.filter(r => r.status === 'blocked').length;
   const done = activeRows.filter(r => r.status === 'done').length;
-  const tested = activeRows.reduce((a, r) => a + r.tasks.filter(t => t.tested).length, 0);
+  const tested = rows.reduce((a, r) => a + r.tasks.filter(t => t.tested).length, 0);
 
-  // Count SKIP from tasks array - only from activeRows (consistent with rawTotal)
+  // Count SKIP from tasks array - all rows (full total)
   let skipPaused = 0, skipOrch = 0;
-  activeRows.forEach(r => {
+  rows.forEach(r => {
     ((state.pipelines[r.name] || {}).tasks || []).forEach(t => {
       if (/^skip/i.test(t.status || '')) {
         if (/dag paused/i.test(t.tool || '') || /dag paused/i.test(t.status || '')) skipPaused++;
@@ -953,11 +953,11 @@ function totals() {
   });
   const skipped = skipOrch + skipPaused; // Total SKIP = sum of both categories
 
-  // Total tasks = raw total - skipped (only count tasks that need conversion)
-  const rawTotal = activeRows.reduce((a, r) => a + (r.total || 0), 0);
-  const totalTasks = rawTotal - skipped;
+  // Total tasks = full total - skipped (only count tasks that need conversion)
+  const fullTotal = rows.reduce((a, r) => a + (r.total || 0), 0);
+  const totalTasks = fullTotal - skipped;
 
-  return { totalPipes: activeRows.length, totalTasks, converted, skipped, skipPaused, skipOrch, blocked, done, tested };
+  return { totalPipes: rows.length, totalTasks, converted, skipped, skipPaused, skipOrch, blocked, done, tested };
 }
 
 function l1Totals() {
