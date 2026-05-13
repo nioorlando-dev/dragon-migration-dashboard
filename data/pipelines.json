@@ -2419,7 +2419,9 @@
     "status_counts": {
       "SKIP": 23
     },
-    "priority": "P1"
+    "priority": "P1",
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_L2": {
     "dag_id": "dragon_L2",
@@ -3448,7 +3450,9 @@
         "catatan": "DummyOperator",
         "tested": false
       }
-    ]
+    ],
+    "status": "Done",
+    "dag_done": true
   },
   "dragon_leadtimesalesheader_fromspk": {
     "dag_id": "dragon_leadtimesalesheader_fromspk",
