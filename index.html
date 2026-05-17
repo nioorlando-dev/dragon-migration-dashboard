@@ -1143,12 +1143,12 @@ function renderOverview(root) {
           <div class="section-sub">current phase across ${t.totalPipes} pipelines</div>
         </div>
         <div class="status-grid">
-          ${statusRing('Tested', b.tested || 0, t.totalPipes, '#7c6cfc')}
+          ${statusRing('Tested Pipeline', b.tested || 0, t.totalPipes, '#7c6cfc')}
+          ${statusRing('Tested Task', t.tested || 0, t.totalTasks, '#a78bfa')}
           ${statusRing('Validated', b.validated || 0, t.totalPipes, '#f59e0b')}
           ${statusRing('DAG Convert', b.dag_done || 0, t.totalPipes, '#ec4899')}
           ${statusRing('DAG Tested', b.dag_tested || 0, t.totalPipes, '#8b5cf6')}
           ${statusRing('Deployed', b.deployed || 0, t.totalPipes, '#10b981')}
-          ${statusRing('Completed', b.completed || 0, t.totalPipes, 'var(--green)')}
         </div>
       </div>
 
