@@ -1441,14 +1441,19 @@ function pipeCard(r) {
   const pct = r.total ? Math.round(r.converted / r.total * 100) : 0;
   const pausedStyle = r.isPaused ? 'opacity:0.55;border-color:rgba(220,38,38,0.25);' : '';
   
+  // Only these pipelines have valid DAG convert (not just start/finish)
+  const validDagPipelines = ['dragon_L2', 'dragon_l2_py', 'dragon_customerprofilesales_cloudera'];
+  const hasDagConvert = validDagPipelines.some(p => r.name.toLowerCase().includes(p.toLowerCase())) && r.dagConverted;
+  
   // 6 stages: Convert → Test → DAG Conv → DAG Test → Deploy → Done
+  // Done depends on Deploy (not status)
   const stages = [
     { name: 'Convert', done: r.converted > 0 },
     { name: 'Test', done: r.tested },
-    { name: 'DAG Conv', done: r.dagConverted },
-    { name: 'DAG Test', done: r.dagTested },
+    { name: 'DAG Conv', done: hasDagConvert },
+    { name: 'DAG Test', done: hasDagConvert && r.dagTested },
     { name: 'Deploy', done: r.deployed },
-    { name: 'Done', done: r.status === 'done' || r.status === 'ready' },
+    { name: 'Done', done: r.deployed }, // Done depends on Deploy
   ];
   
   // Find current active stage (first not done)
