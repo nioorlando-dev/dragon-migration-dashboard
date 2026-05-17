@@ -727,6 +727,10 @@
     <div class="topbar">
       <div class="crumbs"><span id="crumbLevel">Dashboard</span> <span style="opacity:0.4;margin:0 6px">/</span> <strong id="crumbPage">Overview</strong></div>
       <div class="topbar-meta">
+        <span class="pill mono" id="headerLastUpdated" style="color:var(--green);font-size:11px">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+          Updated: <span id="dataLastUpdated">—</span>
+        </span>
         <span class="pill mono" id="projMeta">28 pipelines · 922 tasks</span>
         <span class="pill">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -999,6 +1003,13 @@ function paintTopMeta() {
   const t = totals();
   document.getElementById('projMeta').textContent =
     `${t.totalPipes} pipelines · ${t.totalTasks.toLocaleString()} tasks`;
+  
+  // Update header last updated date
+  const rows = allRows();
+  const dates = rows.map(r => r.last_updated).filter(Boolean).sort();
+  const last = dates[dates.length - 1];
+  const el = document.getElementById('dataLastUpdated');
+  if (el) el.textContent = last ? formatDate(last) : '—';
 }
 
 function paintClock() {
