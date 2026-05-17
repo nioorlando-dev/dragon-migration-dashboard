@@ -931,6 +931,7 @@ function pipeRow(name) {
     dagConverted: !!s.dag_converted,
     sqlConverted: !!s.sql_converted,
     tested: !!s.tested,
+    validated: !!s.validated,
     dagTested: !!s.dag_tested,
     deployed: !!s.deployed,
     tasks: p.tasks || [],
@@ -960,11 +961,14 @@ function countsByPrio() {
 }
 
 function statusBreakdown(rows = allRows()) {
-  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0 };
+  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0, validated: 0, deployed: 0, completed: 0 };
   rows.forEach(r => {
     out[r.status] = (out[r.status] || 0) + 1;
-    out.tested += (r.tasks || []).filter(t => t.tested).length;
+    out.tested += r.tested ? 1 : 0;
+    out.validated += r.validated ? 1 : 0;
     if (r.dagConverted) out.dag_done++;
+    if (r.deployed) out.deployed++;
+    if (r.deployed) out.completed++;
   });
   return out;
 }
@@ -1138,11 +1142,12 @@ function renderOverview(root) {
           <div class="section-sub">current phase across ${t.totalPipes} pipelines</div>
         </div>
         <div class="status-grid">
-          ${statusRing('Done', b.done || 0, t.totalPipes, 'var(--green)')}
-          ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, 'var(--blue)')}
-          ${statusRing('Tested', t.tested || 0, t.totalTasks, '#7c6cfc')}
-          ${statusRing('Blocked', b.blocked || 0, t.totalPipes, 'var(--red)')}
-          ${statusRing('Pending', (b.pending || 0) + (b.testing || 0), t.totalPipes, 'var(--yellow)')}
+          ${statusRing('Converted', t.converted > 0 ? activeForPrio.filter(r => r.converted > 0).length : 0, t.totalPipes, 'var(--blue)')}
+          ${statusRing('Tested', b.tested || 0, t.totalPipes, '#7c6cfc')}
+          ${statusRing('Validated', b.validated || 0, t.totalPipes, '#f59e0b')}
+          ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, '#ec4899')}
+          ${statusRing('Deployed', b.deployed || 0, t.totalPipes, '#10b981')}
+          ${statusRing('Completed', b.completed || 0, t.totalPipes, 'var(--green)')}
         </div>
       </div>
 
@@ -1445,15 +1450,15 @@ function pipeCard(r) {
   const validDagPipelines = ['dragon_L2', 'dragon_l2_py', 'dragon_customerprofilesales_cloudera'];
   const hasDagConvert = validDagPipelines.some(p => r.name.toLowerCase().includes(p.toLowerCase())) && r.dagConverted;
   
-  // 6 stages: Convert → Test → DAG Conv → DAG Test → Deploy → Done
-  // Done depends on Deploy (not status)
+  // 7 stages: Convert → Test → Validate → DAG Conv → DAG Test → Deploy → Completed
   const stages = [
     { name: 'Convert', done: r.converted > 0 },
     { name: 'Test', done: r.tested },
+    { name: 'Validate', done: r.validated },
     { name: 'DAG Conv', done: hasDagConvert },
     { name: 'DAG Test', done: hasDagConvert && r.dagTested },
     { name: 'Deploy', done: r.deployed },
-    { name: 'Done', done: r.deployed }, // Done depends on Deploy
+    { name: 'Completed', done: r.deployed },
   ];
   
   // Find current active stage (first not done)
