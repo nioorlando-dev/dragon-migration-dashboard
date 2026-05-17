@@ -932,7 +932,7 @@ function pipeRow(name) {
     sqlConverted: !!s.sql_converted,
     tested: !!s.tested,
     dagTested: !!s.dag_tested,
-    deployed: !!s.deployed || status === 'done',
+    deployed: !!s.deployed,
     tasks: p.tasks || [],
     status_counts: p.status_counts || {},
     isPaused: PAUSED_DAGS.includes(name),
