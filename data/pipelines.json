@@ -2664,58 +2664,90 @@
       },
       {
         "task_id": "masterdealer_star",
-        "type": "Transform DBT",
-        "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
+        "type": "Transform PySpark",
+        "status": "Blocked",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "❌ BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)",
         "tested": false
       },
       {
         "task_id": "masterdealer_union",
-        "type": "Transform DBT",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 3,264 rows @ 2026-05-17 18:12 (masterdealer.py)",
+        "tested": true
       },
       {
         "task_id": "masterunittype",
-        "type": "Transform DBT",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 2,315 rows @ 2026-05-17 18:23 (masterunittype.py)",
+        "tested": true
       },
       {
         "task_id": "mastersalesperson_star",
-        "type": "Transform DBT",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 45,693 rows @ 2026-05-17 18:48 (mastersalesperson_star.py)",
+        "tested": true
       },
       {
         "task_id": "mastersalesperson_union",
-        "type": "Transform DBT",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 87,161 rows @ 2026-05-17 19:04 (mastersalesperson.py)",
+        "tested": true
+      },
+      {
+        "task_id": "mastermaindealer_star",
+        "type": "Transform PySpark",
+        "status": "Blocked",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "❌ BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)",
         "tested": false
       },
       {
-        "task_id": "masterdealermaindealer_star",
-        "type": "Transform DBT",
+        "task_id": "mastermaindealer_union",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
-        "tested": false
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 42 rows @ 2026-05-17 18:21 (mastermaindealer.py)",
+        "tested": true
       },
       {
-        "task_id": "mastermaterial",
-        "type": "Transform DBT",
+        "task_id": "targetservicepart",
+        "type": "Transform PySpark",
         "status": "Done",
-        "tool": "NEED INPUT (DBT/Dataform/BQ)",
-        "catatan": "dbt run -s <model> -t prod",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 125,379 rows @ 2026-05-17 18:33 (targetservicepart.py)",
+        "tested": true
+      },
+      {
+        "task_id": "grape_mapping_ringdescription",
+        "type": "Transform PySpark",
+        "status": "Done",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 5 rows @ 2026-05-17 18:26 (grape_mapping_ringdescription.py)",
+        "tested": true
+      },
+      {
+        "task_id": "salessummaryv2",
+        "type": "Transform PySpark",
+        "status": "Done",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "✅ SUCCESS: 9,574,101 rows @ 2026-05-17 20:06 (salessummaryv2.py)",
+        "tested": true
+      },
+      {
+        "task_id": "eventactivity",
+        "type": "Transform PySpark",
+        "status": "Blocked",
+        "tool": "Dataproc Serverless (PySpark)",
+        "catatan": "⚠️ OOM: OutOfMemoryError, perlu split query atau tambah memory",
         "tested": false
       },
       {
@@ -2727,8 +2759,9 @@
         "tested": false
       }
     ],
-    "status": "Done",
-    "dag_done": true
+    "status": "in_progress",
+    "dag_done": true,
+    "last_updated": "2026-05-17 21:20"
   },
   "dragon_SAP": {
     "dag_id": "dragon_SAP",
