@@ -961,12 +961,13 @@ function countsByPrio() {
 }
 
 function statusBreakdown(rows = allRows()) {
-  const out = { done: 0, dag_done: 0, blocked: 0, pending: 0, testing: 0, tested: 0, validated: 0, deployed: 0, completed: 0 };
+  const out = { done: 0, dag_done: 0, dag_tested: 0, blocked: 0, pending: 0, testing: 0, tested: 0, validated: 0, deployed: 0, completed: 0 };
   rows.forEach(r => {
     out[r.status] = (out[r.status] || 0) + 1;
     out.tested += r.tested ? 1 : 0;
     out.validated += r.validated ? 1 : 0;
     if (r.dagConverted) out.dag_done++;
+    if (r.dagTested) out.dag_tested++;
     if (r.deployed) out.deployed++;
     if (r.deployed) out.completed++;
   });
@@ -1142,10 +1143,10 @@ function renderOverview(root) {
           <div class="section-sub">current phase across ${t.totalPipes} pipelines</div>
         </div>
         <div class="status-grid">
-          ${statusRing('Converted', t.converted > 0 ? activeForPrio.filter(r => r.converted > 0).length : 0, t.totalPipes, 'var(--blue)')}
           ${statusRing('Tested', b.tested || 0, t.totalPipes, '#7c6cfc')}
           ${statusRing('Validated', b.validated || 0, t.totalPipes, '#f59e0b')}
-          ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, '#ec4899')}
+          ${statusRing('DAG Convert', b.dag_done || 0, t.totalPipes, '#ec4899')}
+          ${statusRing('DAG Tested', b.dag_tested || 0, t.totalPipes, '#8b5cf6')}
           ${statusRing('Deployed', b.deployed || 0, t.totalPipes, '#10b981')}
           ${statusRing('Completed', b.completed || 0, t.totalPipes, 'var(--green)')}
         </div>
