@@ -120,6 +120,10 @@ function pipeRow(name) {
     dag_converted: !!s.dag_converted,
     sql_converted: !!s.sql_converted,
     tested: !!s.tested,
+    validated: !!s.validated,
+    dag_tested: !!s.dag_tested,
+    deployed: !!s.deployed,
+    output_tables: s.output_tables || 0,
     tasks: p.tasks || [],
     status_counts: p.status_counts || {},
   };
@@ -288,10 +292,32 @@ function renderOverview(root) {
 
   const convPct = t.totalTasks ? Math.round((t.converted / t.totalTasks) * 100) : 0;
 
+  // Calculate tested/validated/deployed counts
+  const allPipes = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
+  const testedPipelines = allPipes.filter(r => r.tested).length;
+  const testedTasks = 67; // From TASK_LIST: 28 + 8 + 29 + 2 = 67 scripts tested
+  const validatedCount = allPipes.filter(r => r.validated).length;
+  const dagConvertCount = allPipes.filter(r => r.dag_converted).length;
+  const dagTestedCount = allPipes.filter(r => r.dag_tested).length;
+  const deployedCount = allPipes.filter(r => r.deployed).length;
+
+  // Calculate total output tables from tested pipelines
+  const testedPipelinesList = allPipes
+    .filter(r => r.tested && r.output_tables > 0)
+    .map(r => ({
+      name: r.name,
+      tables: r.output_tables,
+      testedTasks: r.name === 'dragon_L2' ? '28/28' : 
+                   r.name === 'dragon_L3' ? '8/11' :
+                   r.name === 'dragon_customerprofilesales_cloudera' ? '29/29' :
+                   r.name === 'prd_customerprofilesales' ? '2/2' : '—'
+    }));
+  const totalOutputTables = testedPipelinesList.reduce((sum, p) => sum + p.tables, 0);
+
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">Migration Overview</h1>
-      <p class="page-sub">Tracking 28 Hadoop/Cloudera pipelines migrating to Dataproc PySpark + Cloud Composer.</p>
+      <p class="page-sub">Tracking ${t.totalPipes} active pipelines migrating from Cloudera to GCP Dataproc + Airflow (self-managed).</p>
 
       <div class="stats">
         ${statCard('Total Pipelines', t.totalPipes, iconLayers(), 'across all priorities', '', "showView('all')")}
@@ -307,31 +333,58 @@ function renderOverview(root) {
           <div class="section-sub">current phase across ${t.totalPipes} pipelines</div>
         </div>
         <div class="status-grid">
-          ${statusRing('Done', b.done || 0, t.totalPipes, 'var(--green)')}
-          ${statusRing('DAG Done', b.dag_done || 0, t.totalPipes, 'var(--blue)')}
-          ${statusRing('Blocked', b.blocked || 0, t.totalPipes, 'var(--red)')}
-          ${statusRing('Pending', (b.pending || 0) + (b.testing || 0), t.totalPipes, 'var(--yellow)')}
+          ${statusRing('TESTED PIPELINE', testedPipelines, t.totalPipes, 'var(--green)')}
+          ${statusRing('TESTED TASK', testedTasks, 67, 'var(--green)')}
+          ${statusRing('VALIDATED', validatedCount, t.totalPipes, 'var(--blue)')}
+          ${statusRing('DAG CONVERT', dagConvertCount, t.totalPipes, 'var(--yellow)')}
+          ${statusRing('DAG TESTED', dagTestedCount, t.totalPipes, 'var(--yellow)')}
+          ${statusRing('DEPLOYED', deployedCount, t.totalPipes, 'var(--blue)')}
         </div>
       </div>
 
-      <div class="section">
-        <div class="section-head">
-          <div class="section-title">Conversion by priority</div>
-          <div class="section-sub">tasks converted per priority group</div>
-        </div>
-        <div class="card">
-          <div class="prog-list">
-            ${pGroups.map(g => `
-              <div class="prog-row ${g.key === 'p1' ? 'p1' : ''}">
-                <div class="prog-name">
-                  <span class="chip ${g.key}">${g.label.split(' ')[0]}</span>
-                  <span>${g.label.replace(/^P\d\S*\s?/, '').replace(/^P4\S*\s?/, '').trim() || g.label}</span>
-                  <span style="color:var(--text-mute);font-size:11.5px">· ${g.count} pipes</span>
+      <div class="section" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div>
+          <div class="section-head">
+            <div class="section-title">Conversion by priority</div>
+            <div class="section-sub">tasks converted per priority group</div>
+          </div>
+          <div class="card" style="height:calc(100% - 36px)">
+            <div class="prog-list">
+              ${pGroups.map(g => `
+                <div class="prog-row ${g.key === 'p1' ? 'p1' : ''}">
+                  <div class="prog-name">
+                    <span class="chip ${g.key}">${g.label.split(' ')[0]}</span>
+                    <span>${g.label.replace(/^P\d\S*\s?/, '').replace(/^P4\S*\s?/, '').trim() || g.label}</span>
+                    <span style="color:var(--text-mute);font-size:11.5px">· ${g.count} pipes</span>
+                  </div>
+                  <div class="prog-track"><div class="prog-fill" data-pct="${g.pct}" style="width:0%"></div></div>
+                  <div class="prog-meta"><b>${g.pct}%</b> · ${g.conv}/${g.total}</div>
                 </div>
-                <div class="prog-track"><div class="prog-fill" data-pct="${g.pct}" style="width:0%"></div></div>
-                <div class="prog-meta"><b>${g.pct}%</b> · ${g.conv}/${g.total}</div>
-              </div>
-            `).join('')}
+              `).join('')}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-head">
+            <div class="section-title">Total Table Output</div>
+            <div class="section-sub">tables generated from tested pipelines</div>
+          </div>
+          <div class="card" style="height:calc(100% - 36px);display:flex;flex-direction:column">
+            <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+              <span style="font-size:13px;color:var(--text-dim)">Total Output Tables</span>
+              <span style="font-size:28px;font-weight:600;color:var(--green)">${totalOutputTables}</span>
+            </div>
+            <div style="flex:1;overflow-y:auto;padding:12px 16px;max-height:200px">
+              ${testedPipelinesList.map(p => `
+                <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)">
+                  <div style="min-width:0">
+                    <div style="font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div>
+                    <div style="font-size:10px;color:var(--text-mute)">${p.testedTasks} tasks tested</div>
+                  </div>
+                  <div style="font-size:14px;font-weight:600;color:var(--green);margin-left:12px">${p.tables} tables</div>
+                </div>
+              `).join('')}
+            </div>
           </div>
         </div>
       </div>
@@ -371,8 +424,10 @@ function renderPriorityView(root, prio) {
     P45: 'P4–P5 — Low', unassigned: 'Unassigned',
   }[prio];
 
+  const testedInPrio = rows.filter(r => r.tested).length;
+  const blockedInPrio = rows.filter(r => r.status === 'blocked' || (r.blocker && r.blocker.length > 0)).length;
   const sub = {
-    P1: 'Must-ship pipelines. Currently blocked on source data and dbt models.',
+    P1: `Must-ship pipelines. ${testedInPrio} tested, ${blockedInPrio} blocked on validation (Cloudera access needed).`,
     P2: 'High priority. Scheduled for next conversion wave.',
     P3: 'Medium priority. Scoped but not yet started.',
     P45: 'Low priority. Scheduled after critical cutover.',
@@ -387,11 +442,12 @@ function renderPriorityView(root, prio) {
       <h1 class="page-title">${prioLabel}</h1>
       <p class="page-sub">${sub}</p>
 
-      <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
+      <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
         ${statCard('Pipelines', rows.length, iconLayers(), '', '')}
         ${statCard('Tasks', totalTasks, iconHash(), 'under tracking', '')}
         ${statCard('Converted', conv, iconCheck(), totalTasks ? `${Math.round(conv/totalTasks*100)}% of total` : '—', 'up')}
-        ${statCard('Blocked', rows.filter(r => r.status === 'blocked').length, iconAlert(), 'awaiting deps', 'down')}
+        ${statCard('Tested', rows.filter(r => r.tested).length, iconCheck(), `${rows.filter(r => r.tested).length} pipelines`, 'up')}
+        ${statCard('Blocked', rows.filter(r => r.status === 'blocked' || (r.blocker && r.blocker.length > 0)).length, iconAlert(), 'awaiting deps', 'down')}
       </div>
 
       ${rows.length === 0
@@ -430,10 +486,14 @@ function renderAll(root) {
         <select class="select" id="f_status">
           <option value="all">All statuses</option>
           <option value="done">Done</option>
-          <option value="dag_done">DAG Done</option>
+          <option value="tested">Tested</option>
           <option value="blocked">Blocked</option>
           <option value="pending">Pending</option>
-          <option value="testing">Testing</option>
+          <option value="converted">Converted</option>
+          <option value="ready">Ready</option>
+          <option value="in_progress">In Progress</option>
+          <option value="skip">Skip</option>
+          <option value="need_input">Need Input</option>
         </select>
       </div>
 
@@ -502,7 +562,19 @@ function paintTableBody() {
     if (prio === 'unassigned') rows = rows.filter(r => !['P1','P2','P3','P4','P5'].includes(r.priority));
     else rows = rows.filter(r => r.priority === prio);
   }
-  if (status !== 'all') rows = rows.filter(r => r.status === status);
+  if (status !== 'all') {
+    if (status === 'tested') {
+      rows = rows.filter(r => r.tested === true);
+    } else if (status === 'converted') {
+      rows = rows.filter(r => r.sql_converted === true && !r.tested);
+    } else if (status === 'skip') {
+      rows = rows.filter(r => r.status === 'skip' || (r.status_counts && r.status_counts['SKIP'] > 0));
+    } else if (status === 'need_input') {
+      rows = rows.filter(r => r.blocker && r.blocker.toLowerCase().includes('need input'));
+    } else {
+      rows = rows.filter(r => r.status === status);
+    }
+  }
 
   const { key, dir } = state.sort;
   rows.sort((a, b) => {

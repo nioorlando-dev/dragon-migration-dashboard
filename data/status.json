@@ -28,24 +28,26 @@
     "dag_converted": false,
     "sql_converted": true,
     "tested": true,
-    "blocker": "",
-    "notes": "28/28 scripts SUCCESS on Dataproc Serverless. T-SQL to Spark SQL. Total 412M rows. Validation ongoing - terkendala: Synapse/Fabric source tidak bisa diakses.",
-    "last_updated": "2026-05-17",
+    "blocker": "Validation BLOCKED - Script resmi belum lengkap, butuh Cloudera access via edge node",
+    "notes": "28/28 scripts SUCCESS on Dataproc Serverless. T-SQL to Spark SQL. Total 412M rows. Output: 28 tables di L2_STAR. Snapshot captured 18 Mei 2026.",
+    "last_updated": "2026-05-18",
     "deployed": false,
     "dag_tested": false,
-    "validated": false
+    "validated": false,
+    "output_tables": 28
   },
   "dragon_L3": {
-    "status": "in_progress",
+    "status": "blocked",
     "dag_converted": false,
     "sql_converted": true,
     "tested": true,
     "blocker": "3 scripts blocked: eventactivity.py (OOM), masterdealer_star.py & mastermaindealer_star.py (missing source tables)",
-    "notes": "8/11 scripts SUCCESS on Dataproc Serverless (9.8M rows total). Issues: OOM eventactivity.py, missing L1_STAR tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels).",
-    "last_updated": "2026-05-17",
+    "notes": "8/11 scripts SUCCESS on Dataproc Serverless (9.8M rows total). Output: 8 tables di L3_CLOUDERA_DRAGON_HSO + L3_DM_GRAPE. Snapshot captured 18 Mei 2026.",
+    "last_updated": "2026-05-18",
     "deployed": false,
     "dag_tested": false,
-    "validated": false
+    "validated": false,
+    "output_tables": 8
   },
   "dragon_SAP": {
     "status": "done",
@@ -108,16 +110,17 @@
     "validated": false
   },
   "dragon_customerprofilesales_cloudera": {
-    "status": "done",
+    "status": "blocked",
     "dag_converted": false,
     "sql_converted": true,
     "tested": true,
-    "blocker": "Validation BLOCKED - Cloudera source tidak bisa diakses untuk compare",
-    "notes": "25 output tables di BQ. 24 tables validated. Timestamp verification PENDING. Scripts sudah di-run di Dataproc.",
-    "last_updated": "2026-05-17",
+    "blocker": "Validation BLOCKED - Script resmi belum lengkap, butuh Cloudera access via edge node",
+    "notes": "Pipeline 35: 29 scripts SUCCESS. Output: 38 tables di L3_CLOUDERA_DRAGON_HSO. Snapshot captured 18 Mei 2026.",
+    "last_updated": "2026-05-18",
     "deployed": false,
     "dag_tested": false,
-    "validated": false
+    "validated": false,
+    "output_tables": 38
   },
   "dragon_data_mekanik": {
     "status": "pending",
@@ -468,16 +471,17 @@
     "validated": false
   },
   "prd_customerprofilesales": {
-    "status": "done",
+    "status": "blocked",
     "dag_converted": false,
     "sql_converted": true,
-    "tested": false,
-    "blocker": "",
-    "notes": "Converted via pipeline_04_customerprofilesales/ (full CPS pipeline). 12 SQL files converted to Spark SQL (Iceberg) 2026-05-13. BigQuery SQL \u2192 Spark SQL conversion completed. Total files in P1: 70 .py (55 PySpark), 96 .sql (42 DBT), 1 json, 1 md, 1 sh, 1 txt, 1 yml, 2 Dockerfile.",
-    "last_updated": "2026-05-13",
+    "tested": true,
+    "blocker": "Validation BLOCKED - Script resmi belum lengkap, butuh Cloudera access via edge node",
+    "notes": "Pipeline 04: 2/2 scripts SUCCESS (customerprofilesales_ro_final.py, customerprofilesales_pkb.py). Output: 2 tables di WH_STG_DRAGON. Snapshot captured 18 Mei 2026.",
+    "last_updated": "2026-05-18",
     "deployed": false,
     "dag_tested": false,
-    "validated": false
+    "validated": false,
+    "output_tables": 2
   },
   "customerprofilesales_delta": {
     "status": "done",
