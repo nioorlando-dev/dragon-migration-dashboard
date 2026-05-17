@@ -109,12 +109,12 @@
   },
   "dragon_customerprofilesales_cloudera": {
     "status": "done",
-    "dag_converted": false,
+    "dag_converted": true,
     "sql_converted": true,
-    "tested": false,
-    "blocker": "",
-    "notes": "ON HOLD - Tunggu blocker B1-B3. Scripts converted, perlu re-run 27 PySpark scripts.",
-    "last_updated": "2026-05-13",
+    "tested": true,
+    "blocker": "Validation BLOCKED - Cloudera source tidak bisa diakses untuk compare",
+    "notes": "25 output tables di BQ. 24 tables validated. Timestamp verification PENDING. Scripts sudah di-run di Dataproc.",
+    "last_updated": "2026-05-17",
     "deployed": false,
     "dag_tested": false,
     "validated": false
