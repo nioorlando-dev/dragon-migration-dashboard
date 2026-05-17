@@ -23,14 +23,14 @@
   },
   "dragon_L2": {
     "status": "done",
-    "dag_converted": true,
+    "dag_converted": false,
     "sql_converted": true,
     "tested": true,
     "blocker": "",
-    "notes": "✅ COMPLETE: 28/28 scripts SUCCESS on Dataproc Serverless. T-SQL → Spark SQL. Total ~406M rows. Validation: docs/PIPELINE_26_VALIDATION_REPORT.md",
+    "notes": "✅ 28/28 scripts SUCCESS on Dataproc Serverless. T-SQL → Spark SQL. Total ~406M rows. ⏳ Validation ongoing - terkendala: Synapse/Fabric source tidak bisa diakses, hanya Cloudera yang bisa di-validate.",
     "last_updated": "2026-05-17",
     "deployed": false,
-    "dag_tested": true
+    "dag_tested": false
   },
   "dragon_L3": {
     "status": "done",
