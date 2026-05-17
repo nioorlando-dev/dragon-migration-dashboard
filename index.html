@@ -1220,23 +1220,74 @@ function renderPriorityView(root, prio) {
   const totalTasks = rows.reduce((a, r) => a + r.total, 0);
   const conv = rows.reduce((a, r) => a + r.converted, 0);
 
+  const testedPipes = rows.filter(r => r.tested).length;
+  const testedTasks = rows.reduce((a, r) => a + r.tasks.filter(t => t.tested).length, 0);
+  const blockedPipes = rows.filter(r => r.status === 'blocked').length;
+
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">${prioLabel}</h1>
       <p class="page-sub">${sub}</p>
 
-      <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
+      <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
         ${statCard('Pipelines', rows.length, iconLayers(), '', '')}
         ${statCard('Tasks', totalTasks, iconHash(), 'under tracking', '')}
         ${statCard('Converted', conv, iconCheck(), totalTasks ? `${Math.round(conv/totalTasks*100)}% of total` : '—', 'up')}
-        ${statCard('Blocked', rows.filter(r => r.status === 'blocked').length, iconAlert(), 'awaiting deps', 'down')}
+        ${statCard('Tested', testedTasks, iconCheck(), `${testedPipes} pipelines`, 'up')}
+        ${statCard('Blocked', blockedPipes, iconAlert(), 'awaiting deps', blockedPipes > 0 ? 'down' : '')}
       </div>
 
-      ${rows.length === 0
-        ? `<div class="empty"><div class="t">No pipelines in this group</div><div>Nothing to show here yet.</div></div>`
-        : `<div class="pipe-grid">${rows.map(pipeCard).join('')}</div>`}
+      <div class="filters" style="margin-bottom:20px">
+        <div class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="prio_q" type="text" placeholder="Search pipelines…" spellcheck="false" autocomplete="off"/>
+        </div>
+        <select class="select" id="prio_status">
+          <option value="all">All statuses</option>
+          <option value="done">Done</option>
+          <option value="tested">Tested</option>
+          <option value="blocked">Blocked</option>
+          <option value="pending">Pending</option>
+          <option value="converted">Converted</option>
+          <option value="fixable">Fixable</option>
+        </select>
+      </div>
+
+      <div id="prio_grid">
+        ${rows.length === 0
+          ? `<div class="empty"><div class="t">No pipelines in this group</div><div>Nothing to show here yet.</div></div>`
+          : `<div class="pipe-grid">${rows.map(pipeCard).join('')}</div>`}
+      </div>
     </div>
   `;
+
+  // Filter logic for priority view
+  const filterPrioView = () => {
+    const q = (document.getElementById('prio_q')?.value || '').toLowerCase();
+    const st = document.getElementById('prio_status')?.value || 'all';
+    
+    let filtered = rows;
+    if (q) filtered = filtered.filter(r => r.name.toLowerCase().includes(q));
+    if (st !== 'all') {
+      if (st === 'tested') filtered = filtered.filter(r => r.tested);
+      else if (st === 'converted') filtered = filtered.filter(r => r.converted > 0);
+      else if (st === 'fixable') filtered = filtered.filter(r => r.blocker && r.blocker.toLowerCase().includes('fixable'));
+      else filtered = filtered.filter(r => r.status === st);
+    }
+    
+    const grid = document.getElementById('prio_grid');
+    if (grid) {
+      grid.innerHTML = filtered.length === 0
+        ? `<div class="empty"><div class="t">No matching pipelines</div><div>Try adjusting your filters.</div></div>`
+        : `<div class="pipe-grid">${filtered.map(pipeCard).join('')}</div>`;
+      grid.querySelectorAll('.pipe-card').forEach(el => {
+        el.addEventListener('click', () => openPanel(el.dataset.name));
+      });
+    }
+  };
+
+  document.getElementById('prio_q')?.addEventListener('input', filterPrioView);
+  document.getElementById('prio_status')?.addEventListener('change', filterPrioView);
 
   root.querySelectorAll('.pipe-card').forEach(el => {
     el.addEventListener('click', () => openPanel(el.dataset.name));
