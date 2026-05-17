@@ -25,7 +25,7 @@
   },
   "dragon_L2": {
     "status": "done",
-    "dag_converted": false,
+    "dag_converted": true,
     "sql_converted": true,
     "tested": true,
     "blocker": "",
@@ -36,13 +36,13 @@
     "validated": false
   },
   "dragon_L3": {
-    "status": "done",
-    "dag_converted": false,
+    "status": "in_progress",
+    "dag_converted": true,
     "sql_converted": true,
-    "tested": false,
-    "blocker": "",
-    "notes": "dag converted, SQL converted (dbt models in pipeline_25_dragon_L3). sebagian task bisa jalan tetapi belum end-to-end.",
-    "last_updated": "2026-05-13",
+    "tested": true,
+    "blocker": "3 scripts blocked: eventactivity.py (OOM), masterdealer_star.py & mastermaindealer_star.py (missing source tables)",
+    "notes": "8/11 scripts SUCCESS on Dataproc Serverless (9.8M rows total). Issues: OOM eventactivity.py, missing L1_STAR tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels).",
+    "last_updated": "2026-05-17",
     "deployed": false,
     "dag_tested": false,
     "validated": false
