@@ -341,21 +341,28 @@
   .pipe-progress .prog-track { flex: 1; }
   .pipe-progress .meta { font-variant-numeric: tabular-nums; min-width: 48px; text-align: right; }
   
-  /* Pipeline stage indicators */
+  /* Pipeline stage progress line */
   .pipe-stages {
-    display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;
+    display: flex; align-items: center; gap: 0; margin-top: 6px;
   }
-  .pipe-stage {
-    font-size: 9px; padding: 2px 6px; border-radius: 4px;
-    font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+  .pipe-stage-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: #333; border: 2px solid #444;
+    position: relative; z-index: 1;
   }
-  .pipe-stage.pending { background: rgba(100,100,100,0.2); color: #666; }
-  .pipe-stage.task-convert { background: rgba(59,130,246,0.2); color: #60a5fa; }
-  .pipe-stage.task-test { background: rgba(168,85,247,0.2); color: #c084fc; }
-  .pipe-stage.dag-convert { background: rgba(236,72,153,0.2); color: #f472b6; }
-  .pipe-stage.dag-test { background: rgba(249,115,22,0.2); color: #fb923c; }
-  .pipe-stage.deploy { background: rgba(234,179,8,0.2); color: #facc15; }
-  .pipe-stage.done { background: rgba(0,208,132,0.2); color: var(--green); }
+  .pipe-stage-dot.done { background: var(--green); border-color: var(--green); }
+  .pipe-stage-dot.active { background: #3b82f6; border-color: #3b82f6; box-shadow: 0 0 6px rgba(59,130,246,0.5); }
+  .pipe-stage-line {
+    flex: 1; height: 2px; background: #333;
+  }
+  .pipe-stage-line.done { background: var(--green); }
+  .pipe-stage-labels {
+    display: flex; justify-content: space-between; margin-top: 4px;
+    font-size: 8px; color: #666; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .pipe-stage-labels span { text-align: center; }
+  .pipe-stage-labels span.done { color: var(--green); }
+  .pipe-stage-labels span.active { color: #60a5fa; }
   
   .pipe-blocker {
     display: flex; align-items: flex-start; gap: 8px;
@@ -1428,27 +1435,40 @@ function pipeCard(r) {
   const pausedStyle = r.isPaused ? 'opacity:0.55;border-color:rgba(220,38,38,0.25);' : '';
   const pausedBadge = r.isPaused ? `<span class="badge" style="background:rgba(220,38,38,0.15);color:#f87171;border:none"><span class="dot" style="background:#f87171"></span>Paused</span>` : badge(r.status);
   
-  // Determine stages - each has its own color when done
+  // Simplified stages: Convert → Test → Deploy → Done
   const taskConv = r.converted > 0;
   const taskTested = r.tested;
-  const dagConv = r.dagConverted;
-  const dagTested = r.dagTested;
-  const deployed = r.deployed;
-  const isDone = r.status === 'done' || r.status === 'ready';
+  const deployed = r.deployed && !r.isPaused;
+  const isDone = (r.status === 'done' || r.status === 'ready') && !r.isPaused;
   
-  // Stage logic: colored if done, gray if not done yet
-  const stages = [
-    { name: 'Task Convert', css: taskConv ? 'task-convert' : 'pending' },
-    { name: 'Task Test', css: taskTested ? 'task-test' : 'pending' },
-    { name: 'DAG Convert', css: dagConv ? 'dag-convert' : 'pending' },
-    { name: 'DAG Test', css: dagTested ? 'dag-test' : 'pending' },
-    { name: 'Deploy', css: deployed ? 'deploy' : 'pending' },
-    { name: 'Done', css: isDone ? 'done' : 'pending' },
-  ];
+  // Determine current active stage
+  let activeStage = 0;
+  if (taskConv) activeStage = 1;
+  if (taskTested) activeStage = 2;
+  if (deployed) activeStage = 3;
+  if (isDone) activeStage = 4;
   
-  const stagesHtml = stages.map(s => 
-    `<span class="pipe-stage ${s.css}">${s.name}</span>`
-  ).join('');
+  const stages = ['Convert', 'Test', 'Deploy', 'Done'];
+  
+  // Build progress line with dots
+  let stagesHtml = '<div class="pipe-stages">';
+  stages.forEach((s, i) => {
+    const dotClass = i < activeStage ? 'done' : i === activeStage ? 'active' : '';
+    stagesHtml += `<span class="pipe-stage-dot ${dotClass}"></span>`;
+    if (i < stages.length - 1) {
+      const lineClass = i < activeStage ? 'done' : '';
+      stagesHtml += `<span class="pipe-stage-line ${lineClass}"></span>`;
+    }
+  });
+  stagesHtml += '</div>';
+  
+  // Labels
+  stagesHtml += '<div class="pipe-stage-labels">';
+  stages.forEach((s, i) => {
+    const labelClass = i < activeStage ? 'done' : i === activeStage ? 'active' : '';
+    stagesHtml += `<span class="${labelClass}">${s}</span>`;
+  });
+  stagesHtml += '</div>';
   
   return `
     <div class="card pipe-card hoverable" data-name="${r.name}" style="${pausedStyle}">
@@ -1457,7 +1477,7 @@ function pipeCard(r) {
         <span class="pipe-name mono" title="${escapeHtml(r.name)}">${escapeHtml(r.name)}</span>
         ${pausedBadge}
       </div>
-      <div class="pipe-stages">${stagesHtml}</div>
+      ${stagesHtml}
       <div class="pipe-meta mono">
         <span>${iconCal()} ${escapeHtml(r.schedule)}</span>
         <span>${iconTask()} ${r.total} tasks</span>
