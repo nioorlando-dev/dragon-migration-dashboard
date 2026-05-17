@@ -21,10 +21,10 @@
     "status": "done",
     "dag_converted": true,
     "sql_converted": true,
-    "tested": false,
+    "tested": true,
     "blocker": "",
-    "notes": "dag converted, SQL converted (dbt models in pipeline_26_dragon_L2). eksekusi p1 masih tertahan dependency dbt-so-hso.",
-    "last_updated": "2026-05-13"
+    "notes": "✅ COMPLETE: 28/28 scripts SUCCESS on Dataproc Serverless. T-SQL → Spark SQL. Total ~406M rows. Validation: docs/PIPELINE_26_VALIDATION_REPORT.md",
+    "last_updated": "2026-05-17"
   },
   "dragon_L3": {
     "status": "done",
