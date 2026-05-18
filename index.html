@@ -1131,15 +1131,16 @@ function renderOverview(root) {
   const allPipesForOutput = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
   const testedPipelinesList = allPipesForOutput
     .filter(r => r.tested && r.output_tables > 0)
-    .map(r => ({
-      name: r.name,
-      priority: r.priority,
-      tables: r.output_tables,
-      testedTasks: r.name === 'dragon_L2' ? '28/28' : 
-                   r.name === 'dragon_L3' ? '8/11' :
-                   r.name === 'dragon_customerprofilesales_cloudera' ? '29/29' :
-                   r.name === 'prd_customerprofilesales' ? '2/2' : '—'
-    }));
+    .map(r => {
+      const testedCount = r.tasks.filter(t => t.tested).length;
+      const totalCount = r.tasks.length;
+      return {
+        name: r.name,
+        priority: r.priority,
+        tables: r.output_tables,
+        testedTasks: totalCount > 0 ? `${testedCount}/${totalCount}` : '—'
+      };
+    });
   const totalOutputTables = testedPipelinesList.reduce((sum, p) => sum + p.tables, 0);
 
   root.innerHTML = `

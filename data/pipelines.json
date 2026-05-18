@@ -7963,122 +7963,122 @@
       {
         "task_id": "check_integration_pssu",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "report_sdue",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "report_sdue_2023",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "report_sdue_portalahm",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_master_dealer",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_sales_part_oil",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenuehgp",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenueoli",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_mechprod",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_pit",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_toj",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_toj11",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_aprom",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_acap",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_revenue",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_sum",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_filler",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_union",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_dataid_union_aggr",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_tanggal_trans",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_result_aggr",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "view_report_sdue_sdue",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "wait_for_fabric_update1",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "finish",
