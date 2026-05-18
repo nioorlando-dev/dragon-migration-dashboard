@@ -10,7 +10,7 @@
         "script": "final_masterdealer_union",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealer_cloudera",
@@ -19,7 +19,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "masterdealer_star",
@@ -37,7 +37,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "StatusLayananDealer_file",
@@ -46,7 +46,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svmappingpit",
@@ -73,7 +73,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "lookup",
@@ -82,7 +82,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "master2w_dealer",
@@ -91,7 +91,7 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "MasterDealer",
@@ -100,7 +100,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealer_temp",
@@ -109,7 +109,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealerfinal",
@@ -118,7 +118,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealerfinal2",
@@ -127,7 +127,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "portal_dealer",
@@ -136,7 +136,7 @@
         "script": "MasterDealer_Portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefMechanic",
@@ -145,7 +145,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "jabatan",
@@ -190,7 +190,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealergroup",
@@ -199,7 +199,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealertelephone",
@@ -208,7 +208,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "district",
@@ -217,7 +217,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kecamatan",
@@ -226,7 +226,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kelurahan",
@@ -235,7 +235,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "lookup",
@@ -244,7 +244,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "province",
@@ -253,7 +253,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "city",
@@ -262,7 +262,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "city_ahm",
@@ -271,7 +271,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "Dealer",
@@ -280,7 +280,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealer_status",
@@ -289,7 +289,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealer_telephone",
@@ -298,7 +298,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kecamatan",
@@ -307,7 +307,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kelurahan",
@@ -316,7 +316,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "province",
@@ -325,7 +325,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "branch",
@@ -334,7 +334,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealerhondaprofileahm_file",
@@ -343,7 +343,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mappingdealeroldnew_file",
@@ -361,7 +361,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svmappingpit",
@@ -388,7 +388,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "lookup",
@@ -397,7 +397,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "master2w_dealer",
@@ -406,7 +406,7 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "MasterDealer",
@@ -415,7 +415,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealer_temp",
@@ -424,7 +424,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealerfinal",
@@ -433,7 +433,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterdealerfinal2",
@@ -442,7 +442,7 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "portal_dealer",
@@ -451,7 +451,7 @@
         "script": "MasterDealer_Portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefMechanic",
@@ -460,10 +460,13 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 51
+    "total_tables": 51,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "Master Main Dealer": {
     "name": "Master Main Dealer",
@@ -476,7 +479,7 @@
         "script": "mastermaindealer.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastermaindealer",
@@ -485,7 +488,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dbo.mastermaindealer_cloudera",
@@ -506,7 +509,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 4
+    "total_tables": 4,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Master Sales Person": {
     "name": "Master Sales Person",
@@ -522,7 +528,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Master Unit Type": {
     "name": "Master Unit Type",
@@ -553,10 +562,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 3
+    "total_tables": 3,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "File": {
     "name": "File",
@@ -587,7 +599,7 @@
         "script": "Customer Profile Sales DR",
         "dag": "PROD_CustomerProfileSales_Object_Prompt_DR",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[customerprofilesales]",
@@ -614,7 +626,7 @@
         "script": "-",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "Customer_Profile_Sales_DR",
@@ -641,7 +653,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "CustomerProfileSales",
@@ -650,7 +662,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofileservice",
@@ -659,7 +671,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "MappingCityAvocadoMstr_File",
@@ -668,7 +680,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefEquipment",
@@ -677,7 +689,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "region",
@@ -686,7 +698,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "ringterritory_file",
@@ -695,7 +707,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "salesorder",
@@ -704,7 +716,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "sequence_region",
@@ -722,7 +734,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "summarypdrb_yty_file",
@@ -731,7 +743,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeader",
@@ -740,7 +752,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -749,7 +761,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "virtualexhibitionsummary_file",
@@ -758,7 +770,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofileleasing",
@@ -767,7 +779,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales",
@@ -776,7 +788,7 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_CDB",
@@ -785,7 +797,7 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_dataservice",
@@ -794,7 +806,8 @@
         "script": "1_customerprofilesales_dataservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofilesales_delta",
@@ -803,7 +816,7 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_deltah7_archive",
@@ -821,7 +834,7 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_FovAllTime",
@@ -830,7 +843,7 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_FovLastYear",
@@ -839,7 +852,7 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_h1_archive",
@@ -857,7 +870,8 @@
         "script": "3_customerprofilesales_kpb.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_KPB1",
@@ -866,7 +880,7 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB2",
@@ -875,7 +889,7 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB3",
@@ -884,7 +898,7 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB4",
@@ -893,7 +907,7 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_lastservice",
@@ -902,7 +916,7 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_ring",
@@ -911,7 +925,8 @@
         "script": "3_customerprofilesales_ring.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_rofinal",
@@ -920,7 +935,7 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_SalesOrder",
@@ -929,7 +944,7 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_servicejobtype",
@@ -938,7 +953,8 @@
         "script": "3_customerprofilesales_servicejobtype.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_UnitSales",
@@ -947,7 +963,7 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales1",
@@ -965,7 +981,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastercustomerprofileref",
@@ -974,7 +990,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastermaindealer",
@@ -983,7 +999,7 @@
         "script": "mastermaindealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastersalesperson",
@@ -992,7 +1008,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterunittype",
@@ -1001,7 +1017,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefCounterGroup",
@@ -1010,7 +1026,7 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refequipment",
@@ -1019,7 +1035,7 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refjob",
@@ -1028,7 +1044,7 @@
         "script": "RefJob.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refjobtype",
@@ -1037,7 +1053,7 @@
         "script": "RefJobType.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "Reftasklist",
@@ -1046,7 +1062,7 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "ro_masterdealer",
@@ -1064,7 +1080,7 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svpkbheaderequipment",
@@ -1073,7 +1089,7 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svpkbjobdetail",
@@ -1082,7 +1098,7 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "tmp_H0_customerprofilesales",
@@ -1100,7 +1116,7 @@
         "script": "UnitColor.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygdo00004_ustk2",
@@ -1109,7 +1125,7 @@
         "script": "integration_ustk.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygsdi00045_pssu",
@@ -1127,7 +1143,7 @@
         "script": "ustk.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygsdi00045_pssu",
@@ -1136,7 +1152,7 @@
         "script": "pssu.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CDDBUDSTK",
@@ -1145,7 +1161,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customer",
@@ -1154,7 +1170,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "invoice",
@@ -1163,7 +1179,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefEquipment",
@@ -1172,7 +1188,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "salesorder",
@@ -1181,7 +1197,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeader",
@@ -1190,7 +1206,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -1199,7 +1215,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "city",
@@ -1208,7 +1224,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kecamatan",
@@ -1217,7 +1233,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "kelurahan",
@@ -1226,7 +1242,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "occupation",
@@ -1235,7 +1251,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "province",
@@ -1244,7 +1260,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "region",
@@ -1253,7 +1269,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealer_territory_result",
@@ -1262,7 +1278,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "activitypameran_file",
@@ -1271,7 +1287,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "activityroadshow_file",
@@ -1280,7 +1296,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CDDBUDSTK",
@@ -1289,7 +1305,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customer",
@@ -1298,7 +1314,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "Eventlive_file",
@@ -1307,7 +1323,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "hargakomoditas_file",
@@ -1316,7 +1332,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "incentive_sf_file",
@@ -1325,7 +1341,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "incentive_tl_ol_file",
@@ -1334,7 +1350,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "invoice",
@@ -1343,7 +1359,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadscustomer_amanda_file",
@@ -1352,7 +1368,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadscustomer_lemon_file",
@@ -1361,7 +1377,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadscustomer_motorkux_file",
@@ -1370,7 +1386,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadscustomer_socialmediafb_file",
@@ -1379,7 +1395,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadscustomer_virtualexhibition_file",
@@ -1388,7 +1404,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mappingposservice_file",
@@ -1397,7 +1413,7 @@
         "script": "Obj00126988MappingPosService.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mappingpriorityjobtype_file",
@@ -1406,7 +1422,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "marketpricing_file",
@@ -1415,7 +1431,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefEquipment",
@@ -1424,7 +1440,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "region",
@@ -1433,7 +1449,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "ringterritory_file",
@@ -1442,7 +1458,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "salesorder",
@@ -1451,7 +1467,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "sequence_region",
@@ -1469,7 +1485,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "summarypdrb_yty_file",
@@ -1478,7 +1494,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeader",
@@ -1487,7 +1503,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -1496,7 +1512,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "virtualexhibitionsummary_file",
@@ -1505,7 +1521,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofileleasing",
@@ -1514,7 +1530,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales",
@@ -1523,7 +1539,7 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_CDB",
@@ -1532,7 +1548,7 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_dataservice",
@@ -1541,7 +1557,8 @@
         "script": "1_customerprofilesales_dataservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofilesales_delta",
@@ -1550,7 +1567,7 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_deltah7_archive",
@@ -1568,7 +1585,7 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_FovAllTime",
@@ -1577,7 +1594,7 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_FovLastYear",
@@ -1586,7 +1603,7 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_h1_archive",
@@ -1604,7 +1621,8 @@
         "script": "3_customerprofilesales_kpb.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_KPB1",
@@ -1613,7 +1631,7 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB2",
@@ -1622,7 +1640,7 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB3",
@@ -1631,7 +1649,7 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_KPB4",
@@ -1640,7 +1658,7 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_lastservice",
@@ -1649,7 +1667,7 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_ring",
@@ -1658,7 +1676,8 @@
         "script": "3_customerprofilesales_ring.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_rofinal",
@@ -1667,7 +1686,7 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "CustomerProfileSales_SalesOrder",
@@ -1676,7 +1695,7 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales_servicejobtype",
@@ -1685,7 +1704,8 @@
         "script": "3_customerprofilesales_servicejobtype.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "CustomerProfileSales_UnitSales",
@@ -1694,7 +1714,7 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerprofilesales1",
@@ -1712,7 +1732,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastercustomerprofileref",
@@ -1721,7 +1741,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastermaindealer",
@@ -1730,7 +1750,7 @@
         "script": "mastermaindealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mastersalesperson",
@@ -1739,7 +1759,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "masterunittype",
@@ -1748,7 +1768,7 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "RefCounterGroup",
@@ -1757,7 +1777,7 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refequipment",
@@ -1766,7 +1786,7 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refjob",
@@ -1775,7 +1795,7 @@
         "script": "RefJob.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "refjobtype",
@@ -1784,7 +1804,7 @@
         "script": "RefJobType.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "Reftasklist",
@@ -1793,7 +1813,7 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "ro_masterdealer",
@@ -1811,7 +1831,7 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svpkbheaderequipment",
@@ -1820,7 +1840,7 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "svpkbjobdetail",
@@ -1829,7 +1849,7 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "tmp_H0_customerprofilesales",
@@ -1847,10 +1867,13 @@
         "script": "UnitColor.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 143
+    "total_tables": 143,
+    "converted": 5,
+    "tested": 8,
+    "complete": 0
   },
   "Region": {
     "name": "Region",
@@ -1863,10 +1886,13 @@
         "script": "Region",
         "dag": "PRD_Region",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Data SAP": {
     "name": "Data SAP",
@@ -1879,7 +1905,7 @@
         "script": "Obj00125433ARAGING",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygf_ar_aging_nontradedetail",
@@ -1888,7 +1914,7 @@
         "script": "Obj00125593ZPYGF_AR_Aging_NonTradeDetail",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygf_ar_aging_servicessummary",
@@ -1897,7 +1923,7 @@
         "script": "Obj00125591ZPYGF_AR_Aging_ServicesSummary",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygf_ar_aging_unitsummary",
@@ -1906,7 +1932,7 @@
         "script": "Obj00125582ZPYGF_AR_Aging_UnitSummary",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygmme00049a",
@@ -1915,7 +1941,7 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygmmq00036",
@@ -1924,7 +1950,7 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygmmr00188",
@@ -1933,7 +1959,7 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygsddt00720",
@@ -1942,7 +1968,7 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygsdq00010",
@@ -1951,7 +1977,7 @@
         "script": "Obj00125446ZPYGSDQ00010",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygsdq00094",
@@ -1960,7 +1986,7 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygsdr00039",
@@ -1978,7 +2004,7 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygsdr00263",
@@ -1987,7 +2013,7 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "bkpf",
@@ -1996,7 +2022,7 @@
         "script": "Obj00125418BKPF",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "bsec",
@@ -2005,7 +2031,7 @@
         "script": "Obj00125427BSEC",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "bseg",
@@ -2014,7 +2040,7 @@
         "script": "Obj00125420BSEG",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "mappingunittype",
@@ -2023,10 +2049,13 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 17
+    "total_tables": 17,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "SAP PSSU": {
     "name": "SAP PSSU",
@@ -2039,10 +2068,13 @@
         "script": "SAP_PSSU",
         "dag": "SAP_PSSU",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "SAP USTK2": {
     "name": "SAP USTK2",
@@ -2055,7 +2087,7 @@
         "script": "SAP_USTK",
         "dag": "SAP_USTK",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygdo00004_ustk2",
@@ -2064,7 +2096,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygdo00004_ustk2",
@@ -2073,7 +2105,7 @@
         "script": "ustk2",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygdo00004_ustk2_rfc",
@@ -2091,7 +2123,7 @@
         "script": "stg_ustk2_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygdo00004_ustk2_union",
@@ -2103,13 +2135,19 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 6
+    "total_tables": 6,
+    "converted": 4,
+    "tested": 0,
+    "complete": 0
   },
   "Customer Profile Sales": {
     "name": "Customer Profile Sales",
     "priority": "P1B",
     "tables": [],
-    "total_tables": 0
+    "total_tables": 0,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Leads Funnel CRM H1": {
     "name": "Leads Funnel CRM H1",
@@ -2131,7 +2169,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "LeadsFunnelCRMH1",
@@ -2140,7 +2178,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadsfunnelcrmh1",
@@ -2149,7 +2187,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadsfunnelcrmh1",
@@ -2158,7 +2196,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "customerinvitation",
@@ -2167,16 +2205,22 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 6
+    "total_tables": 6,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "Customer Profile Service": {
     "name": "Customer Profile Service",
     "priority": "P1B",
     "tables": [],
-    "total_tables": 0
+    "total_tables": 0,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "PKB Service": {
     "name": "PKB Service",
@@ -2189,7 +2233,7 @@
         "script": "DataTransaksional_DR_Delta_ADLS",
         "dag": "PRD_PKBServiceFinal_Integrasi",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.pkbservicefinal",
@@ -2198,7 +2242,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.pkbservicefinal_union",
@@ -2207,7 +2251,7 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "Data_Transaksi_PKB_DR",
@@ -2216,7 +2260,7 @@
         "script": "Data_Transaksi_PKB_DR_Upsert",
         "dag": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > PKBService_DR > PRD_Data_Transaksi_PKB_DR_Main > PRD_Data_Transaksi_PKB_DR",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "DataTransaksional_DR",
@@ -2225,7 +2269,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "Demand_PKB_Service_DR",
@@ -2234,7 +2278,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "Demand_PKB_Service_Object_Prompt_DR",
@@ -2243,7 +2287,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "PKBServiceFinal",
@@ -2252,7 +2296,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "opr_ast_star_wh_dm.pkbservicefinal_star",
@@ -2270,10 +2314,13 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 10
+    "total_tables": 10,
+    "converted": 8,
+    "tested": 0,
+    "complete": 0
   },
   "Niguri Part": {
     "name": "Niguri Part",
@@ -2313,7 +2360,7 @@
         "script": "ZMB51_Base. ZMB51_Upsert",
         "dag": "SAP_ZMB51_Fabric",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygsdq00010",
@@ -2322,7 +2369,7 @@
         "script": "ZPYGSDQ00010_Base. ZPYGDQ00010_Upsert",
         "dag": "SAP_ZPYGSDQ00010_Fabric",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "datarevenue",
@@ -2331,7 +2378,7 @@
         "script": "union datrev_delta",
         "dag": "PRD_DataRevenue_Union",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "datarevenue_contextual",
@@ -2340,7 +2387,7 @@
         "script": "datarevenue_contextual",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "masterhet",
@@ -2349,7 +2396,7 @@
         "script": "masterhet",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "masterhet_latest",
@@ -2358,7 +2405,7 @@
         "script": "masterhet_latest",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "mastermaterial",
@@ -2367,7 +2414,7 @@
         "script": "mastermaterial",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "partsharecontribution",
@@ -2376,7 +2423,8 @@
         "script": "partsharecontribution",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "salesinstar",
@@ -2385,7 +2433,7 @@
         "script": "salesinstar",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "stocklevel",
@@ -2394,7 +2442,7 @@
         "script": "stocklevel",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "targetservicepart",
@@ -2403,7 +2451,8 @@
         "script": "targetservicepart",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "datarevenue",
@@ -2412,10 +2461,13 @@
         "script": "datarevenue",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 15
+    "total_tables": 15,
+    "converted": 10,
+    "tested": 2,
+    "complete": 0
   },
   "SDUE": {
     "name": "SDUE",
@@ -2428,7 +2480,7 @@
         "script": "CustomerProfileService_STAR",
         "dag": "PRD_SDUE_Quickwin",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.datarevenue_sdue",
@@ -2437,7 +2489,7 @@
         "script": "DataRevenue_STAR",
         "dag": "PRD_SDUE_Quickwin",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.pkbservicefinal_sdue",
@@ -2446,7 +2498,7 @@
         "script": "PKBService _STAR",
         "dag": "PRD_SDUE_Quickwin",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.svmappingpit_union",
@@ -2464,7 +2516,8 @@
         "script": "report_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_2023",
@@ -2473,7 +2526,8 @@
         "script": "report_sdue_2023.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_acap",
@@ -2482,7 +2536,8 @@
         "script": "view_report_sdue_acap.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_aprom",
@@ -2491,7 +2546,8 @@
         "script": "view_report_sdue_aprom.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_dataid",
@@ -2500,7 +2556,8 @@
         "script": "view_report_sdue_dataid.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_dataid_filler",
@@ -2509,7 +2566,8 @@
         "script": "view_report_sdue_dataid_filler.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_dataid_sum",
@@ -2518,7 +2576,8 @@
         "script": "view_report_sdue_dataid_sum.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_dataid_union",
@@ -2527,7 +2586,8 @@
         "script": "view_report_sdue_dataid_union.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_dataid_union_aggr",
@@ -2536,7 +2596,8 @@
         "script": "view_report_sdue_dataid_union_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_master_dealer",
@@ -2545,7 +2606,8 @@
         "script": "view_report_sdue_master_dealer.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_mechprod",
@@ -2554,7 +2616,8 @@
         "script": "view_report_sdue_mechprod.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_pit",
@@ -2563,7 +2626,8 @@
         "script": "view_report_sdue_pit.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_portalahm",
@@ -2572,7 +2636,8 @@
         "script": "report_sdue_portalahm.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_result_aggr",
@@ -2581,7 +2646,8 @@
         "script": "view_report_sdue_result_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_revenue",
@@ -2590,7 +2656,8 @@
         "script": "view_report_sdue_revenue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_revenuehgp",
@@ -2599,7 +2666,8 @@
         "script": "view_report_sdue_revenuehgp.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_revenueoli",
@@ -2608,7 +2676,8 @@
         "script": "view_report_sdue_revenueoli.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_sales_part_oil",
@@ -2617,7 +2686,8 @@
         "script": "view_report_sdue_sales_part_oil.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_sdue",
@@ -2626,7 +2696,8 @@
         "script": "view_report_sdue_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_tanggal_trans",
@@ -2635,7 +2706,8 @@
         "script": "view_report_sdue_tanggal_trans.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_toj",
@@ -2644,7 +2716,8 @@
         "script": "view_report_sdue_toj.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "report_sdue_toj11",
@@ -2653,7 +2726,8 @@
         "script": "view_report_sdue_toj11.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofileservice_sdue",
@@ -2662,7 +2736,7 @@
         "script": "cpservice_sdue.ipynb",
         "dag": "sdue_datamart_quickwin > cpservice",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "datamekanik_sdue",
@@ -2680,7 +2754,7 @@
         "script": "datarevenue_sdue.ipynb",
         "dag": "sdue_datamart_quickwin > datarevenue",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "masterdealer_sdue",
@@ -2689,7 +2763,7 @@
         "script": "Union_df_new",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "pkbservicefinal_sdue",
@@ -2698,7 +2772,7 @@
         "script": "pkbservice_sdue.ipynb",
         "dag": "sdue_datamart_quickwin > pkbservice",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "sdue_master_dataid",
@@ -2707,7 +2781,7 @@
         "script": "-",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "svmappingpit",
@@ -2725,7 +2799,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterdealer_union",
@@ -2734,7 +2809,7 @@
         "script": "",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.mastermaindealer_union",
@@ -2743,7 +2818,7 @@
         "script": "",
         "dag": "PRD_MasterMainDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "report_sdue_2023",
@@ -2752,10 +2827,14 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       }
     ],
-    "total_tables": 37
+    "total_tables": 37,
+    "converted": 10,
+    "tested": 24,
+    "complete": 0
   },
   "Grape Phase 1": {
     "name": "Grape Phase 1",
@@ -2768,7 +2847,7 @@
         "script": "3_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dbo.targetsales",
@@ -2795,7 +2874,8 @@
         "script": "2_customerprofilesales_pkb.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofilesales_pkb_temp",
@@ -2804,7 +2884,8 @@
         "script": "1_customerprofilesales_pkb_temp.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofilesales_ro_final",
@@ -2813,7 +2894,8 @@
         "script": "1_customerprofilesales_ro_temp.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "customerprofilesales_ustk2",
@@ -2822,7 +2904,8 @@
         "script": "1_customerprofilesales_ustk2.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "prospecttossu_integrasi",
@@ -2834,7 +2917,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 8
+    "total_tables": 8,
+    "converted": 0,
+    "tested": 4,
+    "complete": 0
   },
   "Grape Phase 2": {
     "name": "Grape Phase 2",
@@ -2856,7 +2942,8 @@
         "script": "salessummaryv2",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "targetsales",
@@ -2865,10 +2952,13 @@
         "script": "notebook_grape_targetsales",
         "dag": "pipeline_grape_targetsales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 3
+    "total_tables": 3,
+    "converted": 0,
+    "tested": 1,
+    "complete": 0
   },
   "3 Axis Leads Monitoring": {
     "name": "3 Axis Leads Monitoring",
@@ -2899,7 +2989,7 @@
         "script": "",
         "dag": "PRD_CustomerProfileSales",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.customerprofileservice_union",
@@ -2908,7 +2998,7 @@
         "script": "",
         "dag": "PRD_Customerprofileservice_UNION",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterdealer_union",
@@ -2917,7 +3007,7 @@
         "script": "",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterdealergroup_union",
@@ -2926,7 +3016,7 @@
         "script": "",
         "dag": "PRD_Union_MasterGroupDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.mastermaindealer_union",
@@ -2935,7 +3025,7 @@
         "script": "",
         "dag": "PRD_MasterMainDealer",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterunittype_union",
@@ -2944,7 +3034,7 @@
         "script": "",
         "dag": "MasterUnitType UNION",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "3Axis_Leads_Monitoring_DR",
@@ -2953,7 +3043,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "3AxisLeadsFunnel",
@@ -3010,13 +3100,19 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 15
+    "total_tables": 15,
+    "converted": 7,
+    "tested": 0,
+    "complete": 0
   },
   "USTK2": {
     "name": "USTK2",
     "priority": "P2",
     "tables": [],
-    "total_tables": 0
+    "total_tables": 0,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Unit Entry Transformation": {
     "name": "Unit Entry Transformation",
@@ -3032,7 +3128,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Utilisasi STAR BD": {
     "name": "Utilisasi STAR BD",
@@ -3063,7 +3162,7 @@
         "script": "",
         "dag": "DE",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leads_ahm_stg",
@@ -3081,7 +3180,8 @@
         "script": "bd_h1.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "bd.h23",
@@ -3090,7 +3190,8 @@
         "script": "bd_h23.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "bd.metric_a_j",
@@ -3126,7 +3227,7 @@
         "script": "bd_metric_z_ad.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "bd.partsales",
@@ -3135,7 +3236,8 @@
         "script": "bd_partsales.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "bd.pc",
@@ -3144,7 +3246,7 @@
         "script": "bd_pc.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "bd.pkb",
@@ -3153,7 +3255,7 @@
         "script": "bd_pkb.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "bd.po_h23",
@@ -3162,7 +3264,7 @@
         "script": "bd_po_h23.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "bd.po_suggestion",
@@ -3171,7 +3273,7 @@
         "script": "bd_po_suggestion.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "nms_ahm",
@@ -3180,7 +3282,7 @@
         "script": "monitoringdocumentsalescomplete",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "nms_consistency",
@@ -3198,7 +3300,7 @@
         "script": "nms_handleleasing.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "utilisasistar_bd",
@@ -3207,10 +3309,13 @@
         "script": "salesinstar",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 19
+    "total_tables": 19,
+    "converted": 8,
+    "tested": 3,
+    "complete": 0
   },
   "Data Revenue": {
     "name": "Data Revenue",
@@ -3223,7 +3328,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "datarevenue_transformation",
@@ -3244,7 +3349,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 3
+    "total_tables": 3,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "New Data Point - MonitoringKuitansi": {
     "name": "New Data Point - MonitoringKuitansi",
@@ -3257,10 +3365,13 @@
         "script": "monitoringbku_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "New Data Point - CDB x MotorkuX Insight": {
     "name": "New Data Point - CDB x MotorkuX Insight",
@@ -3273,7 +3384,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_apin_event_log_detail",
@@ -3282,7 +3393,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_booking_details",
@@ -3291,7 +3402,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_booking_kpb_details",
@@ -3300,7 +3411,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_daerah_details",
@@ -3309,7 +3420,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_kpb_request_details",
@@ -3318,7 +3429,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_recap_leads_h1_details",
@@ -3327,7 +3438,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_recap_leads_h1_fif_details",
@@ -3336,7 +3447,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_recap_leads_h3_details",
@@ -3345,7 +3456,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_recap_leads_h3_items_details",
@@ -3354,7 +3465,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_user_details",
@@ -3363,7 +3474,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "motorkux_user_motorcycle_details",
@@ -3372,7 +3483,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "workshop_details",
@@ -3381,7 +3492,7 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "cdbxmotorkux",
@@ -3390,7 +3501,7 @@
         "script": "smart_stock_sales_location_customer",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxfunnelworkshop",
@@ -3399,7 +3510,7 @@
         "script": "zpygsdr00263",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxkpbperformance",
@@ -3408,7 +3519,7 @@
         "script": "cdbxmotorkux",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxleadsh1",
@@ -3417,7 +3528,7 @@
         "script": "datarevenue",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxleadsh2",
@@ -3426,7 +3537,7 @@
         "script": "motorkuxfunnelworkshop",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxleadsh3",
@@ -3435,7 +3546,7 @@
         "script": "motorkuxkpbperformance",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxregistereduser",
@@ -3444,7 +3555,7 @@
         "script": "motorkuxleadsh1",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxsourceregisteredmc",
@@ -3453,7 +3564,7 @@
         "script": "motorkuxleadsh2",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "motorkuxsummary",
@@ -3462,7 +3573,7 @@
         "script": "motorkuxleadsh3",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "customerprofileservice",
@@ -3471,10 +3582,13 @@
         "script": "PRD_CPService_UNION_Initial",
         "dag": "PRD_CustomerProfileService_STAR",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 23
+    "total_tables": 23,
+    "converted": 9,
+    "tested": 0,
+    "complete": 0
   },
   "Prospect To SSU": {
     "name": "Prospect To SSU",
@@ -3517,7 +3631,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 4
+    "total_tables": 4,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Purifikasi HSO": {
     "name": "Purifikasi HSO",
@@ -3587,7 +3704,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 7
+    "total_tables": 7,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "RO Leads": {
     "name": "RO Leads",
@@ -3639,7 +3759,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Utilisasi Dragon": {
     "name": "Utilisasi Dragon",
@@ -3670,7 +3793,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "utilisasidragon",
@@ -3679,10 +3802,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 4
+    "total_tables": 4,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Smart Stock": {
     "name": "Smart Stock",
@@ -3695,7 +3821,7 @@
         "script": "smart_stock_sales.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "smart_stock_sales_location",
@@ -3704,7 +3830,7 @@
         "script": "smart_stock_sales_location.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "smart_stock_sales_location_customer",
@@ -3713,7 +3839,7 @@
         "script": "smart_stock_sales_location_customer_.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "zpygsdr00059",
@@ -3722,7 +3848,7 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "zpygsdr00263",
@@ -3731,10 +3857,13 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 3,
+    "tested": 0,
+    "complete": 0
   },
   "Customer Persona Segmentation": {
     "name": "Customer Persona Segmentation",
@@ -3786,7 +3915,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Market Share Data": {
     "name": "Market Share Data",
@@ -3817,7 +3949,7 @@
         "script": "marketsharedata.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_marketsharedata/grid?task_id=marketsharedata",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "marketsharedata",
@@ -3826,7 +3958,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "marketsharedata",
@@ -3835,10 +3967,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 3,
+    "tested": 0,
+    "complete": 0
   },
   "LCR": {
     "name": "LCR",
@@ -3851,7 +3986,7 @@
         "script": "-",
         "dag": "Target_LCR_File",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[lcr_transformation]",
@@ -3869,10 +4004,13 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 3
+    "total_tables": 3,
+    "converted": 2,
+    "tested": 0,
+    "complete": 0
   },
   "BTL Transformation": {
     "name": "BTL Transformation",
@@ -3894,10 +4032,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 2
+    "total_tables": 2,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Data Mekanik": {
     "name": "Data Mekanik",
@@ -3967,7 +4108,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 7
+    "total_tables": 7,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Data Pit": {
     "name": "Data Pit",
@@ -3989,7 +4133,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "datapit_transformation",
@@ -3998,7 +4142,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "datapit_transformation",
@@ -4007,10 +4151,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 4
+    "total_tables": 4,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Data Insight": {
     "name": "Data Insight",
@@ -4059,7 +4206,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4068,7 +4215,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "datainsighthotline",
@@ -4077,7 +4224,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4095,7 +4242,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4107,7 +4254,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 10
+    "total_tables": 10,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "Part Stock": {
     "name": "Part Stock",
@@ -4147,10 +4297,13 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 4
+    "total_tables": 4,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Dealer General Data": {
     "name": "Dealer General Data",
@@ -4199,7 +4352,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "DealerGeneralData_Historical",
@@ -4217,7 +4370,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dealergeneraldata",
@@ -4226,10 +4379,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 8
+    "total_tables": 8,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Monitoring BKU": {
     "name": "Monitoring BKU",
@@ -4242,7 +4398,7 @@
         "script": "final_monitoringbku_union",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "monitoringbku_cloudera",
@@ -4251,7 +4407,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "monitoringbku_star",
@@ -4260,7 +4416,8 @@
         "script": "stg_monitoringbku_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Tested",
+        "test_time": 0
       },
       {
         "table": "monitoringbku",
@@ -4269,7 +4426,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "monitoringbku",
@@ -4278,10 +4435,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 1,
+    "tested": 1,
+    "complete": 0
   },
   "Funnel Leads to Sales": {
     "name": "Funnel Leads to Sales",
@@ -4297,7 +4457,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Monitoring Sales Document STNK & BPKB": {
     "name": "Monitoring Sales Document STNK & BPKB",
@@ -4310,7 +4473,7 @@
         "script": "monitoringbku",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "monitoringdocumentsalescomplete_star",
@@ -4322,7 +4485,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 2
+    "total_tables": 2,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "NMS - Data Hotline Detail": {
     "name": "NMS - Data Hotline Detail",
@@ -4338,7 +4504,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "NMS - Part Consumption Detail": {
     "name": "NMS - Part Consumption Detail",
@@ -4351,10 +4520,13 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "NMS - Stock Level Summary": {
     "name": "NMS - Stock Level Summary",
@@ -4385,7 +4557,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "StockLevelSummaryMD",
@@ -4415,7 +4587,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 6
+    "total_tables": 6,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "Report SO REM": {
     "name": "Report SO REM",
@@ -4428,7 +4603,7 @@
         "script": "table",
         "dag": "PRD_ReportSORem",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "dbo.ReportSORem",
@@ -4446,7 +4621,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[reportsorem_temp]",
@@ -4464,10 +4639,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Sales In Sales Out": {
     "name": "Sales In Sales Out",
@@ -4489,7 +4667,7 @@
         "script": "TargetSalesInOut_File",
         "dag": "TargetSalesInOut_File",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[salesinsalesout_transformation]",
@@ -4507,7 +4685,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "salesinsalesout_transformation",
@@ -4516,7 +4694,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "salesinsalesout_transformation",
@@ -4525,10 +4703,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 6
+    "total_tables": 6,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "SPR": {
     "name": "SPR",
@@ -4586,7 +4767,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "spr_transformation",
@@ -4595,7 +4776,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "spr_transformation",
@@ -4604,10 +4785,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 8
+    "total_tables": 8,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Work Days Akumulatif": {
     "name": "Work Days Akumulatif",
@@ -4641,7 +4825,10 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 3
+    "total_tables": 3,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Lead Time Sales Header": {
     "name": "Lead Time Sales Header",
@@ -4663,7 +4850,7 @@
         "script": "leadtimesalesheader_fromspk_star.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "leadtimesalesheader_fromspk (view)",
@@ -4672,7 +4859,7 @@
         "script": "leadtimesalesheader_fromspk_union.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       },
       {
         "table": "leadtimesalesheader_fromprospect",
@@ -4681,7 +4868,7 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "leadtimesalesheader_fromprospect",
@@ -4690,10 +4877,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 2,
+    "tested": 0,
+    "complete": 0
   },
   "Report Monitoring AR dan Cashbank": {
     "name": "Report Monitoring AR dan Cashbank",
@@ -4706,7 +4896,7 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       },
       {
         "table": "MonitoringCashbank",
@@ -4715,10 +4905,13 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done"
       }
     ],
-    "total_tables": 2
+    "total_tables": 2,
+    "converted": 1,
+    "tested": 0,
+    "complete": 0
   },
   "Simpart": {
     "name": "Simpart",
@@ -4731,10 +4924,13 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Skip"
       }
     ],
-    "total_tables": 1
+    "total_tables": 1,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   },
   "Sugor Ahass Pss": {
     "name": "Sugor Ahass Pss",
@@ -4786,6 +4982,9 @@
         "status": "Pending"
       }
     ],
-    "total_tables": 5
+    "total_tables": 5,
+    "converted": 0,
+    "tested": 0,
+    "complete": 0
   }
 }
