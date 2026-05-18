@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 29,
+    "tested": 35,
     "tables": [
       {
         "no": "",
@@ -257,9 +257,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mappingkaryawanjabatan",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -425,9 +425,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: city_ahm",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -453,9 +453,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dealer_status",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -467,9 +467,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dealer_telephone",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -537,9 +537,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dealerhondaprofileahm_file",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -551,9 +551,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mappingdealeroldnew_file",
+        "test_time": "02:15"
       },
       {
         "no": "",
@@ -724,8 +724,8 @@
         "test_time": "-"
       }
     ],
-    "done": 29,
-    "pending": 10
+    "done": 35,
+    "pending": 4
   },
   "Master Main Dealer": {
     "no": 2,
