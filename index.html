@@ -748,6 +748,11 @@
         <span class="nav-label">Task Inventory</span>
         <span class="nav-badge" data-badge="scripts">—</span>
       </div>
+      <div class="nav-item" data-view="indicators" style="color:var(--blue)">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+        <span class="nav-label">Indicators</span>
+        <span class="nav-badge" data-badge="indicators" style="color:var(--blue)">—</span>
+      </div>
     </nav>
 
     <div class="sidebar-footer">
@@ -1078,6 +1083,7 @@ function showView(v) {
     if (v === 'overview') renderOverview(root);
     else if (v === 'all') renderAll(root);
     else if (v === 'scripts') renderScripts(root);
+    else if (v === 'indicators') renderIndicators(root);
     else renderPriorityView(root, v);
     root.style.transition = 'opacity .28s ease, transform .28s ease';
     requestAnimationFrame(() => {
@@ -1100,6 +1106,7 @@ function updateCrumbs(v) {
     unassigned: ['Priorities', 'Unassigned'],
     all: ['Data', 'All Pipelines'],
     scripts: ['Data', 'Task Inventory'],
+    indicators: ['Data', 'Indicators'],
   };
   const [l, p] = map[v] || map.overview;
   document.getElementById('crumbLevel').textContent = l;
@@ -1811,6 +1818,156 @@ function animateCounter(el, target, duration) {
     if (t < 1) requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);
+}
+
+// ---------- indicators page ----------
+async function renderIndicators(root) {
+  let indicators = state.indicators;
+  if (!indicators) {
+    try {
+      const res = await fetch('./data/indicators.json');
+      indicators = await res.json();
+      state.indicators = indicators;
+    } catch (e) {
+      root.innerHTML = '<p style="color:var(--red)">Error loading indicators: ' + e.message + '</p>';
+      return;
+    }
+  }
+
+  const indList = Object.values(indicators).map(ind => {
+    ind.totalTables = ind.tables.length;
+    ind.dagInactive = ind.tables.filter(t => !t.dag_active).length;
+    ind.converted = ind.tables.filter(t => t.status === 'Done').length;
+    ind.progress = ind.totalTables > 0 ? Math.round(ind.converted / ind.totalTables * 100) : 0;
+    return ind;
+  }).sort((a, b) => {
+    const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
+    return (order[a.priority] || 3) - (order[b.priority] || 3) || b.totalTables - a.totalTables;
+  });
+
+  const p1a = indList.filter(i => i.priority === 'P1A');
+  const p1b = indList.filter(i => i.priority === 'P1B');
+  const p2 = indList.filter(i => i.priority === 'P2');
+  const p3 = indList.filter(i => i.priority === 'P3');
+  const totalTables = indList.reduce((s, i) => s + i.totalTables, 0);
+  const totalDagInactive = indList.reduce((s, i) => s + i.dagInactive, 0);
+
+  // Update badge
+  const badge = document.querySelector('[data-badge="indicators"]');
+  if (badge) badge.textContent = indList.length;
+
+  root.innerHTML = `
+    <div class="section">
+      <h2 class="section-title">Indicators</h2>
+      <div class="section-sub">Tracking ${indList.length} indicators · ${totalTables} tables · ${totalDagInactive} DAG inactive</div>
+    </div>
+
+    <div class="stat-grid" style="margin-bottom:24px">
+      <div class="stat-card"><div class="stat-label"># INDICATORS</div><div class="stat-value">${indList.length}</div><div class="stat-sub">from Lift & Shift</div></div>
+      <div class="stat-card"><div class="stat-label"># TABLES</div><div class="stat-value">${totalTables}</div><div class="stat-sub">total tracked</div></div>
+      <div class="stat-card"><div class="stat-label" style="color:var(--red)">P1A CRITICAL</div><div class="stat-value">${p1a.length}</div><div class="stat-sub">${p1a.reduce((s,i)=>s+i.totalTables,0)} tables</div></div>
+      <div class="stat-card"><div class="stat-label" style="color:var(--yellow)">P1B HIGH</div><div class="stat-value">${p1b.length}</div><div class="stat-sub">${p1b.reduce((s,i)=>s+i.totalTables,0)} tables</div></div>
+      <div class="stat-card"><div class="stat-label" style="color:#ff69b4">DAG INACTIVE</div><div class="stat-value">${totalDagInactive}</div><div class="stat-sub">need data check</div></div>
+    </div>
+
+    <div class="section" style="margin-bottom:16px">
+      <div class="toolbar">
+        <input type="text" class="input" id="indSearch" placeholder="Search indicators..." style="width:240px">
+        <select class="select" id="indFilter" style="width:160px">
+          <option value="all">All priorities</option>
+          <option value="P1A">P1A Critical</option>
+          <option value="P1B">P1B High</option>
+          <option value="P2">P2 Medium</option>
+          <option value="P3">P3 Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="pipe-grid" id="indGrid"></div>
+  `;
+
+  const renderCards = (filter = 'all', search = '') => {
+    let filtered = indList;
+    if (filter !== 'all') filtered = filtered.filter(i => i.priority === filter);
+    if (search) filtered = filtered.filter(i => i.name.toLowerCase().includes(search.toLowerCase()));
+
+    document.getElementById('indGrid').innerHTML = filtered.map(ind => `
+      <div class="pipe-card" onclick="showIndicatorDetail('${ind.name.replace(/'/g, "\\'")}')">
+        <div class="pipe-head">
+          <span class="pipe-name">${ind.name}</span>
+          <span class="pipe-badge ${ind.priority === 'P1A' ? 'p1' : ind.priority === 'P1B' ? 'p2' : ''}" style="color:${ind.priority === 'P1A' ? 'var(--red)' : ind.priority === 'P1B' ? 'var(--yellow)' : 'var(--text-dim)'}">${ind.priority}</span>
+        </div>
+        <div class="pipe-meta">
+          <span>${ind.totalTables} tables</span>
+          <span>${ind.converted} converted</span>
+          <span style="color:#ff69b4">${ind.dagInactive} DAG inactive</span>
+        </div>
+        <div class="prog-wrap">
+          <div class="prog-track"><div class="prog-bar" style="width:${ind.progress}%"></div></div>
+          <div class="prog-meta"><b>${ind.progress}%</b></div>
+        </div>
+      </div>
+    `).join('');
+  };
+
+  renderCards();
+  document.getElementById('indSearch').addEventListener('input', e => renderCards(document.getElementById('indFilter').value, e.target.value));
+  document.getElementById('indFilter').addEventListener('change', e => renderCards(e.target.value, document.getElementById('indSearch').value));
+}
+
+function showIndicatorDetail(name) {
+  const ind = Object.values(state.indicators || {}).find(i => i.name === name);
+  if (!ind) return;
+
+  const panel = document.getElementById('panel');
+  const backdrop = document.getElementById('backdrop');
+
+  panel.innerHTML = `
+    <div class="panel-header">
+      <div class="panel-title">${ind.name}</div>
+      <button class="panel-close" onclick="closePanel()">×</button>
+    </div>
+    <div class="panel-body">
+      <div class="panel-section">
+        <div class="panel-label">Priority</div>
+        <span class="pipe-badge" style="color:${ind.priority === 'P1A' ? 'var(--red)' : ind.priority === 'P1B' ? 'var(--yellow)' : 'var(--text-dim)'}">${ind.priority}</span>
+      </div>
+      <div class="panel-section">
+        <div class="panel-label">Summary</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px">
+          <div style="text-align:center"><div style="font-size:20px;font-weight:700">${ind.tables.length}</div><div style="font-size:11px;color:var(--text-mute)">Tables</div></div>
+          <div style="text-align:center"><div style="font-size:20px;font-weight:700">${ind.tables.filter(t=>t.status==='Done').length}</div><div style="font-size:11px;color:var(--text-mute)">Converted</div></div>
+          <div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#ff69b4">${ind.tables.filter(t=>!t.dag_active).length}</div><div style="font-size:11px;color:var(--text-mute)">DAG Inactive</div></div>
+        </div>
+      </div>
+      <div class="panel-section">
+        <div class="panel-label">Tables (${ind.tables.length})</div>
+        <div style="max-height:400px;overflow-y:auto;margin-top:8px">
+          <table style="width:100%;font-size:12px;border-collapse:collapse">
+            <thead><tr style="background:var(--card)">
+              <th style="padding:8px;text-align:left">Table</th>
+              <th style="padding:8px;text-align:left">Database</th>
+              <th style="padding:8px;text-align:left">DAG</th>
+              <th style="padding:8px;text-align:left">Status</th>
+            </tr></thead>
+            <tbody>
+              ${ind.tables.map(t => `
+                <tr style="${!t.dag_active ? 'background:rgba(255,105,180,0.1);' : ''}">
+                  <td style="padding:6px 8px;border-bottom:1px solid var(--border)" class="mono">${t.table || '-'}</td>
+                  <td style="padding:6px 8px;border-bottom:1px solid var(--border);font-size:11px">${t.database || '-'}</td>
+                  <td style="padding:6px 8px;border-bottom:1px solid var(--border);color:${t.dag_active ? 'var(--green)' : '#ff69b4'}">${t.dag_active ? 'Active' : 'Inactive'}</td>
+                  <td style="padding:6px 8px;border-bottom:1px solid var(--border)">${t.status || '-'}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  `;
+
+  panel.setAttribute('aria-hidden', 'false');
+  backdrop.classList.add('show');
 }
 
 // ---------- icons ----------
