@@ -1891,23 +1891,40 @@ async function renderIndicators(root) {
     if (filter !== 'all') filtered = filtered.filter(i => i.priority === filter);
     if (search) filtered = filtered.filter(i => i.name.toLowerCase().includes(search.toLowerCase()));
 
-    document.getElementById('indGrid').innerHTML = filtered.map(ind => `
-      <div class="pipe-card" onclick="showIndicatorDetail('${ind.name.replace(/'/g, "\\'")}')">
-        <div class="pipe-head">
-          <span class="pipe-name">${ind.name}</span>
-          <span class="pipe-badge ${ind.priority === 'P1A' ? 'p1' : ind.priority === 'P1B' ? 'p2' : ''}" style="color:${ind.priority === 'P1A' ? 'var(--red)' : ind.priority === 'P1B' ? 'var(--yellow)' : 'var(--text-dim)'}">${ind.priority}</span>
-        </div>
-        <div class="pipe-meta">
-          <span>${ind.totalTables} tables</span>
-          <span>${ind.converted} converted</span>
-          <span style="color:#ff69b4">${ind.dagInactive} DAG inactive</span>
-        </div>
-        <div class="prog-wrap">
-          <div class="prog-track"><div class="prog-bar" style="width:${ind.progress}%"></div></div>
-          <div class="prog-meta"><b>${ind.progress}%</b></div>
-        </div>
-      </div>
-    `).join('');
+    document.getElementById('indGrid').innerHTML = filtered.map(ind => {
+      // Stages: Convert → Test → Complete
+      const stages = [
+        { name: 'CONVERT', done: ind.converted > 0 },
+        { name: 'TEST', done: ind.tested > 0 },
+        { name: 'COMPLETE', done: ind.progress === 100 },
+      ];
+      const currentIdx = stages.findIndex(s => !s.done);
+      const currentStage = currentIdx === -1 ? 'Completed' : stages[currentIdx].name;
+      
+      let stagesHtml = '<div class="pipe-stages">';
+      stages.forEach((s, i) => {
+        const cls = s.done ? 'done' : (i === currentIdx ? 'active' : '');
+        stagesHtml += '<span class="pipe-stage-badge ' + cls + '">' + s.name + '</span>';
+        if (i < stages.length - 1) stagesHtml += '<span class="pipe-stage-line ' + (s.done ? 'done' : '') + '"></span>';
+      });
+      stagesHtml += '</div>';
+
+      const pausedStyle = ind.dagInactive === ind.totalTables ? 'opacity:0.55;border-color:rgba(255,105,180,0.25);' : '';
+      const statusDot = ind.dagInactive === ind.totalTables 
+        ? '<span class="pipe-current-stage" style="color:#ff69b4"><span class="dot" style="background:#ff69b4;animation:none"></span>DAG Inactive</span>'
+        : currentIdx === -1 
+          ? '<span class="pipe-current-stage" style="color:var(--green)"><span class="dot" style="background:var(--green);animation:none"></span>Completed</span>'
+          : '<span class="pipe-current-stage"><span class="dot"></span>On ' + currentStage + '</span>';
+
+      return '<div class="card pipe-card hoverable" onclick="showIndicatorDetail(\'' + ind.name.replace(/'/g, "\\'") + '\')" style="' + pausedStyle + '">' +
+        '<div class="row"><span class="prio ' + ind.priority + '" style="color:' + (ind.priority === 'P1A' ? 'var(--red)' : ind.priority === 'P1B' ? 'var(--yellow)' : 'var(--text-dim)') + '">' + ind.priority + '</span>' +
+        '<span class="pipe-name mono">' + ind.name + '</span></div>' +
+        stagesHtml + statusDot +
+        '<div class="pipe-meta mono"><span>' + ind.totalTables + ' tables</span><span>' + ind.converted + ' converted</span>' +
+        (ind.dagInactive > 0 ? '<span style="color:#ff69b4">' + ind.dagInactive + ' DAG inactive</span>' : '') + '</div>' +
+        '<div class="pipe-progress"><span class="prog-track"><span class="prog-fill" style="width:' + ind.progress + '%"></span></span>' +
+        '<span class="meta"><b style="color:var(--text)">' + ind.progress + '%</b></span></div></div>';
+    }).join('');
   };
 
   renderCards();
@@ -2483,26 +2500,53 @@ async function exportIndicatorXLSX() {
     if (!res.ok) throw new Error('Failed to load indicators.json');
     const data = await res.json();
 
-    const HEADERS = ['No','Indicator','Priority','Table','Database','Asset','Script','DAG','DAG Status','Status'];
+    const HEADERS = [
+      'No', 'Project', 'Indicator', 'Assets', 'Database Name', 'Table Name', 'Layer Bucket', 'Dataset BQ',
+      'Initial Landing', 'Initial Mart', 'DA Mapping', 'ETL Conversion', 'ETL Test', 'Test Time (min)',
+      'Incremental', 'Orchestration', 'Internal Testing', 'PQA Test', 'BI Dev',
+      'Labeling Charging', 'Dataplex', 'Sign-off Document', 'DAG Status', 'Last Updated'
+    ];
     const PINK = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFCE4EC' } };
+    const IND_BG = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE3F2FD' } };
 
     const wb = new ExcelJS.Workbook();
     wb.creator = 'HSO Dragon Migration Dashboard';
-    const ws = wb.addWorksheet('Indicator Details');
+    const ws = wb.addWorksheet('Indicator Tracking');
 
     // Header
     const headerRow = ws.addRow(HEADERS);
     headerRow.eachCell(cell => {
       cell.font = { bold: true, color: { argb: 'FFFFFFFF' }, size: 10 };
       cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0070F3' } };
-      cell.alignment = { horizontal: 'center' };
+      cell.alignment = { horizontal: 'center', vertical: 'middle' };
+      cell.border = { bottom: { style: 'thin', color: { argb: 'FF666666' } } };
     });
 
     let no = 1;
+    let indNo = 1;
     for (const [indName, ind] of Object.entries(data)) {
+      // Indicator header row
+      const indRow = ws.addRow([indNo, ind.tables[0]?.dag || indName, indName, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
+      indRow.eachCell(cell => { cell.fill = IND_BG; cell.font = { bold: true, size: 10 }; });
+      indNo++;
+
       for (const t of ind.tables) {
-        const row = ws.addRow([no, indName, ind.priority, t.table, t.database, t.asset, t.script, t.dag, t.dag_active ? 'Active' : 'Inactive', t.status]);
-        if (!t.dag_active) {
+        const isDagInactive = !t.dag_active;
+        const etlConv = isDagInactive ? 'DAG non-active' : (t.status === 'Done' ? 'Done' : 'In Progress');
+        const etlTest = isDagInactive ? '-' : (t.status === 'Tested' ? 'Completed' : '');
+        const testTime = isDagInactive ? '-' : '5';
+        const layerBucket = t.database?.includes('L1') ? 'hotd-hso/L1' : 'hotd-hso/L3_CLOUDERA_DRAGON_HSO';
+        const datasetBQ = t.database?.includes('L1') ? t.database : 'L3_CLOUDERA_DRAGON_HSO';
+
+        const row = ws.addRow([
+          no, t.dag || indName, indName, t.asset || 'Data Mart', t.database || '-', t.table || '-',
+          layerBucket, datasetBQ,
+          'Completed', 'Completed', 'Completed', etlConv, etlTest, testTime,
+          '', isDagInactive ? '-' : '', etlTest ? 'Completed' : '', '', '',
+          '', '', '', isDagInactive ? 'Inactive' : 'Active', new Date().toISOString().slice(0,10)
+        ]);
+
+        if (isDagInactive) {
           row.eachCell(cell => {
             cell.fill = PINK;
             cell.font = { color: { argb: 'FF880E4F' }, size: 10 };
@@ -2525,7 +2569,7 @@ async function exportIndicatorXLSX() {
 
     // Sheet 2: Summary
     const ws2 = wb.addWorksheet('Summary');
-    ws2.addRow(['Indicator','Priority','Total Tables','DAG Inactive','Converted','Progress %']);
+    ws2.addRow(['Indicator','Priority','Total Tables','DAG Inactive','Converted','Tested','Progress %']);
     const h2 = ws2.getRow(1);
     h2.eachCell(cell => {
       cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
@@ -2534,8 +2578,9 @@ async function exportIndicatorXLSX() {
     for (const [indName, ind] of Object.entries(data)) {
       const dagInactive = ind.tables.filter(t => !t.dag_active).length;
       const converted = ind.tables.filter(t => t.status === 'Done').length;
+      const tested = ind.tables.filter(t => t.status === 'Tested').length;
       const progress = ind.tables.length > 0 ? Math.round(converted / ind.tables.length * 100) : 0;
-      ws2.addRow([indName, ind.priority, ind.tables.length, dagInactive, converted, progress + '%']);
+      ws2.addRow([indName, ind.priority, ind.tables.length, dagInactive, converted, tested, progress + '%']);
     }
 
     const buf = await wb.xlsx.writeBuffer();
