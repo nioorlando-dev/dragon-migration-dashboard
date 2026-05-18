@@ -29,8 +29,9 @@
         "script": "stg_masterdealer_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "\u274c BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)"
+        "status": "Tested",
+        "catatan": "\u2705 SUCCESS: 2,880 rows @ 2026-05-18 18:24",
+        "test_time": "2026-05-18 18:24"
       },
       {
         "table": "MasterDealer",
@@ -511,7 +512,7 @@
     ],
     "total_tables": 51,
     "converted": 1,
-    "tested": 0,
+    "tested": 1,
     "complete": 0
   },
   "Master Main Dealer": {
@@ -554,13 +555,14 @@
         "script": "mastermaindealer_star.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "\u274c BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)"
+        "status": "Tested",
+        "catatan": "\u2705 SUCCESS: 41 rows @ 2026-05-18 18:31",
+        "test_time": "2026-05-18 18:31"
       }
     ],
     "total_tables": 4,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "complete": 0
   },
   "Master Sales Person": {
