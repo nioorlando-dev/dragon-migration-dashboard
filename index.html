@@ -2076,6 +2076,7 @@ function showIndicatorDetail(name) {
               <th>Database</th>
               <th>Script</th>
               <th>Status</th>
+              <th>Test Time</th>
               <th>Notes</th>
             </tr>
           </thead>
@@ -2136,13 +2137,15 @@ function showIndicatorDetail(name) {
               const badgeStyle = !t.dag_active ? 'background:rgba(255,105,180,0.15);color:#ff69b4;' : '';
               const dotStyle = !t.dag_active ? 'background:#ff69b4;' : '';
               const notesTrunc = (notes || '-').substring(0, 60);
+              const testTime = t.test_time || '-';
               
               return '<tr style="' + rowStyle + '">' +
                 '<td class="mono">' + escapeHtml(t.table || '-') + '</td>' +
                 '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
                 '<td class="mono" style="font-size:11px">' + escapeHtml(t.script || '-') + '</td>' +
                 '<td><span class="badge ' + statusClass + '" style="' + badgeStyle + '"><span class="dot" style="' + dotStyle + '"></span>' + statusText + '</span></td>' +
-                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notesTrunc) + '</td>' +
+                '<td style="font-size:11px;text-align:center">' + escapeHtml(testTime) + '</td>' +
+                '<td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notesTrunc) + '</td>' +
                 '</tr>';
             }).join('')}
           </tbody>

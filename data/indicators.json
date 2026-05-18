@@ -10,7 +10,8 @@
         "script": "final_masterdealer_union",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealer_cloudera",
@@ -28,7 +29,8 @@
         "script": "stg_masterdealer_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "\u274c BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)"
       },
       {
         "table": "MasterDealer",
@@ -37,7 +39,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "StatusLayananDealer_file",
@@ -46,7 +49,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "svmappingpit",
@@ -64,7 +68,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
       },
       {
         "table": "data_master",
@@ -73,7 +78,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "lookup",
@@ -82,7 +88,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "master2w_dealer",
@@ -91,7 +98,8 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "MasterDealer",
@@ -100,7 +108,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealer_temp",
@@ -109,7 +118,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealerfinal",
@@ -118,7 +128,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealerfinal2",
@@ -127,7 +138,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "portal_dealer",
@@ -136,7 +148,8 @@
         "script": "MasterDealer_Portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "RefMechanic",
@@ -145,7 +158,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "jabatan",
@@ -154,7 +168,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "AHASS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
       },
       {
         "table": "mappingkaryawanjabatan",
@@ -163,7 +178,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "AHASS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
       },
       {
         "table": "svmappingpit",
@@ -181,7 +197,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
       },
       {
         "table": "Dealer",
@@ -190,7 +207,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "dealergroup",
@@ -199,7 +217,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dealertelephone",
@@ -208,7 +227,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "district",
@@ -217,7 +237,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kecamatan",
@@ -226,7 +247,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kelurahan",
@@ -235,7 +257,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "lookup",
@@ -244,7 +267,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "province",
@@ -253,7 +277,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "city",
@@ -262,7 +287,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "city_ahm",
@@ -271,7 +297,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "Dealer",
@@ -280,7 +307,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "dealer_status",
@@ -289,7 +317,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dealer_telephone",
@@ -298,7 +327,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kecamatan",
@@ -307,7 +337,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kelurahan",
@@ -316,7 +347,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "province",
@@ -325,7 +357,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "branch",
@@ -334,7 +367,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dealerhondaprofileahm_file",
@@ -343,7 +377,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "mappingdealeroldnew_file",
@@ -361,7 +396,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "svmappingpit",
@@ -379,7 +415,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
       },
       {
         "table": "data_master",
@@ -388,7 +425,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "lookup",
@@ -397,7 +435,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "master2w_dealer",
@@ -406,7 +445,8 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "MasterDealer",
@@ -415,7 +455,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealer_temp",
@@ -424,7 +465,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealerfinal",
@@ -433,7 +475,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterdealerfinal2",
@@ -442,7 +485,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "portal_dealer",
@@ -451,7 +495,8 @@
         "script": "MasterDealer_Portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "RefMechanic",
@@ -460,7 +505,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 51,
@@ -479,7 +525,8 @@
         "script": "mastermaindealer.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "mastermaindealer",
@@ -488,7 +535,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dbo.mastermaindealer_cloudera",
@@ -506,7 +554,8 @@
         "script": "mastermaindealer_star.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "\u274c BLOCKED: Missing source tables (VillageViewModels, SubDistrictViewModels, DistrictViewModels)"
       }
     ],
     "total_tables": 4,
@@ -562,7 +611,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 3,
@@ -662,7 +712,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofileservice",
@@ -671,7 +722,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "MappingCityAvocadoMstr_File",
@@ -680,7 +732,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "RefEquipment",
@@ -689,7 +742,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "region",
@@ -698,7 +752,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "ringterritory_file",
@@ -707,7 +762,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "salesorder",
@@ -716,7 +772,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "sequence_region",
@@ -734,7 +791,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "summarypdrb_yty_file",
@@ -743,7 +801,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "SvPKBHeader",
@@ -752,7 +811,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -761,7 +821,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "virtualexhibitionsummary_file",
@@ -770,7 +831,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "customerprofileleasing",
@@ -779,7 +841,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales",
@@ -788,7 +851,8 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_CDB",
@@ -797,7 +861,8 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_dataservice",
@@ -807,7 +872,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "1_customerprofilesales_dataservice.py. Tested 2026-05-12."
       },
       {
         "table": "customerprofilesales_delta",
@@ -816,7 +882,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "customerprofilesales_deltah7_archive",
@@ -834,7 +901,8 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_FovAllTime",
@@ -843,7 +911,8 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_FovLastYear",
@@ -852,7 +921,8 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_h1_archive",
@@ -871,7 +941,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_kpb.sql \u2192 sudah convert"
       },
       {
         "table": "CustomerProfileSales_KPB1",
@@ -880,7 +951,8 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB2",
@@ -889,7 +961,8 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB3",
@@ -898,7 +971,8 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB4",
@@ -907,7 +981,8 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_lastservice",
@@ -916,7 +991,8 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_ring",
@@ -926,7 +1002,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_ring.sql \u2192 sudah convert"
       },
       {
         "table": "CustomerProfileSales_rofinal",
@@ -935,7 +1012,8 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_SalesOrder",
@@ -944,7 +1022,8 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_servicejobtype",
@@ -954,7 +1033,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_servicejobtype.py"
       },
       {
         "table": "CustomerProfileSales_UnitSales",
@@ -963,7 +1043,8 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales1",
@@ -981,7 +1062,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "mastercustomerprofileref",
@@ -990,7 +1072,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "mastermaindealer",
@@ -999,7 +1082,8 @@
         "script": "mastermaindealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "mastersalesperson",
@@ -1008,7 +1092,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterunittype",
@@ -1017,7 +1102,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "RefCounterGroup",
@@ -1026,7 +1112,8 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refequipment",
@@ -1035,7 +1122,8 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refjob",
@@ -1044,7 +1132,8 @@
         "script": "RefJob.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refjobtype",
@@ -1053,7 +1142,8 @@
         "script": "RefJobType.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "Reftasklist",
@@ -1062,7 +1152,8 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "ro_masterdealer",
@@ -1080,7 +1171,8 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "svpkbheaderequipment",
@@ -1089,7 +1181,8 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "svpkbjobdetail",
@@ -1098,7 +1191,8 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "tmp_H0_customerprofilesales",
@@ -1116,7 +1210,8 @@
         "script": "UnitColor.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "zpygdo00004_ustk2",
@@ -1134,7 +1229,8 @@
         "script": "integration_pssu.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "PSS integration \u2014 depends on PSS ingest strategy."
       },
       {
         "table": "zpygdo00004_ustk2",
@@ -1152,7 +1248,8 @@
         "script": "pssu.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "CDDBUDSTK",
@@ -1161,7 +1258,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customer",
@@ -1170,7 +1268,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "invoice",
@@ -1179,7 +1278,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "RefEquipment",
@@ -1188,7 +1288,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "salesorder",
@@ -1197,7 +1298,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "SvPKBHeader",
@@ -1206,7 +1308,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -1215,7 +1318,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "city",
@@ -1224,7 +1328,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kecamatan",
@@ -1233,7 +1338,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "kelurahan",
@@ -1242,7 +1348,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "occupation",
@@ -1251,7 +1358,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "province",
@@ -1260,7 +1368,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "region",
@@ -1269,7 +1378,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dealer_territory_result",
@@ -1278,7 +1388,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "activitypameran_file",
@@ -1287,7 +1398,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "activityroadshow_file",
@@ -1296,7 +1408,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "CDDBUDSTK",
@@ -1305,7 +1418,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customer",
@@ -1314,7 +1428,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "Eventlive_file",
@@ -1323,7 +1438,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "hargakomoditas_file",
@@ -1332,7 +1448,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "incentive_sf_file",
@@ -1341,7 +1458,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "incentive_tl_ol_file",
@@ -1350,7 +1468,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "invoice",
@@ -1359,7 +1478,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "leadscustomer_amanda_file",
@@ -1368,7 +1488,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "leadscustomer_lemon_file",
@@ -1377,7 +1498,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "leadscustomer_motorkux_file",
@@ -1386,7 +1508,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "leadscustomer_socialmediafb_file",
@@ -1395,7 +1518,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "leadscustomer_virtualexhibition_file",
@@ -1404,7 +1528,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "mappingposservice_file",
@@ -1413,7 +1538,8 @@
         "script": "Obj00126988MappingPosService.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "mappingpriorityjobtype_file",
@@ -1422,7 +1548,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "marketpricing_file",
@@ -1431,7 +1558,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "RefEquipment",
@@ -1440,7 +1568,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "region",
@@ -1449,7 +1578,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "ringterritory_file",
@@ -1458,7 +1588,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "salesorder",
@@ -1467,7 +1598,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "sequence_region",
@@ -1485,7 +1617,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "summarypdrb_yty_file",
@@ -1494,7 +1627,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "SvPKBHeader",
@@ -1503,7 +1637,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "SvPKBHeaderEquipment",
@@ -1512,7 +1647,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "virtualexhibitionsummary_file",
@@ -1521,7 +1657,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "customerprofileleasing",
@@ -1530,7 +1667,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales",
@@ -1539,7 +1677,8 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_CDB",
@@ -1548,7 +1687,8 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_dataservice",
@@ -1558,7 +1698,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "1_customerprofilesales_dataservice.py. Tested 2026-05-12."
       },
       {
         "table": "customerprofilesales_delta",
@@ -1567,7 +1708,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "customerprofilesales_deltah7_archive",
@@ -1585,7 +1727,8 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_FovAllTime",
@@ -1594,7 +1737,8 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_FovLastYear",
@@ -1603,7 +1747,8 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_h1_archive",
@@ -1622,7 +1767,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_kpb.sql \u2192 sudah convert"
       },
       {
         "table": "CustomerProfileSales_KPB1",
@@ -1631,7 +1777,8 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB2",
@@ -1640,7 +1787,8 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB3",
@@ -1649,7 +1797,8 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_KPB4",
@@ -1658,7 +1807,8 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_lastservice",
@@ -1667,7 +1817,8 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_ring",
@@ -1677,7 +1828,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_ring.sql \u2192 sudah convert"
       },
       {
         "table": "CustomerProfileSales_rofinal",
@@ -1686,7 +1838,8 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "CustomerProfileSales_SalesOrder",
@@ -1695,7 +1848,8 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales_servicejobtype",
@@ -1705,7 +1859,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "3_customerprofilesales_servicejobtype.py"
       },
       {
         "table": "CustomerProfileSales_UnitSales",
@@ -1714,7 +1869,8 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "customerprofilesales1",
@@ -1732,7 +1888,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "mastercustomerprofileref",
@@ -1741,7 +1898,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "mastermaindealer",
@@ -1750,7 +1908,8 @@
         "script": "mastermaindealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "mastersalesperson",
@@ -1759,7 +1918,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "masterunittype",
@@ -1768,7 +1928,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "RefCounterGroup",
@@ -1777,7 +1938,8 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refequipment",
@@ -1786,7 +1948,8 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refjob",
@@ -1795,7 +1958,8 @@
         "script": "RefJob.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "refjobtype",
@@ -1804,7 +1968,8 @@
         "script": "RefJobType.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "Reftasklist",
@@ -1813,7 +1978,8 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "ro_masterdealer",
@@ -1831,7 +1997,8 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "svpkbheaderequipment",
@@ -1840,7 +2007,8 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "svpkbjobdetail",
@@ -1849,7 +2017,8 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "tmp_H0_customerprofilesales",
@@ -1867,7 +2036,8 @@
         "script": "UnitColor.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 143,
@@ -1886,7 +2056,8 @@
         "script": "Region",
         "dag": "PRD_Region",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 1,
@@ -1905,7 +2076,8 @@
         "script": "Obj00125433ARAGING",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygf_ar_aging_nontradedetail",
@@ -1914,7 +2086,8 @@
         "script": "Obj00125593ZPYGF_AR_Aging_NonTradeDetail",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygf_ar_aging_servicessummary",
@@ -1923,7 +2096,8 @@
         "script": "Obj00125591ZPYGF_AR_Aging_ServicesSummary",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygf_ar_aging_unitsummary",
@@ -1932,7 +2106,8 @@
         "script": "Obj00125582ZPYGF_AR_Aging_UnitSummary",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygmme00049a",
@@ -1941,7 +2116,8 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "zpygmmq00036",
@@ -1950,7 +2126,8 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygmmr00188",
@@ -1959,7 +2136,8 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygsddt00720",
@@ -1968,7 +2146,8 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygsdq00010",
@@ -1986,7 +2165,8 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygsdr00039",
@@ -1995,7 +2175,8 @@
         "script": "Obj00125521ZPYGSDR00039",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "SAP RFC extract \u2014 SAP connector now available. Needs implementation."
       },
       {
         "table": "zpygsdr00059",
@@ -2004,7 +2185,8 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygsdr00263",
@@ -2013,7 +2195,8 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "bkpf",
@@ -2022,7 +2205,8 @@
         "script": "Obj00125418BKPF",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "bsec",
@@ -2031,7 +2215,8 @@
         "script": "Obj00125427BSEC",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "bseg",
@@ -2040,7 +2225,8 @@
         "script": "Obj00125420BSEG",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "mappingunittype",
@@ -2049,7 +2235,8 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Invalidate Impala Metadata \u2014 tidak ada di GCP"
       }
     ],
     "total_tables": 17,
@@ -2068,7 +2255,8 @@
         "script": "SAP_PSSU",
         "dag": "SAP_PSSU",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Tidak perlu diconvert."
       }
     ],
     "total_tables": 1,
@@ -2123,7 +2311,8 @@
         "script": "stg_ustk2_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "NEED INPUT DBT L2 staging"
       },
       {
         "table": "zpygdo00004_ustk2_union",
@@ -2178,7 +2367,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "leadsfunnelcrmh1",
@@ -2187,7 +2377,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "leadsfunnelcrmh1",
@@ -2196,7 +2387,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "customerinvitation",
@@ -2205,7 +2397,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 6,
@@ -2296,7 +2489,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "opr_ast_star_wh_dm.pkbservicefinal_star",
@@ -2360,7 +2554,8 @@
         "script": "ZMB51_Base. ZMB51_Upsert",
         "dag": "SAP_ZMB51_Fabric",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Composer sensor \u2192 As-Is"
       },
       {
         "table": "zpygsdq00010",
@@ -2396,7 +2591,8 @@
         "script": "masterhet",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "masterhet_latest",
@@ -2405,7 +2601,8 @@
         "script": "masterhet_latest",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "mastermaterial",
@@ -2414,7 +2611,8 @@
         "script": "mastermaterial",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Composer sensor \u2192 As-Is"
       },
       {
         "table": "partsharecontribution",
@@ -2424,7 +2622,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "salesinstar",
@@ -2433,7 +2632,8 @@
         "script": "salesinstar",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "stocklevel",
@@ -2442,7 +2642,8 @@
         "script": "stocklevel",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "targetservicepart",
@@ -2452,7 +2653,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": "2026-05-17 18:33",
+        "catatan": "\u2705 SUCCESS: 125,379 rows @ 2026-05-17 18:33 (targetservicepart.py)"
       },
       {
         "table": "datarevenue",
@@ -2763,7 +2965,8 @@
         "script": "Union_df_new",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py (SDUE variant)"
       },
       {
         "table": "pkbservicefinal_sdue",
@@ -2809,7 +3012,8 @@
         "script": "",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer_star.py"
       },
       {
         "table": "opr_ast_so2w_wh_dm.mastermaindealer_union",
@@ -2818,7 +3022,8 @@
         "script": "",
         "dag": "PRD_MasterMainDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastermaindealer_star.py"
       },
       {
         "table": "report_sdue_2023",
@@ -2847,7 +3052,8 @@
         "script": "3_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "dbo.targetsales",
@@ -2933,7 +3139,8 @@
         "script": "evenactivity",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "\u26a0\ufe0f OOM: OutOfMemoryError, perlu split query atau tambah memory"
       },
       {
         "table": "salessummaryv2",
@@ -2943,7 +3150,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": "2026-05-17 20:06",
+        "catatan": "\u2705 SUCCESS: 9,574,101 rows @ 2026-05-17 20:06 (salessummaryv2.py)"
       },
       {
         "table": "targetsales",
@@ -2952,7 +3160,8 @@
         "script": "notebook_grape_targetsales",
         "dag": "pipeline_grape_targetsales",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       }
     ],
     "total_tables": 3,
@@ -2989,7 +3198,8 @@
         "script": "",
         "dag": "PRD_CustomerProfileSales",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_04_customerprofilesales/ (full CPS pipeline)"
       },
       {
         "table": "opr_ast_so2w_wh_dm.customerprofileservice_union",
@@ -3007,7 +3217,8 @@
         "script": "",
         "dag": "PRD_Union_MasterDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer_star.py"
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterdealergroup_union",
@@ -3016,7 +3227,8 @@
         "script": "",
         "dag": "PRD_Union_MasterGroupDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterdealer.py (group dealer variant)"
       },
       {
         "table": "opr_ast_so2w_wh_dm.mastermaindealer_union",
@@ -3025,7 +3237,8 @@
         "script": "",
         "dag": "PRD_MasterMainDealer",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/mastermaindealer_star.py"
       },
       {
         "table": "opr_ast_so2w_wh_dm.masterunittype_union",
@@ -3034,7 +3247,8 @@
         "script": "",
         "dag": "MasterUnitType UNION",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "Converted: pipeline_25_dragon_L3/pyspark/masterunittype.py (DBT union)"
       },
       {
         "table": "3Axis_Leads_Monitoring_DR",
@@ -3162,7 +3376,8 @@
         "script": "",
         "dag": "DE",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Trigger Fabric Job (leads_ahm). Needs Cloud Run Job in GCP."
       },
       {
         "table": "leads_ahm_stg",
@@ -3181,7 +3396,8 @@
         "dag": "DBT",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": "2026-05-16 16:53",
+        "catatan": "\u2705 SUCCESS: 26,885 rows @ 2026-05-16 16:53"
       },
       {
         "table": "bd.h23",
@@ -3191,7 +3407,8 @@
         "dag": "DBT",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": "2026-05-16 15:58",
+        "catatan": "\u2705 SUCCESS: 16,936 rows @ 2026-05-16 15:58"
       },
       {
         "table": "bd.metric_a_j",
@@ -3227,7 +3444,8 @@
         "script": "bd_metric_z_ad.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "ExternalTaskSensor on dragon_L2 BD tasks."
       },
       {
         "table": "bd.partsales",
@@ -3237,7 +3455,8 @@
         "dag": "DBT",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": "2026-05-16 17:35",
+        "catatan": "\u2705 SUCCESS: 23,155 rows @ 2026-05-16 17:35"
       },
       {
         "table": "bd.pc",
@@ -3246,7 +3465,8 @@
         "script": "bd_pc.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "ExternalTaskSensor on dragon_L2 BD tasks."
       },
       {
         "table": "bd.pkb",
@@ -3255,7 +3475,8 @@
         "script": "bd_pkb.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "ExternalTaskSensor on dragon_L2 BD tasks."
       },
       {
         "table": "bd.po_h23",
@@ -3264,7 +3485,8 @@
         "script": "bd_po_h23.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "ExternalTaskSensor on dragon_L2 BD tasks."
       },
       {
         "table": "bd.po_suggestion",
@@ -3273,7 +3495,8 @@
         "script": "bd_po_suggestion.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "ExternalTaskSensor on dragon_L2 BD tasks."
       },
       {
         "table": "nms_ahm",
@@ -3282,7 +3505,8 @@
         "script": "monitoringdocumentsalescomplete",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "nms_consistency",
@@ -3300,7 +3524,8 @@
         "script": "nms_handleleasing.sql",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "utilisasistar_bd",
@@ -3309,7 +3534,8 @@
         "script": "salesinstar",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       }
     ],
     "total_tables": 19,
@@ -3365,7 +3591,8 @@
         "script": "monitoringbku_star",
         "dag": "-",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       }
     ],
     "total_tables": 1,
@@ -3384,7 +3611,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_apin_event_log_detail",
@@ -3393,7 +3621,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP."
       },
       {
         "table": "motorkux_booking_details",
@@ -3402,7 +3631,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_booking_kpb_details",
@@ -3411,7 +3641,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_daerah_details",
@@ -3420,7 +3651,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_kpb_request_details",
@@ -3429,7 +3661,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_recap_leads_h1_details",
@@ -3438,7 +3671,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_recap_leads_h1_fif_details",
@@ -3447,7 +3681,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP."
       },
       {
         "table": "motorkux_recap_leads_h3_details",
@@ -3456,7 +3691,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "motorkux_recap_leads_h3_items_details",
@@ -3465,7 +3701,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP."
       },
       {
         "table": "motorkux_user_details",
@@ -3474,7 +3711,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Trigger Fabric Job via SSH (fabric_job_trigger.py). Needs Cloud Run Job in GCP."
       },
       {
         "table": "motorkux_user_motorcycle_details",
@@ -3483,7 +3721,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Tidak perlu diconvert."
       },
       {
         "table": "workshop_details",
@@ -3492,7 +3731,8 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Script ingest MotorkuX tidak ada di TFS. Butuh akses ke API MotorkuX dari GCP."
       },
       {
         "table": "cdbxmotorkux",
@@ -3582,7 +3822,8 @@
         "script": "PRD_CPService_UNION_Initial",
         "dag": "PRD_CustomerProfileService_STAR",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 23,
@@ -3793,7 +4034,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "utilisasidragon",
@@ -3802,7 +4044,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 4,
@@ -3848,7 +4091,8 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       },
       {
         "table": "zpygsdr00263",
@@ -3857,7 +4101,8 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh SAP RFC connector untuk GCP. Perlu koordinasi dengan tim SAP sebelum bisa di-ingest ke Dataproc."
       }
     ],
     "total_tables": 5,
@@ -3949,7 +4194,8 @@
         "script": "marketsharedata.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_marketsharedata/grid?task_id=marketsharedata",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "NEED INPUT DBT L3 \u2192 marketshare model"
       },
       {
         "table": "marketsharedata",
@@ -3958,7 +4204,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "NEED INPUT DBT L3 \u2192 marketshare model"
       },
       {
         "table": "marketsharedata",
@@ -3967,7 +4214,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "NEED INPUT DBT L3 \u2192 marketshare model"
       }
     ],
     "total_tables": 5,
@@ -4032,7 +4280,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 2,
@@ -4060,7 +4309,8 @@
         "script": "DataMekanik",
         "dag": "PRD_DataMekanik",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Fabric trigger \u2014 menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner."
       },
       {
         "table": "DataMekanik",
@@ -4069,7 +4319,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Fabric trigger \u2014 menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner."
       },
       {
         "table": "datamekanik",
@@ -4078,7 +4329,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Fabric trigger \u2014 menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner."
       },
       {
         "table": "datamekanik_transformation",
@@ -4096,7 +4348,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Fabric trigger \u2014 menunggu konfirmasi FABRIC_ENTRY dan config name dengan data owner."
       },
       {
         "table": "datamekanik_transformation",
@@ -4133,7 +4386,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "datapit_transformation",
@@ -4142,7 +4396,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "datapit_transformation",
@@ -4151,7 +4406,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 4,
@@ -4206,7 +4462,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4224,7 +4481,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4242,7 +4500,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "datainsighthotline_transformation",
@@ -4297,7 +4556,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 4,
@@ -4352,7 +4612,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "DealerGeneralData_Historical",
@@ -4370,7 +4631,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "dealergeneraldata",
@@ -4379,7 +4641,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 8,
@@ -4398,7 +4661,8 @@
         "script": "final_monitoringbku_union",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "monitoringbku_cloudera",
@@ -4417,7 +4681,8 @@
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "test_time": 0
+        "test_time": 0,
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "monitoringbku",
@@ -4426,7 +4691,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "monitoringbku",
@@ -4435,7 +4701,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       }
     ],
     "total_tables": 5,
@@ -4473,7 +4740,8 @@
         "script": "monitoringbku",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
       },
       {
         "table": "monitoringdocumentsalescomplete_star",
@@ -4603,7 +4871,8 @@
         "script": "table",
         "dag": "PRD_ReportSORem",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "dbo.ReportSORem",
@@ -4621,7 +4890,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[reportsorem_temp]",
@@ -4639,7 +4909,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 5,
@@ -4667,7 +4938,8 @@
         "script": "TargetSalesInOut_File",
         "dag": "TargetSalesInOut_File",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
       },
       {
         "table": "[opr_ast_so2w_wh_dm].[salesinsalesout_transformation]",
@@ -4685,7 +4957,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "salesinsalesout_transformation",
@@ -4694,7 +4967,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "salesinsalesout_transformation",
@@ -4703,7 +4977,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 6,
@@ -4767,7 +5042,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "spr_transformation",
@@ -4776,7 +5052,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "spr_transformation",
@@ -4785,7 +5062,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 8,
@@ -4813,7 +5091,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Hive write task \u2014 needs Spark SQL equivalent in GCP."
       },
       {
         "table": "workdaysakumulatif",
@@ -4822,7 +5101,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Pending",
+        "catatan": "Hive write task \u2014 needs Spark SQL equivalent in GCP."
       }
     ],
     "total_tables": 3,
@@ -4850,7 +5130,8 @@
         "script": "leadtimesalesheader_fromspk_star.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "dbt run -s <model> -t prod"
       },
       {
         "table": "leadtimesalesheader_fromspk (view)",
@@ -4859,7 +5140,8 @@
         "script": "leadtimesalesheader_fromspk_union.sql",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Done"
+        "status": "Done",
+        "catatan": "NEED INPUT DBT final union"
       },
       {
         "table": "leadtimesalesheader_fromprospect",
@@ -4868,7 +5150,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "leadtimesalesheader_fromprospect",
@@ -4877,7 +5160,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 5,
@@ -4896,7 +5180,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       },
       {
         "table": "MonitoringCashbank",
@@ -4924,7 +5209,8 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Skip"
+        "status": "Skip",
+        "catatan": "DAG paused di Airflow (Jul 2025), tidak diconvert \u2013 pakai versi Cloudera"
       }
     ],
     "total_tables": 1,
