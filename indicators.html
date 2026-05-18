@@ -179,7 +179,7 @@ let allRows = [];
 
 async function loadData() {
   try {
-    const res = await fetch('./data/indicators.json');
+    const res = await fetch('./data/indicators.json?v=' + Date.now());
     const data = await res.json();
 
     indicatorData = Object.values(data).map(ind => {
