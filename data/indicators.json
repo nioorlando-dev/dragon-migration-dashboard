@@ -7,11 +7,12 @@
         "table": "masterdealer",
         "database": "L3_DM_DRAGON",
         "asset": "Datamart",
-        "script": "final_masterdealer_union",
+        "script": "masterdealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 3,264 rows",
+        "test_time": "2:05"
       },
       {
         "table": "masterdealer_cloudera",
@@ -26,22 +27,23 @@
         "table": "masterdealer_star",
         "database": "L3_DM_DRAGON",
         "asset": "Datamart",
-        "script": "stg_masterdealer_star",
+        "script": "masterdealer_star.py",
         "dag": "-",
         "dag_active": true,
         "status": "Tested",
-        "catatan": "\u2705 SUCCESS: 2,880 rows @ 2026-05-18 18:24",
-        "test_time": "2026-05-18 18:24"
+        "catatan": "SUCCESS: 2,880 rows",
+        "test_time": "3:21"
       },
       {
         "table": "MasterDealer",
         "database": "LakehousePrd",
         "asset": "Table Shortcut",
-        "script": "",
+        "script": "masterdealer.py",
         "dag": "",
-        "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "dag_active": false,
+        "status": "DAG Inactive",
+        "catatan": "Fabric - tidak di-migrate ke GCP",
+        "test_time": "2:05"
       },
       {
         "table": "StatusLayananDealer_file",
@@ -50,8 +52,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svmappingpit",
@@ -60,7 +62,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svtipepit",
@@ -69,8 +72,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "data_master",
@@ -79,8 +82,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "lookup",
@@ -89,28 +92,30 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Reference table - data sudah ada"
       },
       {
         "table": "master2w_dealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Datamart",
-        "script": "MasterDealer_Master2W.py",
+        "script": "masterdealer_master2w.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 5,269 rows",
+        "test_time": "2:30"
       },
       {
         "table": "MasterDealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Data Landing",
-        "script": "MasterDealer.py",
+        "script": "masterdealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 3,264 rows",
+        "test_time": "2:05"
       },
       {
         "table": "masterdealer_temp",
@@ -119,8 +124,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "masterdealerfinal",
@@ -129,8 +134,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "masterdealerfinal2",
@@ -139,18 +144,19 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "portal_dealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Datamart",
-        "script": "MasterDealer_Portal.py",
+        "script": "masterdealer_portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 2,863 rows",
+        "test_time": "2:15"
       },
       {
         "table": "RefMechanic",
@@ -159,8 +165,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Reference table - data sudah ada"
       },
       {
         "table": "jabatan",
@@ -169,8 +175,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "AHASS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "mappingkaryawanjabatan",
@@ -179,8 +185,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "AHASS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svmappingpit",
@@ -189,7 +195,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svtipepit",
@@ -198,8 +205,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "Dealer",
@@ -208,8 +215,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "dealergroup",
@@ -218,8 +225,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "dealertelephone",
@@ -228,8 +235,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "district",
@@ -238,8 +245,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "kecamatan",
@@ -248,8 +255,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "kelurahan",
@@ -258,8 +265,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "lookup",
@@ -268,8 +275,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "province",
@@ -278,8 +285,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "city",
@@ -288,8 +295,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "city_ahm",
@@ -298,8 +305,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "Dealer",
@@ -308,8 +315,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "dealer_status",
@@ -318,8 +325,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "dealer_telephone",
@@ -328,8 +335,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "kecamatan",
@@ -338,8 +345,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "kelurahan",
@@ -348,8 +355,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "province",
@@ -358,8 +365,8 @@
         "script": "-",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "branch",
@@ -368,8 +375,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "dealerhondaprofileahm_file",
@@ -378,8 +385,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "mappingdealeroldnew_file",
@@ -388,7 +395,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "StatusLayananDealer_file",
@@ -397,8 +405,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "Butuh infrastruktur AstraNet file landing ke GCP (Cloud Storage + trigger) sebelum bisa diproses di Dataproc."
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svmappingpit",
@@ -407,7 +415,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "svtipepit",
@@ -416,8 +425,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Pending",
-        "catatan": "PSS ingest from Cloudera \u2014 architecture decision pending (GCP ingest strategy needed)"
+        "status": "Landing",
+        "catatan": "Data Landing - sudah ada di GCS/BQ"
       },
       {
         "table": "data_master",
@@ -426,8 +435,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "lookup",
@@ -436,28 +445,30 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Reference table - data sudah ada"
       },
       {
         "table": "master2w_dealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Datamart",
-        "script": "MasterDealer_Master2W.py",
+        "script": "masterdealer_master2w.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 5,269 rows",
+        "test_time": "2:30"
       },
       {
         "table": "MasterDealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Data Landing",
-        "script": "MasterDealer.py",
+        "script": "masterdealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 3,264 rows",
+        "test_time": "2:05"
       },
       {
         "table": "masterdealer_temp",
@@ -466,8 +477,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "masterdealerfinal",
@@ -476,8 +487,8 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "masterdealerfinal2",
@@ -486,18 +497,19 @@
         "script": "MasterDealer.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Done",
+        "catatan": "Output: MasterDealer.py"
       },
       {
         "table": "portal_dealer",
         "database": "opr_ast_so2w_wh_dm",
         "asset": "Datamart",
-        "script": "MasterDealer_Portal.py",
+        "script": "masterdealer_portal.py",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 2,863 rows",
+        "test_time": "2:15"
       },
       {
         "table": "RefMechanic",
@@ -506,8 +518,8 @@
         "script": "",
         "dag": "-",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Landing",
+        "catatan": "Reference table - data sudah ada"
       }
     ],
     "total_tables": 51,
@@ -523,11 +535,12 @@
         "table": "mastermaindealer (view)",
         "database": "L3_DM_DRAGON",
         "asset": "Datamart",
-        "script": "mastermaindealer.sql",
+        "script": "mastermaindealer.py",
         "dag": "DBT",
         "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "status": "Tested",
+        "catatan": "SUCCESS: 42 rows",
+        "test_time": "1:45"
       },
       {
         "table": "mastermaindealer",
@@ -535,9 +548,9 @@
         "asset": "Datamart",
         "script": "",
         "dag": "",
-        "dag_active": true,
-        "status": "Skip",
-        "catatan": "DAG tidak aktif. Data sudah ada di GCP. Tidak perlu diconvert."
+        "dag_active": false,
+        "status": "DAG Inactive",
+        "catatan": "Fabric - tidak di-migrate ke GCP"
       },
       {
         "table": "dbo.mastermaindealer_cloudera",
@@ -546,18 +559,19 @@
         "script": "",
         "dag": "",
         "dag_active": true,
-        "status": "Pending"
+        "status": "Done",
+        "catatan": "Data sudah ada di BQ"
       },
       {
         "table": "dbo.mastermaindealer_star",
         "database": "L3_DM_DRAGON",
         "asset": "Datamart",
-        "script": "mastermaindealer_star.sql",
+        "script": "mastermaindealer_star.py",
         "dag": "DBT",
         "dag_active": true,
         "status": "Tested",
-        "catatan": "\u2705 SUCCESS: 41 rows @ 2026-05-18 18:31",
-        "test_time": "2026-05-18 18:31"
+        "catatan": "SUCCESS: 41 rows",
+        "test_time": "1:42"
       }
     ],
     "total_tables": 4,
