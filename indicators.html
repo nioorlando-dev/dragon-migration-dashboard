@@ -186,17 +186,18 @@ async function loadData() {
       ind.totalTables = ind.tables.length;
       ind.duplicates = ind.tables.filter(t => t.is_duplicate).length;
       ind.uniqueTables = ind.totalTables - ind.duplicates;
-      ind.dagInactive = ind.tables.filter(t => !t.dag_active && !t.is_duplicate).length;
-      ind.done = ind.tables.filter(t => t.status === 'Done' && !t.is_duplicate).length;
+      ind.converted = ind.tables.filter(t => t.status === 'Converted' && !t.is_duplicate).length;
+      ind.tested = ind.tables.filter(t => t.status === 'Tested' && !t.is_duplicate).length;
+      ind.landing = ind.tables.filter(t => t.status === 'Landing' && !t.is_duplicate).length;
       ind.skip = ind.tables.filter(t => t.status === 'Skip' && !t.is_duplicate).length;
       ind.pending = ind.tables.filter(t => t.status === 'Pending' && !t.is_duplicate).length;
-      // Progress = Done / (Unique - Skip) * 100
-      const countable = ind.uniqueTables - ind.skip;
-      ind.progress = countable > 0 ? Math.round(ind.done / countable * 100) : 0;
+      // Progress = (Converted + Tested) / (Unique - Skip - Landing) * 100
+      const countable = ind.uniqueTables - ind.skip - ind.landing;
+      ind.progress = countable > 0 ? Math.round((ind.converted + ind.tested) / countable * 100) : 100;
       return ind;
     }).sort((a, b) => {
-      const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
-      return (order[a.priority] - order[b.priority]) || (b.totalTables - a.totalTables);
+      const order = { P1A: 0, P1B: 1, P2: 2, P3: 3, P4: 4, P5: 5 };
+      return (order[a.priority] || 5) - (order[b.priority] || 5) || (ind.no || 0) - (ind.no || 0);
     });
 
     updateUI();
@@ -214,11 +215,12 @@ function updateUI(filter = 'all') {
   document.getElementById('p1aCount').textContent = indicatorData.filter(i => i.priority === 'P1A').length;
   document.getElementById('p1bCount').textContent = indicatorData.filter(i => i.priority === 'P1B').length;
   document.getElementById('p2Count').textContent = indicatorData.filter(i => i.priority === 'P2').length;
-  document.getElementById('p3Count').textContent = indicatorData.filter(i => i.priority === 'P3').length;
+  document.getElementById('p3Count').textContent = indicatorData.filter(i => i.priority === 'P3' || i.priority === 'P4' || i.priority === 'P5').length;
   
   const totalUnique = indicatorData.reduce((s, i) => s + i.uniqueTables, 0);
-  const totalDone = indicatorData.reduce((s, i) => s + i.done, 0);
-  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalUnique} tables · ${totalDone} done`;
+  const totalConverted = indicatorData.reduce((s, i) => s + i.converted, 0);
+  const totalTested = indicatorData.reduce((s, i) => s + i.tested, 0);
+  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalUnique} tables · ${totalConverted} converted · ${totalTested} tested`;
 
   // Render cards
   const grid = document.getElementById('cardsGrid');
@@ -234,12 +236,12 @@ function updateUI(filter = 'all') {
           <div class="stat-label">Tables</div>
         </div>
         <div class="stat">
-          <div class="stat-value" style="color:var(--green)">${ind.done}</div>
-          <div class="stat-label">Done</div>
+          <div class="stat-value" style="color:var(--green)">${ind.converted + ind.tested}</div>
+          <div class="stat-label">Converted</div>
         </div>
         <div class="stat">
-          <div class="stat-value" style="color:${ind.pending > 0 ? 'var(--yellow)' : 'var(--text-mute)'}">${ind.pending}</div>
-          <div class="stat-label">Pending</div>
+          <div class="stat-value" style="color:var(--blue)">${ind.tested}</div>
+          <div class="stat-label">Tested</div>
         </div>
       </div>
       <div class="card-progress">
@@ -264,23 +266,23 @@ function showDetail(name) {
   
   document.getElementById('modalTitle').textContent = `${ind.name} (${ind.priority})`;
   document.getElementById('modalBody').innerHTML = `
-    ${ind.note ? `<div style="background:#1a2d1a;border:1px solid #305030;padding:12px;border-radius:8px;margin-bottom:16px;font-size:13px">� ${ind.note}</div>` : ''}
+    ${ind.note ? `<div style="background:#1a2d1a;border:1px solid #305030;padding:12px;border-radius:8px;margin-bottom:16px;font-size:13px">📊 ${ind.note}</div>` : ''}
     <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:20px">
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
         <div class="stat-value">${ind.uniqueTables}</div>
-        <div class="stat-label">Tables</div>
+        <div class="stat-label">Total Tables</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:var(--green)">${ind.done}</div>
-        <div class="stat-label">Done</div>
+        <div class="stat-value" style="color:var(--green)">${ind.converted}</div>
+        <div class="stat-label">Converted</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:var(--yellow)">${ind.pending}</div>
-        <div class="stat-label">Pending</div>
+        <div class="stat-value" style="color:var(--blue)">${ind.tested}</div>
+        <div class="stat-label">Tested</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:var(--text-mute)">${ind.skip}</div>
-        <div class="stat-label">Skip</div>
+        <div class="stat-value" style="color:var(--text-mute)">${ind.landing + ind.skip}</div>
+        <div class="stat-label">Landing/Skip</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
         <div class="stat-value" style="color:var(--green)">${ind.progress}%</div>
@@ -292,8 +294,9 @@ function showDetail(name) {
         <tr>
           <th>Table</th>
           <th>Database</th>
-          <th>DAG</th>
+          <th>Script</th>
           <th>Status</th>
+          <th>Test Time</th>
           <th>Notes</th>
         </tr>
       </thead>
@@ -302,8 +305,14 @@ function showDetail(name) {
           <tr>
             <td class="mono">${t.table || '-'}</td>
             <td class="mono" style="font-size:11px">${t.database || '-'}</td>
-            <td class="mono" style="font-size:11px;color:${t.dag_active ? 'var(--green)' : 'var(--text-mute)'}">${t.dag || '-'}</td>
-            <td><span style="padding:2px 8px;border-radius:4px;font-size:11px;background:${t.status === 'Done' ? 'rgba(0,208,132,0.2);color:var(--green)' : (t.status === 'Pending' ? 'rgba(245,166,35,0.2);color:var(--yellow)' : 'rgba(107,107,107,0.2);color:var(--text-mute)')}">${t.status}</span></td>
+            <td class="mono" style="font-size:11px">${t.script || '-'}</td>
+            <td><span style="padding:2px 8px;border-radius:4px;font-size:11px;background:${
+              t.status === 'Tested' ? 'rgba(0,112,243,0.2);color:var(--blue)' : 
+              t.status === 'Converted' ? 'rgba(0,208,132,0.2);color:var(--green)' : 
+              t.status === 'Pending' ? 'rgba(245,166,35,0.2);color:var(--yellow)' : 
+              'rgba(107,107,107,0.2);color:var(--text-mute)'
+            }">${t.status}</span></td>
+            <td class="mono" style="font-size:11px">${t.test_time || '-'}</td>
             <td style="font-size:11px;color:var(--text-dim)">${t.catatan || '-'}</td>
           </tr>
         `).join('')}
