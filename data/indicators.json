@@ -6,8 +6,8 @@
     "total_tables": 51,
     "unique_tables": 39,
     "duplicates": 12,
-    "converted": 9,
-    "tested": 0,
+    "converted": 0,
+    "tested": 9,
     "tables": [
       {
         "no": "",
@@ -19,7 +19,9 @@
         "script": "final_masterdealer_union",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -31,7 +33,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -43,7 +47,9 @@
         "script": "stg_masterdealer_star",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer_star",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -55,7 +61,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -67,7 +75,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -79,7 +89,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -91,7 +103,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -103,7 +117,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: data_master",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -115,7 +131,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -127,7 +145,9 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: master2w_dealer",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -139,7 +159,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: MasterDealer",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -151,7 +173,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer_temp",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -163,7 +187,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealerfinal",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -175,7 +201,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealerfinal2",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -187,7 +215,9 @@
         "script": "MasterDealer_Portal.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Tested",
+        "notes": "SUCCESS: portal_dealer",
+        "test_time": "2:30"
       },
       {
         "no": "",
@@ -199,7 +229,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -211,7 +243,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -223,7 +257,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -235,7 +271,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -247,7 +285,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -259,7 +299,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -271,7 +313,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -283,7 +327,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -295,7 +341,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -307,7 +355,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -319,7 +369,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -331,7 +383,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -343,7 +397,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -355,7 +411,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -367,7 +425,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -379,7 +439,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -391,7 +453,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -403,7 +467,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -415,7 +481,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -427,7 +495,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -439,7 +509,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -451,7 +523,9 @@
         "script": "",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -463,7 +537,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -475,7 +551,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -487,7 +565,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 5"
       },
       {
         "no": "",
@@ -499,7 +578,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 6"
       },
       {
         "no": "",
@@ -511,7 +591,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 7"
       },
       {
         "no": "",
@@ -523,7 +604,8 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 8"
       },
       {
         "no": "",
@@ -535,7 +617,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 9"
       },
       {
         "no": "",
@@ -547,7 +630,8 @@
         "script": "MasterDealer_Master2W.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 10"
       },
       {
         "no": "",
@@ -559,7 +643,8 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 11"
       },
       {
         "no": "",
@@ -571,7 +656,8 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 12"
       },
       {
         "no": "",
@@ -583,7 +669,8 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 13"
       },
       {
         "no": "",
@@ -595,7 +682,8 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 14"
       },
       {
         "no": "",
@@ -607,7 +695,8 @@
         "script": "MasterDealer_Portal.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 15"
       },
       {
         "no": "",
@@ -619,9 +708,15 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 16"
       }
-    ]
+    ],
+    "done": 35,
+    "landing": 26,
+    "dag_inactive": 0,
+    "complete": 35,
+    "pending": 4
   },
   "Master Main Dealer": {
     "no": 2,
@@ -630,7 +725,7 @@
     "total_tables": 4,
     "unique_tables": 4,
     "duplicates": 0,
-    "converted": 2,
+    "converted": 0,
     "tested": 0,
     "tables": [
       {
@@ -643,7 +738,9 @@
         "script": "mastermaindealer.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -655,7 +752,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -667,7 +766,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -679,9 +780,16 @@
         "script": "mastermaindealer_star.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 4
   },
   "Master Sales Person": {
     "no": 3,
@@ -703,9 +811,16 @@
         "script": "Script MasterSalesPerson",
         "dag": "By Schedule on Synapse",
         "pipeline": "PROD_MasterSalesPerson",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "Master Unit Type": {
     "no": 4,
@@ -727,7 +842,9 @@
         "script": "Script MasterUnitType STAR",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType STAR",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -739,7 +856,9 @@
         "script": "/home/adiden/scripts/vctd-daas/DBT/scripts/dbt_runner.sh SO_HSO .env.prod \"dbt run -s masterunittype -t prod\" ",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType UNION",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -751,9 +870,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "File": {
     "no": 5,
@@ -775,7 +901,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -787,7 +915,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -799,7 +929,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -811,7 +943,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -823,7 +957,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -835,7 +971,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -847,7 +985,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -859,7 +999,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -871,7 +1013,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -883,7 +1027,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -895,7 +1041,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 1"
       },
       {
         "no": "",
@@ -907,7 +1054,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 2"
       },
       {
         "no": "",
@@ -919,9 +1067,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 3"
       }
-    ]
+    ],
+    "done": 10,
+    "landing": 10,
+    "dag_inactive": 0,
+    "complete": 10,
+    "pending": 0
   },
   "Region": {
     "no": 6,
@@ -943,9 +1097,16 @@
         "script": "Region",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_Region",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "Data SAP": {
     "no": 7,
@@ -954,7 +1115,7 @@
     "total_tables": 17,
     "unique_tables": 17,
     "duplicates": 0,
-    "converted": 17,
+    "converted": 0,
     "tested": 0,
     "tables": [
       {
@@ -967,7 +1128,9 @@
         "script": "Obj00125433ARAGING",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -979,7 +1142,9 @@
         "script": "Obj00125593ZPYGF_AR_Aging_NonTradeDetail",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -991,7 +1156,9 @@
         "script": "Obj00125591ZPYGF_AR_Aging_ServicesSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1003,7 +1170,9 @@
         "script": "Obj00125582ZPYGF_AR_Aging_UnitSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1015,7 +1184,9 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1027,7 +1198,9 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1039,7 +1212,9 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1051,7 +1226,9 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1063,7 +1240,9 @@
         "script": "Obj00125446ZPYGSDQ00010",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1075,7 +1254,9 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1087,7 +1268,9 @@
         "script": "Obj00125521ZPYGSDR00039",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1099,7 +1282,9 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1111,7 +1296,9 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1123,7 +1310,9 @@
         "script": "Obj00125418BKPF",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1135,7 +1324,9 @@
         "script": "Obj00125427BSEC",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1147,7 +1338,9 @@
         "script": "Obj00125420BSEG",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1159,9 +1352,16 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "dragon_SAP",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 17,
+    "landing": 17,
+    "dag_inactive": 0,
+    "complete": 17,
+    "pending": 0
   },
   "SAP PSSU": {
     "no": 8,
@@ -1183,9 +1383,16 @@
         "script": "SAP_PSSU",
         "dag": "By Schedule on Synapse",
         "pipeline": "SAP_PSSU",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 1,
+    "landing": 1,
+    "dag_inactive": 0,
+    "complete": 1,
+    "pending": 0
   },
   "SAP USTK2": {
     "no": 9,
@@ -1194,7 +1401,7 @@
     "total_tables": 2,
     "unique_tables": 2,
     "duplicates": 0,
-    "converted": 1,
+    "converted": 0,
     "tested": 0,
     "tables": [
       {
@@ -1207,7 +1414,9 @@
         "script": "SAP_USTK",
         "dag": "dragon_ustk2",
         "pipeline": "SAP_USTK",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1219,9 +1428,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 0
   },
   "Customer Profile Sales": {
     "no": 10,
@@ -1243,7 +1459,9 @@
         "script": "Customer Profile Sales Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "CustomerProfileSales_Delta",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1255,7 +1473,9 @@
         "script": "Customer Profile Sales DR",
         "dag": "By Schedule on Synapse",
         "pipeline": "PROD_CustomerProfileSales_Object_Prompt_DR",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1267,7 +1487,9 @@
         "script": "Customer Profile Sales Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "CustomerProfileSales_Delta",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1279,7 +1501,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1291,7 +1515,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1303,7 +1529,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1315,7 +1543,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1327,7 +1557,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1339,7 +1571,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1351,7 +1585,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1363,7 +1599,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1375,7 +1613,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1387,7 +1627,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1399,7 +1641,9 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1411,7 +1655,9 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1423,7 +1669,9 @@
         "script": "1_customerprofilesales_dataservice.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1435,7 +1683,9 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1447,7 +1697,9 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1459,7 +1711,9 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1471,7 +1725,9 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1483,7 +1739,9 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1495,7 +1753,9 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1507,7 +1767,9 @@
         "script": "3_customerprofilesales_kpb.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1519,7 +1781,9 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1531,7 +1795,9 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1543,7 +1809,9 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1555,7 +1823,9 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1567,7 +1837,9 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1579,7 +1851,9 @@
         "script": "3_customerprofilesales_ring.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1591,7 +1865,9 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1603,7 +1879,9 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1615,7 +1893,9 @@
         "script": "3_customerprofilesales_servicejobtype.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1627,7 +1907,9 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1639,7 +1921,9 @@
         "script": "4_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1651,7 +1935,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1663,7 +1949,9 @@
         "script": "mastermaindealer.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1675,7 +1963,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1687,7 +1977,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1699,7 +1991,9 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1711,7 +2005,9 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1723,7 +2019,9 @@
         "script": "RefJob.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1735,7 +2033,9 @@
         "script": "RefJobType.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1747,7 +2047,9 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1759,7 +2061,9 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1771,7 +2075,9 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1783,7 +2089,9 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1795,7 +2103,9 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1807,7 +2117,9 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1819,7 +2131,9 @@
         "script": "UnitColor.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1831,7 +2145,9 @@
         "script": "integration_ustk.sql",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1843,7 +2159,9 @@
         "script": "integration_pssu.sql",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1855,7 +2173,9 @@
         "script": "ustk.cfg",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1867,7 +2187,9 @@
         "script": "pssu.cfg",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1879,7 +2201,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1891,7 +2215,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1903,7 +2229,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1915,7 +2243,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1927,7 +2257,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1939,7 +2271,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1951,7 +2285,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1963,7 +2299,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1975,7 +2313,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1987,7 +2327,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1999,7 +2341,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2011,7 +2355,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2023,7 +2369,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2035,7 +2383,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2047,7 +2397,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2059,7 +2411,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2071,7 +2425,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2083,7 +2439,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2095,7 +2453,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2107,7 +2467,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2119,7 +2481,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2131,7 +2495,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2143,7 +2509,9 @@
         "script": "Obj00126988MappingPosService.cfg",
         "dag": "dragon",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2155,7 +2523,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2167,7 +2537,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 7"
       },
       {
         "no": "",
@@ -2179,7 +2550,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 8"
       },
       {
         "no": "",
@@ -2191,7 +2563,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 9"
       },
       {
         "no": "",
@@ -2203,7 +2576,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 10"
       },
       {
         "no": "",
@@ -2215,7 +2589,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 11"
       },
       {
         "no": "",
@@ -2227,7 +2602,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 12"
       },
       {
         "no": "",
@@ -2239,7 +2615,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 13"
       },
       {
         "no": "",
@@ -2251,7 +2628,8 @@
         "script": "5_CustomerProfileSales_Merge_STAR.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 14"
       },
       {
         "no": "",
@@ -2263,7 +2641,8 @@
         "script": "1_customerprofilesales_cdb.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 15"
       },
       {
         "no": "",
@@ -2275,7 +2654,8 @@
         "script": "1_customerprofilesales_dataservice.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 16"
       },
       {
         "no": "",
@@ -2287,7 +2667,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 17"
       },
       {
         "no": "",
@@ -2299,7 +2680,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 18"
       },
       {
         "no": "",
@@ -2311,7 +2693,8 @@
         "script": "1_customerprofilesales_fovallowndealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 19"
       },
       {
         "no": "",
@@ -2323,7 +2706,8 @@
         "script": "1_customerprofilesales_fovalltime.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 20"
       },
       {
         "no": "",
@@ -2335,7 +2719,8 @@
         "script": "1_customerprofilesales_fovlastyear.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 21"
       },
       {
         "no": "",
@@ -2347,7 +2732,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 22"
       },
       {
         "no": "",
@@ -2359,7 +2745,8 @@
         "script": "3_customerprofilesales_kpb.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 23"
       },
       {
         "no": "",
@@ -2371,7 +2758,8 @@
         "script": "1_customerprofilesales_kpb1.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 24"
       },
       {
         "no": "",
@@ -2383,7 +2771,8 @@
         "script": "1_customerprofilesales_kpb2.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 25"
       },
       {
         "no": "",
@@ -2395,7 +2784,8 @@
         "script": "1_customerprofilesales_kpb3.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 26"
       },
       {
         "no": "",
@@ -2407,7 +2797,8 @@
         "script": "1_customerprofilesales_kpb4.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 27"
       },
       {
         "no": "",
@@ -2419,7 +2810,8 @@
         "script": "1_customerprofilesales_lastservice.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 28"
       },
       {
         "no": "",
@@ -2431,7 +2823,8 @@
         "script": "3_customerprofilesales_ring.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 29"
       },
       {
         "no": "",
@@ -2443,7 +2836,8 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 30"
       },
       {
         "no": "",
@@ -2455,7 +2849,8 @@
         "script": "1_customerprofilesales_salesorder.py",
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 31"
       },
       {
         "no": "",
@@ -2467,7 +2862,8 @@
         "script": "3_customerprofilesales_servicejobtype.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 32"
       },
       {
         "no": "",
@@ -2479,7 +2875,8 @@
         "script": "2_customerprofilesales_unitsales.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 33"
       },
       {
         "no": "",
@@ -2491,7 +2888,8 @@
         "script": "4_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 34"
       },
       {
         "no": "",
@@ -2503,7 +2901,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 35"
       },
       {
         "no": "",
@@ -2515,7 +2914,8 @@
         "script": "mastermaindealer.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 36"
       },
       {
         "no": "",
@@ -2527,7 +2927,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 37"
       },
       {
         "no": "",
@@ -2539,7 +2940,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 38"
       },
       {
         "no": "",
@@ -2551,7 +2953,8 @@
         "script": "RefCounterGroup.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 39"
       },
       {
         "no": "",
@@ -2563,7 +2966,8 @@
         "script": "RefEquipment.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 40"
       },
       {
         "no": "",
@@ -2575,7 +2979,8 @@
         "script": "RefJob.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 41"
       },
       {
         "no": "",
@@ -2587,7 +2992,8 @@
         "script": "RefJobType.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 42"
       },
       {
         "no": "",
@@ -2599,7 +3005,8 @@
         "script": "RefTaskList.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 43"
       },
       {
         "no": "",
@@ -2611,7 +3018,8 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 44"
       },
       {
         "no": "",
@@ -2623,7 +3031,8 @@
         "script": "svpkbheader.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 45"
       },
       {
         "no": "",
@@ -2635,7 +3044,8 @@
         "script": "SvPKBHeaderEquipment.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 46"
       },
       {
         "no": "",
@@ -2647,7 +3057,8 @@
         "script": "SvPKBJobDetail.py",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 47"
       },
       {
         "no": "",
@@ -2659,7 +3070,8 @@
         "script": "6_customerprofilesales_delta.sql",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 48"
       },
       {
         "no": "",
@@ -2671,9 +3083,15 @@
         "script": "UnitColor.py",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 49"
       }
-    ]
+    ],
+    "done": 43,
+    "landing": 43,
+    "dag_inactive": 0,
+    "complete": 43,
+    "pending": 34
   },
   "Leads Funnel CRM H1": {
     "no": 11,
@@ -2695,7 +3113,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2707,7 +3127,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2719,7 +3141,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2731,7 +3155,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2743,7 +3169,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2755,7 +3183,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2767,7 +3197,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2779,7 +3211,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2791,7 +3225,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2803,7 +3239,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2815,7 +3253,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2827,7 +3267,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2839,7 +3281,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2851,7 +3295,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2863,7 +3309,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2875,7 +3323,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2887,7 +3337,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2899,7 +3351,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2911,7 +3365,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2923,7 +3379,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2935,7 +3393,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2947,7 +3407,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2959,7 +3421,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2971,7 +3435,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2983,7 +3449,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2995,7 +3463,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3007,7 +3477,9 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3019,7 +3491,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3031,7 +3505,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3043,7 +3519,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3055,7 +3533,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3067,7 +3547,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3079,7 +3561,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3091,7 +3575,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3103,7 +3589,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3115,7 +3603,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3127,7 +3617,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3139,7 +3631,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3151,7 +3645,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3163,7 +3659,9 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3175,7 +3673,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3187,7 +3687,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3199,7 +3701,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3211,7 +3715,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3223,7 +3729,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3235,7 +3743,9 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3247,7 +3757,9 @@
         "script": "GroupMaterialCompositionH3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3259,7 +3771,9 @@
         "script": "GroupMaterialCompositionH3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3271,7 +3785,9 @@
         "script": "GroupMaterialCompositionH3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3283,7 +3799,9 @@
         "script": "GroupMaterialCompositionH3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3295,7 +3813,9 @@
         "script": "PRD_Leadsfunnel_CRMH1",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_Leadsfunnel_CRMH1",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3307,7 +3827,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3319,7 +3841,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3331,7 +3855,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3343,7 +3869,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 54"
       },
       {
         "no": "",
@@ -3355,9 +3882,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 46,
+    "landing": 46,
+    "dag_inactive": 0,
+    "complete": 46,
+    "pending": 9
   },
   "Customer Profile Service": {
     "no": 12,
@@ -3379,7 +3913,9 @@
         "script": "customerprofileservice_base_v3",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_Customerprofileservice_STAR",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3391,7 +3927,9 @@
         "script": "PRD_Customerprofileservice_UNION",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_Customerprofileservice_UNION",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3403,7 +3941,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3415,7 +3955,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3427,16 +3969,23 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   },
   "PKB Service": {
     "no": 13,
     "name": "PKB Service",
     "priority": "P1B",
     "total_tables": 10,
-    "unique_tables": 10,
+    "unique_tables": 9,
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
@@ -3451,7 +4000,9 @@
         "script": "DataTransaksional_DR_Delta_ADLS",
         "dag": "By Schedule on Synapse(Trigger - PKB Service)",
         "pipeline": "PRD_PKBServiceFinal_Integrasi",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3463,7 +4014,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3475,7 +4028,9 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3487,7 +4042,9 @@
         "script": "Data_Transaksi_PKB_DR_Upsert",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > PKBService_DR > PRD_Data_Transaksi_PKB_DR_Main > PRD_Data_Transaksi_PKB_DR",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3499,7 +4056,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3511,7 +4070,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3523,7 +4084,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3535,7 +4098,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3547,7 +4112,9 @@
         "script": "DataFlow_StarDelta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3559,9 +4126,16 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 9
   },
   "Niguri Part": {
     "no": 14,
@@ -3583,7 +4157,9 @@
         "script": "PROD_NB_Data_Revenue_DR",
         "dag": "PRD_DR_DataRevenue:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_DR_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue DR:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_direct_synapse",
         "pipeline": "PRD_DR_DataRevenue",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3595,7 +4171,9 @@
         "script": "-",
         "dag": "PRD_STAR_Delta_DataRevenue:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_STAR_Delta_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\n\nDAG Airflow DataRevenue STAR:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_star_synapse",
         "pipeline": "PRD_STAR_Delta_DataRevenue",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3607,7 +4185,9 @@
         "script": "-",
         "dag": "PRD_DataRevenue_Transformation:\nhttps://web.azuresynapse.net/en/authoring/analyze/pipeline/PRD_DataRevenue_Transformation?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue Transformation:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_transformation_synapse",
         "pipeline": "PRD_DataRevenue_Transformation",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3619,7 +4199,9 @@
         "script": "ZMB51_Base. ZMB51_Upsert",
         "dag": "so2w_dragon_sap",
         "pipeline": "SAP_ZMB51_Fabric",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3631,7 +4213,9 @@
         "script": "ZPYGSDQ00010_Base. ZPYGDQ00010_Upsert",
         "dag": "so2w_dragon_sap",
         "pipeline": "SAP_ZPYGSDQ00010_Fabric",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3643,7 +4227,9 @@
         "script": "union datrev_delta",
         "dag": "PRD_DataRevenue_Union:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_Union_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue UNION:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_union_synapse",
         "pipeline": "PRD_DataRevenue_Union",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3655,7 +4241,9 @@
         "script": "datarevenue_contextual",
         "dag": "dragon_datarevenue",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3667,7 +4255,9 @@
         "script": "masterhet",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3679,7 +4269,9 @@
         "script": "masterhet_latest",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3691,7 +4283,9 @@
         "script": "mastermaterial",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3703,7 +4297,9 @@
         "script": "partsharecontribution",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3715,7 +4311,9 @@
         "script": "salesinstar",
         "dag": "dragon_niguri_partstock",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3727,7 +4325,9 @@
         "script": "stocklevel",
         "dag": "dragon_niguri_partstock",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3739,7 +4339,9 @@
         "script": "targetservicepart",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3751,9 +4353,16 @@
         "script": "datarevenue",
         "dag": "dragon_datarevenue",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 13
   },
   "SDUE": {
     "no": 15,
@@ -3775,7 +4384,9 @@
         "script": "CustomerProfileService_STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3787,7 +4398,9 @@
         "script": "DataRevenue_STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3799,7 +4412,9 @@
         "script": "PKBService _STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3811,7 +4426,9 @@
         "script": "svmappingpit_star",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SvMappingpit",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3823,7 +4440,9 @@
         "script": "report_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3835,7 +4454,9 @@
         "script": "report_sdue_2023.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3847,7 +4468,9 @@
         "script": "view_report_sdue_acap.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3859,7 +4482,9 @@
         "script": "view_report_sdue_aprom.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3871,7 +4496,9 @@
         "script": "view_report_sdue_dataid.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3883,7 +4510,9 @@
         "script": "view_report_sdue_dataid_filler.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3895,7 +4524,9 @@
         "script": "view_report_sdue_dataid_sum.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3907,7 +4538,9 @@
         "script": "view_report_sdue_dataid_union.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3919,7 +4552,9 @@
         "script": "view_report_sdue_dataid_union_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3931,7 +4566,9 @@
         "script": "view_report_sdue_master_dealer.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3943,7 +4580,9 @@
         "script": "view_report_sdue_mechprod.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3955,7 +4594,9 @@
         "script": "view_report_sdue_pit.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3967,7 +4608,9 @@
         "script": "report_sdue_portalahm.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3979,7 +4622,9 @@
         "script": "view_report_sdue_result_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3991,7 +4636,9 @@
         "script": "view_report_sdue_revenue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4003,7 +4650,9 @@
         "script": "view_report_sdue_revenuehgp.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4015,7 +4664,9 @@
         "script": "view_report_sdue_revenueoli.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4027,7 +4678,9 @@
         "script": "view_report_sdue_sales_part_oil.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4039,7 +4692,9 @@
         "script": "view_report_sdue_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4051,7 +4706,9 @@
         "script": "view_report_sdue_tanggal_trans.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4063,7 +4720,9 @@
         "script": "view_report_sdue_toj.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4075,7 +4734,9 @@
         "script": "view_report_sdue_toj11.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4087,7 +4748,9 @@
         "script": "cpservice_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > cpservice",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4099,7 +4762,9 @@
         "script": "DataMekanik_Union",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_DataMekanikCloudera_DataMekanikUnion",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4111,7 +4776,9 @@
         "script": "datarevenue_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > datarevenue",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4123,7 +4790,9 @@
         "script": "Union_df_new",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4135,7 +4804,9 @@
         "script": "pkbservice_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > pkbservice",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4147,7 +4818,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4159,7 +4832,9 @@
         "script": "Ingest to fabric",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SvMappingpit",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4171,7 +4846,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4183,7 +4860,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4195,7 +4874,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_MasterMainDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4207,9 +4888,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 34"
       }
-    ]
+    ],
+    "done": 1,
+    "landing": 1,
+    "dag_inactive": 0,
+    "complete": 1,
+    "pending": 35
   },
   "Grape Phase 1": {
     "no": 16,
@@ -4231,7 +4918,9 @@
         "script": "3_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4243,7 +4932,9 @@
         "script": "ctas targetsales",
         "dag": "http://10.252.136.230:8080/dags/so2w_grape/grid",
         "pipeline": "pipeline_grape_targetsales",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4255,7 +4946,9 @@
         "script": "ctas targetsales",
         "dag": "http://10.252.136.230:8080/dags/so2w_grape/grid",
         "pipeline": "pipeline_grape_targetsales",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4267,7 +4960,9 @@
         "script": "2_customerprofilesales_pkb.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4279,7 +4974,9 @@
         "script": "1_customerprofilesales_pkb_temp.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4291,7 +4988,9 @@
         "script": "1_customerprofilesales_ro_temp.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4303,7 +5002,9 @@
         "script": "1_customerprofilesales_ustk2.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4315,9 +5016,16 @@
         "script": "1_prospecttossu_integrasi.sql",
         "dag": "dragon_prospecttossu - Grid - Airflow",
         "pipeline": "dragon_prospecttossu",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 8
   },
   "Grape Phase 2": {
     "no": 17,
@@ -4339,7 +5047,9 @@
         "script": "evenactivity",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4351,7 +5061,9 @@
         "script": "salessummaryv2",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4363,9 +5075,16 @@
         "script": "notebook_grape_targetsales",
         "dag": "Pipeline Fabric:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/131b4c40-cbc6-4c37-9874-ab13929dc6af?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\nDAG Airflow targetsales:\nhttp://10.252.136.230:8080/dags/so2w_grape/grid?tags=HSO&search=so2w_grape&task_id=targetsales",
         "pipeline": "pipeline_grape_targetsales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "3 Axis Leads Monitoring": {
     "no": 18,
@@ -4387,7 +5106,9 @@
         "script": "Delta_3AxisFu",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > 3Axis_Delta_Daily",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4399,7 +5120,9 @@
         "script": "Delta_Funnel",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > Funnel_Delta_daily",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4411,7 +5134,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_CustomerProfileSales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4423,7 +5148,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Customerprofileservice_UNION",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4435,7 +5162,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4447,7 +5176,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterGroupDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4459,7 +5190,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_MasterMainDealer",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4471,7 +5204,9 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "MasterUnitType UNION",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4483,7 +5218,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4495,7 +5232,9 @@
         "script": "Data flow Upsert Final",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > Funnel_Delta_daily",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4507,7 +5246,9 @@
         "script": "Data flow Upsert Final",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > 3Axis_Delta_Daily",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4519,7 +5260,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4531,7 +5274,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4543,7 +5288,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 12"
       },
       {
         "no": "",
@@ -4555,9 +5301,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 13"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 13
   },
   "USTK2": {
     "no": 19,
@@ -4579,7 +5331,9 @@
         "script": "ustk2",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4591,7 +5345,9 @@
         "script": "stg_ustk2_rfc",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4603,7 +5359,9 @@
         "script": "stg_ustk2_star",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4615,9 +5373,16 @@
         "script": "final_ustk_union",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 4
   },
   "Unit Entry Transformation": {
     "no": 20,
@@ -4639,9 +5404,16 @@
         "script": "Unit Entry_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_UnitEntry",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "Utilisasi STAR BD": {
     "no": 21,
@@ -4663,7 +5435,9 @@
         "script": "",
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_threshold_nms",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4675,7 +5449,9 @@
         "script": "",
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_threshold_nms",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4687,7 +5463,9 @@
         "script": "",
         "dag": "Inas",
         "pipeline": "DE",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4699,7 +5477,9 @@
         "script": "",
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_transformation_astranet_file_leads_ahm",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4711,7 +5491,9 @@
         "script": "bd_h1.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4723,7 +5505,9 @@
         "script": "bd_h23.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4735,7 +5519,9 @@
         "script": "bd_metric_a_j.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4747,7 +5533,9 @@
         "script": "bd_metric_k_q.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4759,7 +5547,9 @@
         "script": "bd_metric_r_y.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4771,7 +5561,9 @@
         "script": "bd_metric_z_ad.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4783,7 +5575,9 @@
         "script": "bd_partsales.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4795,7 +5589,9 @@
         "script": "bd_pc.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4807,7 +5603,9 @@
         "script": "bd_pkb.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4819,7 +5617,9 @@
         "script": "bd_po_h23.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4831,7 +5631,9 @@
         "script": "bd_po_suggestion.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4843,7 +5645,9 @@
         "script": "monitoringdocumentsalescomplete",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4855,7 +5659,9 @@
         "script": "monitoringdocumentsalescomplete_star",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4867,9 +5673,16 @@
         "script": "salesinstar",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 4,
+    "landing": 4,
+    "dag_inactive": 0,
+    "complete": 4,
+    "pending": 14
   },
   "Data Revenue": {
     "no": 22,
@@ -4891,7 +5704,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4903,7 +5718,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4915,9 +5732,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 2"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 2
   },
   "New Data Point - MonitoringKuitansi": {
     "no": 23,
@@ -4939,9 +5762,16 @@
         "script": "monitoringbku_star",
         "dag": "dragon_monitoringkuitansi_all",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "New Data Point - CDB x MotorkuX Insight": {
     "no": 24,
@@ -4963,7 +5793,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4975,7 +5807,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4987,7 +5821,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4999,7 +5835,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5011,7 +5849,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5023,7 +5863,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5035,7 +5877,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5047,7 +5891,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5059,7 +5905,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5071,7 +5919,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5083,7 +5933,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5095,7 +5947,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5107,7 +5961,9 @@
         "script": "Landing_Databricks_Motorkux_Framework",
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5119,7 +5975,9 @@
         "script": "smart_stock_sales_location_customer",
         "dag": "cdbxmotorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5131,7 +5989,9 @@
         "script": "zpygsdr00263",
         "dag": "motorkuxfunnelworkshop",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5143,7 +6003,9 @@
         "script": "cdbxmotorkux",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5155,7 +6017,9 @@
         "script": "datarevenue",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5167,7 +6031,9 @@
         "script": "motorkuxfunnelworkshop",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5179,7 +6045,9 @@
         "script": "motorkuxkpbperformance",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5191,7 +6059,9 @@
         "script": "motorkuxleadsh1",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5203,7 +6073,9 @@
         "script": "motorkuxleadsh2",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5215,7 +6087,9 @@
         "script": "motorkuxleadsh3",
         "dag": "motorkuxsummary",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5227,9 +6101,16 @@
         "script": "PRD_CPService_UNION_Initial",
         "dag": "PRD_CustomerProfileService:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_Customerprofileservice_STAR?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\n\nDAG Airflow CustomerProfileService Synapse:\nhttp://10.252.136.230:8080/dags/dragon_motorkux/grid?task_id=customerprofileservice_synapse&tab=code",
         "pipeline": "PRD_CustomerProfileService_STAR",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 13,
+    "landing": 13,
+    "dag_inactive": 0,
+    "complete": 13,
+    "pending": 10
   },
   "Prospect To SSU": {
     "no": 25,
@@ -5251,7 +6132,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5263,7 +6146,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5275,7 +6160,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5287,9 +6174,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 3"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "Purifikasi HSO": {
     "no": 26,
@@ -5311,7 +6204,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5323,7 +6218,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5335,7 +6232,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5347,7 +6246,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5359,7 +6260,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5371,7 +6274,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5383,9 +6288,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 7
   },
   "RO Leads": {
     "no": 27,
@@ -5407,7 +6319,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5419,7 +6333,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5431,7 +6347,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5443,7 +6361,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5455,9 +6375,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   },
   "Utilisasi Dragon": {
     "no": 28,
@@ -5479,7 +6406,9 @@
         "script": "PRD_Utilisasi_Dragon",
         "dag": "PRD_UtilisasiDragon",
         "pipeline": "PRD_UtilisasiDragon",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5491,7 +6420,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5503,7 +6434,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5515,9 +6448,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 2
   },
   "Smart Stock": {
     "no": 29,
@@ -5539,7 +6479,9 @@
         "script": "smart_stock_sales.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5551,7 +6493,9 @@
         "script": "smart_stock_sales_location.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5563,7 +6507,9 @@
         "script": "smart_stock_sales_location_customer_.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5575,7 +6521,9 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5587,9 +6535,16 @@
         "script": "-",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": ""
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 3
   },
   "Customer Persona Segmentation": {
     "no": 30,
@@ -5611,7 +6566,9 @@
         "script": "[DE] - HSO_Customer_Persona_Percentile",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Percentile",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5623,7 +6580,9 @@
         "script": "[DE] - HSO_Customer_Persona_Percentile",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Percentile",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5635,7 +6594,9 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5647,7 +6608,9 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5659,9 +6622,16 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   },
   "Market Share Data": {
     "no": 31,
@@ -5683,7 +6653,9 @@
         "script": "",
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_marketsharedata",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5695,7 +6667,9 @@
         "script": "",
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_marketsharedatatype",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5707,7 +6681,9 @@
         "script": "marketsharedata.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_marketsharedata/grid?task_id=marketsharedata",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5719,7 +6695,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5731,9 +6709,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 4"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 2
   },
   "LCR": {
     "no": 32,
@@ -5755,7 +6739,9 @@
         "script": "-",
         "dag": "By Schedule on Synapse",
         "pipeline": "Target_LCR_File",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5767,7 +6753,9 @@
         "script": "Script_LCR_Transformation\nScript_LCR_Transformation_2",
         "dag": "By Schedule on Synapse",
         "pipeline": "LCR_Transformation",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5779,9 +6767,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 1,
+    "landing": 1,
+    "dag_inactive": 0,
+    "complete": 1,
+    "pending": 2
   },
   "BTL Transformation": {
     "no": 33,
@@ -5803,7 +6798,9 @@
         "script": "DeltaFormat_BTL",
         "dag": "By Schedule on Synapse",
         "pipeline": "BTL_Transformation_FullLoad",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5815,9 +6812,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 2
   },
   "Data Mekanik": {
     "no": 34,
@@ -5839,7 +6843,9 @@
         "script": "PRD_DataMekanik_Transformation",
         "dag": "PRD_DataMekanik_Transformation",
         "pipeline": "PRD_DataMekanik_Transformation",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5851,7 +6857,9 @@
         "script": "DataMekanik",
         "dag": "Pipeline Fabric:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/cab721c3-4ece-48c5-b632-86265ff0cf24?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\nDAG Airflow Data Mekanik:\nhttp://10.252.136.230:8080/dags/dragon_data_mekanik/grid",
         "pipeline": "PRD_DataMekanik",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5863,7 +6871,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5875,7 +6885,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5887,7 +6899,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5899,7 +6913,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 4"
       },
       {
         "no": "",
@@ -5911,9 +6926,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 5"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   },
   "Data Pit": {
     "no": 35,
@@ -5935,7 +6956,9 @@
         "script": "",
         "dag": "Scheduled on Synapse",
         "pipeline": "Datapit_Transformation",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5947,7 +6970,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5959,7 +6984,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5971,9 +6998,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 3"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "Data Insight": {
     "no": 36,
@@ -5995,7 +7028,9 @@
         "script": "DataInsightHotline_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Delta",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6007,7 +7042,9 @@
         "script": "Hotline_Test_DR_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_DR",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6019,7 +7056,9 @@
         "script": "DataInsightHotline_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Final",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6031,7 +7070,9 @@
         "script": "Script_DataInsightHotline_Transformation_Delta\nScript_DataInisghtHotline_Transformation_Delta_M_1",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Transformation",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6043,7 +7084,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6055,7 +7098,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6067,7 +7112,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6079,7 +7126,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6091,7 +7140,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 7"
       },
       {
         "no": "",
@@ -6103,9 +7153,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 8"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 8
   },
   "Part Stock": {
     "no": 37,
@@ -6127,7 +7183,9 @@
         "script": "Cloudera_Enhance",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6139,7 +7197,9 @@
         "script": "Partstock_Transform",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6151,7 +7211,9 @@
         "script": "Partstock_Union",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6163,9 +7225,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 4
   },
   "Dealer General Data": {
     "no": 38,
@@ -6187,7 +7256,9 @@
         "script": "1. ctas h1\n2. DeltaScript",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6199,7 +7270,9 @@
         "script": "ctas h1",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6211,7 +7284,9 @@
         "script": "DeltaScript_Monthly",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_FULL",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6223,7 +7298,9 @@
         "script": "",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6235,7 +7312,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6247,7 +7326,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6259,7 +7340,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6271,9 +7354,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 7"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 7
   },
   "Monitoring BKU": {
     "no": 39,
@@ -6295,7 +7384,9 @@
         "script": "final_monitoringbku_union",
         "dag": "dragon_monitoring_bku",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6307,7 +7398,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6319,7 +7412,9 @@
         "script": "stg_monitoringbku_star",
         "dag": "dragon_monitoring_bku",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6331,7 +7426,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6343,9 +7440,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 4"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 4
   },
   "Funnel Leads to Sales": {
     "no": 40,
@@ -6367,16 +7470,23 @@
         "script": "Funnel Leads To Sales",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_FunnelLeadtoSales",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "Monitoring Sales Document STNK & BPKB": {
     "no": 41,
     "name": "Monitoring Sales Document STNK & BPKB",
     "priority": "P4",
     "total_tables": 2,
-    "unique_tables": 2,
+    "unique_tables": 1,
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
@@ -6391,7 +7501,9 @@
         "script": "monitoringbku",
         "dag": "dragon_monitoring_stnk_bpkb",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6403,9 +7515,16 @@
         "script": "monitoringbku_cloudera",
         "dag": "dragon_monitoring_stnk_bpkb",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "NMS - Data Hotline Detail": {
     "no": 42,
@@ -6427,9 +7546,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "NMS - Part Consumption Detail": {
     "no": 43,
@@ -6451,9 +7577,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "NMS - Stock Level Summary": {
     "no": 44,
@@ -6475,7 +7608,9 @@
         "script": "Daily_Stock",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 6_StockLevelSummarymonthyear",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6487,7 +7622,9 @@
         "script": "StockLevelSummaryMD",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 7_StockLevelSummaryMD",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6499,7 +7636,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6511,7 +7650,9 @@
         "script": "Ingest to Fabric",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 9_StockLevelSummary_MD_OneLake",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6523,7 +7664,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6535,16 +7678,22 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 5"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   },
   "Report SO REM": {
     "no": 45,
     "name": "Report SO REM",
     "priority": "P4",
     "total_tables": 5,
-    "unique_tables": 4,
+    "unique_tables": 3,
     "duplicates": 1,
     "converted": 0,
     "tested": 0,
@@ -6559,7 +7708,9 @@
         "script": "table",
         "dag": "",
         "pipeline": "PRD_ReportSORem",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6571,7 +7722,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6583,7 +7736,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6595,7 +7750,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6607,9 +7764,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 3"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "Sales In Sales Out": {
     "no": 46,
@@ -6631,7 +7794,9 @@
         "script": "",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_PCD_H3_Upload_File",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6643,7 +7808,9 @@
         "script": "TargetSalesInOut_File",
         "dag": "By Schedule on Synapse",
         "pipeline": "TargetSalesInOut_File",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6655,7 +7822,9 @@
         "script": "SalesInSalesOut_Transformation_Fullload",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SalesInSalesOut_Transformation",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6667,7 +7836,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6679,7 +7850,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6691,9 +7864,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 5"
       }
-    ]
+    ],
+    "done": 2,
+    "landing": 2,
+    "dag_inactive": 0,
+    "complete": 2,
+    "pending": 3
   },
   "SPR": {
     "no": 47,
@@ -6715,7 +7894,9 @@
         "script": "Script cps_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6727,7 +7908,9 @@
         "script": "Script number_workdays",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6739,7 +7922,9 @@
         "script": "Script psf_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6751,7 +7936,9 @@
         "script": "Script SPR_Transformation",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6763,7 +7950,9 @@
         "script": "Script target_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6775,7 +7964,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6787,7 +7978,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6799,9 +7992,15 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Duplicate",
+        "notes": "Duplicate of row 7"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 7
   },
   "Work Days Akumulatif": {
     "no": 48,
@@ -6823,7 +8022,9 @@
         "script": "",
         "dag": "By Schedule on Synapse",
         "pipeline": "Deploy_WorkDaysAkumulatif",
-        "status": "Production"
+        "status": "Landing",
+        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6835,7 +8036,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6847,9 +8050,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 1,
+    "landing": 1,
+    "dag_inactive": 0,
+    "complete": 1,
+    "pending": 2
   },
   "Lead Time Sales Header": {
     "no": 49,
@@ -6871,7 +8081,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6883,7 +8095,9 @@
         "script": "leadtimesalesheader_fromspk_star.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_leadtimesalesheader_fromspk/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6895,9 +8109,16 @@
         "script": "leadtimesalesheader_fromspk_union.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_leadtimesalesheader_fromspk/grid",
         "pipeline": "DBT",
-        "status": "Production"
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 3
   },
   "Report Monitoring AR dan Cashbank": {
     "no": 50,
@@ -6919,7 +8140,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6931,9 +8154,16 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 2
   },
   "Simpart": {
     "no": 51,
@@ -6955,9 +8185,16 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 1
   },
   "Sugor Ahass Pss": {
     "no": 52,
@@ -6979,7 +8216,9 @@
         "script": "SugorAhassPss_Star",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 2_SugorAhassPss_STAR",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6991,7 +8230,9 @@
         "script": "Sugor_Mapping",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -7003,7 +8244,9 @@
         "script": "Delta_SugorAhassPss_UNION",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 3_SugorAhassPss_UNION",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -7015,7 +8258,9 @@
         "script": "Sugor Daily",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -7027,8 +8272,15 @@
         "script": "Delta_Fabric",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": ""
+        "status": "Pending",
+        "notes": "",
+        "test_time": "-"
       }
-    ]
+    ],
+    "done": 0,
+    "landing": 0,
+    "dag_inactive": 0,
+    "complete": 0,
+    "pending": 5
   }
 }

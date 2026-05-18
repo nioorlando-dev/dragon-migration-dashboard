@@ -418,6 +418,14 @@
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
   }
+  .badge.tested { color: #7c6cfc; background: rgba(124,108,252,0.08); border-color: rgba(124,108,252,0.25); }
+  .badge.tested .dot { background: #7c6cfc; box-shadow: 0 0 6px rgba(124,108,252,0.5); }
+  .badge.landing { color: #38bdf8; background: rgba(56,189,248,0.08); border-color: rgba(56,189,248,0.25); }
+  .badge.landing .dot { background: #38bdf8; }
+  .badge.dag-inactive { color: #f472b6; background: rgba(244,114,182,0.08); border-color: rgba(244,114,182,0.25); }
+  .badge.dag-inactive .dot { background: #f472b6; }
+  .badge.duplicate { color: #94a3b8; background: rgba(148,163,184,0.08); border-color: rgba(148,163,184,0.25); }
+  .badge.duplicate .dot { background: #94a3b8; }
 
   .prio {
     font-family: 'JetBrains Mono', monospace;
@@ -1834,25 +1842,28 @@ async function renderIndicators(root) {
   }
 
   // Build indicator list from indicators.json ONLY
-  // Schema: { no, name, priority, total_tables, unique_tables, duplicates, converted, tested, tables[] }
+  // Schema: { no, name, priority, total_tables, unique_tables, duplicates, done, tested, landing, dag_inactive, tables[] }
   const indList = Object.values(indicators).map(ind => {
     const obj = {
       no: ind.no || 0,
       name: ind.name,
       priority: ind.priority,
-      totalTables: ind.unique_tables || 0,        // unique tables (after dedup)
-      rawTotal: ind.total_tables || ind.unique_tables || 0,
+      totalTables: ind.total_tables || 0,         // total rows (including duplicates)
+      uniqueTables: ind.unique_tables || 0,       // unique tables (after dedup)
       duplicates: ind.duplicates || 0,
-      converted: ind.converted || 0,
+      done: ind.done || ind.complete || 0,        // all done (tested + landing + dag_inactive)
       tested: ind.tested || 0,
+      landing: ind.landing || 0,
+      dagInactive: ind.dag_inactive || 0,
       tables: ind.tables || []
     };
-    obj.pending = obj.totalTables - obj.converted;
-    obj.progress = obj.totalTables > 0 ? Math.round(obj.converted / obj.totalTables * 100) : 0;
+    obj.complete = obj.done;  // complete = done (excluding duplicates)
+    obj.pending = obj.uniqueTables - obj.done;
+    obj.progress = obj.uniqueTables > 0 ? Math.round(obj.done / obj.uniqueTables * 100) : 0;
     // Stage based on counts
-    if (obj.tested === obj.totalTables && obj.totalTables > 0) obj.stage = 'complete';
+    if (obj.done === obj.uniqueTables && obj.uniqueTables > 0) obj.stage = 'complete';
     else if (obj.tested > 0) obj.stage = 'test';
-    else if (obj.converted > 0) obj.stage = 'convert';
+    else if (obj.done > 0) obj.stage = 'convert';
     else obj.stage = 'pending';
     return obj;
   }).sort((a, b) => {
@@ -1869,12 +1880,11 @@ async function renderIndicators(root) {
   
   // ALL stats from indicators.json - INDEPENDENT
   const totalTables = indList.reduce((s, i) => s + i.totalTables, 0);
-  const totalConverted = indList.reduce((s, i) => s + i.converted, 0);
+  const totalUnique = indList.reduce((s, i) => s + i.uniqueTables, 0);
+  const totalDone = indList.reduce((s, i) => s + i.done, 0);
   const totalTested = indList.reduce((s, i) => s + i.tested, 0);
-  const totalPending = totalTables - totalConverted;
-  const indTested = indList.filter(i => i.tested > 0).length;
-  const convertedPct = totalTables > 0 ? Math.round(totalConverted/totalTables*100) : 0;
-  const testedPct = totalTables > 0 ? Math.round(totalTested/totalTables*100) : 0;
+  const donePct = totalUnique > 0 ? Math.round(totalDone/totalUnique*100) : 0;
+  const testedPct = totalUnique > 0 ? Math.round(totalTested/totalUnique*100) : 0;
 
   // Update badge
   const badge = document.querySelector('[data-badge="indicators"]');
@@ -1888,9 +1898,9 @@ async function renderIndicators(root) {
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
         ${statCard('Total Indicators', indList.length, iconLayers(), 'from Plan Detail HSO Dragon', '')}
         ${statCard('Total Tables', totalTables, iconHash(), 'all tables mapped', '')}
-        ${statCard('Converted', totalConverted, iconCheck(), convertedPct + '% of total', totalConverted > 0 ? 'up' : '')}
+        ${statCard('Done', totalDone, iconCheck(), donePct + '% of total', totalDone > 0 ? 'up' : '')}
         ${statCard('Tested', totalTested, iconCheck(), testedPct + '% of total', totalTested > 0 ? 'up' : '')}
-        ${statCard('Pending', totalPending, iconCheck(), 'not started yet', '')}
+        ${statCard('Total Done', totalDone, iconCheck(), 'tables completed', totalDone > 0 ? 'up' : '')}
       </div>
 
       <div class="filters" style="margin-bottom:20px">
@@ -1955,16 +1965,16 @@ async function renderIndicators(root) {
 
 function indCard(ind) {
   const pct = ind.progress || 0;
-  const isComplete = ind.tested === ind.totalTables && ind.totalTables > 0;
+  const isComplete = ind.done === ind.uniqueTables && ind.uniqueTables > 0;
   
   // Stage logic based on indicators.json fields
   let currentStage = 'CONVERT';
   if (isComplete) currentStage = 'COMPLETE';
   else if (ind.tested > 0) currentStage = 'TEST';
-  else if (ind.converted > 0) currentStage = 'CONVERT';
+  else if (ind.done > 0) currentStage = 'CONVERT';
   
   const stages = [
-    { name: 'CONVERT', done: ind.converted > 0, active: currentStage === 'CONVERT' },
+    { name: 'CONVERT', done: ind.done > 0, active: currentStage === 'CONVERT' },
     { name: 'TEST', done: ind.tested > 0, active: currentStage === 'TEST' },
     { name: 'COMPLETE', done: isComplete, active: currentStage === 'COMPLETE' },
   ];
@@ -1972,7 +1982,7 @@ function indCard(ind) {
   let currentStageText = '';
   if (isComplete) {
     currentStageText = '<span class="pipe-current-stage" style="color:var(--green)"><span class="dot" style="background:var(--green);animation:none"></span>Complete</span>';
-  } else if (ind.converted === 0 && ind.tested === 0) {
+  } else if (ind.done === 0 && ind.tested === 0) {
     currentStageText = '<span class="pipe-current-stage" style="color:var(--text-mute)"><span class="dot" style="background:var(--text-mute);animation:none"></span>Pending</span>';
   } else {
     currentStageText = '<span class="pipe-current-stage"><span class="dot"></span>On ' + currentStage + '</span>';
@@ -1997,13 +2007,13 @@ function indCard(ind) {
       ${stagesHtml}
       ${currentStageText}
       <div class="pipe-meta mono">
-        <span>${iconTask()} ${ind.totalTables} tables</span>
-        <span style="color:var(--green)">${ind.converted} converted</span>
+        <span>${iconTask()} ${ind.uniqueTables} tables</span>
+        <span style="color:var(--green)">${ind.done} done</span>
         <span style="color:var(--blue)">${ind.tested} tested</span>
       </div>
       <div class="pipe-progress">
         <span class="prog-track"><span class="prog-fill" data-pct="${pct}" style="width:0%"></span></span>
-        <span class="meta"><b style="color:var(--text)">${pct}%</b> · ${ind.converted}/${ind.totalTables}</span>
+        <span class="meta"><b style="color:var(--text)">${pct}%</b> · ${ind.done}/${ind.uniqueTables}</span>
       </div>
     </div>
   `;
@@ -2053,11 +2063,10 @@ function showIndicatorDetail(name) {
   // Use indicators.json schema fields (independent)
   const tables = ind.tables || [];
   const rawTotal = ind.total_tables || tables.length;
-  const uniqueTables = ind.unique_tables || rawTotal;
-  const converted = ind.converted || 0;
+  const done = ind.done || ind.complete || 0;
   const tested = ind.tested || 0;
-  const complete = (tested === uniqueTables && uniqueTables > 0) ? uniqueTables : 0;
-  const pending = uniqueTables - converted;
+  const duplicates = ind.duplicates || 0;
+  const complete = done;  // Complete = done (excluding duplicates)
 
   panel.innerHTML = `
     <div class="panel-head">
@@ -2076,14 +2085,14 @@ function showIndicatorDetail(name) {
     <div class="panel-body">
       <div class="panel-stats">
         <div class="cell"><div class="l">Total Tables</div><div class="v">${rawTotal}</div></div>
-        <div class="cell"><div class="l">Converted</div><div class="v" style="color:var(--green)">${converted}</div></div>
+        <div class="cell"><div class="l">Done</div><div class="v" style="color:var(--green)">${done}</div></div>
         <div class="cell"><div class="l">Tested</div><div class="v" style="color:#7c6cfc">${tested}</div></div>
         <div class="cell"><div class="l">Complete</div><div class="v" style="color:var(--blue)">${complete}</div></div>
-        <div class="cell"><div class="l">Pending</div><div class="v" style="color:var(--text-dim)">${pending}</div></div>
+        <div class="cell"><div class="l">Duplicate</div><div class="v" style="color:var(--text-dim)">${duplicates}</div></div>
       </div>
 
       <div style="display:flex;gap:14px;margin-bottom:18px;font-size:12px;flex-wrap:wrap">
-        ${flagPill('Converted', converted > 0)}
+        ${flagPill('Done', done > 0)}
         ${flagPill('Tested', tested > 0)}
         ${flagPill('Complete', complete > 0)}
       </div>
@@ -2095,6 +2104,7 @@ function showIndicatorDetail(name) {
           <thead>
             <tr>
               <th>Database</th>
+              <th>Table</th>
               <th>Script</th>
               <th>Status</th>
               <th>Test Time</th>
@@ -2103,54 +2113,30 @@ function showIndicatorDetail(name) {
           </thead>
           <tbody>
             ${tables.map(t => {
-              // Status logic: Done (converted), Tested, Landing, Pending, DAG Inactive
+              // Use status from indicators.json (pre-computed by build script)
+              const status = t.status || 'Pending';
               let statusClass = 'pending';
-              let statusText = t.status || 'Pending';
-              let notes = '';
               
-              // Determine status based on available data
-              const hasScript = t.script && t.script !== '-' && t.script !== '';
-              const isLanding = (t.asset || '').toLowerCase().includes('landing') || (t.process || '').toLowerCase() === 'extract';
-              const isDagInactive = t.dag && t.dag === '-';
+              if (status === 'Tested') statusClass = 'tested';
+              else if (status === 'Done') statusClass = 'done';
+              else if (status === 'Landing') statusClass = 'landing';
+              else if (status === 'DAG Inactive') statusClass = 'dag-inactive';
+              else if (status === 'Duplicate') statusClass = 'duplicate';
+              else statusClass = 'pending';
               
-              if (t.status === 'Tested' || t.status === 'tested') {
-                statusClass = 'tested';
-                statusText = 'Tested';
-                notes = 'SUCCESS: ' + (t.table || '');
-              } else if (t.status === 'Done' || t.status === 'Converted' || hasScript) {
-                statusClass = 'done';
-                statusText = 'Done';
-                notes = hasScript ? 'Output: ' + t.script : '';
-              } else if (isDagInactive) {
-                statusClass = 'dag-inactive';
-                statusText = 'DAG Inactive';
-                notes = 'Data sudah ada di GCS/BQ';
-              } else if (isLanding) {
-                statusClass = 'landing';
-                statusText = 'Landing';
-                notes = 'Data Landing - sudah ada di GCS/BQ';
-              } else {
-                statusClass = 'pending';
-                statusText = 'Pending';
-                notes = '';
-              }
+              // Row styling: ONLY DAG Inactive gets pink background
+              const rowStyle = statusClass === 'dag-inactive' ? 'background:rgba(255,182,193,0.15);' : '';
               
-              // Row styling
-              const rowStyle = statusClass === 'dag-inactive' ? 'background:rgba(255,193,7,0.08);' 
-                : statusClass === 'done' ? 'background:rgba(0,208,132,0.06);' 
-                : statusClass === 'tested' ? 'background:rgba(124,108,252,0.06);'
-                : '';
-              
-              const testTime = statusClass === 'tested' ? '2:05' : (statusClass === 'done' ? '2:30' : '-');
-              const displayDb = t.database || '-';
-              const displayScript = t.script || '-';
+              const testTime = t.test_time || '-';
+              const notes = t.notes || '-';
               
               return '<tr style="' + rowStyle + '">' +
-                '<td style="font-size:11px">' + escapeHtml(displayDb) + '</td>' +
-                '<td class="mono" style="font-size:11px">' + escapeHtml(displayScript) + '</td>' +
-                '<td><span class="badge ' + statusClass + '"><span class="dot"></span>' + statusText + '</span></td>' +
+                '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
+                '<td class="mono" style="font-size:11px">' + escapeHtml(t.table || '-') + '</td>' +
+                '<td class="mono" style="font-size:11px">' + escapeHtml(t.script || '-') + '</td>' +
+                '<td><span class="badge ' + statusClass + '"><span class="dot"></span>' + status + '</span></td>' +
                 '<td style="font-size:11px;text-align:center">' + testTime + '</td>' +
-                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notes || '-') + '</td>' +
+                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notes) + '</td>' +
                 '</tr>';
             }).join('')}
           </tbody>
