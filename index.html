@@ -1132,8 +1132,10 @@ function renderOverview(root) {
   const testedPipelinesList = allPipesForOutput
     .filter(r => r.tested && r.output_tables > 0)
     .map(r => {
-      const testedCount = r.tasks.filter(t => t.tested).length;
-      const totalCount = r.tasks.length;
+      // Exclude SKIP tasks from count
+      const nonSkipTasks = r.tasks.filter(t => t.status !== 'SKIP' && t.status !== 'Skip');
+      const testedCount = nonSkipTasks.filter(t => t.tested).length;
+      const totalCount = nonSkipTasks.length;
       return {
         name: r.name,
         priority: r.priority,
