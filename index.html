@@ -2101,9 +2101,9 @@ function showIndicatorDetail(name) {
               }
               else if (t.status === 'Complete') { statusClass = 'done'; statusText = 'Complete'; }
               else if (!t.dag_active) {
-                statusClass = 'skip';
+                statusClass = 'dag-inactive';
                 statusText = 'DAG Inactive';
-                notes = 'Tidak perlu convert (DAG non-active)';
+                notes = 'Data sudah ada di GCS/BQ';
               }
               else if (t.status === 'Skip') {
                 statusClass = 'skip';
@@ -2133,9 +2133,9 @@ function showIndicatorDetail(name) {
                 }
               }
               
-              const rowStyle = !t.dag_active ? 'background:rgba(255,105,180,0.08);' : '';
-              const badgeStyle = !t.dag_active ? 'background:rgba(255,105,180,0.15);color:#ff69b4;' : '';
-              const dotStyle = !t.dag_active ? 'background:#ff69b4;' : '';
+              const rowStyle = !t.dag_active ? 'background:rgba(239,68,68,0.08);' : '';
+              const badgeStyle = !t.dag_active ? 'background:rgba(239,68,68,0.15);color:#ef4444;' : '';
+              const dotStyle = !t.dag_active ? 'background:#ef4444;' : '';
               const notesTrunc = (notes || '-').substring(0, 60);
               const testTime = t.test_time || '-';
               
