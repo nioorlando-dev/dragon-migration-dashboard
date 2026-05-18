@@ -183,21 +183,17 @@ async function loadData() {
     const data = await res.json();
 
     indicatorData = Object.values(data).map(ind => {
-      ind.totalTables = ind.tables.length;
-      ind.duplicates = ind.tables.filter(t => t.is_duplicate).length;
-      ind.uniqueTables = ind.totalTables - ind.duplicates;
-      ind.converted = ind.tables.filter(t => t.status === 'Converted' && !t.is_duplicate).length;
-      ind.tested = ind.tables.filter(t => t.status === 'Tested' && !t.is_duplicate).length;
-      ind.landing = ind.tables.filter(t => t.status === 'Landing' && !t.is_duplicate).length;
-      ind.skip = ind.tables.filter(t => t.status === 'Skip' && !t.is_duplicate).length;
-      ind.pending = ind.tables.filter(t => t.status === 'Pending' && !t.is_duplicate).length;
-      // Progress = (Converted + Tested) / (Unique - Skip - Landing) * 100
-      const countable = ind.uniqueTables - ind.skip - ind.landing;
-      ind.progress = countable > 0 ? Math.round((ind.converted + ind.tested) / countable * 100) : 100;
+      // Use pre-calculated values from JSON
+      ind.uniqueTables = ind.unique_tables || 0;
+      ind.converted = ind.converted || 0;
+      ind.tested = ind.tested || 0;
+      ind.duplicates = ind.duplicates || 0;
+      // Progress = converted / unique * 100
+      ind.progress = ind.uniqueTables > 0 ? Math.round(ind.converted / ind.uniqueTables * 100) : 0;
       return ind;
     }).sort((a, b) => {
       const order = { P1A: 0, P1B: 1, P2: 2, P3: 3, P4: 4, P5: 5 };
-      return (order[a.priority] || 5) - (order[b.priority] || 5) || (ind.no || 0) - (ind.no || 0);
+      return (order[a.priority] || 5) - (order[b.priority] || 5) || (a.no || 0) - (b.no || 0);
     });
 
     updateUI();
@@ -220,7 +216,7 @@ function updateUI(filter = 'all') {
   const totalUnique = indicatorData.reduce((s, i) => s + i.uniqueTables, 0);
   const totalConverted = indicatorData.reduce((s, i) => s + i.converted, 0);
   const totalTested = indicatorData.reduce((s, i) => s + i.tested, 0);
-  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalUnique} tables · ${totalConverted} converted · ${totalTested} tested`;
+  document.getElementById('totalStats').textContent = `${totalUnique} tables · ${totalConverted} converted · ${totalTested} tested`;
 
   // Render cards
   const grid = document.getElementById('cardsGrid');
@@ -264,10 +260,10 @@ function showDetail(name) {
   const ind = indicatorData.find(i => i.name === name);
   if (!ind) return;
   
+  const pending = ind.uniqueTables - ind.converted;
   document.getElementById('modalTitle').textContent = `${ind.name} (${ind.priority})`;
   document.getElementById('modalBody').innerHTML = `
-    ${ind.note ? `<div style="background:#1a2d1a;border:1px solid #305030;padding:12px;border-radius:8px;margin-bottom:16px;font-size:13px">📊 ${ind.note}</div>` : ''}
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:20px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px">
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
         <div class="stat-value">${ind.uniqueTables}</div>
         <div class="stat-label">Total Tables</div>
@@ -281,14 +277,20 @@ function showDetail(name) {
         <div class="stat-label">Tested</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:var(--text-mute)">${ind.landing + ind.skip}</div>
-        <div class="stat-label">Landing/Skip</div>
-      </div>
-      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:var(--green)">${ind.progress}%</div>
-        <div class="stat-label">Progress</div>
+        <div class="stat-value" style="color:var(--yellow)">${pending}</div>
+        <div class="stat-label">Pending</div>
       </div>
     </div>
+    <div style="margin-bottom:16px;padding:12px;background:var(--card);border-radius:8px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+        <span style="font-size:12px;color:var(--text-dim)">Progress</span>
+        <span style="font-size:12px;color:var(--green)">${ind.progress}%</span>
+      </div>
+      <div style="height:8px;background:var(--border);border-radius:4px;overflow:hidden">
+        <div style="height:100%;width:${ind.progress}%;background:var(--green)"></div>
+      </div>
+    </div>
+    ${ind.tables && ind.tables.length > 0 ? `
     <table class="data-table">
       <thead>
         <tr>
@@ -296,12 +298,11 @@ function showDetail(name) {
           <th>Database</th>
           <th>Script</th>
           <th>Status</th>
-          <th>Test Time</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
-        ${ind.tables.filter(t => !t.is_duplicate).map(t => `
+        ${ind.tables.map(t => `
           <tr>
             <td class="mono">${t.table || '-'}</td>
             <td class="mono" style="font-size:11px">${t.database || '-'}</td>
@@ -311,13 +312,13 @@ function showDetail(name) {
               t.status === 'Converted' ? 'rgba(0,208,132,0.2);color:var(--green)' : 
               t.status === 'Pending' ? 'rgba(245,166,35,0.2);color:var(--yellow)' : 
               'rgba(107,107,107,0.2);color:var(--text-mute)'
-            }">${t.status}</span></td>
-            <td class="mono" style="font-size:11px">${t.test_time || '-'}</td>
-            <td style="font-size:11px;color:var(--text-dim)">${t.catatan || '-'}</td>
+            }">${t.status || 'Pending'}</span></td>
+            <td style="font-size:11px;color:var(--text-dim)">${t.notes || '-'}</td>
           </tr>
         `).join('')}
       </tbody>
     </table>
+    ` : '<p style="color:var(--text-mute);text-align:center;padding:40px">No table data yet - will be populated when indicator is worked on</p>'}
   `;
   document.getElementById('modalBackdrop').classList.add('show');
 }
