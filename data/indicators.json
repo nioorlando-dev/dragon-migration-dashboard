@@ -1113,7 +1113,7 @@
     "unique_tables": 17,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -1181,9 +1181,9 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygmme00049a",
+        "test_time": "02:18"
       },
       {
         "no": "",
@@ -1354,8 +1354,8 @@
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 17
+    "done": 1,
+    "pending": 16
   },
   "SAP PSSU": {
     "no": 8,
@@ -1393,7 +1393,7 @@
     "unique_tables": 2,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 2,
     "tables": [
       {
         "no": "",
@@ -1405,9 +1405,9 @@
         "script": "SAP_USTK",
         "dag": "dragon_ustk2",
         "pipeline": "SAP_USTK",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygdo00004_ustk2",
+        "test_time": "02:18"
       },
       {
         "no": "",
@@ -1419,13 +1419,13 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygdo00004_ustk2",
+        "test_time": "02:18"
       }
     ],
-    "done": 0,
-    "pending": 2
+    "done": 2,
+    "pending": 0
   },
   "Customer Profile Sales": {
     "no": 10,
