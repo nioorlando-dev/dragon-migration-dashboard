@@ -2074,23 +2074,40 @@ function showIndicatorDetail(name) {
             <tr>
               <th>Table Name</th>
               <th>Database</th>
-              <th>Asset</th>
               <th>Script</th>
               <th>Status</th>
-              <th>Test Time</th>
+              <th>Notes</th>
             </tr>
           </thead>
           <tbody>
-            ${tables.map(t => `
-              <tr>
-                <td class="mono">${escapeHtml(t.table || '-')}</td>
-                <td style="font-size:11px">${escapeHtml(t.database || '-')}</td>
-                <td style="font-size:11px">${escapeHtml(t.asset || '-')}</td>
-                <td class="mono" style="font-size:11px">${escapeHtml(t.script || '-')}</td>
-                <td><span class="badge ${t.status === 'Done' ? 'done' : t.status === 'Tested' ? 'tested' : t.status === 'Complete' ? 'done' : 'pending'}"><span class="dot"></span>${t.status || 'Pending'}</span></td>
-                <td style="font-size:11px;text-align:center">${t.test_time ? t.test_time + ' min' : '-'}</td>
-              </tr>
-            `).join('')}
+            ${tables.map(t => {
+              let statusClass = 'pending';
+              let statusText = t.status || 'Pending';
+              let notes = t.catatan || t.notes || '';
+              
+              if (t.status === 'Done') { statusClass = 'done'; statusText = 'Done'; }
+              else if (t.status === 'Tested') { statusClass = 'tested'; statusText = 'Tested'; }
+              else if (t.status === 'Complete') { statusClass = 'done'; statusText = 'Complete'; }
+              else if (t.status === 'Skip') {
+                statusClass = 'skip';
+                if (!t.dag_active) { statusText = 'DAG Inactive'; notes = notes || 'DAG paused/non-active'; }
+                else if (!t.script || t.script === '-' || t.script === '') { statusText = 'No Script'; notes = notes || 'Tidak ada script'; }
+                else { statusText = 'Skip'; notes = notes || 'Tidak perlu convert'; }
+              }
+              
+              const rowStyle = !t.dag_active ? 'background:rgba(255,105,180,0.08);' : '';
+              const badgeStyle = !t.dag_active ? 'background:rgba(255,105,180,0.15);color:#ff69b4;' : '';
+              const dotStyle = !t.dag_active ? 'background:#ff69b4;' : '';
+              const notesTrunc = (notes || '-').substring(0, 50);
+              
+              return '<tr style="' + rowStyle + '">' +
+                '<td class="mono">' + escapeHtml(t.table || '-') + '</td>' +
+                '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
+                '<td class="mono" style="font-size:11px">' + escapeHtml(t.script || '-') + '</td>' +
+                '<td><span class="badge ' + statusClass + '" style="' + badgeStyle + '"><span class="dot" style="' + dotStyle + '"></span>' + statusText + '</span></td>' +
+                '<td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notesTrunc) + '</td>' +
+                '</tr>';
+            }).join('')}
           </tbody>
         </table>
       </div>
