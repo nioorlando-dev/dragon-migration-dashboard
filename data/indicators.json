@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 0,
+    "tested": 9,
     "tables": [
       {
         "no": "",
@@ -19,9 +19,9 @@
         "script": "final_masterdealer_union",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -33,9 +33,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer_cloudera",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -47,9 +47,9 @@
         "script": "stg_masterdealer_star",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer_star",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -61,9 +61,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: MasterDealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -117,9 +117,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: data_master",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -159,9 +159,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: MasterDealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -173,9 +173,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealer_temp",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -187,9 +187,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealerfinal",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -201,9 +201,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: masterdealerfinal2",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -724,8 +724,8 @@
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 39
+    "done": 9,
+    "pending": 30
   },
   "Master Main Dealer": {
     "no": 2,
@@ -735,7 +735,7 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -761,9 +761,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mastermaindealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -794,8 +794,8 @@
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 4
+    "done": 1,
+    "pending": 3
   },
   "Master Sales Person": {
     "no": 3,
