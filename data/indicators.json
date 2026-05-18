@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 9,
+    "tested": 29,
     "tables": [
       {
         "no": "",
@@ -89,9 +89,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: svmappingpit",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -103,9 +103,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: svtipepit",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -131,9 +131,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: lookup",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -243,9 +243,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: jabatan",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -271,9 +271,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: svmappingpit",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -285,9 +285,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: svtipepit",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -299,9 +299,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: Dealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -313,9 +313,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dealergroup",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -327,9 +327,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dealertelephone",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -341,9 +341,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: district",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -355,9 +355,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: kecamatan",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -369,9 +369,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: kelurahan",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -383,9 +383,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: lookup",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -397,9 +397,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: province",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -411,9 +411,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: city",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -439,9 +439,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: Dealer",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -481,9 +481,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: kecamatan",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -495,9 +495,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: kelurahan",
+        "test_time": "02:12"
       },
       {
         "no": "",
@@ -509,9 +509,9 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: province",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -523,9 +523,9 @@
         "script": "",
         "dag": "-",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: branch",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -724,8 +724,8 @@
         "test_time": "-"
       }
     ],
-    "done": 9,
-    "pending": 30
+    "done": 29,
+    "pending": 10
   },
   "Master Main Dealer": {
     "no": 2,
