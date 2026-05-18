@@ -2106,24 +2106,30 @@ function showIndicatorDetail(name) {
                 notes = 'Data sudah ada di GCS/BQ';
               }
               else if (t.status === 'Skip') {
-                statusClass = 'skip';
+                // Convert Skip ke status yang lebih tepat
                 if (isLanding) {
+                  statusClass = 'landing';
                   statusText = 'Landing';
                   notes = 'Data Landing - sudah ada di GCS/BQ';
                 } else if (isShortcut) {
+                  statusClass = 'landing';
                   statusText = 'Shortcut';
                   notes = 'Table Shortcut - reference only';
                 } else if (t.script && t.script !== '-') {
-                  statusText = 'Skip';
-                  notes = 'Output dari: ' + t.script;
+                  // Ada script tapi status Skip → harusnya Done
+                  statusClass = 'done';
+                  statusText = 'Done';
+                  notes = 'Output: ' + t.script;
                 } else {
-                  statusText = 'Skip';
-                  notes = notes || 'Tidak perlu convert';
+                  // Tidak ada script, tidak landing → Pending
+                  statusClass = 'pending';
+                  statusText = 'Pending';
+                  notes = notes || '';
                 }
               }
               else if (!t.script || t.script === '-' || t.script === '') {
                 if (isLanding) {
-                  statusClass = 'skip';
+                  statusClass = 'landing';
                   statusText = 'Landing';
                   notes = 'Data Landing - sudah ada di GCS/BQ';
                 } else {
