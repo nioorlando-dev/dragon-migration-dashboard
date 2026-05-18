@@ -1940,27 +1940,39 @@ async function renderIndicators(root) {
 
 function indCard(ind) {
   const pct = ind.progress || 0;
+  const skip = ind.tables?.filter(t => t.status === 'Skip').length || 0;
+  const activeTables = ind.totalTables - skip;
+  
+  // Determine current stage based on progress
+  // On CONVERT = ada yang sedang/sudah convert, belum semua test
+  // On TEST = ada yang sudah test, belum semua complete
+  // Complete = semua sudah complete atau progress 100%
+  let currentStage = 'CONVERT';
+  if (ind.complete > 0 || pct === 100) {
+    currentStage = 'COMPLETE';
+  } else if (ind.tested > 0) {
+    currentStage = 'TEST';
+  } else if (ind.converted > 0) {
+    currentStage = 'CONVERT';
+  }
   
   // 3 stages: Convert → Test → Complete
   const stages = [
-    { name: 'CONVERT', done: ind.converted > 0 },
-    { name: 'TEST', done: ind.tested > 0 },
-    { name: 'COMPLETE', done: ind.complete > 0 || ind.progress === 100 },
+    { name: 'CONVERT', done: ind.converted > 0, active: currentStage === 'CONVERT' },
+    { name: 'TEST', done: ind.tested > 0, active: currentStage === 'TEST' },
+    { name: 'COMPLETE', done: ind.complete > 0 || pct === 100, active: currentStage === 'COMPLETE' },
   ];
   
-  let currentStageIdx = stages.findIndex(s => !s.done);
-  if (currentStageIdx === -1) currentStageIdx = stages.length;
-  
   let currentStageText = '';
-  if (currentStageIdx >= stages.length) {
+  if (currentStage === 'COMPLETE' && (ind.complete > 0 || pct === 100)) {
     currentStageText = '<span class="pipe-current-stage" style="color:var(--green)"><span class="dot" style="background:var(--green);animation:none"></span>Complete</span>';
   } else {
-    currentStageText = '<span class="pipe-current-stage"><span class="dot"></span>On ' + stages[currentStageIdx].name + '</span>';
+    currentStageText = '<span class="pipe-current-stage"><span class="dot"></span>On ' + currentStage + '</span>';
   }
   
   let stagesHtml = '<div class="pipe-stages">';
   stages.forEach((s, i) => {
-    const badgeClass = s.done ? 'done' : (i === currentStageIdx) ? 'active' : '';
+    const badgeClass = s.done ? 'done' : s.active ? 'active' : '';
     stagesHtml += '<span class="pipe-stage-badge ' + badgeClass + '">' + s.name + '</span>';
     if (i < stages.length - 1) {
       stagesHtml += '<span class="pipe-stage-line ' + (s.done ? 'done' : '') + '"></span>';
