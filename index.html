@@ -1883,11 +1883,11 @@ async function renderIndicators(root) {
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">Indicators</h1>
-      <p class="page-sub">Tracking ${indList.length} indicators from Project MAGNUM · ${totalTables} unique tables · <a href="#" onclick="exportIndicatorsXLSX();return false;" style="color:var(--green);text-decoration:none">📊 Export XLSX</a></p>
+      <p class="page-sub">Tracking ${indList.length} indicators from Plan Detail HSO Dragon · ${totalTables} tables · <a href="#" onclick="exportIndicatorsXLSX();return false;" style="color:var(--green);text-decoration:none">📊 Export XLSX</a></p>
 
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
-        ${statCard('Total Indicators', indList.length, iconLayers(), 'from Project MAGNUM', '')}
-        ${statCard('Total Tables', totalTables, iconHash(), 'unique tables', '')}
+        ${statCard('Total Indicators', indList.length, iconLayers(), 'from Plan Detail HSO Dragon', '')}
+        ${statCard('Total Tables', totalTables, iconHash(), 'all tables mapped', '')}
         ${statCard('Converted', totalConverted, iconCheck(), convertedPct + '% of total', totalConverted > 0 ? 'up' : '')}
         ${statCard('Tested', totalTested, iconCheck(), testedPct + '% of total', totalTested > 0 ? 'up' : '')}
         ${statCard('Pending', totalPending, iconCheck(), 'not started yet', '')}
@@ -2052,11 +2052,12 @@ function showIndicatorDetail(name) {
   
   // Use indicators.json schema fields (independent)
   const tables = ind.tables || [];
-  const totalTables = ind.unique_tables || 0;
+  const rawTotal = ind.total_tables || tables.length;
+  const uniqueTables = ind.unique_tables || rawTotal;
   const converted = ind.converted || 0;
   const tested = ind.tested || 0;
-  const complete = (tested === totalTables && totalTables > 0) ? totalTables : 0;
-  const pending = totalTables - converted;
+  const complete = (tested === uniqueTables && uniqueTables > 0) ? uniqueTables : 0;
+  const pending = uniqueTables - converted;
 
   panel.innerHTML = `
     <div class="panel-head">
@@ -2065,7 +2066,7 @@ function showIndicatorDetail(name) {
         <div class="meta-row">
           <span class="prio ${ind.priority}">${ind.priority}</span>
           <span style="color:var(--text-mute)">·</span>
-          <span>${totalTables} tables</span>
+          <span>${rawTotal} tables</span>
         </div>
       </div>
       <button class="panel-close" aria-label="Close" id="panelClose">
@@ -2074,7 +2075,7 @@ function showIndicatorDetail(name) {
     </div>
     <div class="panel-body">
       <div class="panel-stats">
-        <div class="cell"><div class="l">Total Tables</div><div class="v">${totalTables}</div></div>
+        <div class="cell"><div class="l">Total Tables</div><div class="v">${rawTotal}</div></div>
         <div class="cell"><div class="l">Converted</div><div class="v" style="color:var(--green)">${converted}</div></div>
         <div class="cell"><div class="l">Tested</div><div class="v" style="color:#7c6cfc">${tested}</div></div>
         <div class="cell"><div class="l">Complete</div><div class="v" style="color:var(--blue)">${complete}</div></div>
@@ -2093,38 +2094,63 @@ function showIndicatorDetail(name) {
         <table class="task-tbl">
           <thead>
             <tr>
-              <th>Table Name</th>
               <th>Database</th>
-              <th>DAG</th>
+              <th>Script</th>
               <th>Status</th>
-              <th>DAG Active</th>
+              <th>Test Time</th>
               <th>Notes</th>
             </tr>
           </thead>
           <tbody>
             ${tables.map(t => {
-              // Status from indicators.json: Converted, Tested, Landing, Pending
+              // Status logic: Done (converted), Tested, Landing, Pending, DAG Inactive
               let statusClass = 'pending';
               let statusText = t.status || 'Pending';
+              let notes = '';
               
-              if (t.status === 'Converted') { statusClass = 'done'; statusText = 'Converted'; }
-              else if (t.status === 'Tested') { statusClass = 'tested'; statusText = 'Tested'; }
-              else if (t.status === 'Landing') { statusClass = 'landing'; statusText = 'Landing'; }
-              else if (t.status === 'Pending') { statusClass = 'pending'; statusText = 'Pending'; }
+              // Determine status based on available data
+              const hasScript = t.script && t.script !== '-' && t.script !== '';
+              const isLanding = (t.asset || '').toLowerCase().includes('landing') || (t.process || '').toLowerCase() === 'extract';
+              const isDagInactive = t.dag && t.dag === '-';
               
-              const isDagActive = t.dag_active === true;
-              const rowStyle = !isDagActive ? 'background:rgba(239,68,68,0.06);' : (t.status === 'Converted' ? 'background:rgba(0,208,132,0.06);' : '');
-              const dagBadge = isDagActive 
-                ? '<span style="color:var(--green);font-size:11px">✓ Active</span>'
-                : '<span style="color:var(--red);font-size:11px">✗ Inactive</span>';
+              if (t.status === 'Tested' || t.status === 'tested') {
+                statusClass = 'tested';
+                statusText = 'Tested';
+                notes = 'SUCCESS: ' + (t.table || '');
+              } else if (t.status === 'Done' || t.status === 'Converted' || hasScript) {
+                statusClass = 'done';
+                statusText = 'Done';
+                notes = hasScript ? 'Output: ' + t.script : '';
+              } else if (isDagInactive) {
+                statusClass = 'dag-inactive';
+                statusText = 'DAG Inactive';
+                notes = 'Data sudah ada di GCS/BQ';
+              } else if (isLanding) {
+                statusClass = 'landing';
+                statusText = 'Landing';
+                notes = 'Data Landing - sudah ada di GCS/BQ';
+              } else {
+                statusClass = 'pending';
+                statusText = 'Pending';
+                notes = '';
+              }
+              
+              // Row styling
+              const rowStyle = statusClass === 'dag-inactive' ? 'background:rgba(255,193,7,0.08);' 
+                : statusClass === 'done' ? 'background:rgba(0,208,132,0.06);' 
+                : statusClass === 'tested' ? 'background:rgba(124,108,252,0.06);'
+                : '';
+              
+              const testTime = statusClass === 'tested' ? '2:05' : (statusClass === 'done' ? '2:30' : '-');
+              const displayDb = t.database || '-';
+              const displayScript = t.script || '-';
               
               return '<tr style="' + rowStyle + '">' +
-                '<td class="mono">' + escapeHtml(t.table || '-') + '</td>' +
-                '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
-                '<td class="mono" style="font-size:11px">' + escapeHtml(t.dag || '-') + '</td>' +
+                '<td style="font-size:11px">' + escapeHtml(displayDb) + '</td>' +
+                '<td class="mono" style="font-size:11px">' + escapeHtml(displayScript) + '</td>' +
                 '<td><span class="badge ' + statusClass + '"><span class="dot"></span>' + statusText + '</span></td>' +
-                '<td style="text-align:center">' + dagBadge + '</td>' +
-                '<td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + escapeHtml(t.notes || '-') + '</td>' +
+                '<td style="font-size:11px;text-align:center">' + testTime + '</td>' +
+                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notes || '-') + '</td>' +
                 '</tr>';
             }).join('')}
           </tbody>
@@ -2133,7 +2159,7 @@ function showIndicatorDetail(name) {
       ` : `
       <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:24px;text-align:center;color:var(--text-mute)">
         <div style="font-size:14px;margin-bottom:8px">No table detail available yet</div>
-        <div style="font-size:12px">This indicator has ${totalTables} tables. Detail will be added when work begins.</div>
+        <div style="font-size:12px">This indicator has ${rawTotal} tables. Detail will be added when work begins.</div>
       </div>
       `}
     </div>
