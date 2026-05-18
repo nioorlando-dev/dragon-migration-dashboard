@@ -184,10 +184,15 @@ async function loadData() {
 
     indicatorData = Object.values(data).map(ind => {
       ind.totalTables = ind.tables.length;
-      ind.dagInactive = ind.tables.filter(t => !t.dag_active).length;
-      ind.converted = ind.tables.filter(t => t.status === 'Done').length;
-      ind.tested = ind.tables.filter(t => t.status === 'Tested').length;
-      ind.progress = ind.totalTables > 0 ? Math.round(ind.converted / ind.totalTables * 100) : 0;
+      ind.duplicates = ind.tables.filter(t => t.is_duplicate).length;
+      ind.uniqueTables = ind.totalTables - ind.duplicates;
+      ind.dagInactive = ind.tables.filter(t => !t.dag_active && !t.is_duplicate).length;
+      ind.done = ind.tables.filter(t => t.status === 'Done' && !t.is_duplicate).length;
+      ind.skip = ind.tables.filter(t => t.status === 'Skip' && !t.is_duplicate).length;
+      ind.pending = ind.tables.filter(t => t.status === 'Pending' && !t.is_duplicate).length;
+      // Progress = Done / (Unique - Skip) * 100
+      const countable = ind.uniqueTables - ind.skip;
+      ind.progress = countable > 0 ? Math.round(ind.done / countable * 100) : 0;
       return ind;
     }).sort((a, b) => {
       const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
@@ -211,9 +216,9 @@ function updateUI(filter = 'all') {
   document.getElementById('p2Count').textContent = indicatorData.filter(i => i.priority === 'P2').length;
   document.getElementById('p3Count').textContent = indicatorData.filter(i => i.priority === 'P3').length;
   
-  const totalTables = indicatorData.reduce((s, i) => s + i.totalTables, 0);
-  const totalTested = indicatorData.reduce((s, i) => s + i.tested, 0);
-  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalTables} tables · ${totalTested} tested`;
+  const totalUnique = indicatorData.reduce((s, i) => s + i.uniqueTables, 0);
+  const totalDone = indicatorData.reduce((s, i) => s + i.done, 0);
+  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalUnique} tables · ${totalDone} done`;
 
   // Render cards
   const grid = document.getElementById('cardsGrid');
@@ -225,16 +230,16 @@ function updateUI(filter = 'all') {
       </div>
       <div class="card-stats">
         <div class="stat">
-          <div class="stat-value">${ind.totalTables}</div>
+          <div class="stat-value">${ind.uniqueTables}</div>
           <div class="stat-label">Tables</div>
         </div>
         <div class="stat">
-          <div class="stat-value">${ind.converted}</div>
-          <div class="stat-label">Converted</div>
+          <div class="stat-value" style="color:var(--green)">${ind.done}</div>
+          <div class="stat-label">Done</div>
         </div>
         <div class="stat">
-          <div class="stat-value" style="color:${ind.dagInactive > 0 ? '#ff69b4' : 'var(--text)'}">${ind.dagInactive}</div>
-          <div class="stat-label">DAG Inactive</div>
+          <div class="stat-value" style="color:${ind.pending > 0 ? 'var(--yellow)' : 'var(--text-mute)'}">${ind.pending}</div>
+          <div class="stat-label">Pending</div>
         </div>
       </div>
       <div class="card-progress">
@@ -259,21 +264,26 @@ function showDetail(name) {
   
   document.getElementById('modalTitle').textContent = `${ind.name} (${ind.priority})`;
   document.getElementById('modalBody').innerHTML = `
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px">
+    ${ind.note ? `<div style="background:#1a2d1a;border:1px solid #305030;padding:12px;border-radius:8px;margin-bottom:16px;font-size:13px">� ${ind.note}</div>` : ''}
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:20px">
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value">${ind.totalTables}</div>
-        <div class="stat-label">Total Tables</div>
+        <div class="stat-value">${ind.uniqueTables}</div>
+        <div class="stat-label">Tables</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value">${ind.converted}</div>
-        <div class="stat-label">Converted</div>
+        <div class="stat-value" style="color:var(--green)">${ind.done}</div>
+        <div class="stat-label">Done</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value" style="color:#ff69b4">${ind.dagInactive}</div>
-        <div class="stat-label">DAG Inactive</div>
+        <div class="stat-value" style="color:var(--yellow)">${ind.pending}</div>
+        <div class="stat-label">Pending</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value">${ind.progress}%</div>
+        <div class="stat-value" style="color:var(--text-mute)">${ind.skip}</div>
+        <div class="stat-label">Skip</div>
+      </div>
+      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
+        <div class="stat-value" style="color:var(--green)">${ind.progress}%</div>
         <div class="stat-label">Progress</div>
       </div>
     </div>
@@ -282,23 +292,19 @@ function showDetail(name) {
         <tr>
           <th>Table</th>
           <th>Database</th>
-          <th>Asset</th>
-          <th>Script</th>
           <th>DAG</th>
-          <th>DAG Status</th>
           <th>Status</th>
+          <th>Notes</th>
         </tr>
       </thead>
       <tbody>
-        ${ind.tables.map(t => `
-          <tr style="${!t.dag_active ? 'background:#2d1a24;' : ''}">
+        ${ind.tables.filter(t => !t.is_duplicate).map(t => `
+          <tr>
             <td class="mono">${t.table || '-'}</td>
             <td class="mono" style="font-size:11px">${t.database || '-'}</td>
-            <td>${t.asset || '-'}</td>
-            <td class="mono" style="font-size:11px">${t.script || '-'}</td>
-            <td class="mono" style="font-size:11px">${t.dag || '-'}</td>
-            <td style="color:${t.dag_active ? 'var(--green)' : '#ff69b4'}">${t.dag_active ? 'Active' : 'Inactive'}</td>
-            <td class="${t.status === 'Done' ? 'status-done' : 'status-pending'}">${t.status || '-'}</td>
+            <td class="mono" style="font-size:11px;color:${t.dag_active ? 'var(--green)' : 'var(--text-mute)'}">${t.dag || '-'}</td>
+            <td><span style="padding:2px 8px;border-radius:4px;font-size:11px;background:${t.status === 'Done' ? 'rgba(0,208,132,0.2);color:var(--green)' : (t.status === 'Pending' ? 'rgba(245,166,35,0.2);color:var(--yellow)' : 'rgba(107,107,107,0.2);color:var(--text-mute)')}">${t.status}</span></td>
+            <td style="font-size:11px;color:var(--text-dim)">${t.catatan || '-'}</td>
           </tr>
         `).join('')}
       </tbody>
