@@ -1822,6 +1822,7 @@ function animateCounter(el, target, duration) {
 
 // ---------- indicators page ----------
 async function renderIndicators(root) {
+  // Load indicators.json for indicator list
   let indicators = state.indicators;
   if (!indicators) {
     try {
@@ -1833,6 +1834,28 @@ async function renderIndicators(root) {
       return;
     }
   }
+
+  // Get ACTUAL stats from pipelines.json and status.json (same as Overview)
+  const pipes = state.pipelines || {};
+  const statusData = state.status || {};
+  
+  // Calculate actual tested/done from pipelines.json (SOURCE OF TRUTH)
+  let actualTestedTasks = 0;
+  let actualDoneTasks = 0;
+  let actualTotalTasks = 0;
+  Object.values(pipes).forEach(p => {
+    (p.tasks || []).forEach(t => {
+      if (t.status !== 'SKIP' && t.status !== 'Skip') {
+        actualTotalTasks++;
+        if (t.tested) actualTestedTasks++;
+        if (t.status === 'Done') actualDoneTasks++;
+      }
+    });
+  });
+  
+  // Get output tables from status.json
+  const actualOutputTables = Object.values(statusData).reduce((s, st) => s + (st.output_tables || 0), 0);
+  const testedPipelines = Object.values(statusData).filter(s => s.tested).length;
 
   const indList = Object.values(indicators).map(ind => {
     ind.totalTables = ind.tables?.length || 0;
@@ -1871,11 +1894,11 @@ async function renderIndicators(root) {
       <p class="page-sub">Tracking ${indList.length} indicators from Project MAGNUM · ${totalTables} tables</p>
 
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
-        ${statCard('Indicator Tested', indTested, iconLayers(), 'from Project MAGNUM', 'up')}
+        ${statCard('Tested Pipelines', testedPipelines, iconLayers(), 'from pipelines.json', 'up')}
         ${statCard('Tables', totalTables, iconHash(), 'from lift and shift dragon', '')}
-        ${statCard('Converted Task', totalConverted, iconCheck(), totalTables ? Math.round(totalConverted/totalTables*100) + '% of total' : '—', 'up')}
-        ${statCard('Task Tested', totalTested, iconCheck(), indList.filter(i=>i.tested>0).length + ' indicators', 'up')}
-        ${statCard('Table Done', totalComplete, iconCheck(), 'completed', totalComplete > 0 ? 'up' : '')}
+        ${statCard('Converted Task', actualDoneTasks, iconCheck(), actualTotalTasks ? Math.round(actualDoneTasks/actualTotalTasks*100) + '% of total' : '—', 'up')}
+        ${statCard('Task Tested', actualTestedTasks, iconCheck(), testedPipelines + ' pipelines', 'up')}
+        ${statCard('Output Tables', actualOutputTables, iconCheck(), 'from tested pipelines', actualOutputTables > 0 ? 'up' : '')}
       </div>
 
       <div class="filters" style="margin-bottom:20px">
