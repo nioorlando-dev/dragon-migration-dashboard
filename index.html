@@ -2322,7 +2322,7 @@ async function exportXLSX() {
 // Export Indicator XLSX from INDICATOR_TRACKING.csv
 async function exportIndicatorXLSX() {
   try {
-    const res = await fetch('../docs/INDICATOR_TRACKING.csv');
+    const res = await fetch('./data/INDICATOR_TRACKING.csv');
     if (!res.ok) throw new Error('Failed to load INDICATOR_TRACKING.csv');
     const csvText = await res.text();
     

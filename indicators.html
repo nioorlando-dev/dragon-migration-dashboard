@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1440" />
+<title>HSO Dragon - Indicators</title>
+<link rel="icon" type="image/jpeg" href="./assets/dragon_logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0a; --bg-2: #0f0f0f; --card: #111111; --card-hi: #161616;
+  --border: #222222; --border-hi: #2a2a2a;
+  --text: #ededed; --text-dim: #a1a1a1; --text-mute: #6b6b6b;
+  --green: #00d084; --red: #ff4444; --yellow: #f5a623; --blue: #0070f3;
+  --p1a: #ff4444; --p1b: #f5a623; --p2: #0070f3; --p3: #6b6b6b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Layout */
+.app { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+  position: fixed; inset: 0 auto 0 0; width: 240px;
+  background: var(--bg-2); border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; z-index: 10;
+}
+.brand { padding: 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); }
+.brand-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(0,208,132,0.1); display: grid; place-items: center; }
+.brand-title { font-size: 13px; font-weight: 600; }
+.brand-sub { font-size: 11px; color: var(--text-mute); }
+
+.nav { padding: 10px 8px; flex: 1; }
+.nav-group-label { padding: 14px 12px 6px; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mute); }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 6px; cursor: pointer; color: var(--text-dim); transition: all .15s; }
+.nav-item:hover { background: var(--card); color: var(--text); }
+.nav-item.active { background: var(--card-hi); color: var(--green); }
+.nav-badge { margin-left: auto; background: var(--card); padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+
+/* Main */
+main { margin-left: 240px; padding: 24px 32px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.topbar h1 { font-size: 24px; font-weight: 600; }
+.topbar-meta { display: flex; gap: 10px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
+
+/* Priority Filter */
+.priority-filter { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.priority-btn { padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text-dim); cursor: pointer; font-size: 12px; font-weight: 500; transition: all .15s; }
+.priority-btn:hover { border-color: var(--border-hi); color: var(--text); }
+.priority-btn.active { border-color: var(--green); color: var(--green); background: rgba(0,208,132,0.08); }
+.priority-btn.p1a { border-color: var(--p1a); color: var(--p1a); }
+.priority-btn.p1b { border-color: var(--p1b); color: var(--p1b); }
+.priority-btn.p2 { border-color: var(--p2); color: var(--p2); }
+
+/* Cards Grid */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+.indicator-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; cursor: pointer; transition: all .2s;
+}
+.indicator-card:hover { border-color: var(--border-hi); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+.indicator-card.p1a { border-left: 3px solid var(--p1a); }
+.indicator-card.p1b { border-left: 3px solid var(--p1b); }
+.indicator-card.p2 { border-left: 3px solid var(--p2); }
+.indicator-card.p3 { border-left: 3px solid var(--p3); }
+
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.card-title { font-size: 15px; font-weight: 600; }
+.card-priority { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; }
+.card-priority.p1a { background: rgba(255,68,68,0.15); color: var(--p1a); }
+.card-priority.p1b { background: rgba(245,166,35,0.15); color: var(--p1b); }
+.card-priority.p2 { background: rgba(0,112,243,0.15); color: var(--p2); }
+.card-priority.p3 { background: rgba(107,107,107,0.15); color: var(--p3); }
+
+.card-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+.stat { text-align: center; }
+.stat-value { font-size: 20px; font-weight: 700; color: var(--text); }
+.stat-label { font-size: 10px; color: var(--text-mute); text-transform: uppercase; }
+
+.card-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.card-progress-bar { height: 100%; background: var(--green); transition: width .3s; }
+
+/* Modal */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; display: none; }
+.modal-backdrop.show { display: flex; align-items: center; justify-content: center; }
+.modal { background: var(--bg-2); border: 1px solid var(--border); border-radius: 16px; width: 90%; max-width: 900px; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
+.modal-header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.modal-title { font-size: 18px; font-weight: 600; }
+.modal-close { background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 24px; }
+.modal-body { padding: 24px; overflow-y: auto; flex: 1; }
+
+/* Table */
+.data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.data-table th, .data-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+.data-table th { background: var(--card); color: var(--text-mute); font-weight: 600; text-transform: uppercase; font-size: 10px; position: sticky; top: 0; }
+.data-table tr:hover { background: var(--card); }
+.status-done { color: var(--green); }
+.status-pending { color: var(--text-mute); }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">🐉</div>
+      <div>
+        <div class="brand-title">HSO Dragon Migration</div>
+        <div class="brand-sub">Indicators View</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-group-label">Navigation</div>
+      <a class="nav-item" href="index.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item active" href="indicators.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+        Indicators
+        <span class="nav-badge" id="indicatorCount">0</span>
+      </a>
+      <div class="nav-group-label">Priority</div>
+      <div class="nav-item" onclick="filterPriority('P1A')">
+        <span style="color:var(--p1a)">●</span> P1A Critical
+        <span class="nav-badge" id="p1aCount">0</span>
+      </div>
+      <div class="nav-item" onclick="filterPriority('P1B')">
+        <span style="color:var(--p1b)">●</span> P1B High
+        <span class="nav-badge" id="p1bCount">0</span>
+      </div>
+      <div class="nav-item" onclick="filterPriority('P2')">
+        <span style="color:var(--p2)">●</span> P2 Medium
+        <span class="nav-badge" id="p2Count">0</span>
+      </div>
+      <div class="nav-item" onclick="filterPriority('P3')">
+        <span style="color:var(--p3)">●</span> P3 Low
+        <span class="nav-badge" id="p3Count">0</span>
+      </div>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <h1>Indicator Tracking</h1>
+      <div class="topbar-meta">
+        <span class="pill mono" id="totalStats">Loading...</span>
+        <a href="index.html" class="pill" style="text-decoration:none;color:var(--text-dim)">← Back to Dashboard</a>
+      </div>
+    </div>
+
+    <div class="priority-filter">
+      <button class="priority-btn active" onclick="filterPriority('all')">All</button>
+      <button class="priority-btn" onclick="filterPriority('P1A')">P1A Critical</button>
+      <button class="priority-btn" onclick="filterPriority('P1B')">P1B High</button>
+      <button class="priority-btn" onclick="filterPriority('P2')">P2 Medium</button>
+      <button class="priority-btn" onclick="filterPriority('P3')">P3 Low</button>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid"></div>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTitle">Indicator Detail</div>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+let indicatorData = [];
+let allRows = [];
+
+async function loadData() {
+  try {
+    const res = await fetch('./data/INDICATOR_TRACKING.csv');
+    const text = await res.text();
+    const lines = text.trim().split('\n');
+    const headers = lines[0].split(',');
+    
+    allRows = lines.slice(1).map(line => {
+      const values = [];
+      let current = '', inQuotes = false;
+      for (let c of line) {
+        if (c === '"') inQuotes = !inQuotes;
+        else if (c === ',' && !inQuotes) { values.push(current); current = ''; }
+        else current += c;
+      }
+      values.push(current);
+      return values;
+    });
+
+    // Group by indicator
+    const grouped = {};
+    allRows.forEach(row => {
+      const indicator = row[2] || 'Unknown';
+      if (!grouped[indicator]) grouped[indicator] = { name: indicator, tables: [], priority: 'P3' };
+      grouped[indicator].tables.push({
+        project: row[1],
+        asset: row[3],
+        database: row[4],
+        table: row[5],
+        bucket: row[6],
+        bqDataset: row[7],
+        initialLanding: row[8],
+        initialMart: row[9],
+        daMapping: row[10],
+        etlConversion: row[11],
+        etlTest: row[12],
+        testTime: row[13],
+        incremental: row[14],
+        orchestration: row[15],
+        internalTest: row[16],
+        pqaTest: row[17],
+        lastUpdated: row[22]
+      });
+    });
+
+    // Assign priorities (based on known P1A/P1B indicators)
+    const p1aList = ['Master Dealer', 'Master Main Dealer', 'Master Sales Person', 'Master Unit Type', 'File', 'Region', 'Data SAP', 'SAP PSSU', 'SAP USTK2'];
+    const p1bList = ['Customer Profile Sales', 'Leads Funnel CRM H1', 'Customer Profile Service', 'PKB Service', 'Niguri Part', 'SDUE'];
+    const p2List = ['Grape Phase 1', 'Grape Phase 2', '3 Axis Leads Monitoring', 'USTK2', 'Unit Entry Transformation'];
+
+    indicatorData = Object.values(grouped).map(ind => {
+      if (p1aList.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P1A';
+      else if (p1bList.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P1B';
+      else if (p2List.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P2';
+      
+      ind.totalTables = ind.tables.length;
+      ind.converted = ind.tables.filter(t => t.etlConversion === '✓').length;
+      ind.tested = ind.tables.filter(t => t.etlTest === '✓').length;
+      ind.totalTestTime = ind.tables.reduce((sum, t) => sum + (parseInt(t.testTime) || 0), 0);
+      ind.progress = ind.totalTables > 0 ? Math.round(ind.tested / ind.totalTables * 100) : 0;
+      return ind;
+    }).sort((a, b) => {
+      const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
+      return (order[a.priority] - order[b.priority]) || (b.totalTables - a.totalTables);
+    });
+
+    updateUI();
+  } catch (err) {
+    console.error(err);
+    document.getElementById('cardsGrid').innerHTML = '<p style="color:var(--red)">Error loading data: ' + err.message + '</p>';
+  }
+}
+
+function updateUI(filter = 'all') {
+  const filtered = filter === 'all' ? indicatorData : indicatorData.filter(i => i.priority === filter);
+  
+  // Update counts
+  document.getElementById('indicatorCount').textContent = indicatorData.length;
+  document.getElementById('p1aCount').textContent = indicatorData.filter(i => i.priority === 'P1A').length;
+  document.getElementById('p1bCount').textContent = indicatorData.filter(i => i.priority === 'P1B').length;
+  document.getElementById('p2Count').textContent = indicatorData.filter(i => i.priority === 'P2').length;
+  document.getElementById('p3Count').textContent = indicatorData.filter(i => i.priority === 'P3').length;
+  
+  const totalTables = indicatorData.reduce((s, i) => s + i.totalTables, 0);
+  const totalTested = indicatorData.reduce((s, i) => s + i.tested, 0);
+  document.getElementById('totalStats').textContent = `${indicatorData.length} indicators · ${totalTables} tables · ${totalTested} tested`;
+
+  // Render cards
+  const grid = document.getElementById('cardsGrid');
+  grid.innerHTML = filtered.map(ind => `
+    <div class="indicator-card ${ind.priority.toLowerCase()}" onclick="showDetail('${ind.name}')">
+      <div class="card-header">
+        <div class="card-title">${ind.name}</div>
+        <span class="card-priority ${ind.priority.toLowerCase()}">${ind.priority}</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="stat-value">${ind.totalTables}</div>
+          <div class="stat-label">Tables</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">${ind.converted}</div>
+          <div class="stat-label">Converted</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">${ind.tested}</div>
+          <div class="stat-label">Tested</div>
+        </div>
+      </div>
+      <div class="card-progress">
+        <div class="card-progress-bar" style="width:${ind.progress}%"></div>
+      </div>
+      <div style="margin-top:8px;font-size:11px;color:var(--text-mute)">
+        Est. Test Time: <span class="mono">${ind.totalTestTime} min</span> · Progress: <span style="color:var(--green)">${ind.progress}%</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterPriority(priority) {
+  document.querySelectorAll('.priority-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  updateUI(priority);
+}
+
+function showDetail(name) {
+  const ind = indicatorData.find(i => i.name === name);
+  if (!ind) return;
+  
+  document.getElementById('modalTitle').textContent = `${ind.name} (${ind.priority})`;
+  document.getElementById('modalBody').innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px">
+      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
+        <div class="stat-value">${ind.totalTables}</div>
+        <div class="stat-label">Total Tables</div>
+      </div>
+      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
+        <div class="stat-value">${ind.converted}</div>
+        <div class="stat-label">Converted</div>
+      </div>
+      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
+        <div class="stat-value">${ind.tested}</div>
+        <div class="stat-label">Tested</div>
+      </div>
+      <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
+        <div class="stat-value">${ind.totalTestTime}m</div>
+        <div class="stat-label">Est. Test Time</div>
+      </div>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Table</th>
+          <th>Database</th>
+          <th>Asset</th>
+          <th>ETL Conv</th>
+          <th>ETL Test</th>
+          <th>Test Time</th>
+          <th>Orchestration</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${ind.tables.map(t => `
+          <tr>
+            <td class="mono">${t.table || '-'}</td>
+            <td class="mono" style="font-size:11px">${t.database || '-'}</td>
+            <td>${t.asset || '-'}</td>
+            <td class="${t.etlConversion === '✓' ? 'status-done' : 'status-pending'}">${t.etlConversion || '-'}</td>
+            <td class="${t.etlTest === '✓' ? 'status-done' : 'status-pending'}">${t.etlTest || '-'}</td>
+            <td class="mono">${t.testTime || '-'} min</td>
+            <td class="${t.orchestration === '✓' ? 'status-done' : 'status-pending'}">${t.orchestration || '-'}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+  document.getElementById('modalBackdrop').classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('modalBackdrop').classList.remove('show');
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+loadData();
+</script>
+</body>
+</html>
