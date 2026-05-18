@@ -2084,28 +2084,65 @@ function showIndicatorDetail(name) {
               let statusClass = 'pending';
               let statusText = t.status || 'Pending';
               let notes = t.catatan || t.notes || '';
+              const asset = t.asset || '';
+              const isLanding = asset.toLowerCase().includes('landing');
+              const isShortcut = asset.toLowerCase().includes('shortcut');
               
-              if (t.status === 'Done') { statusClass = 'done'; statusText = 'Done'; }
-              else if (t.status === 'Tested') { statusClass = 'tested'; statusText = 'Tested'; }
+              if (t.status === 'Done') { 
+                statusClass = 'done'; 
+                statusText = 'Done';
+                notes = notes || (t.script ? 'Output: ' + t.script : '');
+              }
+              else if (t.status === 'Tested') { 
+                statusClass = 'tested'; 
+                statusText = 'Tested';
+                notes = notes || (t.script ? 'Output: ' + t.script : '');
+              }
               else if (t.status === 'Complete') { statusClass = 'done'; statusText = 'Complete'; }
+              else if (!t.dag_active) {
+                statusClass = 'skip';
+                statusText = 'DAG Inactive';
+                notes = 'Tidak perlu convert (DAG non-active)';
+              }
               else if (t.status === 'Skip') {
                 statusClass = 'skip';
-                if (!t.dag_active) { statusText = 'DAG Inactive'; notes = notes || 'DAG paused/non-active'; }
-                else if (!t.script || t.script === '-' || t.script === '') { statusText = 'No Script'; notes = notes || 'Tidak ada script'; }
-                else { statusText = 'Skip'; notes = notes || 'Tidak perlu convert'; }
+                if (isLanding) {
+                  statusText = 'Landing';
+                  notes = 'Data Landing - sudah ada di GCS/BQ';
+                } else if (isShortcut) {
+                  statusText = 'Shortcut';
+                  notes = 'Table Shortcut - reference only';
+                } else if (t.script && t.script !== '-') {
+                  statusText = 'Skip';
+                  notes = 'Output dari: ' + t.script;
+                } else {
+                  statusText = 'Skip';
+                  notes = notes || 'Tidak perlu convert';
+                }
+              }
+              else if (!t.script || t.script === '-' || t.script === '') {
+                if (isLanding) {
+                  statusClass = 'skip';
+                  statusText = 'Landing';
+                  notes = 'Data Landing - sudah ada di GCS/BQ';
+                } else {
+                  statusClass = 'pending';
+                  statusText = 'Pending';
+                  notes = notes || '';
+                }
               }
               
               const rowStyle = !t.dag_active ? 'background:rgba(255,105,180,0.08);' : '';
               const badgeStyle = !t.dag_active ? 'background:rgba(255,105,180,0.15);color:#ff69b4;' : '';
               const dotStyle = !t.dag_active ? 'background:#ff69b4;' : '';
-              const notesTrunc = (notes || '-').substring(0, 50);
+              const notesTrunc = (notes || '-').substring(0, 60);
               
               return '<tr style="' + rowStyle + '">' +
                 '<td class="mono">' + escapeHtml(t.table || '-') + '</td>' +
                 '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
                 '<td class="mono" style="font-size:11px">' + escapeHtml(t.script || '-') + '</td>' +
                 '<td><span class="badge ' + statusClass + '" style="' + badgeStyle + '"><span class="dot" style="' + dotStyle + '"></span>' + statusText + '</span></td>' +
-                '<td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notesTrunc) + '</td>' +
+                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notesTrunc) + '</td>' +
                 '</tr>';
             }).join('')}
           </tbody>
