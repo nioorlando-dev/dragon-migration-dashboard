@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 9,
+    "tested": 10,
     "tables": [
       {
         "no": "",
@@ -21,7 +21,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: masterdealer",
-        "test_time": "2:30"
+        "test_time": "18:12"
       },
       {
         "no": "",
@@ -49,7 +49,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: masterdealer_star",
-        "test_time": "2:30"
+        "test_time": "18:12"
       },
       {
         "no": "",
@@ -61,9 +61,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: MasterDealer",
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -76,7 +76,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -90,7 +90,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -104,7 +104,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -119,7 +119,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: data_master",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -147,7 +147,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: master2w_dealer",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -161,7 +161,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: MasterDealer",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -175,7 +175,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: masterdealer_temp",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -189,7 +189,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: masterdealerfinal",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -203,7 +203,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: masterdealerfinal2",
-        "test_time": "2:30"
+        "test_time": "06:31"
       },
       {
         "no": "",
@@ -217,7 +217,7 @@
         "pipeline": "-",
         "status": "Tested",
         "notes": "SUCCESS: portal_dealer",
-        "test_time": "2:30"
+        "test_time": "06:33"
       },
       {
         "no": "",
@@ -244,7 +244,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -258,7 +258,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -272,7 +272,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -286,7 +286,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -300,7 +300,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -314,7 +314,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -328,7 +328,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -342,7 +342,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -356,7 +356,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -370,7 +370,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -384,7 +384,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -398,7 +398,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -412,7 +412,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -426,7 +426,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -440,7 +440,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -454,7 +454,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -468,7 +468,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -482,7 +482,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -496,7 +496,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -510,7 +510,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -524,7 +524,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -538,7 +538,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -552,7 +552,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -566,7 +566,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 5"
+        "notes": "Same as: StatusLayananDealer_file",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -579,7 +580,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 6"
+        "notes": "Same as: svmappingpit",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -592,7 +594,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 7"
+        "notes": "Same as: svtipepit",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -605,7 +608,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 8"
+        "notes": "Same as: data_master",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -618,7 +622,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 9"
+        "notes": "Same as: lookup",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -631,7 +636,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 10"
+        "notes": "Same as: master2w_dealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -644,7 +650,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 11"
+        "notes": "Same as: MasterDealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -657,7 +664,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 12"
+        "notes": "Same as: masterdealer_temp",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -670,7 +678,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 13"
+        "notes": "Same as: masterdealerfinal",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -683,7 +692,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 14"
+        "notes": "Same as: masterdealerfinal2",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -696,7 +706,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 15"
+        "notes": "Same as: portal_dealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -709,14 +720,15 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 16"
+        "notes": "Same as: RefMechanic",
+        "test_time": "-"
       }
     ],
-    "done": 35,
+    "done": 36,
     "landing": 26,
     "dag_inactive": 0,
-    "complete": 35,
-    "pending": 4
+    "complete": 36,
+    "pending": 3
   },
   "Master Main Dealer": {
     "no": 2,
@@ -726,7 +738,7 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -752,9 +764,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mastermaindealer",
+        "test_time": "18:21"
       },
       {
         "no": "",
@@ -785,11 +797,11 @@
         "test_time": "-"
       }
     ],
-    "done": 0,
+    "done": 1,
     "landing": 0,
     "dag_inactive": 0,
-    "complete": 0,
-    "pending": 4
+    "complete": 1,
+    "pending": 3
   },
   "Master Sales Person": {
     "no": 3,
@@ -902,7 +914,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -916,7 +928,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -930,7 +942,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -944,7 +956,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -958,7 +970,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -972,7 +984,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -986,7 +998,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1000,7 +1012,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1014,7 +1026,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1028,7 +1040,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1042,7 +1054,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 1"
+        "notes": "Same as: summarypdrb_mtm_file",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1055,7 +1068,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 2"
+        "notes": "Same as: summarypdrb_yty_file",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1068,7 +1082,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 3"
+        "notes": "Same as: virtualexhibitionsummary_file",
+        "test_time": "-"
       }
     ],
     "done": 10,
@@ -1129,7 +1144,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1143,7 +1158,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1157,7 +1172,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1171,7 +1186,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1185,7 +1200,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1199,7 +1214,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1213,7 +1228,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1227,7 +1242,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1241,7 +1256,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1255,7 +1270,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1269,7 +1284,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1283,7 +1298,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1297,7 +1312,7 @@
         "dag": "dragon_SAP",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1311,7 +1326,7 @@
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1325,7 +1340,7 @@
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1339,7 +1354,7 @@
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1353,7 +1368,7 @@
         "dag": "dragon_SAP",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       }
     ],
@@ -1384,7 +1399,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "SAP_PSSU",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       }
     ],
@@ -1415,7 +1430,7 @@
         "dag": "dragon_ustk2",
         "pipeline": "SAP_USTK",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1429,7 +1444,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       }
     ],
@@ -1544,7 +1559,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1558,7 +1573,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1572,7 +1587,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1586,7 +1601,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1600,7 +1615,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1614,7 +1629,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1628,7 +1643,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -1992,7 +2007,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2006,7 +2021,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2020,7 +2035,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2034,7 +2049,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2048,7 +2063,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2076,7 +2091,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2090,7 +2105,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2104,7 +2119,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2132,7 +2147,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2160,7 +2175,7 @@
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2174,7 +2189,7 @@
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2188,7 +2203,7 @@
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2202,7 +2217,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2216,7 +2231,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2230,7 +2245,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2244,7 +2259,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2258,7 +2273,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2272,7 +2287,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2286,7 +2301,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2300,7 +2315,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2314,7 +2329,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2328,7 +2343,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2342,7 +2357,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2356,7 +2371,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2370,7 +2385,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2384,7 +2399,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2398,7 +2413,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2412,7 +2427,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2426,7 +2441,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2440,7 +2455,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2454,7 +2469,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2468,7 +2483,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2482,7 +2497,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2496,7 +2511,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2510,7 +2525,7 @@
         "dag": "dragon",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2524,7 +2539,7 @@
         "dag": "",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -2538,7 +2553,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 7"
+        "notes": "Same as: RefEquipment",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2551,7 +2567,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 8"
+        "notes": "Same as: region",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2564,7 +2581,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 9"
+        "notes": "Same as: ringterritory_file",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2577,7 +2595,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 10"
+        "notes": "Same as: salesorder",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2590,7 +2609,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 11"
+        "notes": "Same as: sequence_region",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2603,7 +2623,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 12"
+        "notes": "Same as: SvPKBHeader",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2616,7 +2637,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 13"
+        "notes": "Same as: SvPKBHeaderEquipment",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2629,7 +2651,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 14"
+        "notes": "Same as: customerprofilesales",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2642,7 +2665,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 15"
+        "notes": "Same as: CustomerProfileSales_CDB",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2655,7 +2679,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 16"
+        "notes": "Same as: customerprofilesales_dataservice",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2668,7 +2693,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 17"
+        "notes": "Same as: customerprofilesales_delta",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2681,7 +2707,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 18"
+        "notes": "Same as: customerprofilesales_deltah7_archive",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2694,7 +2721,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 19"
+        "notes": "Same as: CustomerProfileSales_fovAllOwndealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2707,7 +2735,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 20"
+        "notes": "Same as: CustomerProfileSales_FovAllTime",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2720,7 +2749,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 21"
+        "notes": "Same as: CustomerProfileSales_FovLastYear",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2733,7 +2763,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 22"
+        "notes": "Same as: customerprofilesales_h1_archive",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2746,7 +2777,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 23"
+        "notes": "Same as: customerprofilesales_kpb",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2759,7 +2791,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 24"
+        "notes": "Same as: CustomerProfileSales_KPB1",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2772,7 +2805,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 25"
+        "notes": "Same as: CustomerProfileSales_KPB2",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2785,7 +2819,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 26"
+        "notes": "Same as: CustomerProfileSales_KPB3",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2798,7 +2833,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 27"
+        "notes": "Same as: CustomerProfileSales_KPB4",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2811,7 +2847,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 28"
+        "notes": "Same as: CustomerProfileSales_lastservice",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2824,7 +2861,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 29"
+        "notes": "Same as: CustomerProfileSales_ring",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2837,7 +2875,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 30"
+        "notes": "Same as: CustomerProfileSales_rofinal",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2850,7 +2889,8 @@
         "dag": "dragon_customerprofilesales_cloudera ",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 31"
+        "notes": "Same as: CustomerProfileSales_SalesOrder",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2863,7 +2903,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 32"
+        "notes": "Same as: customerprofilesales_servicejobtype",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2876,7 +2917,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 33"
+        "notes": "Same as: CustomerProfileSales_UnitSales",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2889,7 +2931,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 34"
+        "notes": "Same as: customerprofilesales1",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2902,7 +2945,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 35"
+        "notes": "Same as: mastercustomerprofileref",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2915,7 +2959,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 36"
+        "notes": "Same as: mastermaindealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2928,7 +2973,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 37"
+        "notes": "Same as: mastersalesperson",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2941,7 +2987,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 38"
+        "notes": "Same as: masterunittype",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2954,7 +3001,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 39"
+        "notes": "Same as: RefCounterGroup",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2967,7 +3015,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 40"
+        "notes": "Same as: refequipment",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2980,7 +3029,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 41"
+        "notes": "Same as: refjob",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -2993,7 +3043,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 42"
+        "notes": "Same as: refjobtype",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3006,7 +3057,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 43"
+        "notes": "Same as: Reftasklist",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3019,7 +3071,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 44"
+        "notes": "Same as: ro_masterdealer",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3032,7 +3085,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 45"
+        "notes": "Same as: svpkbheader",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3045,7 +3099,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 46"
+        "notes": "Same as: svpkbheaderequipment",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3058,7 +3113,8 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 47"
+        "notes": "Same as: svpkbjobdetail",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3071,7 +3127,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 48"
+        "notes": "Same as: tmp_H0_customerprofilesales",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -3084,7 +3141,8 @@
         "dag": "",
         "pipeline": "-",
         "status": "Duplicate",
-        "notes": "Duplicate of row 49"
+        "notes": "Same as: unitcolor",
+        "test_time": "-"
       }
     ],
     "done": 43,
@@ -3114,7 +3172,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3128,7 +3186,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3142,7 +3200,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3156,7 +3214,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3170,7 +3228,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3184,7 +3242,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3198,7 +3256,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3212,7 +3270,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3226,7 +3284,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3240,7 +3298,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3254,7 +3312,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3268,7 +3326,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3282,7 +3340,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3296,7 +3354,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3310,7 +3368,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3324,7 +3382,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3338,7 +3396,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3352,7 +3410,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3366,7 +3424,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3380,7 +3438,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3394,7 +3452,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3408,7 +3466,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3422,7 +3480,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3436,7 +3494,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3450,7 +3508,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3464,7 +3522,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3492,7 +3550,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3506,7 +3564,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3520,7 +3578,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3534,7 +3592,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3548,7 +3606,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3562,7 +3620,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3576,7 +3634,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3590,7 +3648,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3604,7 +3662,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3618,7 +3676,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3632,7 +3690,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3646,7 +3704,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3674,7 +3732,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3688,7 +3746,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3702,7 +3760,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3716,7 +3774,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3730,7 +3788,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3758,7 +3816,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3772,7 +3830,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3786,7 +3844,7 @@
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -3870,7 +3928,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 54"
+        "notes": "Same as: leadsfunnelcrmh1",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -4200,7 +4259,7 @@
         "dag": "so2w_dragon_sap",
         "pipeline": "SAP_ZMB51_Fabric",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -4214,7 +4273,7 @@
         "dag": "so2w_dragon_sap",
         "pipeline": "SAP_ZPYGSDQ00010_Fabric",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -4819,7 +4878,7 @@
         "dag": "",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -4889,7 +4948,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 34"
+        "notes": "Same as: report_sdue_2023",
+        "test_time": "-"
       }
     ],
     "done": 1,
@@ -5289,7 +5349,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 12"
+        "notes": "Same as: 3axisleadsfunnel",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -5302,7 +5363,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 13"
+        "notes": "Same as: 3axisleadsmonitoring",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -5436,7 +5498,7 @@
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_threshold_nms",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5450,7 +5512,7 @@
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_threshold_nms",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5464,7 +5526,7 @@
         "dag": "Inas",
         "pipeline": "DE",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5478,7 +5540,7 @@
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_transformation_astranet_file_leads_ahm",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5733,7 +5795,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 2"
+        "notes": "Same as: datarevenue_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -5794,7 +5857,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5808,7 +5871,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5822,7 +5885,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5836,7 +5899,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5850,7 +5913,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5864,7 +5927,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5878,7 +5941,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5892,7 +5955,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5906,7 +5969,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5920,7 +5983,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5934,7 +5997,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5948,7 +6011,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -5962,7 +6025,7 @@
         "dag": "Landing_Databricks_Motorkux:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/32fcb813-8539-4efb-aa51-329ade3b1a6d?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\ndragon_L1:\nhttp://10.252.136.230:8080/dags/dragon_L1/grid?tags=HSO&search=dragon_L1&task_id=start&tab=details",
         "pipeline": "Landing_Databricks_Motorkux",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6175,7 +6238,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 3"
+        "notes": "Same as: prospecttossu",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -6407,7 +6471,7 @@
         "dag": "PRD_UtilisasiDragon",
         "pipeline": "PRD_UtilisasiDragon",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6421,7 +6485,7 @@
         "dag": "-",
         "pipeline": "-",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6522,7 +6586,7 @@
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6536,7 +6600,7 @@
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       }
     ],
@@ -6654,7 +6718,7 @@
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_marketsharedata",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6668,7 +6732,7 @@
         "dag": "http://10.252.136.230:8080/dags/dragon_L1/grid?task_id=L1_FILE_ASTRANET.astranet_threshold_nms_file",
         "pipeline": "pipeline_astranet_file_marketsharedatatype",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6710,7 +6774,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 4"
+        "notes": "Same as: marketsharedata",
+        "test_time": "-"
       }
     ],
     "done": 2,
@@ -6740,7 +6805,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "Target_LCR_File",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -6914,7 +6979,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 4"
+        "notes": "Same as: datamekanik",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -6927,7 +6993,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 5"
+        "notes": "Same as: datamekanik_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -6999,7 +7066,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 3"
+        "notes": "Same as: datapit_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7141,7 +7209,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 7"
+        "notes": "Same as: datainsighthotline",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -7154,7 +7223,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 8"
+        "notes": "Same as: datainsighthotline_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7355,7 +7425,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 7"
+        "notes": "Same as: dealergeneraldata",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7441,7 +7512,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 4"
+        "notes": "Same as: monitoringbku",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7679,7 +7751,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 5"
+        "notes": "Same as: stock_level_summary",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7765,7 +7838,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 3"
+        "notes": "Same as: btl_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -7795,7 +7869,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_PCD_H3_Upload_File",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -7809,7 +7883,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "TargetSalesInOut_File",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {
@@ -7865,7 +7939,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 5"
+        "notes": "Same as: salesinsalesout_transformation",
+        "test_time": "-"
       }
     ],
     "done": 2,
@@ -7993,7 +8068,8 @@
         "dag": "",
         "pipeline": "",
         "status": "Duplicate",
-        "notes": "Duplicate of row 7"
+        "notes": "Same as: spr_transformation",
+        "test_time": "-"
       }
     ],
     "done": 0,
@@ -8023,7 +8099,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "Deploy_WorkDaysAkumulatif",
         "status": "Landing",
-        "notes": "Data Landing - sudah ada di GCS/BQ",
+        "notes": "Data sudah ada di GCS/BQ",
         "test_time": "-"
       },
       {

@@ -2095,6 +2095,10 @@ function showIndicatorDetail(name) {
         ${flagPill('Done', done > 0)}
         ${flagPill('Tested', tested > 0)}
         ${flagPill('Complete', complete > 0)}
+        <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:6px;background:rgba(148,163,184,0.1);border:1px solid rgba(148,163,184,0.2)">
+          <span style="color:#94a3b8">Pending:</span>
+          <span style="color:var(--text);font-weight:600">${rawTotal - done - duplicates}</span>
+        </span>
       </div>
 
       <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-mute);font-weight:600;margin-bottom:10px">Table Breakdown</div>
@@ -2103,8 +2107,10 @@ function showIndicatorDetail(name) {
         <table class="task-tbl">
           <thead>
             <tr>
+              <th>Platform</th>
               <th>Database</th>
               <th>Table</th>
+              <th>Asset</th>
               <th>Script</th>
               <th>Status</th>
               <th>Test Time</th>
@@ -2131,12 +2137,14 @@ function showIndicatorDetail(name) {
               const notes = t.notes || '-';
               
               return '<tr style="' + rowStyle + '">' +
+                '<td style="font-size:10px;color:var(--text-mute)">' + escapeHtml(t.platform || '-') + '</td>' +
                 '<td style="font-size:11px">' + escapeHtml(t.database || '-') + '</td>' +
                 '<td class="mono" style="font-size:11px">' + escapeHtml(t.table || '-') + '</td>' +
+                '<td style="font-size:10px;color:var(--text-mute)">' + escapeHtml(t.asset || '-') + '</td>' +
                 '<td class="mono" style="font-size:11px">' + escapeHtml(t.script || '-') + '</td>' +
                 '<td><span class="badge ' + statusClass + '"><span class="dot"></span>' + status + '</span></td>' +
                 '<td style="font-size:11px;text-align:center">' + testTime + '</td>' +
-                '<td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notes) + '</td>' +
+                '<td style="font-size:11px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeHtml(notes) + '">' + escapeHtml(notes) + '</td>' +
                 '</tr>';
             }).join('')}
           </tbody>
