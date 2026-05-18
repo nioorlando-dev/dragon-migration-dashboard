@@ -1835,21 +1835,23 @@ async function renderIndicators(root) {
   }
 
   const indList = Object.values(indicators).map(ind => {
-    ind.totalTables = ind.tables.length;
-    ind.dagInactive = ind.tables.filter(t => !t.dag_active).length;
-    ind.converted = ind.tables.filter(t => t.status === 'Done').length;
+    ind.totalTables = ind.tables?.length || 0;
+    ind.dagInactive = ind.tables?.filter(t => !t.dag_active).length || 0;
+    ind.converted = ind.tables?.filter(t => t.status === 'Done').length || 0;
+    ind.tested = ind.tables?.filter(t => t.status === 'Tested').length || 0;
     ind.progress = ind.totalTables > 0 ? Math.round(ind.converted / ind.totalTables * 100) : 0;
     return ind;
-  }).sort((a, b) => {
-    const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
-    return (order[a.priority] || 3) - (order[b.priority] || 3) || b.totalTables - a.totalTables;
   });
 
   const p1a = indList.filter(i => i.priority === 'P1A');
   const p1b = indList.filter(i => i.priority === 'P1B');
   const p2 = indList.filter(i => i.priority === 'P2');
   const p3 = indList.filter(i => i.priority === 'P3');
+  const p4 = indList.filter(i => i.priority === 'P4');
+  const p5 = indList.filter(i => i.priority === 'P5');
   const totalTables = indList.reduce((s, i) => s + i.totalTables, 0);
+  const totalConverted = indList.reduce((s, i) => s + i.converted, 0);
+  const totalTested = indList.reduce((s, i) => s + i.tested, 0);
   const totalDagInactive = indList.reduce((s, i) => s + i.dagInactive, 0);
 
   // Update badge
@@ -1857,79 +1859,125 @@ async function renderIndicators(root) {
   if (badge) badge.textContent = indList.length;
 
   root.innerHTML = `
-    <div class="section">
-      <h2 class="section-title">Indicators</h2>
-      <div class="section-sub">Tracking ${indList.length} indicators · ${totalTables} tables · ${totalDagInactive} DAG inactive</div>
-    </div>
+    <div class="view">
+      <h1 class="page-title">Indicators</h1>
+      <p class="page-sub">Tracking ${indList.length} indicators from Project MAGNUM · ${totalTables} tables</p>
 
-    <div class="stat-grid" style="margin-bottom:24px">
-      <div class="stat-card"><div class="stat-label"># INDICATORS</div><div class="stat-value">${indList.length}</div><div class="stat-sub">from Lift & Shift</div></div>
-      <div class="stat-card"><div class="stat-label"># TABLES</div><div class="stat-value">${totalTables}</div><div class="stat-sub">total tracked</div></div>
-      <div class="stat-card"><div class="stat-label" style="color:var(--red)">P1A CRITICAL</div><div class="stat-value">${p1a.length}</div><div class="stat-sub">${p1a.reduce((s,i)=>s+i.totalTables,0)} tables</div></div>
-      <div class="stat-card"><div class="stat-label" style="color:var(--yellow)">P1B HIGH</div><div class="stat-value">${p1b.length}</div><div class="stat-sub">${p1b.reduce((s,i)=>s+i.totalTables,0)} tables</div></div>
-      <div class="stat-card"><div class="stat-label" style="color:#ff69b4">DAG INACTIVE</div><div class="stat-value">${totalDagInactive}</div><div class="stat-sub">need data check</div></div>
-    </div>
+      <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
+        ${statCard('Indicators', indList.length, iconLayers(), 'from Project MAGNUM', '')}
+        ${statCard('Tables', totalTables, iconHash(), 'under tracking', '')}
+        ${statCard('Converted', totalConverted, iconCheck(), totalTables ? Math.round(totalConverted/totalTables*100) + '% of total' : '—', 'up')}
+        ${statCard('Tested', totalTested, iconCheck(), indList.filter(i=>i.tested>0).length + ' indicators', 'up')}
+        ${statCard('DAG Inactive', totalDagInactive, iconAlert(), 'need data check', totalDagInactive > 0 ? 'down' : '')}
+      </div>
 
-    <div class="section" style="margin-bottom:16px">
-      <div class="toolbar">
-        <input type="text" class="input" id="indSearch" placeholder="Search indicators..." style="width:240px">
-        <select class="select" id="indFilter" style="width:160px">
+      <div class="filters" style="margin-bottom:20px">
+        <div class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="ind_q" type="text" placeholder="Search indicators…" spellcheck="false" autocomplete="off"/>
+        </div>
+        <select class="select" id="ind_prio">
           <option value="all">All priorities</option>
-          <option value="P1A">P1A Critical</option>
-          <option value="P1B">P1B High</option>
-          <option value="P2">P2 Medium</option>
-          <option value="P3">P3 Low</option>
+          <option value="P1A">P1A Critical (${p1a.length})</option>
+          <option value="P1B">P1B High (${p1b.length})</option>
+          <option value="P2">P2 Medium (${p2.length})</option>
+          <option value="P3">P3 Low (${p3.length})</option>
+          <option value="P4">P4 (${p4.length})</option>
+          <option value="P5">P5 (${p5.length})</option>
         </select>
       </div>
-    </div>
 
-    <div class="pipe-grid" id="indGrid"></div>
+      <div id="ind_grid">
+        <div class="pipe-grid">${indList.map(ind => indCard(ind)).join('')}</div>
+      </div>
+    </div>
   `;
 
-  const renderCards = (filter = 'all', search = '') => {
+  // Filter logic
+  const filterIndView = () => {
+    const q = (document.getElementById('ind_q')?.value || '').toLowerCase();
+    const prio = document.getElementById('ind_prio')?.value || 'all';
+    
     let filtered = indList;
-    if (filter !== 'all') filtered = filtered.filter(i => i.priority === filter);
-    if (search) filtered = filtered.filter(i => i.name.toLowerCase().includes(search.toLowerCase()));
-
-    document.getElementById('indGrid').innerHTML = filtered.map(ind => {
-      // Stages: Convert → Test → Complete
-      const stages = [
-        { name: 'CONVERT', done: ind.converted > 0 },
-        { name: 'TEST', done: ind.tested > 0 },
-        { name: 'COMPLETE', done: ind.progress === 100 },
-      ];
-      const currentIdx = stages.findIndex(s => !s.done);
-      const currentStage = currentIdx === -1 ? 'Completed' : stages[currentIdx].name;
-      
-      let stagesHtml = '<div class="pipe-stages">';
-      stages.forEach((s, i) => {
-        const cls = s.done ? 'done' : (i === currentIdx ? 'active' : '');
-        stagesHtml += '<span class="pipe-stage-badge ' + cls + '">' + s.name + '</span>';
-        if (i < stages.length - 1) stagesHtml += '<span class="pipe-stage-line ' + (s.done ? 'done' : '') + '"></span>';
+    if (q) filtered = filtered.filter(i => i.name.toLowerCase().includes(q));
+    if (prio !== 'all') filtered = filtered.filter(i => i.priority === prio);
+    
+    const grid = document.getElementById('ind_grid');
+    if (grid) {
+      grid.innerHTML = filtered.length === 0
+        ? '<div class="empty"><div class="t">No matching indicators</div><div>Try adjusting your filters.</div></div>'
+        : '<div class="pipe-grid">' + filtered.map(ind => indCard(ind)).join('') + '</div>';
+      grid.querySelectorAll('.pipe-card').forEach(el => {
+        el.addEventListener('click', () => showIndicatorDetail(el.dataset.name));
       });
-      stagesHtml += '</div>';
-
-      const pausedStyle = ind.dagInactive === ind.totalTables ? 'opacity:0.55;border-color:rgba(255,105,180,0.25);' : '';
-      const statusDot = ind.dagInactive === ind.totalTables 
-        ? '<span class="pipe-current-stage" style="color:#ff69b4"><span class="dot" style="background:#ff69b4;animation:none"></span>DAG Inactive</span>'
-        : currentIdx === -1 
-          ? '<span class="pipe-current-stage" style="color:var(--green)"><span class="dot" style="background:var(--green);animation:none"></span>Completed</span>'
-          : '<span class="pipe-current-stage"><span class="dot"></span>On ' + currentStage + '</span>';
-
-      return '<div class="card pipe-card hoverable" onclick="showIndicatorDetail(\'' + ind.name.replace(/'/g, "\\'") + '\')" style="' + pausedStyle + '">' +
-        '<div class="row"><span class="prio ' + ind.priority + '" style="color:' + (ind.priority === 'P1A' ? 'var(--red)' : ind.priority === 'P1B' ? 'var(--yellow)' : 'var(--text-dim)') + '">' + ind.priority + '</span>' +
-        '<span class="pipe-name mono">' + ind.name + '</span></div>' +
-        stagesHtml + statusDot +
-        '<div class="pipe-meta mono"><span>' + ind.totalTables + ' tables</span><span>' + ind.converted + ' converted</span>' +
-        (ind.dagInactive > 0 ? '<span style="color:#ff69b4">' + ind.dagInactive + ' DAG inactive</span>' : '') + '</div>' +
-        '<div class="pipe-progress"><span class="prog-track"><span class="prog-fill" style="width:' + ind.progress + '%"></span></span>' +
-        '<span class="meta"><b style="color:var(--text)">' + ind.progress + '%</b></span></div></div>';
-    }).join('');
+    }
   };
 
-  renderCards();
-  document.getElementById('indSearch').addEventListener('input', e => renderCards(document.getElementById('indFilter').value, e.target.value));
-  document.getElementById('indFilter').addEventListener('change', e => renderCards(e.target.value, document.getElementById('indSearch').value));
+  document.getElementById('ind_q')?.addEventListener('input', filterIndView);
+  document.getElementById('ind_prio')?.addEventListener('change', filterIndView);
+
+  root.querySelectorAll('.pipe-card').forEach(el => {
+    el.addEventListener('click', () => showIndicatorDetail(el.dataset.name));
+  });
+}
+
+function indCard(ind) {
+  const pct = ind.progress || 0;
+  const pausedStyle = ind.dagInactive === ind.totalTables && ind.totalTables > 0 ? 'opacity:0.55;border-color:rgba(255,105,180,0.25);' : '';
+  
+  // 7 stages like pipeline: Convert → Test → Validate → DAG Conv → DAG Test → Deploy → Completed
+  const stages = [
+    { name: 'CONVERT', done: ind.converted > 0 },
+    { name: 'TEST', done: ind.tested > 0 },
+    { name: 'VALIDATE', done: false },
+    { name: 'DAG CONV', done: false },
+    { name: 'DAG TEST', done: false },
+    { name: 'DEPLOY', done: false },
+    { name: 'COMPLETED', done: ind.progress === 100 },
+  ];
+  
+  let currentStageIdx = stages.findIndex(s => !s.done);
+  if (currentStageIdx === -1) currentStageIdx = stages.length;
+  
+  let currentStageText = '';
+  if (ind.dagInactive === ind.totalTables && ind.totalTables > 0) {
+    currentStageText = '<span class="pipe-current-stage" style="color:#ff69b4"><span class="dot" style="background:#ff69b4;animation:none"></span>DAG Inactive</span>';
+  } else if (currentStageIdx < stages.length) {
+    currentStageText = '<span class="pipe-current-stage"><span class="dot"></span>On ' + stages[currentStageIdx].name + '</span>';
+  } else {
+    currentStageText = '<span class="pipe-current-stage" style="color:var(--green)"><span class="dot" style="background:var(--green);animation:none"></span>Completed</span>';
+  }
+  
+  let stagesHtml = '<div class="pipe-stages">';
+  stages.forEach((s, i) => {
+    const badgeClass = s.done ? 'done' : (i === currentStageIdx && !(ind.dagInactive === ind.totalTables && ind.totalTables > 0)) ? 'active' : '';
+    stagesHtml += '<span class="pipe-stage-badge ' + badgeClass + '">' + s.name + '</span>';
+    if (i < stages.length - 1) {
+      const lineClass = s.done ? 'done' : '';
+      stagesHtml += '<span class="pipe-stage-line ' + lineClass + '"></span>';
+    }
+  });
+  stagesHtml += '</div>';
+
+  return `
+    <div class="card pipe-card hoverable" data-name="${escapeHtml(ind.name)}" style="${pausedStyle}">
+      <div class="row">
+        <span class="prio ${ind.priority}">${ind.priority}</span>
+        <span class="pipe-name mono" title="${escapeHtml(ind.name)}">${escapeHtml(ind.name)}</span>
+      </div>
+      ${stagesHtml}
+      ${currentStageText}
+      <div class="pipe-meta mono">
+        <span>${iconTask()} ${ind.totalTables} tables</span>
+        <span>${ind.converted} converted</span>
+        ${ind.dagInactive > 0 ? '<span style="color:#ff69b4">' + ind.dagInactive + ' DAG inactive</span>' : ''}
+      </div>
+      <div class="pipe-progress">
+        <span class="prog-track"><span class="prog-fill" data-pct="${pct}" style="width:0%"></span></span>
+        <span class="meta"><b style="color:var(--text)">${pct}%</b> · ${ind.converted}/${ind.totalTables}</span>
+      </div>
+    </div>
+  `;
 }
 
 function showIndicatorDetail(name) {
