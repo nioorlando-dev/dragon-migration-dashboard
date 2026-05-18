@@ -1086,12 +1086,12 @@ function showView(v) {
   const root = document.getElementById('viewRoot');
   root.style.opacity = '0';
   root.style.transform = 'translateY(4px)';
-  setTimeout(() => {
+  setTimeout(async () => {
     root.innerHTML = '';
     if (v === 'overview') renderOverview(root);
     else if (v === 'all') renderAll(root);
     else if (v === 'scripts') renderScripts(root);
-    else if (v === 'indicators') renderIndicators(root);
+    else if (v === 'indicators') await renderIndicators(root);
     else renderPriorityView(root, v);
     root.style.transition = 'opacity .28s ease, transform .28s ease';
     requestAnimationFrame(() => {
@@ -1887,6 +1887,9 @@ async function renderIndicators(root) {
   const totalTested = indList.reduce((s, i) => s + i.tested, 0);
   const donePct = totalUnique > 0 ? Math.round(totalDone/totalUnique*100) : 0;
   const testedPct = totalUnique > 0 ? Math.round(totalTested/totalUnique*100) : 0;
+  
+  console.log('Stats:', { totalTables, totalUnique, totalDone, totalTested, donePct, testedPct });
+  console.log('First indicator:', indList[0]);
 
   // Update badge
   const badge = document.querySelector('[data-badge="indicators"]');
@@ -1899,10 +1902,10 @@ async function renderIndicators(root) {
 
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
         ${statCard('Total Indicators', indList.length, iconLayers(), 'from Plan Detail HSO Dragon', '')}
-        ${statCard('Total Tables', totalTables, iconHash(), 'all tables mapped', '')}
-        ${statCard('Done', totalDone, iconCheck(), donePct + '% of total', totalDone > 0 ? 'up' : '')}
-        ${statCard('Tested', totalTested, iconCheck(), testedPct + '% of total', totalTested > 0 ? 'up' : '')}
-        ${statCard('Total Done', totalDone, iconCheck(), 'tables completed', totalDone > 0 ? 'up' : '')}
+        ${statCard('Total Tables', totalUnique, iconHash(), 'unique tables', '')}
+        ${statCard('Script Done', totalDone, iconCheck(), donePct + '% converted', totalDone > 0 ? 'up' : '')}
+        ${statCard('Script Tested', totalTested, iconCheck(), testedPct + '% tested', totalTested > 0 ? 'up' : '')}
+        ${statCard('Total Table Done', totalDone, iconCheck(), 'tables completed', totalDone > 0 ? 'up' : '')}
       </div>
 
       <div class="filters" style="margin-bottom:20px">
