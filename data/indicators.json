@@ -8,7 +8,281 @@
     "duplicates": 12,
     "converted": 9,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "masterdealer",
+        "database": "L3_DM_DRAGON",
+        "dag": "dragon_L3",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "masterdealer_star",
+        "database": "L3_DM_DRAGON",
+        "dag": "dragon_L3",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "data_master",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "master2w_dealer",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "masterdealer",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "masterdealer_temp",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "masterdealerfinal",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "masterdealerfinal2",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "portal_dealer",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "dealer",
+        "database": "opr_ast_portalhso_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_territory_result",
+        "database": "opr_ast_portalhso_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "city_ahm",
+        "database": "opr_ast_portalhso_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "city",
+        "database": "opr_ast_portalhso_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "branch",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "region",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealerhondaprofileahm_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "mappingdealeroldnew_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "statuslayanandealer_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "master2w_dealer",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "master2w_maindealer",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "master2w_salesperson",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "master2w_unittype",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "refmechanic",
+        "database": "opr_ast_ahass_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "refequipment",
+        "database": "opr_ast_ahass_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "masterdealerfinal",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "masterdealerfinal2",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "masterdealer_temp",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "data_master",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "master2w_dealer",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "portal_dealer",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      },
+      {
+        "table": "dealer_ahm",
+        "database": "opr_ast_portalhso_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_profile",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_mapping",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_ref",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_master",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_info",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_data",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_list",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "dealer_lookup",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "Master Main Dealer": {
     "no": 2,
@@ -19,7 +293,36 @@
     "duplicates": 0,
     "converted": 2,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "mastermaindealer",
+        "database": "L3_DM_DRAGON",
+        "dag": "dragon_L3",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "master2w_maindealer",
+        "database": "opr_ast_so2w_wh_dm",
+        "dag": "dragon_customerprofilesales_cloudera",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "master2w_maindealer",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "maindealer_ref",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "Master Sales Person": {
     "no": 3,
@@ -30,7 +333,15 @@
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "mastersalesperson",
+        "database": "L3_CLOUDERA_DRAGON_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Pending"
+      }
+    ]
   },
   "Master Unit Type": {
     "no": 4,
@@ -41,7 +352,29 @@
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "master2w_unittype",
+        "database": "opr_ast_master2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "unittype_ref",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "unittype_mapping",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "File": {
     "no": 5,
@@ -52,7 +385,78 @@
     "duplicates": 3,
     "converted": 0,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "dealerhondaprofileahm_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "mappingdealeroldnew_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "statuslayanandealer_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "mappingposservice_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "ringterritory_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "leadscustomer_amanda_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "leadscustomer_lemon_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "leadscustomer_motorkux_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "leadscustomer_socialmediafb_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      },
+      {
+        "table": "leadscustomer_virtualexhibition_file",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "Region": {
     "no": 6,
@@ -63,7 +467,15 @@
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "region",
+        "database": "opr_ast_so2w_wh_di",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "Data SAP": {
     "no": 7,
@@ -74,7 +486,127 @@
     "duplicates": 0,
     "converted": 17,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "zpygsdi00045_pssu",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00046",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00047",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00048",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00049",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00050",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00051",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00052",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00053",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00054",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00055",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00056",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00057",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00058",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00059",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00060",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "zpygsdi00061",
+        "database": "L0_SAP_RFC_HSO",
+        "dag": "dragon_SAP_GCP",
+        "dag_active": true,
+        "status": "Converted"
+      }
+    ]
   },
   "SAP PSSU": {
     "no": 8,
@@ -85,7 +617,15 @@
     "duplicates": 0,
     "converted": 0,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "zpygsdi00045_pssu",
+        "database": "L1_SAP_RFC_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "SAP USTK2": {
     "no": 9,
@@ -96,7 +636,22 @@
     "duplicates": 0,
     "converted": 1,
     "tested": 0,
-    "tables": []
+    "tables": [
+      {
+        "table": "ustk2_data",
+        "database": "L1_SAP_RFC_HSO",
+        "dag": "dragon_ustk2",
+        "dag_active": true,
+        "status": "Converted"
+      },
+      {
+        "table": "ustk2_ref",
+        "database": "L1_SAP_RFC_HSO",
+        "dag": "-",
+        "dag_active": false,
+        "status": "Landing"
+      }
+    ]
   },
   "Customer Profile Sales": {
     "no": 10,
