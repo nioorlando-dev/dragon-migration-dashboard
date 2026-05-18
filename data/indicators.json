@@ -6,7 +6,7 @@
     "total_tables": 51,
     "unique_tables": 39,
     "duplicates": 12,
-    "converted": 38,
+    "converted": 9,
     "tested": 0,
     "tables": []
   },
@@ -17,7 +17,7 @@
     "total_tables": 4,
     "unique_tables": 4,
     "duplicates": 0,
-    "converted": 3,
+    "converted": 2,
     "tested": 0,
     "tables": []
   },
