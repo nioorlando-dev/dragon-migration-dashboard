@@ -179,64 +179,15 @@ let allRows = [];
 
 async function loadData() {
   try {
-    const res = await fetch('./data/INDICATOR_TRACKING.csv');
-    const text = await res.text();
-    const lines = text.trim().split('\n');
-    const headers = lines[0].split(',');
-    
-    allRows = lines.slice(1).map(line => {
-      const values = [];
-      let current = '', inQuotes = false;
-      for (let c of line) {
-        if (c === '"') inQuotes = !inQuotes;
-        else if (c === ',' && !inQuotes) { values.push(current); current = ''; }
-        else current += c;
-      }
-      values.push(current);
-      return values;
-    });
+    const res = await fetch('./data/indicators.json');
+    const data = await res.json();
 
-    // Group by indicator
-    const grouped = {};
-    allRows.forEach(row => {
-      const indicator = row[2] || 'Unknown';
-      if (!grouped[indicator]) grouped[indicator] = { name: indicator, tables: [], priority: 'P3' };
-      grouped[indicator].tables.push({
-        project: row[1],
-        asset: row[3],
-        database: row[4],
-        table: row[5],
-        bucket: row[6],
-        bqDataset: row[7],
-        initialLanding: row[8],
-        initialMart: row[9],
-        daMapping: row[10],
-        etlConversion: row[11],
-        etlTest: row[12],
-        testTime: row[13],
-        incremental: row[14],
-        orchestration: row[15],
-        internalTest: row[16],
-        pqaTest: row[17],
-        lastUpdated: row[22]
-      });
-    });
-
-    // Assign priorities (based on known P1A/P1B indicators)
-    const p1aList = ['Master Dealer', 'Master Main Dealer', 'Master Sales Person', 'Master Unit Type', 'File', 'Region', 'Data SAP', 'SAP PSSU', 'SAP USTK2'];
-    const p1bList = ['Customer Profile Sales', 'Leads Funnel CRM H1', 'Customer Profile Service', 'PKB Service', 'Niguri Part', 'SDUE'];
-    const p2List = ['Grape Phase 1', 'Grape Phase 2', '3 Axis Leads Monitoring', 'USTK2', 'Unit Entry Transformation'];
-
-    indicatorData = Object.values(grouped).map(ind => {
-      if (p1aList.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P1A';
-      else if (p1bList.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P1B';
-      else if (p2List.some(p => ind.name.toLowerCase().includes(p.toLowerCase()))) ind.priority = 'P2';
-      
+    indicatorData = Object.values(data).map(ind => {
       ind.totalTables = ind.tables.length;
-      ind.converted = ind.tables.filter(t => t.etlConversion === '✓').length;
-      ind.tested = ind.tables.filter(t => t.etlTest === '✓').length;
-      ind.totalTestTime = ind.tables.reduce((sum, t) => sum + (parseInt(t.testTime) || 0), 0);
-      ind.progress = ind.totalTables > 0 ? Math.round(ind.tested / ind.totalTables * 100) : 0;
+      ind.dagInactive = ind.tables.filter(t => !t.dag_active).length;
+      ind.converted = ind.tables.filter(t => t.status === 'Done').length;
+      ind.tested = ind.tables.filter(t => t.status === 'Tested').length;
+      ind.progress = ind.totalTables > 0 ? Math.round(ind.converted / ind.totalTables * 100) : 0;
       return ind;
     }).sort((a, b) => {
       const order = { P1A: 0, P1B: 1, P2: 2, P3: 3 };
@@ -282,15 +233,15 @@ function updateUI(filter = 'all') {
           <div class="stat-label">Converted</div>
         </div>
         <div class="stat">
-          <div class="stat-value">${ind.tested}</div>
-          <div class="stat-label">Tested</div>
+          <div class="stat-value" style="color:${ind.dagInactive > 0 ? '#ff69b4' : 'var(--text)'}">${ind.dagInactive}</div>
+          <div class="stat-label">DAG Inactive</div>
         </div>
       </div>
       <div class="card-progress">
         <div class="card-progress-bar" style="width:${ind.progress}%"></div>
       </div>
       <div style="margin-top:8px;font-size:11px;color:var(--text-mute)">
-        Est. Test Time: <span class="mono">${ind.totalTestTime} min</span> · Progress: <span style="color:var(--green)">${ind.progress}%</span>
+        Progress: <span style="color:var(--green)">${ind.progress}%</span>
       </div>
     </div>
   `).join('');
@@ -318,12 +269,12 @@ function showDetail(name) {
         <div class="stat-label">Converted</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value">${ind.tested}</div>
-        <div class="stat-label">Tested</div>
+        <div class="stat-value" style="color:#ff69b4">${ind.dagInactive}</div>
+        <div class="stat-label">DAG Inactive</div>
       </div>
       <div class="stat" style="background:var(--card);padding:16px;border-radius:8px">
-        <div class="stat-value">${ind.totalTestTime}m</div>
-        <div class="stat-label">Est. Test Time</div>
+        <div class="stat-value">${ind.progress}%</div>
+        <div class="stat-label">Progress</div>
       </div>
     </div>
     <table class="data-table">
@@ -332,22 +283,22 @@ function showDetail(name) {
           <th>Table</th>
           <th>Database</th>
           <th>Asset</th>
-          <th>ETL Conv</th>
-          <th>ETL Test</th>
-          <th>Test Time</th>
-          <th>Orchestration</th>
+          <th>Script</th>
+          <th>DAG</th>
+          <th>DAG Status</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
         ${ind.tables.map(t => `
-          <tr>
+          <tr style="${!t.dag_active ? 'background:#2d1a24;' : ''}">
             <td class="mono">${t.table || '-'}</td>
             <td class="mono" style="font-size:11px">${t.database || '-'}</td>
             <td>${t.asset || '-'}</td>
-            <td class="${t.etlConversion === '✓' ? 'status-done' : 'status-pending'}">${t.etlConversion || '-'}</td>
-            <td class="${t.etlTest === '✓' ? 'status-done' : 'status-pending'}">${t.etlTest || '-'}</td>
-            <td class="mono">${t.testTime || '-'} min</td>
-            <td class="${t.orchestration === '✓' ? 'status-done' : 'status-pending'}">${t.orchestration || '-'}</td>
+            <td class="mono" style="font-size:11px">${t.script || '-'}</td>
+            <td class="mono" style="font-size:11px">${t.dag || '-'}</td>
+            <td style="color:${t.dag_active ? 'var(--green)' : '#ff69b4'}">${t.dag_active ? 'Active' : 'Inactive'}</td>
+            <td class="${t.status === 'Done' ? 'status-done' : 'status-pending'}">${t.status || '-'}</td>
           </tr>
         `).join('')}
       </tbody>

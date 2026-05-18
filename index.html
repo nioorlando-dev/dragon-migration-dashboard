@@ -2319,82 +2319,68 @@ async function exportXLSX() {
   URL.revokeObjectURL(url);
 }
 
-// Export Indicator XLSX from INDICATOR_TRACKING.csv
+// Export Indicator XLSX from indicators.json
 async function exportIndicatorXLSX() {
   try {
-    const res = await fetch('./data/INDICATOR_TRACKING.csv');
-    if (!res.ok) throw new Error('Failed to load INDICATOR_TRACKING.csv');
-    const csvText = await res.text();
-    
-    // Parse CSV
-    const lines = csvText.trim().split('\n');
-    const headers = lines[0].split(',');
-    const rows = lines.slice(1).map(line => {
-      const values = [];
-      let current = '';
-      let inQuotes = false;
-      for (let i = 0; i < line.length; i++) {
-        const char = line[i];
-        if (char === '"') {
-          inQuotes = !inQuotes;
-        } else if (char === ',' && !inQuotes) {
-          values.push(current);
-          current = '';
-        } else {
-          current += char;
-        }
-      }
-      values.push(current);
-      return values;
-    });
+    const res = await fetch('./data/indicators.json');
+    if (!res.ok) throw new Error('Failed to load indicators.json');
+    const data = await res.json();
 
-    // Create workbook
+    const HEADERS = ['No','Indicator','Priority','Table','Database','Asset','Script','DAG','DAG Status','Status'];
+    const PINK = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFCE4EC' } };
+
     const wb = new ExcelJS.Workbook();
     wb.creator = 'HSO Dragon Migration Dashboard';
-    wb.created = new Date();
+    const ws = wb.addWorksheet('Indicator Details');
 
-    // Sheet 1: All Indicators
-    const ws = wb.addWorksheet('Indicator Tracking');
-    ws.addRow(headers);
-    rows.forEach(row => ws.addRow(row));
+    // Header
+    const headerRow = ws.addRow(HEADERS);
+    headerRow.eachCell(cell => {
+      cell.font = { bold: true, color: { argb: 'FFFFFFFF' }, size: 10 };
+      cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0070F3' } };
+      cell.alignment = { horizontal: 'center' };
+    });
 
-    // Style header
-    const headerRow = ws.getRow(1);
-    headerRow.font = { bold: true, color: { argb: 'FFFFFFFF' } };
-    headerRow.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0070F3' } };
-    headerRow.alignment = { horizontal: 'center' };
+    let no = 1;
+    for (const [indName, ind] of Object.entries(data)) {
+      for (const t of ind.tables) {
+        const row = ws.addRow([no, indName, ind.priority, t.table, t.database, t.asset, t.script, t.dag, t.dag_active ? 'Active' : 'Inactive', t.status]);
+        if (!t.dag_active) {
+          row.eachCell(cell => {
+            cell.fill = PINK;
+            cell.font = { color: { argb: 'FF880E4F' }, size: 10 };
+          });
+        }
+        no++;
+      }
+    }
 
-    // Auto-width columns
-    ws.columns.forEach((col, i) => {
-      let max = headers[i] ? headers[i].length : 10;
-      ws.getColumn(i + 1).eachCell({ includeEmpty: false }, cell => {
+    // Auto-width
+    ws.columns.forEach(col => {
+      let max = 10;
+      col.eachCell({ includeEmpty: true }, cell => {
         const len = String(cell.value || '').length;
-        if (len > max) max = Math.min(len, 50);
+        if (len > max) max = Math.min(len, 40);
       });
       col.width = max + 2;
     });
-
-    // Freeze header
     ws.views = [{ state: 'frozen', ySplit: 1 }];
 
-    // Sheet 2: Summary by Indicator
-    const ws2 = wb.addWorksheet('Summary by Indicator');
-    const indicatorCounts = {};
-    rows.forEach(row => {
-      const ind = row[2] || 'Unknown';
-      if (!indicatorCounts[ind]) indicatorCounts[ind] = { total: 0, done: 0 };
-      indicatorCounts[ind].total++;
-      if (row[12] === '✓') indicatorCounts[ind].done++;
-    });
-    ws2.addRow(['Indicator', 'Total Tables', 'ETL Test Done', 'Progress %']);
-    Object.entries(indicatorCounts).sort((a,b) => b[1].total - a[1].total).forEach(([ind, c]) => {
-      ws2.addRow([ind, c.total, c.done, c.total > 0 ? Math.round(c.done/c.total*100) + '%' : '0%']);
-    });
+    // Sheet 2: Summary
+    const ws2 = wb.addWorksheet('Summary');
+    ws2.addRow(['Indicator','Priority','Total Tables','DAG Inactive','Converted','Progress %']);
     const h2 = ws2.getRow(1);
-    h2.font = { bold: true, color: { argb: 'FFFFFFFF' } };
-    h2.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF00D084' } };
+    h2.eachCell(cell => {
+      cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF00D084' } };
+    });
+    for (const [indName, ind] of Object.entries(data)) {
+      const dagInactive = ind.tables.filter(t => !t.dag_active).length;
+      const converted = ind.tables.filter(t => t.status === 'Done').length;
+      const progress = ind.tables.length > 0 ? Math.round(converted / ind.tables.length * 100) : 0;
+      ws2.addRow([indName, ind.priority, ind.tables.length, dagInactive, converted, progress + '%']);
+    }
 
-    // Download
     const buf = await wb.xlsx.writeBuffer();
     const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
     const url = URL.createObjectURL(blob);
