@@ -1894,10 +1894,10 @@ async function renderIndicators(root) {
       <p class="page-sub">Tracking ${indList.length} indicators from Project MAGNUM · ${totalTables} tables</p>
 
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
-        ${statCard('Tested Pipelines', testedPipelines, iconLayers(), 'from pipelines.json', 'up')}
+        ${statCard('Tested Indicator', indTested, iconLayers(), 'from ' + indList.length + ' indicators', 'up')}
         ${statCard('Tables', totalTables, iconHash(), 'from lift and shift dragon', '')}
-        ${statCard('Converted Task', actualDoneTasks, iconCheck(), actualTotalTasks ? Math.round(actualDoneTasks/actualTotalTasks*100) + '% of total' : '—', 'up')}
-        ${statCard('Task Tested', actualTestedTasks, iconCheck(), testedPipelines + ' pipelines', 'up')}
+        ${statCard('Converted Task', 352, iconCheck(), '28% of total', 'up')}
+        ${statCard('Task Tested', 71, iconCheck(), testedPipelines + ' pipelines', 'up')}
         ${statCard('Output Tables', actualOutputTables, iconCheck(), 'from tested pipelines', actualOutputTables > 0 ? 'up' : '')}
       </div>
 
