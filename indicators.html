@@ -147,7 +147,37 @@ main { margin-left: 240px; padding: 24px 32px; }
       <h1>Indicator Tracking</h1>
       <div class="topbar-meta">
         <span class="pill mono" id="totalStats">Loading...</span>
+        <a href="#" class="pill" style="text-decoration:none;color:var(--green)" onclick="exportXLSX();return false;">📊 Export XLSX</a>
         <a href="index.html" class="pill" style="text-decoration:none;color:var(--text-dim)">← Back to Dashboard</a>
+      </div>
+    </div>
+
+    <!-- Independent Stat Cards from indicators.json ONLY -->
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px">
+        <div style="font-size:11px;color:var(--text-mute);text-transform:uppercase;margin-bottom:8px">Total Indicators</div>
+        <div style="font-size:32px;font-weight:700" id="statTotalInd">0</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:4px">from Project MAGNUM</div>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px">
+        <div style="font-size:11px;color:var(--text-mute);text-transform:uppercase;margin-bottom:8px">Total Tables</div>
+        <div style="font-size:32px;font-weight:700" id="statTotalTables">0</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:4px">unique tables</div>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;border-left:3px solid var(--green)">
+        <div style="font-size:11px;color:var(--text-mute);text-transform:uppercase;margin-bottom:8px">Converted</div>
+        <div style="font-size:32px;font-weight:700;color:var(--green)" id="statConverted">0</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:4px"><span id="statConvertedPct">0%</span> of total</div>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;border-left:3px solid var(--blue)">
+        <div style="font-size:11px;color:var(--text-mute);text-transform:uppercase;margin-bottom:8px">Tested</div>
+        <div style="font-size:32px;font-weight:700;color:var(--blue)" id="statTested">0</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:4px"><span id="statTestedPct">0%</span> of total</div>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;border-left:3px solid var(--yellow)">
+        <div style="font-size:11px;color:var(--text-mute);text-transform:uppercase;margin-bottom:8px">Pending</div>
+        <div style="font-size:32px;font-weight:700;color:var(--yellow)" id="statPending">0</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:4px">not started yet</div>
       </div>
     </div>
 
@@ -216,7 +246,17 @@ function updateUI(filter = 'all') {
   const totalUnique = indicatorData.reduce((s, i) => s + i.uniqueTables, 0);
   const totalConverted = indicatorData.reduce((s, i) => s + i.converted, 0);
   const totalTested = indicatorData.reduce((s, i) => s + i.tested, 0);
+  const totalPending = totalUnique - totalConverted;
   document.getElementById('totalStats').textContent = `${totalUnique} tables · ${totalConverted} converted · ${totalTested} tested`;
+  
+  // Independent stat cards
+  document.getElementById('statTotalInd').textContent = indicatorData.length;
+  document.getElementById('statTotalTables').textContent = totalUnique;
+  document.getElementById('statConverted').textContent = totalConverted;
+  document.getElementById('statTested').textContent = totalTested;
+  document.getElementById('statPending').textContent = totalPending;
+  document.getElementById('statConvertedPct').textContent = totalUnique > 0 ? Math.round(totalConverted/totalUnique*100) + '%' : '0%';
+  document.getElementById('statTestedPct').textContent = totalUnique > 0 ? Math.round(totalTested/totalUnique*100) + '%' : '0%';
 
   // Render cards
   const grid = document.getElementById('cardsGrid');
@@ -328,6 +368,35 @@ function closeModal() {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// Export Indicator XLSX - INDEPENDENT, only from indicators.json
+function exportXLSX() {
+  if (!indicatorData.length) { alert('No data to export'); return; }
+  
+  // Build CSV (Excel compatible)
+  let csv = 'No,Indicator,Priority,Total Tables,Unique Tables,Duplicates,Converted,Tested,Pending,Progress %\n';
+  indicatorData.forEach(ind => {
+    const pending = ind.uniqueTables - ind.converted;
+    csv += `${ind.no},"${ind.name}",${ind.priority},${ind.total_tables || 0},${ind.uniqueTables},${ind.duplicates || 0},${ind.converted},${ind.tested},${pending},${ind.progress}\n`;
+  });
+  
+  // Add totals
+  const totalU = indicatorData.reduce((s,i)=>s+i.uniqueTables,0);
+  const totalC = indicatorData.reduce((s,i)=>s+i.converted,0);
+  const totalT = indicatorData.reduce((s,i)=>s+i.tested,0);
+  const totalTot = indicatorData.reduce((s,i)=>s+(i.total_tables||0),0);
+  const totalDup = indicatorData.reduce((s,i)=>s+(i.duplicates||0),0);
+  csv += `,"TOTAL",,${totalTot},${totalU},${totalDup},${totalC},${totalT},${totalU-totalC},${totalU>0?Math.round(totalC/totalU*100):0}\n`;
+  
+  const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const ts = new Date().toISOString().slice(0,10);
+  a.href = url;
+  a.download = `indicators_${ts}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
 
 loadData();
 </script>
