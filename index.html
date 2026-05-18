@@ -2033,14 +2033,16 @@ function showIndicatorDetail(name) {
       </div>
 
       <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-mute);font-weight:600;margin-bottom:10px">Table Breakdown</div>
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden;overflow-x:auto">
         <table class="task-tbl">
           <thead>
             <tr>
               <th>Table Name</th>
               <th>Database</th>
-              <th>Status</th>
+              <th>Asset</th>
               <th>Script</th>
+              <th>Status</th>
+              <th>Test Time</th>
             </tr>
           </thead>
           <tbody>
@@ -2048,8 +2050,10 @@ function showIndicatorDetail(name) {
               <tr>
                 <td class="mono">${escapeHtml(t.table || '-')}</td>
                 <td style="font-size:11px">${escapeHtml(t.database || '-')}</td>
-                <td><span class="badge ${t.status === 'Done' ? 'done' : t.status === 'Tested' ? 'tested' : t.status === 'Complete' ? 'done' : 'pending'}"><span class="dot"></span>${t.status || 'Pending'}</span></td>
+                <td style="font-size:11px">${escapeHtml(t.asset || '-')}</td>
                 <td class="mono" style="font-size:11px">${escapeHtml(t.script || '-')}</td>
+                <td><span class="badge ${t.status === 'Done' ? 'done' : t.status === 'Tested' ? 'tested' : t.status === 'Complete' ? 'done' : 'pending'}"><span class="dot"></span>${t.status || 'Pending'}</span></td>
+                <td style="font-size:11px;text-align:center">${t.test_time ? t.test_time + ' min' : '-'}</td>
               </tr>
             `).join('')}
           </tbody>
