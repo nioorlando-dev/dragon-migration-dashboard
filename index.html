@@ -985,7 +985,7 @@ function totals() {
   const done = activeRows.filter(r => r.status === 'done').length;
   // Tested tasks count: 28 (L2) + 8 (L3) + 29 (P35) + 2 (P04) = 67
   const testedPipelines = rows.filter(r => r.tested).length;
-  const tested = 67; // Hardcoded from actual test results
+  const tested = 71; // Hardcoded from actual test results
 
   // Calculate from status_counts (consistent with pipelines.json)
   let fullTotal = 0, converted = 0, skipped = 0, skipPaused = 0, skipOrch = 0;

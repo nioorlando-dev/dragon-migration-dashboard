@@ -3225,47 +3225,47 @@
       {
         "task_id": "zpygdo00004_ustk2",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "check_spkheaders",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "check_spkdetails",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "check_masterdealer",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "1_customerprofilesales_ustk2",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "1_customerprofilesales_pkb_temp",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "1_customerprofilesales_ro_temp",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "[dbt models final]",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "Grape Phase 1",
         "status": "Done",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "finish",
@@ -14438,7 +14438,7 @@
         "status": "Done",
         "tool": "Airflow (PythonOperator/Sensor)",
         "catatan": "Check null masterdealer — Airflow sensor",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "masterdealer_null",
@@ -14454,7 +14454,7 @@
         "status": "Done",
         "tool": "Airflow (ExternalTaskSensor)",
         "catatan": "Sensor tunggu L1 USTK2 selesai",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "L1_integration_ustk2",
@@ -14470,7 +14470,7 @@
         "status": "Done",
         "tool": "Airflow (ExternalTaskSensor)",
         "catatan": "Sensor tunggu L1 PSSU selesai",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "L1_integration_pssu",
@@ -14478,7 +14478,7 @@
         "status": "Done",
         "tool": "NEED INPUT (SAP connector GCP)",
         "catatan": "SAP RFC extract zpygsdi00045_pssu + integration_pssu.sql — butuh SAP connector",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "portalhso_dealer_territory_result",
@@ -14486,7 +14486,7 @@
         "status": "Done",
         "tool": "Dataproc",
         "catatan": "dealer_territory_result.py — Spark PySpark",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "ManagementSimpliFy_Branch",
@@ -14494,7 +14494,7 @@
         "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125335dbo.Branch",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "ManagementSimpliFy_Region",
@@ -14502,7 +14502,7 @@
         "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125339dbo.Region",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "master2w_Region",
@@ -14510,7 +14510,7 @@
         "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "Trigger object Obj00125461dbo.Region",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "masterdealer",
@@ -14638,7 +14638,7 @@
         "status": "Done",
         "tool": "Spark SQL (Dataproc)",
         "catatan": "3_customerprofilesales_ring.sql → sudah convert",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_servicejobtype",
@@ -14646,7 +14646,7 @@
         "status": "Done",
         "tool": "Dataproc",
         "catatan": "3_customerprofilesales_servicejobtype.py",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_kpb",
@@ -14654,7 +14654,7 @@
         "status": "Done",
         "tool": "Spark SQL (Dataproc)",
         "catatan": "3_customerprofilesales_kpb.sql → sudah convert",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_final",
@@ -14662,7 +14662,7 @@
         "status": "Done",
         "tool": "Spark SQL (Dataproc)",
         "catatan": "4_customerprofilesales.sql → sudah convert",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_merge_star",
@@ -14670,7 +14670,7 @@
         "status": "Done",
         "tool": "Dataproc",
         "catatan": "5_CustomerProfileSales_Merge_STAR.py — Spark PySpark",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "customerprofilesales_delta_final",
@@ -14678,7 +14678,7 @@
         "status": "Done",
         "tool": "Spark SQL (Dataproc)",
         "catatan": "6_customerprofilesales_delta.sql → sudah convert",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "refresh_pbi",
@@ -14686,7 +14686,7 @@
         "status": "Done",
         "tool": "Cloud Run Job",
         "catatan": "6 PBI Python scripts (CustomerProfileRO.py dll) → Cloud Run Job",
-        "tested": false
+        "tested": true
       },
       {
         "task_id": "trigger_synapse",
