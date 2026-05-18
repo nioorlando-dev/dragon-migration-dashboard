@@ -1836,8 +1836,10 @@ async function renderIndicators(root) {
     const res = await fetch('./data/indicators.json?v=' + Date.now());
     indicators = await res.json();
     state.indicators = indicators;
+    console.log('Loaded indicators:', Object.keys(indicators).length, 'items');
   } catch (e) {
     root.innerHTML = '<p style="color:var(--red)">Error loading indicators.json: ' + e.message + '</p>';
+    console.error('Failed to load indicators.json:', e);
     return;
   }
 
@@ -2010,6 +2012,7 @@ function indCard(ind) {
         <span>${iconTask()} ${ind.uniqueTables} tables</span>
         <span style="color:var(--green)">${ind.done} done</span>
         <span style="color:var(--blue)">${ind.tested} tested</span>
+        <span style="color:var(--yellow)">${ind.pending} pending</span>
       </div>
       <div class="pipe-progress">
         <span class="prog-track"><span class="prog-fill" data-pct="${pct}" style="width:0%"></span></span>
@@ -2095,9 +2098,9 @@ function showIndicatorDetail(name) {
         ${flagPill('Done', done > 0)}
         ${flagPill('Tested', tested > 0)}
         ${flagPill('Complete', complete > 0)}
-        <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:6px;background:rgba(148,163,184,0.1);border:1px solid rgba(148,163,184,0.2)">
-          <span style="color:#94a3b8">Pending:</span>
-          <span style="color:var(--text);font-weight:600">${rawTotal - done - duplicates}</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:6px;background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.25)">
+          <span style="color:var(--yellow)">Pending:</span>
+          <span style="color:var(--yellow);font-weight:600">${rawTotal - done - duplicates}</span>
         </span>
       </div>
 
