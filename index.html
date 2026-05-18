@@ -769,9 +769,13 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
           <span id="nowTime">—</span>
         </span>
-        <button class="pill" onclick="exportXLSX()" title="Export to XLSX (HSO Dragon format)" style="cursor:pointer;background:rgba(0,208,132,0.08);border:1px solid rgba(0,208,132,0.25);color:var(--green);font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:6px">
+        <button class="pill" onclick="exportXLSX()" title="Export Pipeline Data (per DAG/Pipeline)" style="cursor:pointer;background:rgba(0,208,132,0.08);border:1px solid rgba(0,208,132,0.25);color:var(--green);font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:6px">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Export XLSX
+          Pipeline XLSX
+        </button>
+        <button class="pill" onclick="exportIndicatorXLSX()" title="Export Indicator Data (per Indikator/KPI)" style="cursor:pointer;background:rgba(0,112,243,0.08);border:1px solid rgba(0,112,243,0.25);color:var(--blue);font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:6px">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Indicator XLSX
         </button>
       </div>
     </div>
@@ -2308,11 +2312,104 @@ async function exportXLSX() {
   const ts = new Date().toISOString().slice(0,19).replace(/[-:T]/g,'').replace(/(\d{8})(\d{6})/,'$1_$2');
   const a = document.createElement('a');
   a.href = url;
-  a.download = `HSO_DRAGON_EXPORT_${ts}.xlsx`;
+  a.download = `HSO_DRAGON_PIPELINE_${ts}.xlsx`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+}
+
+// Export Indicator XLSX from INDICATOR_TRACKING.csv
+async function exportIndicatorXLSX() {
+  try {
+    const res = await fetch('../docs/INDICATOR_TRACKING.csv');
+    if (!res.ok) throw new Error('Failed to load INDICATOR_TRACKING.csv');
+    const csvText = await res.text();
+    
+    // Parse CSV
+    const lines = csvText.trim().split('\n');
+    const headers = lines[0].split(',');
+    const rows = lines.slice(1).map(line => {
+      const values = [];
+      let current = '';
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        if (char === '"') {
+          inQuotes = !inQuotes;
+        } else if (char === ',' && !inQuotes) {
+          values.push(current);
+          current = '';
+        } else {
+          current += char;
+        }
+      }
+      values.push(current);
+      return values;
+    });
+
+    // Create workbook
+    const wb = new ExcelJS.Workbook();
+    wb.creator = 'HSO Dragon Migration Dashboard';
+    wb.created = new Date();
+
+    // Sheet 1: All Indicators
+    const ws = wb.addWorksheet('Indicator Tracking');
+    ws.addRow(headers);
+    rows.forEach(row => ws.addRow(row));
+
+    // Style header
+    const headerRow = ws.getRow(1);
+    headerRow.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+    headerRow.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF0070F3' } };
+    headerRow.alignment = { horizontal: 'center' };
+
+    // Auto-width columns
+    ws.columns.forEach((col, i) => {
+      let max = headers[i] ? headers[i].length : 10;
+      ws.getColumn(i + 1).eachCell({ includeEmpty: false }, cell => {
+        const len = String(cell.value || '').length;
+        if (len > max) max = Math.min(len, 50);
+      });
+      col.width = max + 2;
+    });
+
+    // Freeze header
+    ws.views = [{ state: 'frozen', ySplit: 1 }];
+
+    // Sheet 2: Summary by Indicator
+    const ws2 = wb.addWorksheet('Summary by Indicator');
+    const indicatorCounts = {};
+    rows.forEach(row => {
+      const ind = row[2] || 'Unknown';
+      if (!indicatorCounts[ind]) indicatorCounts[ind] = { total: 0, done: 0 };
+      indicatorCounts[ind].total++;
+      if (row[12] === '✓') indicatorCounts[ind].done++;
+    });
+    ws2.addRow(['Indicator', 'Total Tables', 'ETL Test Done', 'Progress %']);
+    Object.entries(indicatorCounts).sort((a,b) => b[1].total - a[1].total).forEach(([ind, c]) => {
+      ws2.addRow([ind, c.total, c.done, c.total > 0 ? Math.round(c.done/c.total*100) + '%' : '0%']);
+    });
+    const h2 = ws2.getRow(1);
+    h2.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+    h2.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF00D084' } };
+
+    // Download
+    const buf = await wb.xlsx.writeBuffer();
+    const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+    const url = URL.createObjectURL(blob);
+    const ts = new Date().toISOString().slice(0,19).replace(/[-:T]/g,'').replace(/(\d{8})(\d{6})/,'$1_$2');
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `HSO_DRAGON_INDICATORS_${ts}.xlsx`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (err) {
+    alert('Error exporting Indicator XLSX: ' + err.message);
+    console.error(err);
+  }
 }
 
 </script>

@@ -295,7 +295,7 @@ function renderOverview(root) {
   // Calculate tested/validated/deployed counts
   const allPipes = allRows().filter(r => !INCREMENTAL_DAGS.includes(r.name));
   const testedPipelines = allPipes.filter(r => r.tested).length;
-  const testedTasks = 67; // From TASK_LIST: 28 + 8 + 29 + 2 = 67 scripts tested
+  const testedTasks = allPipes.reduce((sum, r) => sum + r.tasks.filter(t => t.tested).length, 0);
   const validatedCount = allPipes.filter(r => r.validated).length;
   const dagConvertCount = allPipes.filter(r => r.dag_converted).length;
   const dagTestedCount = allPipes.filter(r => r.dag_tested).length;
@@ -304,14 +304,17 @@ function renderOverview(root) {
   // Calculate total output tables from tested pipelines
   const testedPipelinesList = allPipes
     .filter(r => r.tested && r.output_tables > 0)
-    .map(r => ({
-      name: r.name,
-      tables: r.output_tables,
-      testedTasks: r.name === 'dragon_L2' ? '28/28' : 
-                   r.name === 'dragon_L3' ? '8/11' :
-                   r.name === 'dragon_customerprofilesales_cloudera' ? '29/29' :
-                   r.name === 'prd_customerprofilesales' ? '2/2' : '—'
-    }));
+    .map(r => {
+      // Exclude SKIP tasks from count
+      const nonSkipTasks = r.tasks.filter(t => t.status !== 'SKIP' && t.status !== 'Skip');
+      const testedCount = nonSkipTasks.filter(t => t.tested).length;
+      const totalCount = nonSkipTasks.length;
+      return {
+        name: r.name,
+        tables: r.output_tables,
+        testedTasks: totalCount > 0 ? `${testedCount}/${totalCount}` : '—'
+      };
+    });
   const totalOutputTables = testedPipelinesList.reduce((sum, p) => sum + p.tables, 0);
 
   root.innerHTML = `
