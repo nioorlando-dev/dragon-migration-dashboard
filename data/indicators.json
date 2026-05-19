@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 38,
+    "tested": 39,
     "tables": [
       {
         "no": "",
@@ -75,9 +75,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: StatusLayananDealer_file",
+        "test_time": "08:35"
       },
       {
         "no": "",
@@ -724,8 +724,8 @@
         "test_time": "-"
       }
     ],
-    "done": 38,
-    "pending": 1
+    "done": 39,
+    "pending": 0
   },
   "Master Main Dealer": {
     "no": 2,
@@ -735,7 +735,7 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 1,
+    "tested": 3,
     "tables": [
       {
         "no": "",
@@ -775,9 +775,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dbo.mastermaindealer_cloudera",
+        "test_time": "08:35"
       },
       {
         "no": "",
@@ -789,13 +789,13 @@
         "script": "mastermaindealer_star.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: dbo.mastermaindealer_star",
+        "test_time": "02:08"
       }
     ],
-    "done": 1,
-    "pending": 3
+    "done": 3,
+    "pending": 1
   },
   "Master Sales Person": {
     "no": 3,
@@ -805,7 +805,7 @@
     "unique_tables": 1,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -817,13 +817,13 @@
         "script": "Script MasterSalesPerson",
         "dag": "By Schedule on Synapse",
         "pipeline": "PROD_MasterSalesPerson",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: [opr_ast_so2w_wh_dm].[mastersalesperson]",
+        "test_time": "08:25"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "Master Unit Type": {
     "no": 4,
@@ -833,7 +833,7 @@
     "unique_tables": 3,
     "duplicates": 0,
     "converted": 0,
-    "tested": 1,
+    "tested": 2,
     "tables": [
       {
         "no": "",
@@ -845,9 +845,9 @@
         "script": "Script MasterUnitType STAR",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType STAR",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: [opr_ast_so2w_wh_dm].[masterunittype]",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -878,8 +878,8 @@
         "test_time": "08:25"
       }
     ],
-    "done": 1,
-    "pending": 2
+    "done": 2,
+    "pending": 1
   },
   "File": {
     "no": 5,
@@ -1365,7 +1365,7 @@
     "unique_tables": 1,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -1377,13 +1377,13 @@
         "script": "SAP_PSSU",
         "dag": "By Schedule on Synapse",
         "pipeline": "SAP_PSSU",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: [opr_ast_sap_wh_di].[zpygsdi00045_pssu]",
+        "test_time": "02:18"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "SAP USTK2": {
     "no": 9,
