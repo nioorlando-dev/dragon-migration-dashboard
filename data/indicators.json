@@ -735,7 +735,7 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 3,
+    "tested": 4,
     "tables": [
       {
         "no": "",
@@ -747,9 +747,9 @@
         "script": "mastermaindealer.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mastermaindealer (view)",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -794,8 +794,8 @@
         "test_time": "02:08"
       }
     ],
-    "done": 3,
-    "pending": 1
+    "done": 4,
+    "pending": 0
   },
   "Master Sales Person": {
     "no": 3,
@@ -833,7 +833,7 @@
     "unique_tables": 3,
     "duplicates": 0,
     "converted": 0,
-    "tested": 2,
+    "tested": 3,
     "tables": [
       {
         "no": "",
@@ -859,9 +859,9 @@
         "script": "/home/adiden/scripts/vctd-daas/DBT/scripts/dbt_runner.sh SO_HSO .env.prod \"dbt run -s masterunittype -t prod\" ",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType UNION",
-        "status": "Pending",
-        "notes": "Belum dikerjakan",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: [opr_ast_so2w_wh_dm].[masterunittype_union]",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -878,8 +878,8 @@
         "test_time": "08:25"
       }
     ],
-    "done": 2,
-    "pending": 1
+    "done": 3,
+    "pending": 0
   },
   "File": {
     "no": 5,
