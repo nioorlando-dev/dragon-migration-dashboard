@@ -735,20 +735,20 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 1,
+    "tested": 0,
     "tables": [
       {
-        "no": "",
+        "no": "306",
         "platform": "Fabric",
         "database": "L3_DM_DRAGON",
-        "table": "mastermaindealer (view)",
+        "table": "mastermaindealer",
         "asset": "Datamart",
         "process": "Transform",
         "script": "mastermaindealer.sql",
-        "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
+        "dag": "dragon_L3",
         "pipeline": "DBT",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG dragon_L3 Script",
         "test_time": "-"
       },
       {
@@ -759,38 +759,38 @@
         "asset": "Datamart",
         "process": "Shortcut",
         "script": "",
-        "dag": "",
-        "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 02:08",
-        "test_time": "02:08"
-      },
-      {
-        "no": "",
-        "platform": "Fabric",
-        "database": "L3_DM_DRAGON",
-        "table": "dbo.mastermaindealer_cloudera",
-        "asset": "Datamart",
-        "process": "Ingestion",
-        "script": "",
-        "dag": "",
+        "dag": "dragon_L3",
         "pipeline": "",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG dragon_L3 Script",
         "test_time": "-"
       },
       {
-        "no": "",
+        "no": "307",
         "platform": "Fabric",
         "database": "L3_DM_DRAGON",
-        "table": "dbo.mastermaindealer_star",
+        "table": "mastermaindealer_cloudera",
+        "asset": "Datamart",
+        "process": "Ingestion",
+        "script": "",
+        "dag": "dragon_L3",
+        "pipeline": "",
+        "status": "Fabric",
+        "notes": "Fabric - put on DAG dragon_L3 Script",
+        "test_time": "-"
+      },
+      {
+        "no": "308",
+        "platform": "Fabric",
+        "database": "L3_DM_DRAGON",
+        "table": "mastermaindealer_star",
         "asset": "Datamart",
         "process": "Transform",
         "script": "mastermaindealer_star.sql",
-        "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
+        "dag": "dragon_L3",
         "pipeline": "DBT",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG dragon_L3 Script",
         "test_time": "-"
       }
     ],
@@ -808,17 +808,17 @@
     "tested": 0,
     "tables": [
       {
-        "no": "",
+        "no": "309",
         "platform": "Synapse",
-        "database": "Datamart_UNION",
-        "table": "[opr_ast_so2w_wh_dm].[mastersalesperson]",
+        "database": "L3_DM_DRAGON",
+        "table": "mastersalesperson",
         "asset": "Datamart",
         "process": "Transform",
         "script": "Script MasterSalesPerson",
-        "dag": "By Schedule on Synapse",
+        "dag": "synapse_schedule",
         "pipeline": "PROD_MasterSalesPerson",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
         "test_time": "-"
       }
     ],
@@ -833,7 +833,7 @@
     "unique_tables": 3,
     "duplicates": 0,
     "converted": 0,
-    "tested": 1,
+    "tested": 0,
     "tables": [
       {
         "no": "",
@@ -846,7 +846,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType STAR",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
         "test_time": "-"
       },
       {
@@ -860,7 +860,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType UNION",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
         "test_time": "-"
       },
       {
@@ -873,9 +873,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Fabric",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
+        "test_time": "-"
       }
     ],
     "done": 3,
@@ -889,7 +889,7 @@
     "unique_tables": 10,
     "duplicates": 3,
     "converted": 0,
-    "tested": 10,
+    "tested": 0,
     "tables": [
       {
         "no": "",
@@ -901,9 +901,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -915,9 +915,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -929,9 +929,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -943,9 +943,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -957,23 +957,23 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
         "platform": "Cloudera",
         "database": "opr_ast_so2w_wh_di",
-        "table": "Eventlive_file",
+        "table": "eventlive_file",
         "asset": "Data Landing",
         "process": "Transform",
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:32",
-        "test_time": "08:32"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -985,9 +985,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:32",
-        "test_time": "08:32"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -999,9 +999,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:32",
-        "test_time": "08:32"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1013,9 +1013,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:32",
-        "test_time": "08:32"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1027,9 +1027,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:32",
-        "test_time": "08:32"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1041,8 +1041,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Duplicate",
-        "notes": "Same as: summarypdrb_mtm_file",
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
         "test_time": "-"
       },
       {
@@ -1055,8 +1055,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Duplicate",
-        "notes": "Same as: summarypdrb_yty_file",
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
         "test_time": "-"
       },
       {
@@ -1069,8 +1069,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Duplicate",
-        "notes": "Same as: virtualexhibitionsummary_file",
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
         "test_time": "-"
       }
     ],
@@ -1098,7 +1098,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_Region",
         "status": "Fabric",
-        "notes": "Fabric - ikut DAG",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
         "test_time": "-"
       }
     ],
@@ -1113,7 +1113,7 @@
     "unique_tables": 17,
     "duplicates": 0,
     "converted": 0,
-    "tested": 17,
+    "tested": 0,
     "tables": [
       {
         "no": "",
@@ -1125,9 +1125,9 @@
         "script": "Obj00125433ARAGING",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1139,9 +1139,9 @@
         "script": "Obj00125593ZPYGF_AR_Aging_NonTradeDetail",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1153,9 +1153,9 @@
         "script": "Obj00125591ZPYGF_AR_Aging_ServicesSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1167,9 +1167,9 @@
         "script": "Obj00125582ZPYGF_AR_Aging_UnitSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:25",
-        "test_time": "08:25"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1181,9 +1181,9 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 02:18",
-        "test_time": "02:18"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1195,9 +1195,9 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1209,9 +1209,9 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1223,9 +1223,9 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1237,9 +1237,9 @@
         "script": "Obj00125446ZPYGSDQ00010",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1251,9 +1251,9 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1265,9 +1265,9 @@
         "script": "Obj00125521ZPYGSDR00039",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1279,9 +1279,9 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1293,9 +1293,9 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1307,9 +1307,9 @@
         "script": "Obj00125418BKPF",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1321,9 +1321,9 @@
         "script": "Obj00125427BSEC",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1335,9 +1335,9 @@
         "script": "Obj00125420BSEG",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1349,9 +1349,9 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "dragon_SAP",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: 08:30",
-        "test_time": "08:30"
+        "status": "Landing",
+        "notes": "Data sudah ada di GCS dan BQ",
+        "test_time": "-"
       }
     ],
     "done": 17,
@@ -1378,7 +1378,7 @@
         "dag": "By Schedule on Synapse",
         "pipeline": "SAP_PSSU",
         "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
+        "notes": "Data sudah ada di GCS dan BQ",
         "test_time": "-"
       }
     ],
@@ -1393,7 +1393,7 @@
     "unique_tables": 2,
     "duplicates": 0,
     "converted": 0,
-    "tested": 2,
+    "tested": 0,
     "tables": [
       {
         "no": "",
@@ -1405,9 +1405,9 @@
         "script": "SAP_USTK",
         "dag": "dragon_ustk2",
         "pipeline": "SAP_USTK",
-        "status": "Tested",
-        "notes": "SUCCESS: 02:18",
-        "test_time": "02:18"
+        "status": "Fabric",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -1419,9 +1419,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: 02:18",
-        "test_time": "02:18"
+        "status": "Fabric",
+        "notes": "Fabric - put on DAG synapse_schedule Script",
+        "test_time": "-"
       }
     ],
     "done": 2,
