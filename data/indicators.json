@@ -1113,7 +1113,7 @@
     "unique_tables": 17,
     "duplicates": 0,
     "converted": 0,
-    "tested": 5,
+    "tested": 17,
     "tables": [
       {
         "no": "",
@@ -1195,9 +1195,9 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygmmq00036",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1209,9 +1209,9 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygmmr00188",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1223,9 +1223,9 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsddt00720",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1237,9 +1237,9 @@
         "script": "Obj00125446ZPYGSDQ00010",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsdq00010",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1251,9 +1251,9 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsdq00094",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1265,9 +1265,9 @@
         "script": "Obj00125521ZPYGSDR00039",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsdr00039",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1279,9 +1279,9 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsdr00059",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1293,9 +1293,9 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: zpygsdr00263",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1307,9 +1307,9 @@
         "script": "Obj00125418BKPF",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: bkpf",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1321,9 +1321,9 @@
         "script": "Obj00125427BSEC",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: bsec",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1335,9 +1335,9 @@
         "script": "Obj00125420BSEG",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: bseg",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1349,13 +1349,13 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "dragon_SAP",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: mappingunittype",
+        "test_time": "08:30"
       }
     ],
-    "done": 5,
-    "pending": 12
+    "done": 17,
+    "pending": 0
   },
   "SAP PSSU": {
     "no": 8,
