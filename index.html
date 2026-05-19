@@ -1898,7 +1898,7 @@ async function renderIndicators(root) {
   root.innerHTML = `
     <div class="view">
       <h1 class="page-title">Indicators</h1>
-      <p class="page-sub">Tracking ${indList.length} indicators from Plan Detail HSO Dragon · ${totalTables} tables · <a href="#" onclick="exportIndicatorsXLSX();return false;" style="color:var(--green);text-decoration:none">📊 Export XLSX</a></p>
+      <p class="page-sub">Tracking ${indList.length} indicators from Plan Detail HSO Dragon · ${totalTables} tables</p>
 
       <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
         ${statCard('Total Indicators', indList.length, iconLayers(), 'from Plan Detail HSO Dragon', '')}
@@ -2023,40 +2023,6 @@ function indCard(ind) {
       </div>
     </div>
   `;
-}
-
-// Export Indicators XLSX/CSV - INDEPENDENT, only from indicators.json
-function exportIndicatorsXLSX() {
-  const inds = state.indicators;
-  if (!inds) { alert('No indicator data loaded'); return; }
-  
-  let csv = 'No,Indicator,Priority,Total Tables,Unique Tables,Duplicates,Converted,Tested,Pending,Progress %\n';
-  const list = Object.values(inds).sort((a,b) => {
-    const order = { P1A: 0, P1B: 1, P2: 2, P3: 3, P4: 4, P5: 5 };
-    return (order[a.priority]||9) - (order[b.priority]||9) || (a.no||0) - (b.no||0);
-  });
-  
-  let totalRaw = 0, totalU = 0, totalDup = 0, totalC = 0, totalT = 0;
-  list.forEach(ind => {
-    const u = ind.unique_tables || 0;
-    const c = ind.converted || 0;
-    const t = ind.tested || 0;
-    const tot = ind.total_tables || u;
-    const dup = ind.duplicates || 0;
-    const pending = u - c;
-    const prog = u > 0 ? Math.round(c/u*100) : 0;
-    csv += `${ind.no},"${ind.name}",${ind.priority},${tot},${u},${dup},${c},${t},${pending},${prog}\n`;
-    totalRaw += tot; totalU += u; totalDup += dup; totalC += c; totalT += t;
-  });
-  csv += `,"TOTAL",,${totalRaw},${totalU},${totalDup},${totalC},${totalT},${totalU-totalC},${totalU>0?Math.round(totalC/totalU*100):0}\n`;
-  
-  const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `indicators_${new Date().toISOString().slice(0,10)}.csv`;
-  a.click();
-  URL.revokeObjectURL(url);
 }
 
 function showIndicatorDetail(name) {
@@ -2678,6 +2644,9 @@ async function exportXLSX() {
 }
 
 // Export Indicator XLSX from indicators.json (INDEPENDENT)
+// Format sesuai workflow: No, Project, Indicator, Priority, Assets, Database Name, Table Name, 
+// Layer Bucket, Dataset BQ, Initial Landing, Initial Mart, DA Mapping, ETL Conversion, ETL Test, 
+// Test Time, Incremental, Orchestration
 async function exportIndicatorXLSX() {
   try {
     const res = await fetch('./data/indicators.json?v=' + Date.now());
@@ -2685,14 +2654,13 @@ async function exportIndicatorXLSX() {
     const data = await res.json();
 
     const HEADERS = [
-      'No', 'Project', 'Indicator', 'Assets', 'Database Name', 'Table Name', 'Layer Bucket', 'Dataset BQ',
-      'Initial Landing', 'Initial Mart', 'DA Mapping', 'ETL Conversion', 'ETL Test', 'Test Time (min)',
-      'Incremental', 'Orchestration', 'Internal Testing', 'PQA Test', 'BI Dev',
-      'Labeling Charging', 'Dataplex', 'Sign-off Document', 'DAG Status', 'Last Updated'
+      'No', 'Project', 'Indicator', 'Priority', 'Assets', 'Database Name', 'Table Name', 
+      'Layer Bucket', 'Dataset BQ', 'Initial Landing', 'Initial Mart', 'DA Mapping', 
+      'ETL Conversion', 'ETL Test', 'Test Time', 'Incremental', 'Orchestration'
     ];
     const PINK = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFCE4EC' } };
-    const IND_BG = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE3F2FD' } };
     const GREEN_BG = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE8F5E9' } };
+    const YELLOW_BG = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFF9C4' } };
 
     const wb = new ExcelJS.Workbook();
     wb.creator = 'HSO Dragon Migration Dashboard';
@@ -2713,55 +2681,97 @@ async function exportIndicatorXLSX() {
       return (order[a[1].priority] || 9) - (order[b[1].priority] || 9) || (a[1].no || 0) - (b[1].no || 0);
     });
 
+    // Database to BQ Dataset mapping
+    const DB_TO_BQ = {
+      'opr_ast_so2w_wh_dm': 'L3_CLOUDERA_DRAGON_HSO',
+      'opr_ast_so2w_wh_di': 'L1_SO2W_HSO',
+      'opr_ast_master2w_wh_di': 'L1_MASTER2W_HSO',
+      'opr_ast_ahass_wh_di': 'L1_AHASS_HSO',
+      'opr_ast_portalhso_wh_di': 'L1_PORTALHSO_HSOFINAL3_HSO',
+      'opr_ast_sap_wh_di': 'L1_SAP_RFC_HSO',
+      'L3_DM_DRAGON': 'L3_DM_DRAGON',
+      'LakehousePrd': 'L3_DM_DRAGON'
+    };
+
     let no = 1;
     for (const [indName, ind] of sorted) {
-      // Indicator header row
-      const indRow = ws.addRow([ind.no, ind.tables[0]?.dag || 'HSO Dragon', indName, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-      indRow.eachCell(cell => { cell.fill = IND_BG; cell.font = { bold: true, size: 10 }; });
-
-      // If indicator has tables, show them
       if (ind.tables && ind.tables.length > 0) {
         for (const t of ind.tables) {
-          const isDagInactive = !t.dag_active;
-          const isConverted = t.status === 'Converted' || t.dag_active;
-          const isTested = t.status === 'Tested';
-          const etlConv = isDagInactive ? 'DAG non-active' : (isConverted ? 'Completed' : 'Pending');
-          const etlTest = isDagInactive ? '-' : (isTested ? 'Completed' : '');
-          const testTime = isDagInactive ? '-' : (isTested ? '5' : '');
-          const layerBucket = t.database?.includes('L0') || t.database?.includes('L1') ? 'hotd-hso/L1' : 'hotd-hso/L3_CLOUDERA_DRAGON_HSO';
-          const datasetBQ = t.database || 'L3_CLOUDERA_DRAGON_HSO';
+          const status = t.status || 'Pending';
+          const isTested = status === 'Tested';
+          const isLanding = status === 'Landing';
+          const isDagInactive = status === 'DAG Inactive';
+          const isFabric = status === 'Fabric';
+          const isDuplicate = status === 'Duplicate';
+          const isShortcut = status === 'Shortcut';
+          
+          // Determine ETL status
+          let etlConv = 'Pending';
+          let etlTest = 'Pending';
+          if (isTested) {
+            etlConv = 'Complete';
+            etlTest = 'Complete';
+          } else if (isLanding || isDagInactive || isFabric || isShortcut) {
+            etlConv = isDagInactive ? 'DAG non-active' : 'Complete';
+            etlTest = '-';
+          } else if (isDuplicate) {
+            etlConv = 'Duplicate';
+            etlTest = '-';
+          }
+          
+          // Test time from notes or test_time field
+          const testTime = t.test_time || '-';
+          
+          // Layer bucket and dataset
+          const db = (t.database || '').toLowerCase();
+          const datasetBQ = DB_TO_BQ[db] || DB_TO_BQ[t.database] || 'L3_CLOUDERA_DRAGON_HSO';
+          const layerBucket = db.includes('_di') ? 'sotd-hso-prd/L1' : 'sotd-hso-prd/' + datasetBQ;
+          
+          // Asset type
+          const asset = t.asset || 'Data Mart';
+          
+          // Project name (from DAG or indicator)
+          const project = t.dag || indName.toLowerCase().replace(/\s+/g, '_');
 
           const row = ws.addRow([
-            no, t.dag || indName, indName, 'Data Mart', t.database || '-', t.table || '-',
-            layerBucket, datasetBQ,
-            'Completed', 'Completed', 'Completed', etlConv, etlTest, testTime,
-            '', isDagInactive ? '-' : 'Yes', etlTest ? 'Completed' : '', '', '',
-            '', '', '', isDagInactive ? 'Inactive' : 'Active', new Date().toISOString().slice(0,10)
+            no,
+            project,
+            indName,
+            ind.priority || 'P2',
+            asset,
+            t.database || '-',
+            t.table || '-',
+            layerBucket,
+            datasetBQ,
+            'Completed',  // Initial Landing - all data already in GCS/BQ
+            'Completed',  // Initial Mart
+            'Completed',  // DA Mapping
+            etlConv,
+            etlTest,
+            testTime,
+            '-',  // Incremental - kosongkan dulu
+            '-'   // Orchestration - kosongkan dulu
           ]);
 
+          // Color coding
           if (isDagInactive) {
             row.eachCell(cell => {
               cell.fill = PINK;
               cell.font = { color: { argb: 'FF880E4F' }, size: 10 };
             });
-          } else if (isConverted) {
+          } else if (isTested) {
             row.eachCell(cell => {
               cell.fill = GREEN_BG;
               cell.font = { color: { argb: 'FF1B5E20' }, size: 10 };
             });
+          } else if (isLanding || isFabric) {
+            row.eachCell(cell => {
+              cell.fill = YELLOW_BG;
+              cell.font = { size: 10 };
+            });
           }
           no++;
         }
-      } else {
-        // No tables detail - show summary row
-        const row = ws.addRow([
-          no, 'HSO Dragon', indName, 'Data Mart', '-', `(${ind.unique_tables || 0} tables)`,
-          '-', '-',
-          'Pending', 'Pending', 'Pending', ind.converted > 0 ? 'In Progress' : 'Pending', '', '',
-          '', '', '', '', '',
-          '', '', '', '-', new Date().toISOString().slice(0,10)
-        ]);
-        no++;
       }
     }
 
@@ -2770,35 +2780,35 @@ async function exportIndicatorXLSX() {
       let max = 10;
       col.eachCell({ includeEmpty: true }, cell => {
         const len = String(cell.value || '').length;
-        if (len > max) max = Math.min(len, 40);
+        if (len > max) max = Math.min(len, 50);
       });
       col.width = max + 2;
     });
     ws.views = [{ state: 'frozen', ySplit: 1 }];
 
-    // Sheet 2: Summary (INDEPENDENT from indicators.json)
+    // Sheet 2: Summary
     const ws2 = wb.addWorksheet('Summary');
-    ws2.addRow(['No','Indicator','Priority','Total Tables','Unique Tables','Duplicates','Converted','Tested','Pending','Progress %']);
+    ws2.addRow(['No','Indicator','Priority','Total Tables','Unique Tables','Duplicates','Done','Tested','Pending','Progress %']);
     const h2 = ws2.getRow(1);
     h2.eachCell(cell => {
       cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
       cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF00D084' } };
     });
     
-    let totalRaw = 0, totalU = 0, totalDup = 0, totalC = 0, totalT = 0;
+    let totalRaw = 0, totalU = 0, totalDup = 0, totalDone = 0, totalT = 0, totalPend = 0;
     for (const [indName, ind] of sorted) {
       const u = ind.unique_tables || 0;
-      const c = ind.converted || 0;
+      const done = ind.done || 0;
       const t = ind.tested || 0;
       const tot = ind.total_tables || u;
       const dup = ind.duplicates || 0;
-      const pending = u - c;
-      const progress = u > 0 ? Math.round(c / u * 100) : 0;
-      ws2.addRow([ind.no, indName, ind.priority, tot, u, dup, c, t, pending, progress + '%']);
-      totalRaw += tot; totalU += u; totalDup += dup; totalC += c; totalT += t;
+      const pending = ind.pending || 0;
+      const progress = u > 0 ? Math.round(done / u * 100) : 0;
+      ws2.addRow([ind.no, indName, ind.priority, tot, u, dup, done, t, pending, progress + '%']);
+      totalRaw += tot; totalU += u; totalDup += dup; totalDone += done; totalT += t; totalPend += pending;
     }
     // Total row
-    const totalRow = ws2.addRow(['', 'TOTAL', '', totalRaw, totalU, totalDup, totalC, totalT, totalU - totalC, totalU > 0 ? Math.round(totalC/totalU*100) + '%' : '0%']);
+    const totalRow = ws2.addRow(['', 'TOTAL', '', totalRaw, totalU, totalDup, totalDone, totalT, totalPend, totalU > 0 ? Math.round(totalDone/totalU*100) + '%' : '0%']);
     totalRow.eachCell(cell => { cell.font = { bold: true }; cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFF9C4' } }; });
 
     const buf = await wb.xlsx.writeBuffer();
