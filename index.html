@@ -2106,7 +2106,17 @@ function showIndicatorDetail(name) {
               const rowStyle = statusClass === 'dag-inactive' ? 'background:rgba(255,182,193,0.15);' : '';
               
               const testTime = t.test_time || '-';
-              const notes = t.notes || '-';
+              
+              // Generate notes based on status
+              let notes = t.notes || '-';
+              if (!t.notes || t.notes === '-') {
+                if (status === 'Tested') notes = 'Test Script Success';
+                else if (status === 'Landing' || status === 'DAG Inactive') notes = 'Data sudah ada di GCS dan BQ';
+                else if (status === 'Fabric') notes = 'Fabric - put on DAG ' + (t.dag || ind.name) + ' Script';
+                else if (status === 'Shortcut') notes = 'Shortcut to ' + (t.shortcut_to || t.table || 'table');
+                else if (status === 'Duplicate') notes = 'Duplicate: ' + (t.duplicate_of || (t.database + '.' + t.table));
+                else if (status === 'Pending') notes = 'Pending';
+              }
               
               return '<tr style="' + rowStyle + '">' +
                 '<td style="font-size:10px;color:var(--text-mute)">' + escapeHtml(t.platform || '-') + '</td>' +
@@ -2739,8 +2749,19 @@ async function exportIndicatorXLSX() {
           const dagStatus = isDagInactive ? 'Inactive' : 'Active';
           const today = new Date().toISOString().slice(0,10);
           
-          // Internal Testing status
-          const internalTest = isTested ? 'Completed' : '';
+          // Internal Testing status based on status type
+          let internalTest = 'Pending';
+          if (isTested) {
+            internalTest = 'Test Script Success';
+          } else if (isLanding || isDagInactive) {
+            internalTest = 'Data sudah ada di GCS dan BQ';
+          } else if (isFabric) {
+            internalTest = 'Fabric - put on DAG ' + (t.dag || indName) + ' Script';
+          } else if (isShortcut) {
+            internalTest = 'Shortcut to ' + (t.shortcut_to || t.table || 'table');
+          } else if (isDuplicate) {
+            internalTest = 'Duplicate: ' + (t.duplicate_of || t.database + '.' + t.table);
+          }
 
           const row = ws.addRow([
             no,
