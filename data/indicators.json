@@ -889,7 +889,7 @@
     "unique_tables": 10,
     "duplicates": 3,
     "converted": 0,
-    "tested": 5,
+    "tested": 10,
     "tables": [
       {
         "no": "",
@@ -971,9 +971,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: Eventlive_file",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -985,9 +985,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: hargakomoditas_file",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -999,9 +999,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: incentive_sf_file",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1013,9 +1013,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: incentive_tl_ol_file",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1027,9 +1027,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Data Landing - perlu verify di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: marketpricing_file",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1074,8 +1074,8 @@
         "test_time": "-"
       }
     ],
-    "done": 5,
-    "pending": 5
+    "done": 10,
+    "pending": 0
   },
   "Region": {
     "no": 6,
