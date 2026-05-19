@@ -2656,7 +2656,9 @@ async function exportIndicatorXLSX() {
     const HEADERS = [
       'No', 'Project', 'Indicator', 'Priority', 'Assets', 'Database Name', 'Table Name', 
       'Layer Bucket', 'Dataset BQ', 'Initial Landing', 'Initial Mart', 'DA Mapping', 
-      'ETL Conversion', 'ETL Test', 'Test Time', 'Incremental', 'Orchestration'
+      'ETL Conversion', 'ETL Test', 'Test Time (min)', 'Incremental', 'Orchestration',
+      'Internal Testing', 'PQA Test', 'BI Dev', 'Labeling Charging', 'Dataplex', 
+      'Sign-off Document', 'DAG Status', 'Last Updated'
     ];
     const PINK = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFCE4EC' } };
     const GREEN_BG = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE8F5E9' } };
@@ -2733,6 +2735,13 @@ async function exportIndicatorXLSX() {
           // Project name (from DAG or indicator)
           const project = t.dag || indName.toLowerCase().replace(/\s+/g, '_');
 
+          // DAG status
+          const dagStatus = isDagInactive ? 'Inactive' : 'Active';
+          const today = new Date().toISOString().slice(0,10);
+          
+          // Internal Testing status
+          const internalTest = isTested ? 'Completed' : '';
+
           const row = ws.addRow([
             no,
             project,
@@ -2743,14 +2752,22 @@ async function exportIndicatorXLSX() {
             t.table || '-',
             layerBucket,
             datasetBQ,
-            'Completed',  // Initial Landing - all data already in GCS/BQ
+            'Completed',  // Initial Landing
             'Completed',  // Initial Mart
             'Completed',  // DA Mapping
             etlConv,
             etlTest,
             testTime,
-            '-',  // Incremental - kosongkan dulu
-            '-'   // Orchestration - kosongkan dulu
+            '-',          // Incremental
+            '-',          // Orchestration
+            internalTest, // Internal Testing
+            '',           // PQA Test
+            '',           // BI Dev
+            '',           // Labeling Charging
+            '',           // Dataplex
+            '',           // Sign-off Document
+            dagStatus,    // DAG Status
+            today         // Last Updated
           ]);
 
           // Color coding
