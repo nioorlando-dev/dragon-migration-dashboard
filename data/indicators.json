@@ -7,7 +7,7 @@
     "unique_tables": 39,
     "duplicates": 12,
     "converted": 0,
-    "tested": 8,
+    "tested": 9,
     "tables": [
       {
         "no": "",
@@ -19,9 +19,9 @@
         "script": "final_masterdealer_union",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -33,8 +33,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -47,8 +47,8 @@
         "script": "stg_masterdealer_star",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -61,9 +61,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -118,8 +118,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: data_master",
-        "test_time": "02:08"
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -131,9 +131,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: lookup",
-        "test_time": "02:12"
+        "status": "Landing",
+        "notes": "Data Landing - verified di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -146,8 +146,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: master2w_dealer",
-        "test_time": "08:22"
+        "notes": "SUCCESS: 00:01:43",
+        "test_time": "00:01:43"
       },
       {
         "no": "",
@@ -159,9 +159,9 @@
         "script": "MasterDealer.py",
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -174,8 +174,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: masterdealer_temp",
-        "test_time": "02:08"
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -188,8 +188,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: masterdealerfinal",
-        "test_time": "02:08"
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -202,8 +202,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: masterdealerfinal2",
-        "test_time": "02:08"
+        "notes": "SUCCESS: 00:20:09",
+        "test_time": "00:20:09"
       },
       {
         "no": "",
@@ -216,8 +216,8 @@
         "dag": "dragon_customerprofilesales_cloudera",
         "pipeline": "-",
         "status": "Tested",
-        "notes": "SUCCESS: portal_dealer",
-        "test_time": "08:22"
+        "notes": "SUCCESS: 00:01:55",
+        "test_time": "00:01:55"
       },
       {
         "no": "",
@@ -229,9 +229,9 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "Tested",
-        "notes": "SUCCESS: RefMechanic",
-        "test_time": "08:22"
+        "status": "DAG Inactive",
+        "notes": "DAG Inactive - data ada di GCS/BQ",
+        "test_time": "-"
       },
       {
         "no": "",
@@ -724,8 +724,8 @@
         "test_time": "-"
       }
     ],
-    "done": 37,
-    "pending": 2
+    "done": 39,
+    "pending": 0
   },
   "Master Main Dealer": {
     "no": 2,
@@ -735,7 +735,7 @@
     "unique_tables": 4,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -747,8 +747,8 @@
         "script": "mastermaindealer.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -761,9 +761,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 02:08",
+        "test_time": "02:08"
       },
       {
         "no": "",
@@ -775,8 +775,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -789,13 +789,13 @@
         "script": "mastermaindealer_star.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L3/grid?task_id=masterdealermaindealer_star",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 2
+    "done": 4,
+    "pending": 0
   },
   "Master Sales Person": {
     "no": 3,
@@ -817,13 +817,13 @@
         "script": "Script MasterSalesPerson",
         "dag": "By Schedule on Synapse",
         "pipeline": "PROD_MasterSalesPerson",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "Master Unit Type": {
     "no": 4,
@@ -833,7 +833,7 @@
     "unique_tables": 3,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 1,
     "tables": [
       {
         "no": "",
@@ -845,8 +845,8 @@
         "script": "Script MasterUnitType STAR",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType STAR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -859,8 +859,8 @@
         "script": "/home/adiden/scripts/vctd-daas/DBT/scripts/dbt_runner.sh SO_HSO .env.prod \"dbt run -s masterunittype -t prod\" ",
         "dag": "By Schedule on Synapse",
         "pipeline": "MasterUnitType UNION",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -873,13 +873,13 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       }
     ],
-    "done": 1,
-    "pending": 2
+    "done": 3,
+    "pending": 0
   },
   "File": {
     "no": 5,
@@ -889,7 +889,7 @@
     "unique_tables": 10,
     "duplicates": 3,
     "converted": 0,
-    "tested": 0,
+    "tested": 10,
     "tables": [
       {
         "no": "",
@@ -901,9 +901,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -915,9 +915,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -929,9 +929,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -943,9 +943,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -957,9 +957,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -971,9 +971,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:32",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -985,9 +985,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:32",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -999,9 +999,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:32",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1013,9 +1013,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:32",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1027,9 +1027,9 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:32",
+        "test_time": "08:32"
       },
       {
         "no": "",
@@ -1097,13 +1097,13 @@
         "script": "Region",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_Region",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "Data SAP": {
     "no": 7,
@@ -1113,7 +1113,7 @@
     "unique_tables": 17,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 17,
     "tables": [
       {
         "no": "",
@@ -1125,9 +1125,9 @@
         "script": "Obj00125433ARAGING",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -1139,9 +1139,9 @@
         "script": "Obj00125593ZPYGF_AR_Aging_NonTradeDetail",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -1153,9 +1153,9 @@
         "script": "Obj00125591ZPYGF_AR_Aging_ServicesSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -1167,9 +1167,9 @@
         "script": "Obj00125582ZPYGF_AR_Aging_UnitSummary",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:25",
+        "test_time": "08:25"
       },
       {
         "no": "",
@@ -1181,9 +1181,9 @@
         "script": "zpygmme00049a.cfg",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 02:18",
+        "test_time": "02:18"
       },
       {
         "no": "",
@@ -1195,9 +1195,9 @@
         "script": "Obj00125448ZPYGMMQ00036",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1209,9 +1209,9 @@
         "script": "Obj00125440ZPYGMMR00188",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1223,9 +1223,9 @@
         "script": "Obj00125431ZPYGSDDT00720",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1237,9 +1237,9 @@
         "script": "Obj00125446ZPYGSDQ00010",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1251,9 +1251,9 @@
         "script": "Obj00125506ZPYGSDQ00094",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1265,9 +1265,9 @@
         "script": "Obj00125521ZPYGSDR00039",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1279,9 +1279,9 @@
         "script": "Obj00125444ZPYGSDR00059",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1293,9 +1293,9 @@
         "script": "Obj00125442ZPYGSDR00263",
         "dag": "dragon_SAP",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1307,9 +1307,9 @@
         "script": "Obj00125418BKPF",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1321,9 +1321,9 @@
         "script": "Obj00125427BSEC",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1335,9 +1335,9 @@
         "script": "Obj00125420BSEG",
         "dag": "dragon_SAP - Grid - Airflow",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       },
       {
         "no": "",
@@ -1349,9 +1349,9 @@
         "script": "ZAISOFII00006.cfg",
         "dag": "dragon_SAP",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 08:30",
+        "test_time": "08:30"
       }
     ],
     "done": 17,
@@ -1393,7 +1393,7 @@
     "unique_tables": 2,
     "duplicates": 0,
     "converted": 0,
-    "tested": 0,
+    "tested": 2,
     "tables": [
       {
         "no": "",
@@ -1405,9 +1405,9 @@
         "script": "SAP_USTK",
         "dag": "dragon_ustk2",
         "pipeline": "SAP_USTK",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 02:18",
+        "test_time": "02:18"
       },
       {
         "no": "",
@@ -1419,9 +1419,9 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
-        "test_time": "-"
+        "status": "Tested",
+        "notes": "SUCCESS: 02:18",
+        "test_time": "02:18"
       }
     ],
     "done": 2,
@@ -1447,8 +1447,8 @@
         "script": "Customer Profile Sales Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "CustomerProfileSales_Delta",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1461,8 +1461,8 @@
         "script": "Customer Profile Sales DR",
         "dag": "By Schedule on Synapse",
         "pipeline": "PROD_CustomerProfileSales_Object_Prompt_DR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1475,8 +1475,8 @@
         "script": "Customer Profile Sales Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "CustomerProfileSales_Delta",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1489,8 +1489,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1503,8 +1503,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1517,8 +1517,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -1923,8 +1923,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -1937,8 +1937,8 @@
         "script": "mastermaindealer.py",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -1951,8 +1951,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -1965,8 +1965,8 @@
         "script": "",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -2049,8 +2049,8 @@
         "script": "2_customerprofilesales_rofinal.py",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -3118,8 +3118,8 @@
         "test_time": "-"
       }
     ],
-    "done": 51,
-    "pending": 26
+    "done": 49,
+    "pending": 28
   },
   "Leads Funnel CRM H1": {
     "no": 11,
@@ -3505,8 +3505,8 @@
         "script": "Funneling Leads H1",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3687,8 +3687,8 @@
         "script": "Funneling Leads H2",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/809dbdcc-8d9c-4d8a-843a-e21b53ab5ef6?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeadsH23",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3771,8 +3771,8 @@
         "script": "Funneling Leads H3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3827,8 +3827,8 @@
         "script": "GroupMaterialCompositionH3",
         "dag": "https://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/a5ba39df-7524-4f11-90b4-0b30409a7633?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=fabric-developer",
         "pipeline": "Reporting_FunnelingLeads",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3841,8 +3841,8 @@
         "script": "PRD_Leadsfunnel_CRMH1",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_Leadsfunnel_CRMH1",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3855,8 +3855,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3869,8 +3869,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3883,8 +3883,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -3911,13 +3911,13 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       }
     ],
-    "done": 50,
-    "pending": 5
+    "done": 53,
+    "pending": 2
   },
   "Customer Profile Service": {
     "no": 12,
@@ -3939,8 +3939,8 @@
         "script": "customerprofileservice_base_v3",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_Customerprofileservice_STAR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3953,8 +3953,8 @@
         "script": "PRD_Customerprofileservice_UNION",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_Customerprofileservice_UNION",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3967,8 +3967,8 @@
         "script": "-",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3981,8 +3981,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -3995,13 +3995,13 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 3,
-    "pending": 2
+    "done": 5,
+    "pending": 0
   },
   "PKB Service": {
     "no": 13,
@@ -4023,8 +4023,8 @@
         "script": "DataTransaksional_DR_Delta_ADLS",
         "dag": "By Schedule on Synapse(Trigger - PKB Service)",
         "pipeline": "PRD_PKBServiceFinal_Integrasi",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4037,8 +4037,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4051,8 +4051,8 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4065,8 +4065,8 @@
         "script": "Data_Transaksi_PKB_DR_Upsert",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > PKBService_DR > PRD_Data_Transaksi_PKB_DR_Main > PRD_Data_Transaksi_PKB_DR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4079,8 +4079,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4093,8 +4093,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4107,8 +4107,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4121,8 +4121,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4135,8 +4135,8 @@
         "script": "DataFlow_StarDelta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4149,13 +4149,13 @@
         "script": "PKB_Enhancement_Delta",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_PKBServiceFinal_STAR > PRD_PKBServiceFinal_Integrasi > Delta_Enhancement",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 5,
-    "pending": 5
+    "done": 10,
+    "pending": 0
   },
   "Niguri Part": {
     "no": 14,
@@ -4177,8 +4177,8 @@
         "script": "PROD_NB_Data_Revenue_DR",
         "dag": "PRD_DR_DataRevenue:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_DR_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue DR:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_direct_synapse",
         "pipeline": "PRD_DR_DataRevenue",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4191,8 +4191,8 @@
         "script": "-",
         "dag": "PRD_STAR_Delta_DataRevenue:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_STAR_Delta_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\n\nDAG Airflow DataRevenue STAR:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_star_synapse",
         "pipeline": "PRD_STAR_Delta_DataRevenue",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4205,8 +4205,8 @@
         "script": "-",
         "dag": "PRD_DataRevenue_Transformation:\nhttps://web.azuresynapse.net/en/authoring/analyze/pipeline/PRD_DataRevenue_Transformation?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue Transformation:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_transformation_synapse",
         "pipeline": "PRD_DataRevenue_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4247,8 +4247,8 @@
         "script": "union datrev_delta",
         "dag": "PRD_DataRevenue_Union:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_Union_DataRevenue?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\nDAG Airflow DataRevenue UNION:\nhttp://10.252.136.230:8080/dags/dragon_datarevenue/grid?task_id=datarevenue_union_synapse",
         "pipeline": "PRD_DataRevenue_Union",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4261,8 +4261,8 @@
         "script": "datarevenue_contextual",
         "dag": "dragon_datarevenue",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4275,8 +4275,8 @@
         "script": "masterhet",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4289,8 +4289,8 @@
         "script": "masterhet_latest",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4303,8 +4303,8 @@
         "script": "mastermaterial",
         "dag": "dragon_L3",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4317,8 +4317,8 @@
         "script": "partsharecontribution",
         "dag": "so2w_dragon_partsharecontribution",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4331,8 +4331,8 @@
         "script": "salesinstar",
         "dag": "dragon_niguri_partstock",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4345,8 +4345,8 @@
         "script": "stocklevel",
         "dag": "dragon_niguri_partstock",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4359,8 +4359,8 @@
         "script": "targetservicepart",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4373,13 +4373,13 @@
         "script": "datarevenue",
         "dag": "dragon_datarevenue",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 13
+    "done": 15,
+    "pending": 0
   },
   "SDUE": {
     "no": 15,
@@ -4401,8 +4401,8 @@
         "script": "CustomerProfileService_STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4415,8 +4415,8 @@
         "script": "DataRevenue_STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4429,8 +4429,8 @@
         "script": "PKBService _STAR",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SDUE_Quickwin",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4443,8 +4443,8 @@
         "script": "svmappingpit_star",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SvMappingpit",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4457,8 +4457,8 @@
         "script": "report_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4471,8 +4471,8 @@
         "script": "report_sdue_2023.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4485,8 +4485,8 @@
         "script": "view_report_sdue_acap.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4499,8 +4499,8 @@
         "script": "view_report_sdue_aprom.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4513,8 +4513,8 @@
         "script": "view_report_sdue_dataid.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4527,8 +4527,8 @@
         "script": "view_report_sdue_dataid_filler.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4541,8 +4541,8 @@
         "script": "view_report_sdue_dataid_sum.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4555,8 +4555,8 @@
         "script": "view_report_sdue_dataid_union.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4569,8 +4569,8 @@
         "script": "view_report_sdue_dataid_union_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4583,8 +4583,8 @@
         "script": "view_report_sdue_master_dealer.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4597,8 +4597,8 @@
         "script": "view_report_sdue_mechprod.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4611,8 +4611,8 @@
         "script": "view_report_sdue_pit.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4625,8 +4625,8 @@
         "script": "report_sdue_portalahm.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4639,8 +4639,8 @@
         "script": "view_report_sdue_result_aggr.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4653,8 +4653,8 @@
         "script": "view_report_sdue_revenue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4667,8 +4667,8 @@
         "script": "view_report_sdue_revenuehgp.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4681,8 +4681,8 @@
         "script": "view_report_sdue_revenueoli.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4695,8 +4695,8 @@
         "script": "view_report_sdue_sales_part_oil.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4709,8 +4709,8 @@
         "script": "view_report_sdue_sdue.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4723,8 +4723,8 @@
         "script": "view_report_sdue_tanggal_trans.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4737,8 +4737,8 @@
         "script": "view_report_sdue_toj.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4751,8 +4751,8 @@
         "script": "view_report_sdue_toj11.sql",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4765,8 +4765,8 @@
         "script": "cpservice_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > cpservice",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4779,8 +4779,8 @@
         "script": "DataMekanik_Union",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_DataMekanikCloudera_DataMekanikUnion",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4793,8 +4793,8 @@
         "script": "datarevenue_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > datarevenue",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4807,8 +4807,8 @@
         "script": "Union_df_new",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4821,8 +4821,8 @@
         "script": "pkbservice_sdue.ipynb",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "sdue_datamart_quickwin > pkbservice",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4849,8 +4849,8 @@
         "script": "Ingest to fabric",
         "dag": "http://10.252.136.230:8080/dags/so2w_dragon_sdue_fabric/grid",
         "pipeline": "PRD_SvMappingpit",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4863,8 +4863,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -4877,8 +4877,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4891,8 +4891,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_MasterMainDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4910,8 +4910,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 34
+    "done": 35,
+    "pending": 1
   },
   "Grape Phase 1": {
     "no": 16,
@@ -4933,8 +4933,8 @@
         "script": "3_customerprofilesales.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4947,8 +4947,8 @@
         "script": "ctas targetsales",
         "dag": "http://10.252.136.230:8080/dags/so2w_grape/grid",
         "pipeline": "pipeline_grape_targetsales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4961,8 +4961,8 @@
         "script": "ctas targetsales",
         "dag": "http://10.252.136.230:8080/dags/so2w_grape/grid",
         "pipeline": "pipeline_grape_targetsales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4975,8 +4975,8 @@
         "script": "2_customerprofilesales_pkb.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -4989,8 +4989,8 @@
         "script": "1_customerprofilesales_pkb_temp.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5003,8 +5003,8 @@
         "script": "1_customerprofilesales_ro_temp.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5017,8 +5017,8 @@
         "script": "1_customerprofilesales_ustk2.sql",
         "dag": "dragon_customerprofilesales - Grid - Airflow",
         "pipeline": "dragon_customerprofilesales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5031,13 +5031,13 @@
         "script": "1_prospecttossu_integrasi.sql",
         "dag": "dragon_prospecttossu - Grid - Airflow",
         "pipeline": "dragon_prospecttossu",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 8
+    "done": 8,
+    "pending": 0
   },
   "Grape Phase 2": {
     "no": 17,
@@ -5059,8 +5059,8 @@
         "script": "evenactivity",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5073,8 +5073,8 @@
         "script": "salessummaryv2",
         "dag": "so2w_grape",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5087,13 +5087,13 @@
         "script": "notebook_grape_targetsales",
         "dag": "Pipeline Fabric:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/131b4c40-cbc6-4c37-9874-ab13929dc6af?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\nDAG Airflow targetsales:\nhttp://10.252.136.230:8080/dags/so2w_grape/grid?tags=HSO&search=so2w_grape&task_id=targetsales",
         "pipeline": "pipeline_grape_targetsales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 3
+    "done": 3,
+    "pending": 0
   },
   "3 Axis Leads Monitoring": {
     "no": 18,
@@ -5115,8 +5115,8 @@
         "script": "Delta_3AxisFu",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > 3Axis_Delta_Daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5129,8 +5129,8 @@
         "script": "Delta_Funnel",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > Funnel_Delta_daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5143,8 +5143,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_CustomerProfileSales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5157,8 +5157,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Customerprofileservice_UNION",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5171,8 +5171,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5185,8 +5185,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_Union_MasterGroupDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5199,8 +5199,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_MasterMainDealer",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5213,8 +5213,8 @@
         "script": "",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "MasterUnitType UNION",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5227,8 +5227,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5241,8 +5241,8 @@
         "script": "Data flow Upsert Final",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > Funnel_Delta_daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5255,8 +5255,8 @@
         "script": "Data flow Upsert Final",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_3AxisLeadsMonitoring_Funnel_Daily > 3Axis_Delta_Daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5269,8 +5269,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -5283,8 +5283,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -5316,8 +5316,8 @@
         "test_time": "-"
       }
     ],
-    "done": 3,
-    "pending": 10
+    "done": 11,
+    "pending": 2
   },
   "USTK2": {
     "no": 19,
@@ -5339,8 +5339,8 @@
         "script": "ustk2",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5353,8 +5353,8 @@
         "script": "stg_ustk2_rfc",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5367,8 +5367,8 @@
         "script": "stg_ustk2_star",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5381,13 +5381,13 @@
         "script": "final_ustk_union",
         "dag": "dragon_ustk2",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 4
+    "done": 4,
+    "pending": 0
   },
   "Unit Entry Transformation": {
     "no": 20,
@@ -5409,13 +5409,13 @@
         "script": "Unit Entry_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_UnitEntry",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "Utilisasi STAR BD": {
     "no": 21,
@@ -5493,8 +5493,8 @@
         "script": "bd_h1.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5507,8 +5507,8 @@
         "script": "bd_h23.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5521,8 +5521,8 @@
         "script": "bd_metric_a_j.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5535,8 +5535,8 @@
         "script": "bd_metric_k_q.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5549,8 +5549,8 @@
         "script": "bd_metric_r_y.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5563,8 +5563,8 @@
         "script": "bd_metric_z_ad.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5577,8 +5577,8 @@
         "script": "bd_partsales.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5591,8 +5591,8 @@
         "script": "bd_pc.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5605,8 +5605,8 @@
         "script": "bd_pkb.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5619,8 +5619,8 @@
         "script": "bd_po_h23.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5633,8 +5633,8 @@
         "script": "bd_po_suggestion.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_L2/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5647,8 +5647,8 @@
         "script": "monitoringdocumentsalescomplete",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5661,8 +5661,8 @@
         "script": "monitoringdocumentsalescomplete_star",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5675,13 +5675,13 @@
         "script": "salesinstar",
         "dag": "dragon_report_bd",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 4,
-    "pending": 14
+    "done": 18,
+    "pending": 0
   },
   "Data Revenue": {
     "no": 22,
@@ -5703,8 +5703,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5717,8 +5717,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -5736,8 +5736,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 0
+    "done": 1,
+    "pending": 1
   },
   "New Data Point - MonitoringKuitansi": {
     "no": 23,
@@ -5759,13 +5759,13 @@
         "script": "monitoringbku_star",
         "dag": "dragon_monitoringkuitansi_all",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "New Data Point - CDB x MotorkuX Insight": {
     "no": 24,
@@ -5969,8 +5969,8 @@
         "script": "smart_stock_sales_location_customer",
         "dag": "cdbxmotorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5983,8 +5983,8 @@
         "script": "zpygsdr00263",
         "dag": "motorkuxfunnelworkshop",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -5997,8 +5997,8 @@
         "script": "cdbxmotorkux",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6011,8 +6011,8 @@
         "script": "datarevenue",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6025,8 +6025,8 @@
         "script": "motorkuxfunnelworkshop",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6039,8 +6039,8 @@
         "script": "motorkuxkpbperformance",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6053,8 +6053,8 @@
         "script": "motorkuxleadsh1",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6067,8 +6067,8 @@
         "script": "motorkuxleadsh2",
         "dag": "dragon_motorkux",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6081,8 +6081,8 @@
         "script": "motorkuxleadsh3",
         "dag": "motorkuxsummary",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6095,13 +6095,13 @@
         "script": "PRD_CPService_UNION_Initial",
         "dag": "PRD_CustomerProfileService:\nhttps://web.azuresynapse.net/en/authoring/orchestrate/pipeline/PRD_Customerprofileservice_STAR?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse\n\nDAG Airflow CustomerProfileService Synapse:\nhttp://10.252.136.230:8080/dags/dragon_motorkux/grid?task_id=customerprofileservice_synapse&tab=code",
         "pipeline": "PRD_CustomerProfileService_STAR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 13,
-    "pending": 10
+    "done": 23,
+    "pending": 0
   },
   "Prospect To SSU": {
     "no": 25,
@@ -6123,8 +6123,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6137,8 +6137,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6151,8 +6151,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -6170,8 +6170,8 @@
         "test_time": "-"
       }
     ],
-    "done": 3,
-    "pending": 0
+    "done": 2,
+    "pending": 1
   },
   "Purifikasi HSO": {
     "no": 26,
@@ -6193,8 +6193,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6207,8 +6207,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6221,8 +6221,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6235,8 +6235,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6249,8 +6249,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6263,8 +6263,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6277,8 +6277,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -6305,8 +6305,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6319,8 +6319,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6333,8 +6333,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6347,8 +6347,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6361,8 +6361,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -6417,8 +6417,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6431,8 +6431,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -6459,8 +6459,8 @@
         "script": "smart_stock_sales.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6473,8 +6473,8 @@
         "script": "smart_stock_sales_location.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6487,8 +6487,8 @@
         "script": "smart_stock_sales_location_customer_.sql",
         "dag": "so2w_smartstock - Grid - Airflow",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6520,8 +6520,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 3
+    "done": 5,
+    "pending": 0
   },
   "Customer Persona Segmentation": {
     "no": 30,
@@ -6543,8 +6543,8 @@
         "script": "[DE] - HSO_Customer_Persona_Percentile",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Percentile",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6557,8 +6557,8 @@
         "script": "[DE] - HSO_Customer_Persona_Percentile",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Percentile",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6571,8 +6571,8 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6585,8 +6585,8 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6599,13 +6599,13 @@
         "script": "[DE] - HSO_Customer_Persona_Union",
         "dag": "Scheduled on Synapse",
         "pipeline": "[DE] - HSO_Customer_Persona_Union",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 5
+    "done": 5,
+    "pending": 0
   },
   "Market Share Data": {
     "no": 31,
@@ -6655,8 +6655,8 @@
         "script": "marketsharedata.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_marketsharedata/grid?task_id=marketsharedata",
         "pipeline": "",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6669,8 +6669,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -6725,8 +6725,8 @@
         "script": "Script_LCR_Transformation\nScript_LCR_Transformation_2",
         "dag": "By Schedule on Synapse",
         "pipeline": "LCR_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6739,13 +6739,13 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 1
+    "done": 3,
+    "pending": 0
   },
   "BTL Transformation": {
     "no": 33,
@@ -6767,8 +6767,8 @@
         "script": "DeltaFormat_BTL",
         "dag": "By Schedule on Synapse",
         "pipeline": "BTL_Transformation_FullLoad",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6781,13 +6781,13 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 1,
-    "pending": 1
+    "done": 2,
+    "pending": 0
   },
   "Data Mekanik": {
     "no": 34,
@@ -6809,8 +6809,8 @@
         "script": "PRD_DataMekanik_Transformation",
         "dag": "PRD_DataMekanik_Transformation",
         "pipeline": "PRD_DataMekanik_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6823,8 +6823,8 @@
         "script": "DataMekanik",
         "dag": "Pipeline Fabric:\nhttps://app.fabric.microsoft.com/groups/361ae196-2700-41ad-b660-0cec99183102/pipelines/cab721c3-4ece-48c5-b632-86265ff0cf24?ctid=ca06aaa2-e01f-4e0c-9567-f2256f398023&experience=power-bi&feature.enableJsonEdit=true\nDAG Airflow Data Mekanik:\nhttp://10.252.136.230:8080/dags/dragon_data_mekanik/grid",
         "pipeline": "PRD_DataMekanik",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6837,8 +6837,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6851,8 +6851,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -6865,8 +6865,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -6921,8 +6921,8 @@
         "script": "",
         "dag": "Scheduled on Synapse",
         "pipeline": "Datapit_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6935,8 +6935,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -6949,8 +6949,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -6991,8 +6991,8 @@
         "script": "DataInsightHotline_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Delta",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7005,8 +7005,8 @@
         "script": "Hotline_Test_DR_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_DR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7019,8 +7019,8 @@
         "script": "DataInsightHotline_Delta",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Final",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7033,8 +7033,8 @@
         "script": "Script_DataInsightHotline_Transformation_Delta\nScript_DataInisghtHotline_Transformation_Delta_M_1",
         "dag": "By Schedule on Synapse",
         "pipeline": "DataInsightHotline_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7047,8 +7047,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7061,8 +7061,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7075,8 +7075,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7089,8 +7089,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7122,8 +7122,8 @@
         "test_time": "-"
       }
     ],
-    "done": 4,
-    "pending": 4
+    "done": 6,
+    "pending": 2
   },
   "Part Stock": {
     "no": 37,
@@ -7145,8 +7145,8 @@
         "script": "Cloudera_Enhance",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7159,8 +7159,8 @@
         "script": "Partstock_Transform",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7173,8 +7173,8 @@
         "script": "Partstock_Union",
         "dag": "By Schedule on Synapse (Trigger - Partstock)",
         "pipeline": "Partstock_Transform",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7187,13 +7187,13 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 1,
-    "pending": 3
+    "done": 4,
+    "pending": 0
   },
   "Dealer General Data": {
     "no": 38,
@@ -7215,8 +7215,8 @@
         "script": "1. ctas h1\n2. DeltaScript",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7229,8 +7229,8 @@
         "script": "ctas h1",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7243,8 +7243,8 @@
         "script": "DeltaScript_Monthly",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_FULL",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7257,8 +7257,8 @@
         "script": "",
         "dag": "Scheduled on Synapse",
         "pipeline": "PRD_DealerGeneralData_Daily",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7271,8 +7271,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7285,8 +7285,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7299,8 +7299,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7318,8 +7318,8 @@
         "test_time": "-"
       }
     ],
-    "done": 3,
-    "pending": 4
+    "done": 6,
+    "pending": 1
   },
   "Monitoring BKU": {
     "no": 39,
@@ -7341,8 +7341,8 @@
         "script": "final_monitoringbku_union",
         "dag": "dragon_monitoring_bku",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7355,8 +7355,8 @@
         "script": "-",
         "dag": "",
         "pipeline": "-",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7369,8 +7369,8 @@
         "script": "stg_monitoringbku_star",
         "dag": "dragon_monitoring_bku",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7383,8 +7383,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7402,8 +7402,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 2
+    "done": 3,
+    "pending": 1
   },
   "Funnel Leads to Sales": {
     "no": 40,
@@ -7425,13 +7425,13 @@
         "script": "Funnel Leads To Sales",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_FunnelLeadtoSales",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 1
+    "done": 1,
+    "pending": 0
   },
   "Monitoring Sales Document STNK & BPKB": {
     "no": 41,
@@ -7453,8 +7453,8 @@
         "script": "monitoringbku",
         "dag": "dragon_monitoring_stnk_bpkb",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7467,13 +7467,13 @@
         "script": "monitoringbku_cloudera",
         "dag": "dragon_monitoring_stnk_bpkb",
         "pipeline": "-",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 2
+    "done": 2,
+    "pending": 0
   },
   "NMS - Data Hotline Detail": {
     "no": 42,
@@ -7495,8 +7495,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -7523,8 +7523,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -7551,8 +7551,8 @@
         "script": "Daily_Stock",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 6_StockLevelSummarymonthyear",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7565,8 +7565,8 @@
         "script": "StockLevelSummaryMD",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 7_StockLevelSummaryMD",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7579,8 +7579,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7593,8 +7593,8 @@
         "script": "Ingest to Fabric",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_StockLevelSummary_Daily > 9_StockLevelSummary_MD_OneLake",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7607,8 +7607,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7626,8 +7626,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 3
+    "done": 4,
+    "pending": 1
   },
   "Report SO REM": {
     "no": 45,
@@ -7649,8 +7649,8 @@
         "script": "table",
         "dag": "",
         "pipeline": "PRD_ReportSORem",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7663,8 +7663,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7677,8 +7677,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7691,8 +7691,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7710,8 +7710,8 @@
         "test_time": "-"
       }
     ],
-    "done": 4,
-    "pending": 0
+    "done": 3,
+    "pending": 1
   },
   "Sales In Sales Out": {
     "no": 46,
@@ -7761,8 +7761,8 @@
         "script": "SalesInSalesOut_Transformation_Fullload",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SalesInSalesOut_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7775,8 +7775,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7789,8 +7789,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7831,8 +7831,8 @@
         "script": "Script cps_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7845,8 +7845,8 @@
         "script": "Script number_workdays",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7859,8 +7859,8 @@
         "script": "Script psf_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7873,8 +7873,8 @@
         "script": "Script SPR_Transformation",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7887,8 +7887,8 @@
         "script": "Script target_spr",
         "dag": "By Schedule on Synapse",
         "pipeline": "PRD_SPR_Transformation_Dataset",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7901,8 +7901,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7915,8 +7915,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Pending",
+        "notes": "Belum dikerjakan",
         "test_time": "-"
       },
       {
@@ -7934,8 +7934,8 @@
         "test_time": "-"
       }
     ],
-    "done": 2,
-    "pending": 5
+    "done": 6,
+    "pending": 1
   },
   "Work Days Akumulatif": {
     "no": 48,
@@ -7971,8 +7971,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -7985,8 +7985,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -8013,8 +8013,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "Landing",
-        "notes": "Data Landing - verified di GCS/BQ",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8027,8 +8027,8 @@
         "script": "leadtimesalesheader_fromspk_star.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_leadtimesalesheader_fromspk/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8041,13 +8041,13 @@
         "script": "leadtimesalesheader_fromspk_union.sql",
         "dag": "http://10.252.136.230:8080/dags/dragon_leadtimesalesheader_fromspk/grid",
         "pipeline": "DBT",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 1,
-    "pending": 2
+    "done": 3,
+    "pending": 0
   },
   "Report Monitoring AR dan Cashbank": {
     "no": 50,
@@ -8069,8 +8069,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8083,8 +8083,8 @@
         "script": "-",
         "dag": "-",
         "pipeline": "-",
-        "status": "Shortcut",
-        "notes": "Shortcut/Link ke data lain",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -8111,8 +8111,8 @@
         "script": "",
         "dag": "",
         "pipeline": "",
-        "status": "DAG Inactive",
-        "notes": "DAG Inactive - script ready, DAG belum aktif",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
@@ -8139,8 +8139,8 @@
         "script": "SugorAhassPss_Star",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 2_SugorAhassPss_STAR",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8153,8 +8153,8 @@
         "script": "Sugor_Mapping",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8167,8 +8167,8 @@
         "script": "Delta_SugorAhassPss_UNION",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 3_SugorAhassPss_UNION",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8181,8 +8181,8 @@
         "script": "Sugor Daily",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       },
       {
@@ -8195,12 +8195,12 @@
         "script": "Delta_Fabric",
         "dag": "https://web.azuresynapse.net/en/monitoring/pipelineruns?workspace=%2Fsubscriptions%2F9647a9dd-07e0-4fff-b88f-553ee3243087%2FresourceGroups%2FHSOStarPrdSea%2Fproviders%2FMicrosoft.Synapse%2Fworkspaces%2Fhsostarprdseasynapse",
         "pipeline": "PRD_SugorAhassPss_Daily > 4_sugorahasspssunionmonthyear",
-        "status": "Pending",
-        "notes": "Fabric - perlu DAG",
+        "status": "Fabric",
+        "notes": "Fabric - ikut DAG",
         "test_time": "-"
       }
     ],
-    "done": 0,
-    "pending": 5
+    "done": 5,
+    "pending": 0
   }
 }
